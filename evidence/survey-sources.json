@@ -1,0 +1,50 @@
+[
+  {
+    "id": "S01",
+    "url": "https://github.com/marketplace",
+    "response_status": 200,
+    "method": "verified HTTPS and parsed main element; layout assets restricted",
+    "observed_at_utc": "2026-10-18T10:32:18.017228+00:00",
+    "evidence_file": "S01-observed-text.txt"
+  },
+  {
+    "id": "S02",
+    "url": "https://github.com/marketplace?category=code-review&type=apps",
+    "response_status": 200,
+    "method": "verified HTTPS and parsed main element; layout assets restricted",
+    "observed_at_utc": "2026-10-18T10:32:18.030477+00:00",
+    "evidence_file": "S02-observed-text.txt"
+  },
+  {
+    "id": "S03",
+    "url": "https://github.com/marketplace/codecov?tab=readme",
+    "response_status": 200,
+    "method": "verified HTTPS and parsed main element; layout assets restricted",
+    "observed_at_utc": "2026-10-18T10:32:18.040324+00:00",
+    "evidence_file": "S03-observed-text.txt"
+  },
+  {
+    "id": "S04",
+    "url": "https://github.com/marketplace?query=codecov&type=apps",
+    "response_status": 200,
+    "method": "verified HTTPS and parsed main element; layout assets restricted",
+    "observed_at_utc": "2026-10-18T10:32:18.051672+00:00",
+    "evidence_file": "S04-observed-text.txt"
+  },
+  {
+    "id": "S05",
+    "url": "https://github.com/marketplace/codecov?tab=pricing-and-setup",
+    "response_status": 200,
+    "method": "verified HTTPS and parsed main element; layout assets restricted",
+    "observed_at_utc": "2026-10-18T10:32:18.061199+00:00",
+    "evidence_file": "S05-observed-text.txt"
+  },
+  {
+    "id": "S06",
+    "url": "https://github.com/login",
+    "response_status": 200,
+    "method": "verified HTTPS and parsed main element; layout assets restricted",
+    "observed_at_utc": "2026-10-18T10:32:18.063769+00:00",
+    "evidence_file": "S06-observed-text.txt"
+  }
+]

@@ -1,0 +1,61 @@
+SOURCE: https://github.com/marketplace/codecov?tab=pricing-and-setup
+ACCESSED: 18/10/2026
+METHOD: HTTPS HTML response; main element text; original styling assets partly blocked
+
+Marketplace
+Apps
+Codecov | Code Coverage
+Codecov | Code CoverageApp
+AboutAutomatic test report merging for all CI and languages into a single code coverage report directly into your pull requestBy codecov122,428 installsSet up a free trial
+Tags2 (2)code-qualitycode-review
+VerifiedGitHub has verified the publisher's identity, ownership of their domain, and compliance with other requirements.
+PricingOpen Source and Umbrella plans available.
+Select a tab navigation
+README
+Transparency
+More items
+Codecov provides highly integrated tools to group, merge, archive and compare coverage reports.
+Uploads coverage reports from your CI
+Merges all builds and languages into one beautiful, coherent report.
+Displays coverage data in GitHub Files tab
+Highly detailed pull request comments and customizable commit statuses will improve your team's workflow and code coverage incrementally.
+Always free for public repositories!
+Pricing for private repos
+Only have 1 user in your organization (or want to start with only 1 user)? It's free on codecov.io.
+Up to 10 users with basic functionality? $4/user/month only on codecov.io
+Otherwise, see list pricing below.
+How does pricing work? Only paid users can view reports on private repos and post Codecov statuses/comments on PRs.
+FAQ
+Do you merge multiple uploads to the same commit? Yes
+Do you support multiple languages in the same project? Yes
+Can you group coverage reports by project and/or test type? Yes
+Notable Features
+Split your coverage reporting by type of test and module/file path with Flags and Components.
+Through Github Checks API coverage overlay directly in GitHub UI to assist in code review.
+Tag your paths and projects with Codecov's Flags featureCoverage data directly in Pull Request CommentsSource Code Coverage OverlaysA small selection of supported integrations
+Supported languages10 (10)JavaScript, Ruby, Python, C, Java, Scala, R, Go, C#, and Swift
+Resources
+Support
+Documentation
+Privacy Policy
+Terms of Service
+Status
+Plans and pricingOpen Source Unlimited public repositories$0Umbrella Free trial availableUse Codecov's standard plan with all features and unlimited private repositories$12 / user / month
+All Codecov features
+Unlimited private repositories
+Unlimited commits
+Email supportNumber of users$12 / user / month
+Try free for 14 days
+Next: Confirm your installation location and payment information
+Codecov | Code Coverage is provided by a third-party and is governed by separate terms of service, privacy policy, and support documentation
+AboutAutomatic test report merging for all CI and languages into a single code coverage report directly into your pull requestBy codecov122,428 installs
+VerifiedGitHub has verified the publisher's identity, ownership of their domain, and compliance with other requirements.
+Tags2 (2)code-qualitycode-review
+PricingOpen Source and Umbrella plans available.
+Supported languages10 (10)JavaScript, Ruby, Python, C, Java, Scala, R, Go, C#, and Swift
+Resources
+Support
+Documentation
+Privacy Policy
+Terms of Service
+Status

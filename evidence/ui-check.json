@@ -1,0 +1,165 @@
+{
+  "run_at_utc": "2026-10-18T10:36:53.604979+00:00",
+  "browser": "154.0.8037.57",
+  "viewports": [
+    {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "cards": 4,
+      "imagesLoaded": true,
+      "gridColumns": "305px 305px 305px 305px",
+      "brokenFragments": [],
+      "runtimeScripts": 0,
+      "http_status": 200,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "cards": 4,
+      "imagesLoaded": true,
+      "gridColumns": "472.5px 472.5px",
+      "brokenFragments": [],
+      "runtimeScripts": 0,
+      "http_status": 200,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "cards": 4,
+      "imagesLoaded": true,
+      "gridColumns": "344.5px 344.5px",
+      "brokenFragments": [],
+      "runtimeScripts": 0,
+      "http_status": 200,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "cards": 4,
+      "imagesLoaded": true,
+      "gridColumns": "354px",
+      "brokenFragments": [],
+      "runtimeScripts": 0,
+      "http_status": 200,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 375,
+      "documentWidth": 375,
+      "cards": 4,
+      "imagesLoaded": true,
+      "gridColumns": "339px",
+      "brokenFragments": [],
+      "runtimeScripts": 0,
+      "http_status": 200,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 320,
+      "documentWidth": 320,
+      "cards": 4,
+      "imagesLoaded": true,
+      "gridColumns": "284px",
+      "brokenFragments": [],
+      "runtimeScripts": 0,
+      "http_status": 200,
+      "no_horizontal_overflow": true
+    }
+  ],
+  "keyboard_details": [
+    {
+      "product": 1,
+      "enter_opens": true,
+      "enter_closes": true
+    },
+    {
+      "product": 2,
+      "enter_opens": true,
+      "enter_closes": true
+    },
+    {
+      "product": 3,
+      "enter_opens": true,
+      "enter_closes": true
+    },
+    {
+      "product": 4,
+      "enter_opens": true,
+      "enter_closes": true
+    }
+  ],
+  "mouse_opens_details": true,
+  "reduced_motion_scroll_behavior": "auto",
+  "accessibility": {
+    "tool": "axe-core",
+    "version": "4.10.3",
+    "violations": [],
+    "passed_rules": 24,
+    "incomplete_rules": 1,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "nodes": [
+          {
+            "target": [
+              "article[aria-labelledby=\"ten-reviewflow\"] > .product-content > .price-block > .price > .price-value > .currency"
+            ],
+            "message": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "target": [
+              "article[aria-labelledby=\"ten-buildpilot\"] > .product-content > .price-block > .price > .price-value > .currency"
+            ],
+            "message": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "target": [
+              "article[aria-labelledby=\"ten-safedeps\"] > .product-content > .price-block > .price > .price-value > .currency"
+            ],
+            "message": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "target": [
+              "article[aria-labelledby=\"ten-insightkit\"] > .product-content > .price-block > .price > .price-value > .currency"
+            ],
+            "message": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ]
+  },
+  "manual_contrast_review_currency_colors": [
+    {
+      "text": "₫",
+      "color": "rgb(24, 60, 53)",
+      "background": "rgb(255, 255, 255)"
+    },
+    {
+      "text": "₫",
+      "color": "rgb(24, 60, 53)",
+      "background": "rgb(255, 255, 255)"
+    },
+    {
+      "text": "₫",
+      "color": "rgb(24, 60, 53)",
+      "background": "rgb(255, 255, 255)"
+    },
+    {
+      "text": "₫",
+      "color": "rgb(24, 60, 53)",
+      "background": "rgb(255, 255, 255)"
+    }
+  ],
+  "file_protocol": {
+    "status": "blocked_by_browser_policy",
+    "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///workspace/BT_canhanPTUDTMDT/index.html"
+  },
+  "page_errors": [],
+  "bad_http_responses": [],
+  "manual_currency_contrast_ratio": 12.09,
+  "manual_currency_contrast_review": "Same inherited ink color on white card for all currency signs; computed ratio above 4.5:1. This does not certify full accessibility."
+}

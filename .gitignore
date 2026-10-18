@@ -1,0 +1,4 @@
+# Anh kiem tra ban dau chi luu trong bo ho so cuc bo.
+evidence/*-initial.png
+__pycache__/
+.DS_Store

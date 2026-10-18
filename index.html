@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DevShelf — giao diện danh sách công cụ số với giá, chu kỳ sử dụng và thông tin gói rõ ràng. Bài tập cá nhân Chương 1 của Trương Thanh Phong.">
+  <meta name="color-scheme" content="light">
+  <title>DevShelf — Chọn công cụ, rõ từng mức giá</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="dau-trang">
+  <a class="skip-link" href="#noi-dung">Chuyển đến nội dung chính</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#dau-trang" aria-label="DevShelf — về đầu trang">
+        <span class="brand-mark" aria-hidden="true">d.</span>
+        <span>DevShelf<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <a href="#cong-cu">Khám phá công cụ</a>
+        <a href="#cai-tien">Điểm cải tiến</a>
+        <a href="#thong-tin">Về bài tập</a>
+      </nav>
+      <span class="header-label"><span class="status-dot" aria-hidden="true"></span> Bản mẫu học tập</span>
+    </div>
+  </header>
+
+  <main id="noi-dung">
+    <section class="hero container" aria-labelledby="tieu-de-chinh">
+      <div class="hero-copy">
+        <p class="eyebrow">BỘ CÔNG CỤ CHO DỰ ÁN TIẾP THEO</p>
+        <h1 id="tieu-de-chinh">Chọn công cụ.<br><span>Rõ từng mức giá.</span></h1>
+        <p class="hero-description">Khám phá những công cụ hỗ trợ lập trình. So sánh giá, chu kỳ sử dụng và quyền lợi ngay trên từng thẻ sản phẩm.</p>
+        <a class="primary-link" href="#cong-cu">Khám phá 4 công cụ <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+        <p class="demo-note">Sản phẩm và giá là dữ liệu minh họa. Không phát sinh mua bán hoặc cài đặt thực tế.</p>
+      </div>
+      <aside class="hero-note" aria-label="Ba thông tin giúp so sánh gói dịch vụ">
+        <div class="note-heading"><span class="note-spark" aria-hidden="true">✳</span><span>Ít tìm kiếm hơn.<br>Dễ lựa chọn hơn.</span></div>
+        <ol class="clarity-list">
+          <li><span class="item-number" aria-hidden="true">01</span><div><strong>Giá hiển thị rõ</strong><span>Nhận biết ngay số tiền của gói.</span></div></li>
+          <li><span class="item-number" aria-hidden="true">02</span><div><strong>Biết giá áp dụng cho gì</strong><span>Chu kỳ và đơn vị tính nằm cạnh giá.</span></div></li>
+          <li><span class="item-number" aria-hidden="true">03</span><div><strong>Xem trước khi quyết định</strong><span>Mở quyền lợi của gói ngay trên thẻ.</span></div></li>
+        </ol>
+        <p class="note-footer">Một bố cục. Thông tin nhất quán.</p>
+      </aside>
+    </section>
+
+    <section id="cong-cu" class="catalog-section" aria-labelledby="tieu-de-cong-cu">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">DANH SÁCH ĐƯỢC CHỌN LỌC</p><h2 id="tieu-de-cong-cu">Công cụ nhỏ. Ý tưởng lớn.</h2></div>
+          <p class="catalog-count"><svg class="catalog-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h6v6H2zM12 2h6v6h-6zM2 12h6v6H2zM12 12h6v6h-6z"/></svg> 04 sản phẩm minh họa</p>
+        </div>
+        <p class="catalog-description">Từ rà soát mã đến theo dõi dự án — mỗi gói đều có thông tin giá và phạm vi sử dụng cụ thể.</p>
+
+        <div class="product-grid">
+          <article class="product-card" aria-labelledby="ten-reviewflow">
+            <div class="product-visual visual-purple">
+              <img src="images/reviewflow.svg" width="640" height="480" alt="Minh họa bảng rà soát mã với các dòng thay đổi và dấu kiểm">
+              <span class="discount-badge"><span aria-hidden="true">−20%</span><span class="sr-only">Giảm 20 phần trăm</span></span>
+            </div>
+            <div class="product-content">
+              <p class="product-category">RÀ SOÁT MÃ</p>
+              <h3 id="ten-reviewflow">ReviewFlow</h3>
+              <p class="product-description">Theo dõi thay đổi và sắp xếp nhận xét để việc rà soát mã dễ theo dõi hơn.</p>
+              <div class="price-block">
+                <p class="price"><span class="price-value">60.000 <span class="currency">₫</span></span><span class="price-period">/ tháng</span></p>
+                <p class="price-context">Cho 1 người dùng · Gói minh họa</p>
+                <p class="previous-price"><span class="sr-only">Giá trước ưu đãi: </span><s>75.000 ₫</s><span>Tiết kiệm 15.000 ₫</span></p>
+              </div>
+              <details class="plan-details">
+                <summary><span>Xem thông tin gói</span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+                <div class="plan-content"><p><strong>Gói ReviewFlow minh họa gồm:</strong></p><ul><li>3 dự án mẫu.</li><li>Nhận xét theo từng thay đổi.</li><li>Tổng hợp nội dung cần kiểm tra.</li></ul><p class="plan-disclaimer">Thông tin để tham khảo giao diện, không phải dịch vụ đang bán.</p></div>
+              </details>
+            </div>
+          </article>
+
+          <article class="product-card" aria-labelledby="ten-buildpilot">
+            <div class="product-visual visual-blue">
+              <img src="images/buildpilot.svg" width="640" height="480" alt="Minh họa quy trình build gồm ba bước nối tiếp, có trạng thái hoàn tất">
+              <span class="discount-badge"><span aria-hidden="true">−20%</span><span class="sr-only">Giảm 20 phần trăm</span></span>
+            </div>
+            <div class="product-content">
+              <p class="product-category">TỰ ĐỘNG HÓA</p>
+              <h3 id="ten-buildpilot">BuildPilot</h3>
+              <p class="product-description">Sắp xếp các bước build và kiểm tra thành một quy trình mạch lạc cho dự án.</p>
+              <div class="price-block">
+                <p class="price"><span class="price-value">120.000 <span class="currency">₫</span></span><span class="price-period">/ tháng</span></p>
+                <p class="price-context">Cho 1 dự án · Gói minh họa</p>
+                <p class="previous-price"><span class="sr-only">Giá trước ưu đãi: </span><s>150.000 ₫</s><span>Tiết kiệm 30.000 ₫</span></p>
+              </div>
+              <details class="plan-details">
+                <summary><span>Xem thông tin gói</span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+                <div class="plan-content"><p><strong>Gói BuildPilot minh họa gồm:</strong></p><ul><li>300 lượt build mỗi tháng.</li><li>Quy trình kiểm tra mẫu.</li><li>Lịch sử trạng thái từng lượt.</li></ul><p class="plan-disclaimer">Thông tin để tham khảo giao diện, không phải dịch vụ đang bán.</p></div>
+              </details>
+            </div>
+          </article>
+
+          <article class="product-card" aria-labelledby="ten-safedeps">
+            <div class="product-visual visual-peach">
+              <img src="images/safedeps.svg" width="640" height="480" alt="Minh họa biểu tượng lá chắn và danh sách thư viện đã kiểm tra">
+              <span class="discount-badge"><span aria-hidden="true">−15%</span><span class="sr-only">Giảm 15 phần trăm</span></span>
+            </div>
+            <div class="product-content">
+              <p class="product-category">QUẢN LÝ THƯ VIỆN</p>
+              <h3 id="ten-safedeps">SafeDeps</h3>
+              <p class="product-description">Tập hợp thông tin thư viện và những thay đổi cần lưu ý vào một danh sách.</p>
+              <div class="price-block">
+                <p class="price"><span class="price-value">85.000 <span class="currency">₫</span></span><span class="price-period">/ tháng</span></p>
+                <p class="price-context">Cho 3 kho mã · Gói minh họa</p>
+                <p class="previous-price"><span class="sr-only">Giá trước ưu đãi: </span><s>100.000 ₫</s><span>Tiết kiệm 15.000 ₫</span></p>
+              </div>
+              <details class="plan-details">
+                <summary><span>Xem thông tin gói</span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+                <div class="plan-content"><p><strong>Gói SafeDeps minh họa gồm:</strong></p><ul><li>Danh sách thư viện của 3 kho mã.</li><li>Nhóm thông báo theo dự án.</li><li>Trang tổng hợp thay đổi.</li></ul><p class="plan-disclaimer">Thông tin để tham khảo giao diện, không phải dịch vụ đang bán.</p></div>
+              </details>
+            </div>
+          </article>
+
+          <article class="product-card" aria-labelledby="ten-insightkit">
+            <div class="product-visual visual-green">
+              <img src="images/insightkit.svg" width="640" height="480" alt="Minh họa bảng theo dõi dự án với biểu đồ cột và đường xu hướng">
+              <span class="free-badge">Gói miễn phí</span>
+            </div>
+            <div class="product-content">
+              <p class="product-category">THEO DÕI DỰ ÁN</p>
+              <h3 id="ten-insightkit">InsightKit</h3>
+              <p class="product-description">Nhìn lại hoạt động dự án qua những biểu đồ đơn giản, dễ đọc và dễ so sánh.</p>
+              <div class="price-block">
+                <p class="price"><span class="price-value">0 <span class="currency">₫</span></span><span class="price-period">/ gói miễn phí</span></p>
+                <p class="price-context">Cho 1 dự án · Gói minh họa</p>
+                <p class="free-price-note">Không áp dụng ưu đãi giảm giá.</p>
+              </div>
+              <details class="plan-details">
+                <summary><span>Xem thông tin gói</span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+                <div class="plan-content"><p><strong>Gói InsightKit minh họa gồm:</strong></p><ul><li>1 bảng theo dõi mẫu.</li><li>3 nhóm chỉ số minh họa.</li><li>Biểu đồ hoạt động theo tuần.</li></ul><p class="plan-disclaimer">Thông tin để tham khảo giao diện, không phải dịch vụ đang bán.</p></div>
+              </details>
+            </div>
+          </article>
+        </div>
+        <p class="catalog-footnote">Giá theo đơn vị VND, chỉ dùng cho bài tập. Không quy đổi hoặc đại diện cho giá của GitHub Marketplace.</p>
+      </div>
+    </section>
+
+    <section id="cai-tien" class="improvement-section container" aria-labelledby="tieu-de-cai-tien">
+      <div class="section-heading"><div><p class="eyebrow">MỖI CHI TIẾT ĐỀU CÓ LÝ DO</p><h2 id="tieu-de-cai-tien">Dễ đọc hơn, từ từng thẻ.</h2></div><span class="small-label">Cải tiến trải nghiệm so sánh</span></div>
+      <div class="improvement-grid">
+        <article><span class="feature-number">01 / THÔNG TIN</span><h3>Giá luôn đi cùng đơn vị.</h3><p>Giá bán, chu kỳ và phạm vi sử dụng được nhóm gần nhau, giúp tránh nhầm giá theo tháng với giá của cả năm hoặc cả nhóm.</p></article>
+        <article><span class="feature-number">02 / ƯU ĐÃI</span><h3>Thấy rõ phần tiết kiệm.</h3><p>Giá trước ưu đãi có gạch ngang; mức giảm theo phần trăm và số tiền được ghi rõ. Gói miễn phí được trình bày riêng.</p></article>
+        <article><span class="feature-number">03 / THAO TÁC</span><h3>Chi tiết ở ngay bên dưới.</h3><p>Mở thông tin gói bằng chuột hoặc bàn phím. Trên điện thoại, các thẻ chuyển thành một cột để nội dung có đủ không gian.</p></article>
+      </div>
+    </section>
+
+    <section id="thong-tin" class="assignment-section" aria-labelledby="tieu-de-bai-tap">
+      <div class="container assignment-content">
+        <div><p class="eyebrow">PHÁT TRIỂN ỨNG DỤNG WEB / TMĐT</p><h2 id="tieu-de-bai-tap">Một bài tập. Một cải tiến cụ thể.</h2><p>Giao diện được xây dựng độc lập để thực hành HTML/CSS, tham khảo cách tổ chức danh sách ứng dụng tại <a href="https://github.com/marketplace" target="_blank" rel="noopener noreferrer">GitHub Marketplace<span class="sr-only"> (mở tab mới)</span> <svg class="arrow-icon external-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>.</p></div>
+        <dl class="student-details"><div><dt>Sinh viên</dt><dd>Trương Thanh Phong</dd></div><div><dt>Bài tập</dt><dd>Chương 01</dd></div><div><dt>Lớp</dt><dd>EE0002</dd></div></dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container"><a class="brand footer-brand" href="#dau-trang">DevShelf.</a><p>Chương 01 · Khảo sát &amp; cải tiến giao diện</p><a href="#dau-trang">Về đầu trang ↑</a></footer>
+</body>
+</html>

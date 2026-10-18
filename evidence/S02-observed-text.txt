@@ -1,0 +1,124 @@
+SOURCE: https://github.com/marketplace?category=code-review&type=apps
+ACCESSED: 18/10/2026
+METHOD: HTTPS HTML response; main element text; original styling assets partly blocked
+
+Enhance your workflow with extensions
+Tools from the community and partners to simplify tasks and automate processesSearch Marketplacetype:apps category:code-review type:apps category:code-review
+Clear filter
+Search
+Featured
+Apps
+All apps
+Agent apps
+AI Assisted
+API management
+Backup Utilities
+Chat
+Code quality
+Code review
+Code Scanning Ready
+Code search
+Container CI
+Continuous integration
+Dependency management
+Deployment
+Deployment Protection Rules
+Desktop tools
+IDEs
+Learning
+Localization
+Mobile
+Mobile CI
+Monitoring
+Open Source management
+Project management
+Publishing
+Recently added
+Reporting
+Security
+Support
+Sustainability
+Testing
+Time tracking
+Utilities
+Actions
+All actions
+Agent apps
+AI Assisted
+API management
+Backup Utilities
+Chat
+Code quality
+Code review
+Code Scanning Ready
+Code search
+Container CI
+Continuous integration
+Dependency management
+Deployment
+Deployment Protection Rules
+Desktop tools
+Game CI
+GitHub Sponsors
+IDEs
+Learning
+Localization
+Mobile
+Mobile CI
+Monitoring
+Open Source management
+Project management
+Publishing
+Reporting
+Security
+Support
+Sustainability
+Testing
+Time tracking
+Utilities
+Create a new extension
+Menu
+Code review appsEnsure your code meets quality standards and ship with confidence.
+Filter: All
+By: All creators
+Sort: Popularity
+CodeRabbitApp
+Cut Code Review Time & Bugs in Half
+Linear CodeApp
+Review code and manage pull requests
+Codecov | Code CoverageApp
+Automatic test report merging for all CI and languages into a single code coverage report directly into your pull request
+CodacyApp
+Codacy helps to build effortless code quality and security for developers
+SourceryApp
+AI code reviews and security scanning
+gitpod.ioApp
+Always ready to code - Spin up fresh cloud development environments for each task, fully automated, in seconds
+Graphite.devApp
+Code review for fast moving teams
+DeepSourceApp
+AI Code Review Platform
+Greptile AppsApp
+AI code reviews with context from your codebase
+QodoApp
+AI code review for GitHub PRs. Catch bugs, edge cases, and security risks automatically before code is merged
+Asana App for GitHubApp
+The GitHub for Asana integration makes it easy to sync the status of work between technical and non-technical teams
+CodeSceneApp
+A software engineering intelligence tool tool to identify and prioritize technical debt and evaluate your efficiency
+Review Notebook AppApp
+Code Review & Collaboration for Jupyter Notebooks
+cubic · AI code reviews for complex codebasesApp
+AI code reviews for complex codebases
+MergifyApp
+Pull requests automation service. Merge your pull requests faster with automatic merges and a merge queue
+DatadogApp
+Connect your GitHub Account to Datadog to enable source code-related features and collect advanced telemetry
+Bito's AI Code Review AgentApp
+Contextual feedback, summaries, and 1-click suggestions in every PR
+WIPApp
+DO NOT MERGE – as a service
+Qlty CloudApp
+Code quality and coverage done right
+CodeFactorApp
+Automated code review for humans and AIPrevious1234567…15Next

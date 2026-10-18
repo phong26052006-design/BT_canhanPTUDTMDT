@@ -1,0 +1,135 @@
+SOURCE: https://github.com/marketplace
+ACCESSED: 18/10/2026
+METHOD: HTTPS HTML response; main element text; original styling assets partly blocked
+
+Enhance your workflow with extensions
+Tools from the community and partners to simplify tasks and automate processesSearch Marketplace
+Search
+Featured
+Apps
+All apps
+Agent apps
+AI Assisted
+API management
+Backup Utilities
+Chat
+Code quality
+Code review
+Code Scanning Ready
+Code search
+Container CI
+Continuous integration
+Dependency management
+Deployment
+Deployment Protection Rules
+Desktop tools
+IDEs
+Learning
+Localization
+Mobile
+Mobile CI
+Monitoring
+Open Source management
+Project management
+Publishing
+Recently added
+Reporting
+Security
+Support
+Sustainability
+Testing
+Time tracking
+Utilities
+Actions
+All actions
+Agent apps
+AI Assisted
+API management
+Backup Utilities
+Chat
+Code quality
+Code review
+Code Scanning Ready
+Code search
+Container CI
+Continuous integration
+Dependency management
+Deployment
+Deployment Protection Rules
+Desktop tools
+Game CI
+GitHub Sponsors
+IDEs
+Learning
+Localization
+Mobile
+Mobile CI
+Monitoring
+Open Source management
+Project management
+Publishing
+Reporting
+Security
+Support
+Sustainability
+Testing
+Time tracking
+Utilities
+Create a new extension
+Menu
+Render
+Continuous integration and deploys with Render, the modern cloud for ambitious developersApp
+LovableBot
+Keep your Lovable project synced both waysApp
+OpenCode
+Login to OpenCode through Github CopilotApp
+Linear Code
+Review code and manage pull requestsApp
+CodeRabbit
+Cut Code Review Time & Bugs in HalfApp
+Codemagic CI/CD
+Cloud-based continuous integration and delivery for Android, iOS, Flutter, React Native, Ionic and Unity projectsApp
+View recommended or recent marketplace listings navigation
+Recommended
+Recently added
+More items
+CodacyApp
+Codacy helps to build effortless code quality and security for developers
+CircleCIApp
+Ship trusted code with confidence. Fast feedback, flexible execution, and enterprise-grade security
+Qlty CloudApp
+Code quality and coverage done right
+CodeFactorApp
+Automated code review for humans and AI
+Rewind Backups for GitHubApp
+Automated GitHub backups so you can recover fast, stay compliant, and never lose a line of code
+Azure PipelinesApp
+Continuously build, test, and deploy to any platform and cloud
+Codecov | Code CoverageApp
+Automatic test report merging for all CI and languages into a single code coverage report directly into your pull request
+ZenhubApp
+Project management that's seamlessly integrated with GitHub’s data & interface, builds powerful insights & automates tasks
+POEditorApp
+Manage your software localization collaboratively
+PercyApp
+Automated visual review platform
+CrowdinApp
+Agile localization for your projects
+WakaTimeApp
+Metrics, goals, and time tracking automatically generated from your programming activity
+Argos Visual TestingApp
+Stop visual regressions, not releases
+PullRequestApp
+Expert On-Demand Code Review as a Service
+CoverallsApp
+Ensure that new code is fully covered, and see coverage trends emerge. Works with any CI service
+CodeSceneApp
+A software engineering intelligence tool tool to identify and prioritize technical debt and evaluate your efficiency
+AccessLintApp
+Find accessibility issues in your pull requests
+TestQuality - Unified Test Management for GitHubApp
+Test Plan Driven QA Test Management for GitHub
+WaydevApp
+AI-Powered Software Engineering Intelligence Platform
+DeepScanApp
+Advanced static analysis for automatically finding runtime errors in JavaScript, TypeScript, React, and Vue code

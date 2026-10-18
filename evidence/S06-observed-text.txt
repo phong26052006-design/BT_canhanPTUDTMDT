@@ -1,0 +1,14 @@
+SOURCE: https://github.com/login
+ACCESSED: 18/10/2026
+METHOD: HTTPS HTML response; main element text; original styling assets partly blocked
+
+Sign in to GitHub
+{{ message }}
+Username or email address
+Password
+Forgot password?
+Uh oh!
+There was an error while loading. Please reload this page.
+New to GitHub?
+Create an account
+Sign in with a passkey
