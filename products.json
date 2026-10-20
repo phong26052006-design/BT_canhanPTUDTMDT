@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "keyboard",
+    "name": "Bàn phím cơ K75",
+    "category": "input",
+    "label": "BÀN PHÍM",
+    "price": 600000,
+    "original": 750000,
+    "discount": 20,
+    "description": "Bố cục nhỏ gọn cho việc nhập liệu và những ý tưởng đang thành hình.",
+    "alt": "Minh họa bàn phím nhỏ gọn với các phím màu kem và xanh",
+    "features": [
+      "Bố cục 75% minh họa.",
+      "Phím màu kem, điểm nhấn xanh.",
+      "Thông tin chỉ dùng cho bản mẫu."
+    ],
+    "color": "purple"
+  },
+  {
+    "slug": "mouse",
+    "name": "Chuột không dây M2",
+    "category": "input",
+    "label": "CHUỘT",
+    "price": 360000,
+    "original": 450000,
+    "discount": 20,
+    "description": "Một thiết kế đơn giản để bàn làm việc gọn hơn và thao tác dễ theo dõi.",
+    "alt": "Minh họa chuột không dây với con lăn và thân bo tròn",
+    "features": [
+      "Kết nối không dây minh họa.",
+      "Thân bo tròn và con lăn giữa.",
+      "Thông tin chỉ dùng cho bản mẫu."
+    ],
+    "color": "blue"
+  },
+  {
+    "slug": "headphones",
+    "name": "Tai nghe chụp tai H1",
+    "category": "audio",
+    "label": "ÂM THANH",
+    "price": 850000,
+    "original": 1000000,
+    "discount": 15,
+    "description": "Khoảng riêng cho những giờ tập trung, với hình dáng mềm và vừa mắt.",
+    "alt": "Minh họa tai nghe chụp tai với quai nối và hai đệm tai",
+    "features": [
+      "Thiết kế chụp tai minh họa.",
+      "Quai nối và đệm tai màu xanh.",
+      "Thông tin chỉ dùng cho bản mẫu."
+    ],
+    "color": "green"
+  },
+  {
+    "slug": "stand",
+    "name": "Giá đỡ laptop L3",
+    "category": "accessory",
+    "label": "PHỤ KIỆN",
+    "price": 240000,
+    "original": 300000,
+    "discount": 20,
+    "description": "Thêm một điểm tựa cho laptop, bớt một chút lộn xộn trên mặt bàn.",
+    "alt": "Minh họa giá đỡ laptop màu bạc với mặt kê nghiêng và chân đế",
+    "features": [
+      "Giá đỡ để bàn minh họa.",
+      "Mặt kê nghiêng, màu bạc.",
+      "Thông tin chỉ dùng cho bản mẫu."
+    ],
+    "color": "peach"
+  }
+]

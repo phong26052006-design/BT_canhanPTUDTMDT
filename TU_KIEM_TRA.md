@@ -1,25 +1,33 @@
-# Phiếu tự kiểm tra của sinh viên trước khi nộp
+# Phần sinh viên tự thực hiện trước khi nộp
 
-Các ô dưới đây để trống vì trợ lý không thể xác nhận thay thao tác và mức hiểu của sinh viên.
+Đề bài yêu cầu sinh viên tự mở trang, kiểm tra, chỉnh ít nhất một điểm do bản thân phát hiện và giải thích mã. Các mục này để trống có chủ ý; không coi kiểm tra do AI chạy là xác nhận cá nhân.
 
-- [ ] Mở index.html trên máy của mình hoặc chạy bằng máy chủ tĩnh.
-- [ ] Xem giao diện trên máy tính và chế độ điện thoại.
-- [ ] Kiểm tra bốn ảnh và bốn mức giá.
-- [ ] Dùng Tab và Enter mở/đóng thông tin gói.
-- [ ] Đối chiếu website tham khảo bằng trình duyệt thông thường, đặc biệt các phần bị giới hạn mạng trong lần hỗ trợ.
-- [ ] Tự phát hiện và chỉnh ít nhất một điểm phù hợp; ghi lại đúng điều mình đã làm.
-- [ ] Giải thích được phần HTML/CSS đã sửa.
-- [ ] Đọc lại AI_USAGE.md; không ghi thao tác của trợ lý thành công việc tự mình thực hiện.
-- [ ] Kiểm tra đường dẫn repository công khai; nếu dùng Pages, mở link thực tế.
-- [ ] Đọc lại báo cáo và bổ sung nhận xét cá nhân trước khi nộp.
+- [ ] Tôi đã tải mã và mở `index.html` hoặc chạy máy chủ HTTP trên máy của mình.
+- [ ] Tôi đã xem ở màn hình máy tính và điện thoại; kiểm tra bốn ảnh và giá.
+- [ ] Tôi đã thử bốn nhóm lọc, nút đặt lại và mở/đóng thông tin.
+- [ ] Tôi đã tự phát hiện và sửa một điểm phù hợp (ví dụ nội dung mô tả hoặc khoảng cách), kiểm tra lại và lưu commit.
+- [ ] Tôi giải thích được vai trò phần HTML/CSS đã sửa và cách lọc hoạt động.
+- [ ] Tôi đã mở repo Public và đường dẫn website, đối chiếu nhật ký AI.
 
-## Ghi nhận một chỉnh sửa do chính sinh viên thực hiện
+## Ghi nhận cá nhân
 
-- Điểm phát hiện:
-- Tại độ rộng màn hình:
-- File và phần đã sửa:
-- Lý do sửa:
-- Kết quả trước/sau:
-- Ảnh hoặc commit minh chứng:
+Ngày, thiết bị, trình duyệt: ..........................................................
 
-Có thể chọn một thay đổi nhỏ có lý do, chẳng hạn điều chỉnh cách diễn đạt phạm vi sử dụng gói để rõ hơn hoặc thay thông tin minh họa cho phù hợp đề tài. Không bắt buộc mở rộng backend hay thêm JavaScript.
+Điểm tôi phát hiện và lý do cần sửa: ...................................................
+
+File, đoạn mã trước → sau: ...........................................................
+
+Cách kiểm tra và kết quả sau sửa: ....................................................
+
+Commit hoặc ảnh minh chứng cá nhân: ..................................................
+
+## Câu hỏi tự giải thích
+
+1. Vì sao radio cần cùng `name` và mục “Tất cả” có `checked`?
+2. CSS `:has()` chọn vùng nào; `:not([data-category=...])` loại thẻ nào?
+3. Vì sao nút reset hoạt động mà không cần JavaScript?
+4. Grid và media query đổi số cột như thế nào?
+5. Vì sao tỷ lệ giảm của tai nghe là 15%, không phải 20%?
+6. `summary` cung cấp thao tác gì; vì sao không gọi đây là nút mua hàng?
+
+Gợi ý giải thích ở `GIAI_THICH_MA_NGUON.md`; trả lời bằng cách hiểu của mình.

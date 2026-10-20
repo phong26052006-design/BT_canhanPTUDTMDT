@@ -1,7 +1,5 @@
 # Nguồn hình ảnh
 
-reviewflow.svg, buildpilot.svg, safedeps.svg, insightkit.svg và favicon.svg được tạo mới bằng mã SVG trong phiên hỗ trợ của trợ lý AI cho bài tập này.
+`keyboard.svg`, `mouse.svg`, `headphones.svg`, `stand.svg` và `favicon.svg` là minh họa SVG do trợ lý tạo riêng trong phiên hỗ trợ ngày 20/10/2026. Không dùng ảnh sản phẩm hoặc logo của Lazada. Bốn sản phẩm và thông số là giả định phục vụ học tập.
 
-Không tải hoặc sao chép logo, ảnh sản phẩm, ảnh chụp giao diện hay mã nguồn của GitHub Marketplace/Codecov. Các tên sản phẩm và màn hình trong ảnh là minh họa hư cấu, không tuyên bố quan hệ với nhà cung cấp thực.
-
-Thư mục không cần kết nối Internet để hiển thị ảnh.
+Ảnh màn hình Lazada chỉ nằm trong `evidence/khao-sat/`, để phân tích và ghi nguồn; không dùng làm ảnh hàng hóa của Phong Select.

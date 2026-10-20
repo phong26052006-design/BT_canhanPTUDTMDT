@@ -1,130 +1,338 @@
 {
-  "run_at_utc": "2026-10-18T10:36:53.604979+00:00",
+  "date_utc": "2026-10-20T16:08:57.306584+00:00",
   "browser": "154.0.8037.57",
   "viewports": [
     {
       "viewport": 1440,
       "documentWidth": 1440,
-      "cards": 4,
-      "imagesLoaded": true,
       "gridColumns": "305px 305px 305px 305px",
+      "productCount": 4,
+      "imagesLoaded": true,
+      "scripts": 0,
+      "supportsHas": true,
       "brokenFragments": [],
-      "runtimeScripts": 0,
-      "http_status": 200,
-      "no_horizontal_overflow": true
+      "status": 200,
+      "filters": [
+        {
+          "filter": "input",
+          "expected": 2,
+          "actual": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "countLabel": "2 sản phẩm"
+        },
+        {
+          "filter": "audio",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "audio"
+          ],
+          "countLabel": "1 sản phẩm"
+        },
+        {
+          "filter": "accessory",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "accessory"
+          ],
+          "countLabel": "1 sản phẩm"
+        }
+      ]
     },
     {
       "viewport": 1024,
       "documentWidth": 1024,
-      "cards": 4,
-      "imagesLoaded": true,
       "gridColumns": "472.5px 472.5px",
+      "productCount": 4,
+      "imagesLoaded": true,
+      "scripts": 0,
+      "supportsHas": true,
       "brokenFragments": [],
-      "runtimeScripts": 0,
-      "http_status": 200,
-      "no_horizontal_overflow": true
+      "status": 200,
+      "filters": [
+        {
+          "filter": "input",
+          "expected": 2,
+          "actual": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "countLabel": "2 sản phẩm"
+        },
+        {
+          "filter": "audio",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "audio"
+          ],
+          "countLabel": "1 sản phẩm"
+        },
+        {
+          "filter": "accessory",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "accessory"
+          ],
+          "countLabel": "1 sản phẩm"
+        }
+      ]
     },
     {
       "viewport": 768,
       "documentWidth": 768,
-      "cards": 4,
-      "imagesLoaded": true,
       "gridColumns": "344.5px 344.5px",
+      "productCount": 4,
+      "imagesLoaded": true,
+      "scripts": 0,
+      "supportsHas": true,
       "brokenFragments": [],
-      "runtimeScripts": 0,
-      "http_status": 200,
-      "no_horizontal_overflow": true
+      "status": 200,
+      "filters": [
+        {
+          "filter": "input",
+          "expected": 2,
+          "actual": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "countLabel": "2 sản phẩm"
+        },
+        {
+          "filter": "audio",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "audio"
+          ],
+          "countLabel": "1 sản phẩm"
+        },
+        {
+          "filter": "accessory",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "accessory"
+          ],
+          "countLabel": "1 sản phẩm"
+        }
+      ]
     },
     {
       "viewport": 390,
       "documentWidth": 390,
-      "cards": 4,
-      "imagesLoaded": true,
       "gridColumns": "354px",
+      "productCount": 4,
+      "imagesLoaded": true,
+      "scripts": 0,
+      "supportsHas": true,
       "brokenFragments": [],
-      "runtimeScripts": 0,
-      "http_status": 200,
-      "no_horizontal_overflow": true
+      "status": 200,
+      "filters": [
+        {
+          "filter": "input",
+          "expected": 2,
+          "actual": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "countLabel": "2 sản phẩm"
+        },
+        {
+          "filter": "audio",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "audio"
+          ],
+          "countLabel": "1 sản phẩm"
+        },
+        {
+          "filter": "accessory",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "accessory"
+          ],
+          "countLabel": "1 sản phẩm"
+        }
+      ]
     },
     {
       "viewport": 375,
       "documentWidth": 375,
-      "cards": 4,
-      "imagesLoaded": true,
       "gridColumns": "339px",
+      "productCount": 4,
+      "imagesLoaded": true,
+      "scripts": 0,
+      "supportsHas": true,
       "brokenFragments": [],
-      "runtimeScripts": 0,
-      "http_status": 200,
-      "no_horizontal_overflow": true
+      "status": 200,
+      "filters": [
+        {
+          "filter": "input",
+          "expected": 2,
+          "actual": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "countLabel": "2 sản phẩm"
+        },
+        {
+          "filter": "audio",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "audio"
+          ],
+          "countLabel": "1 sản phẩm"
+        },
+        {
+          "filter": "accessory",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "accessory"
+          ],
+          "countLabel": "1 sản phẩm"
+        }
+      ]
     },
     {
       "viewport": 320,
       "documentWidth": 320,
-      "cards": 4,
-      "imagesLoaded": true,
       "gridColumns": "284px",
+      "productCount": 4,
+      "imagesLoaded": true,
+      "scripts": 0,
+      "supportsHas": true,
       "brokenFragments": [],
-      "runtimeScripts": 0,
-      "http_status": 200,
-      "no_horizontal_overflow": true
+      "status": 200,
+      "filters": [
+        {
+          "filter": "input",
+          "expected": 2,
+          "actual": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "countLabel": "2 sản phẩm"
+        },
+        {
+          "filter": "audio",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "audio"
+          ],
+          "countLabel": "1 sản phẩm"
+        },
+        {
+          "filter": "accessory",
+          "expected": 1,
+          "actual": 1,
+          "categories": [
+            "accessory"
+          ],
+          "countLabel": "1 sản phẩm"
+        }
+      ]
     }
   ],
   "keyboard_details": [
     {
-      "product": 1,
-      "enter_opens": true,
-      "enter_closes": true
+      "card": 1,
+      "enter_open": true,
+      "enter_close": true
     },
     {
-      "product": 2,
-      "enter_opens": true,
-      "enter_closes": true
+      "card": 2,
+      "enter_open": true,
+      "enter_close": true
     },
     {
-      "product": 3,
-      "enter_opens": true,
-      "enter_closes": true
+      "card": 3,
+      "enter_open": true,
+      "enter_close": true
     },
     {
-      "product": 4,
-      "enter_opens": true,
-      "enter_closes": true
+      "card": 4,
+      "enter_open": true,
+      "enter_close": true
     }
   ],
-  "mouse_opens_details": true,
-  "reduced_motion_scroll_behavior": "auto",
+  "radio_arrow_key_filters": true,
+  "keyboard_reset": true,
+  "reduced_motion": "auto",
+  "arithmetic": [
+    {
+      "name": "Bàn phím cơ K75",
+      "original": 750000,
+      "price": 600000,
+      "saving": 150000,
+      "discount": 20.0
+    },
+    {
+      "name": "Chuột không dây M2",
+      "original": 450000,
+      "price": 360000,
+      "saving": 90000,
+      "discount": 20.0
+    },
+    {
+      "name": "Tai nghe chụp tai H1",
+      "original": 1000000,
+      "price": 850000,
+      "saving": 150000,
+      "discount": 15.0
+    },
+    {
+      "name": "Giá đỡ laptop L3",
+      "original": 300000,
+      "price": 240000,
+      "saving": 60000,
+      "discount": 20.0
+    }
+  ],
   "accessibility": {
-    "tool": "axe-core",
     "version": "4.10.3",
+    "passed": 27,
     "violations": [],
-    "passed_rules": 24,
-    "incomplete_rules": 1,
     "incomplete": [
       {
         "id": "color-contrast",
-        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
         "nodes": [
           {
             "target": [
-              "article[aria-labelledby=\"ten-reviewflow\"] > .product-content > .price-block > .price > .price-value > .currency"
+              "article[aria-labelledby=\"ten-keyboard\"] > .product-content > .price-block > .price > .price-value > .currency"
             ],
             "message": "Fix any of the following:\n  Element content contains only non-text characters"
           },
           {
             "target": [
-              "article[aria-labelledby=\"ten-buildpilot\"] > .product-content > .price-block > .price > .price-value > .currency"
+              "article[aria-labelledby=\"ten-mouse\"] > .product-content > .price-block > .price > .price-value > .currency"
             ],
             "message": "Fix any of the following:\n  Element content contains only non-text characters"
           },
           {
             "target": [
-              "article[aria-labelledby=\"ten-safedeps\"] > .product-content > .price-block > .price > .price-value > .currency"
+              "article[data-category=\"audio\"] > .product-content > .price-block > .price > .price-value > .currency"
             ],
             "message": "Fix any of the following:\n  Element content contains only non-text characters"
           },
           {
             "target": [
-              "article[aria-labelledby=\"ten-insightkit\"] > .product-content > .price-block > .price > .price-value > .currency"
+              "article[data-category=\"accessory\"] > .product-content > .price-block > .price > .price-value > .currency"
             ],
             "message": "Fix any of the following:\n  Element content contains only non-text characters"
           }
@@ -132,34 +340,38 @@
       }
     ]
   },
-  "manual_contrast_review_currency_colors": [
-    {
-      "text": "₫",
-      "color": "rgb(24, 60, 53)",
-      "background": "rgb(255, 255, 255)"
-    },
-    {
-      "text": "₫",
-      "color": "rgb(24, 60, 53)",
-      "background": "rgb(255, 255, 255)"
-    },
-    {
-      "text": "₫",
-      "color": "rgb(24, 60, 53)",
-      "background": "rgb(255, 255, 255)"
-    },
-    {
-      "text": "₫",
-      "color": "rgb(24, 60, 53)",
-      "background": "rgb(255, 255, 255)"
-    }
-  ],
-  "file_protocol": {
-    "status": "blocked_by_browser_policy",
-    "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///workspace/BT_canhanPTUDTMDT/index.html"
-  },
   "page_errors": [],
-  "bad_http_responses": [],
-  "manual_currency_contrast_ratio": 12.09,
-  "manual_currency_contrast_review": "Same inherited ink color on white card for all currency signs; computed ratio above 4.5:1. This does not certify full accessibility."
+  "http_errors": [],
+  "manual_contrast_review": {
+    "method": "Computed foreground and product-card background, WCAG relative luminance formula",
+    "elements": [
+      {
+        "text": "₫",
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "contrast_ratio": 12.09
+      },
+      {
+        "text": "₫",
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "contrast_ratio": 12.09
+      },
+      {
+        "text": "₫",
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "contrast_ratio": 12.09
+      },
+      {
+        "text": "₫",
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "contrast_ratio": 12.09
+      }
+    ],
+    "normal_text_threshold": 4.5,
+    "passed": true,
+    "scope": "Four currency glyphs flagged incomplete by axe; not a full WCAG certification"
+  }
 }

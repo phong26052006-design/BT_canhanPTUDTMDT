@@ -1,59 +1,31 @@
-# Kết quả kiểm tra DevShelf
+# Kết quả kiểm tra — 20/10/2026
 
-## Môi trường và bằng chứng
+Môi trường: Chromium 154.0.8037.57; trang phục vụ qua Python HTTP server. Người thực hiện: trợ lý AI trong phiên hỗ trợ. Log máy: [evidence/ui-check.json](evidence/ui-check.json).
 
-- Ngày kiểm tra: 18/10/2026.
-- Công cụ: Chromium 154.0.8037.57, Playwright và axe-core 4.10.3.
-- Cách chạy: máy chủ HTTP tĩnh trong môi trường hỗ trợ.
-- Người thực hiện các kiểm tra: trợ lý AI bằng công cụ trình duyệt, không ghi nhận thay cho thao tác cá nhân của sinh viên.
-- Log: [evidence/ui-check.json](evidence/ui-check.json).
-
-## Bảng kết quả
-
-| Mã | Nội dung | Kết quả thực tế |
+| Nhóm kiểm tra | Thực tế đã chạy | Kết quả |
 |---|---|---|
-| UI01 | Desktop 1440 px | 4 cột; 4 sản phẩm; không tràn ngang; ảnh tải đủ |
-| UI02 | 1024 px | 2 cột; 4 sản phẩm; không tràn ngang; ảnh tải đủ |
-| UI03 | 768 px | 2 cột; 4 sản phẩm; không tràn ngang; ảnh tải đủ |
-| UI04 | 390 px | 1 cột; 4 sản phẩm; không tràn ngang; ảnh tải đủ |
-| UI05 | 375 px | 1 cột; 4 sản phẩm; không tràn ngang; ảnh tải đủ |
-| UI06 | 320 px | 1 cột; 4 sản phẩm; không tràn ngang; ảnh tải đủ |
-| UI07 | Enter ở summary của 4 thẻ | Mở và đóng được cả 4 |
-| UI08 | Chuột mở thông tin gói | Nội dung được mở |
-| UI09 | Liên kết fragment nội bộ | Không phát hiện đích id bị thiếu |
-| UI10 | Tài nguyên HTTP và lỗi runtime | Không có HTTP 4xx/5xx hoặc pageerror trong luồng kiểm tra bản mẫu |
-| UI11 | Script ứng dụng | 0 script ở cả 6 viewport trước khi chèn công cụ kiểm tra |
-| UI12 | prefers-reduced-motion | scroll-behavior là auto |
-| UI13 | axe-core với nhóm WCAG 2/2.1/2.2 A/AA đã chọn | 24 rule pass, 0 violation, 1 rule cần xem xét thủ công |
-| UI14 | Mở trực tiếp file:// | Bị chính sách Chromium chặn; không ghi đạt; HTTP đã chạy đạt |
-| UI15 | Phép tính giá tĩnh | 75.000→60.000: 20%; 150.000→120.000: 20%; 100.000→85.000: 15% |
+| Độ rộng | 1440, 1024, 768, 390, 375, 320 px | 6/6 không tràn ngang; lưới 4/2/2/1/1/1 cột. |
+| Tài nguyên | 4 ảnh sản phẩm, liên kết nội bộ ở mỗi độ rộng | Tải đủ, không liên kết fragment hỏng; không HTTP lỗi trong lượt kiểm tra. |
+| Lọc nhóm | 3 nhóm × 6 độ rộng | 18/18 đúng: 2 chuột/bàn phím, 1 âm thanh, 1 phụ kiện; nhãn kết quả phù hợp. |
+| Đặt lại | Sau lượt lọc ở từng độ rộng | 6/6 khôi phục 4 thẻ. |
+| Chi tiết bằng bàn phím | Enter mở rồi đóng từng thẻ | 4/4 mở và đóng được. |
+| Radio bằng bàn phím | ArrowRight từ “Tất cả” | Chọn nhóm chuột/bàn phím, còn 2 thẻ. |
+| Đặt lại bằng bàn phím | Focus nút, nhấn Enter | Trở về “Tất cả”, hiện 4 thẻ. |
+| Giảm chuyển động | Giả lập `prefers-reduced-motion:reduce` | `scroll-behavior:auto`. |
+| Giá mẫu | 4 phép trừ và 4 tỷ lệ | Đúng 20%, 20%, 15%, 20%. |
+| JavaScript ứng dụng | Kiểm tra trang trước khi chèn công cụ đo | 0 script; không lỗi thực thi trong lượt thử. |
+| axe-core 4.10.3 | Các quy tắc phù hợp với trang | 27 quy tắc đạt, 0 vi phạm phát hiện, 1 quy tắc chưa kết luận tự động. |
 
-## Mục tự động cần xem xét thủ công
+Quy tắc chưa kết luận là tương phản của bốn ký hiệu ₫ vì công cụ coi nội dung chỉ gồm ký tự phi văn bản. Kiểm tra bổ sung màu thực tính: chữ `rgb(24,60,53)` trên nền `rgb(255,255,255)`, tỷ lệ **12,09:1**, vượt ngưỡng chữ thường 4,5:1. Không xem kết quả axe là chứng nhận tuân thủ đầy đủ WCAG.
 
-axe-core không tự kết luận tương phản của bốn ký tự ₫ vì chỉ có ký tự không phải chữ cái. Đã kiểm tra màu kế thừa rgb(24,60,53) trên nền trắng rgb(255,255,255), tính tỷ lệ theo độ chói tương đối là **12,09:1**. Kết quả tính được lưu trong JSON. Điều này xử lý câu hỏi về màu của các ký tự đó, không chứng nhận toàn bộ khả năng tiếp cận.
+## Minh chứng
 
-## Điều chỉnh sau kiểm tra
+- [Máy tính](evidence/products-desktop.png), [điện thoại](evidence/product-mobile.png), [bộ lọc 320 px](evidence/filter-mobile-320.png).
+- [Lọc còn hai sản phẩm](evidence/filter-input-result.png), [mở chi tiết](evidence/product-open.png).
+- [Trước](evidence/filter-before.png) / [sau](evidence/filter-after.png) và [nhật ký điều chỉnh](evidence/iteration-log.json).
 
-1. Ký tự mũi tên ở bản render đầu không hiển thị ổn định: thay bằng SVG.
-2. Tăng cỡ chữ một số thông tin trên thẻ.
-3. Lỗi tương phản ba số thứ tự: đổi màu thành #36533b và chạy lại.
-4. Nhãn giảm giá: bỏ aria-label trên span không có role; dùng nội dung ẩn thị giác phù hợp.
+## Chưa kiểm tra hoặc nằm ngoài phạm vi
 
-## Ảnh minh chứng
+Chưa thử đầy đủ trên Safari/Firefox, thiết bị thật, trình đọc màn hình, thanh toán hay dữ liệu lớn. Các kiểm tra trên không thay thế bước sinh viên tự chạy và tự điều chỉnh theo đề bài.
 
-- [Tổng quan desktop](evidence/desktop-overview.png)
-- [Lưới sản phẩm desktop](evidence/product-grid-desktop.png)
-- [Đầu trang mobile](evidence/mobile-top.png)
-- [Thẻ mobile](evidence/product-card-mobile.png)
-- [Thông tin gói đang mở](evidence/product-card-open.png)
-- Các ảnh toàn trang 1440/390/320 px được giữ trong evidence.
-
-## Giới hạn và việc chưa kiểm tra
-
-- Chưa thử thiết bị vật lý, Safari/Firefox và screen reader thực tế.
-- Chưa có usability test hay số liệu cải thiện chuyển đổi.
-- Không có giao dịch, giỏ hàng thật, đăng nhập hoặc thanh toán trong bản mẫu.
-- Khảo sát website gốc dựa vào HTML/nội dung; tài nguyên giao diện gốc bị giới hạn mạng.
-- Chưa xác nhận sinh viên đã tự thao tác/tự điều chỉnh.
-
-Passed, incomplete, blocked và unrun được ghi riêng; không xem việc không phát hiện lỗi tự động là bằng chứng mọi yêu cầu chất lượng đã được kiểm tra.
+Khảo sát Lazada: có ảnh thật của 5 khu vực. L02/L04 gặp xác minh, chưa thử bộ lọc nguồn thành công. L05 là giỏ trống; không kết luận về số lượng/tổng tiền/voucher của giỏ có hàng. Giá và nội dung nguồn có thể đổi sau thời điểm chụp.

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "L01",
+    "title": "Trang chủ",
+    "requested_url": "https://www.lazada.vn/",
+    "final_url": "https://www.lazada.vn/",
+    "status": 200,
+    "accessed_utc": "2026-10-20T16:05:41.637925+00:00",
+    "visible_text_chars": 1698,
+    "screenshot": "L01.png",
+    "screenshot_sha256": "1472641d618bb13a5956a199c7059a54163e1d9ae73b177f4c5819e06a852c52",
+    "limitations": "L02/L04 có hộp kiểm tra tự động; L05 là trạng thái khách rỗng. Không vượt CAPTCHA hoặc nhập tài khoản."
+  },
+  {
+    "id": "L02",
+    "title": "Danh mục laptop",
+    "requested_url": "https://www.lazada.vn/laptop/",
+    "final_url": "https://www.lazada.vn/laptop/",
+    "status": 200,
+    "accessed_utc": "2026-10-20T16:05:50.827932+00:00",
+    "visible_text_chars": 12467,
+    "screenshot": "L02.png",
+    "screenshot_sha256": "451111e8076097a8f62a8bf4b9eee4df8113dc20b7722e286e17728696045f3b",
+    "limitations": "L02/L04 có hộp kiểm tra tự động; L05 là trạng thái khách rỗng. Không vượt CAPTCHA hoặc nhập tài khoản."
+  },
+  {
+    "id": "L03",
+    "title": "Chi tiết sản phẩm",
+    "requested_url": "https://www.lazada.vn/products/pdp-i1216340-s1509483.html",
+    "final_url": "https://www.lazada.vn/products/pdp-i1216340-s1509483.html",
+    "status": 200,
+    "accessed_utc": "2026-10-20T16:06:06.635051+00:00",
+    "visible_text_chars": 2540,
+    "screenshot": "L03.png",
+    "screenshot_sha256": "c25d2a1df14f2969ba44e29d262cddaedbe73896998549b01c0bfb9e5e91a2c9",
+    "limitations": "L02/L04 có hộp kiểm tra tự động; L05 là trạng thái khách rỗng. Không vượt CAPTCHA hoặc nhập tài khoản."
+  },
+  {
+    "id": "L04",
+    "title": "Tìm kiếm bàn phím",
+    "requested_url": "https://www.lazada.vn/catalog/?q=b%C3%A0n+ph%C3%ADm",
+    "final_url": "https://www.lazada.vn/tag/b%C3%A0n-ph%C3%ADm/?q=b%C3%A0n+ph%C3%ADm",
+    "status": 200,
+    "accessed_utc": "2026-10-20T16:06:14.469796+00:00",
+    "visible_text_chars": 6427,
+    "screenshot": "L04.png",
+    "screenshot_sha256": "5f2065c7e3ce962c135cf5d8ca05dffb34a0591c6a8c3e87b4da8875158ae98c",
+    "limitations": "L02/L04 có hộp kiểm tra tự động; L05 là trạng thái khách rỗng. Không vượt CAPTCHA hoặc nhập tài khoản."
+  },
+  {
+    "id": "L05",
+    "title": "Giỏ hàng",
+    "requested_url": "https://cart.lazada.vn/cart",
+    "final_url": "https://cart.lazada.vn/cart",
+    "status": 200,
+    "accessed_utc": "2026-10-20T16:06:22.833420+00:00",
+    "visible_text_chars": 274,
+    "screenshot": "L05.png",
+    "screenshot_sha256": "18593715ef8224f3e0cbba17fe7add150428d9c60a7572881793d75eff83083f",
+    "limitations": "L02/L04 có hộp kiểm tra tự động; L05 là trạng thái khách rỗng. Không vượt CAPTCHA hoặc nhập tài khoản."
+  }
+]

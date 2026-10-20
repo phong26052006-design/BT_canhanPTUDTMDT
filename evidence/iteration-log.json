@@ -1,0 +1,26 @@
+{
+  "date_utc": "2026-10-20T16:06:33.169151+00:00",
+  "performed_by": "Trợ lý AI trong phiên hỗ trợ, chưa phải xác nhận sinh viên tự sửa",
+  "before_sha256": {
+    "index.html": "ee808a3d63b1d5c3b011cf61ef9002387d9b0ad7e3d2da4b7cde8cf67ed16eaf",
+    "style.css": "172360594d57eaabb24b38caa07627d2e600b4d256ba06fef00ca1cc641e26f8"
+  },
+  "changes": [
+    {
+      "file": "index.html",
+      "before": "Thiết bị nhập",
+      "after": "Chuột & bàn phím",
+      "reason": "Dùng tên sản phẩm quen thuộc thay thuật ngữ kỹ thuật có thể khó hiểu với người mua."
+    },
+    {
+      "file": "style.css",
+      "before": "Bộ lọc 2 cột ở mọi màn hình <=580 px",
+      "after": "Bộ lọc 1 cột khi <=380 px; tăng nhãn lên 12 px",
+      "reason": "Dành đủ chỗ cho nhãn đầy đủ trên màn hình 320 px, tránh thu nhỏ chữ hoặc cắt nội dung."
+    }
+  ],
+  "before_evidence": [
+    "filter-before.png",
+    "prototype-mobile-before.png"
+  ]
+}
