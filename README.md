@@ -55,7 +55,7 @@ Theo đề bài, sinh viên cần hoàn tất [TU_KIEM_TRA.md](TU_KIEM_TRA.md) b
 
 - [TEST_RESULTS.md](TEST_RESULTS.md): 6 kích thước, 18 tình huống lọc, đặt lại, bàn phím, giá và tiếp cận.
 - Mã nguồn: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
-- Website: https://phong26052006-design.github.io/BT_canhanPTUDTMDT/
+- GitHub Pages chưa bật do API tạo site bị từ chối quyền tích hợp (403); xem hướng dẫn và URL dự kiến trong GITHUB_PUBLISH.md.
 - Trạng thái triển khai được ghi tại [GITHUB_PUBLISH.md](GITHUB_PUBLISH.md).
 
 ## 9. Cấu trúc

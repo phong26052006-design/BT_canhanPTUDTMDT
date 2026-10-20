@@ -1,0 +1,14 @@
+{
+  "default_branch": "main",
+  "html_url": "https://github.com/phong26052006-design/BT_canhanPTUDTMDT",
+  "visibility": "public",
+  "code_commit": "9fc845b417f218ee803ed6b2dc37c63484766c1b",
+  "checked_utc": "2026-10-20T16:22:14.629465+00:00",
+  "pages": {
+    "enabled": false,
+    "create_http_status": 403,
+    "message": "Resource not accessible by integration",
+    "get_http_status": 404,
+    "expected_url": "https://phong26052006-design.github.io/BT_canhanPTUDTMDT/"
+  }
+}
