@@ -57,6 +57,7 @@ Theo đề bài, sinh viên cần hoàn tất [TU_KIEM_TRA.md](TU_KIEM_TRA.md) b
 - Mã nguồn: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
 - GitHub Pages chưa bật do API tạo site bị từ chối quyền tích hợp (403); xem hướng dẫn và URL dự kiến trong GITHUB_PUBLISH.md.
 - Trạng thái triển khai được ghi tại [GITHUB_PUBLISH.md](GITHUB_PUBLISH.md).
+- [Báo cáo Word hoàn thiện — Trương Thanh Phong](bao-cao/BaiTap_Buoi1_TruongThanhPhong_31241024967_HoanThien.docx).
 
 ## 9. Cấu trúc
 
@@ -64,6 +65,7 @@ Theo đề bài, sinh viên cần hoàn tất [TU_KIEM_TRA.md](TU_KIEM_TRA.md) b
 index.html                 Trang giao diện
 style.css                  Toàn bộ trình bày và lọc bằng CSS
 products.json              Dữ liệu giá để đối chiếu
+bao-cao/                   Báo cáo Word hoàn thiện
 images/                    4 hình sản phẩm và favicon tự tạo
 evidence/                  Ảnh trước–sau, log kiểm tra
   khao-sat/                5 ảnh website tham khảo, nguồn và giới hạn
@@ -74,4 +76,4 @@ TU_KIEM_TRA.md             Phần sinh viên tự thực hiện
 GITHUB_PUBLISH.md          Thông tin công khai
 ```
 
-Lịch sử Git giữ bản DevShelf ngày 18/10/2026. Bản ngày 20/10 chuyển sang Lazada/Phong Select, có bằng chứng khảo sát thực tế mới. Các báo cáo riêng được gửi trong gói bài nộp, không công khai MSSV trên giao diện.
+Lịch sử Git giữ bản DevShelf ngày 18/10/2026. Bản ngày 20/10 chuyển sang Lazada/Phong Select, có bằng chứng khảo sát thực tế mới. Báo cáo Word được lưu trong `bao-cao/` theo yêu cầu của sinh viên; giao diện không hiển thị MSSV.
