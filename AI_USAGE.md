@@ -55,3 +55,7 @@ Trợ lý dùng Chromium 154, Playwright và axe-core để kiểm tra. Nguồn:
 `header/nav/main/section/article`, thứ bậc tiêu đề, `fieldset/legend/radio`, `:checked`/`:has()`, `data-category`, `display:none`, `type=reset`, `details/summary`, Grid, media query, `alt`, `focus-visible`, giá trước/sau ưu đãi.
 
 Chi tiết ở `GIAI_THICH_MA_NGUON.md`. Chưa có xác nhận sinh viên đã tự giải thích các phần này. Ghi kết quả cá nhân ở `TU_KIEM_TRA.md`, không tích thay các ô còn trống.
+
+## Buổi 2 — 22/10/2026
+
+Tiếp tục cùng Phong Select. [Nhật ký Buổi 2](docs/buoi2/AI_USAGE.md) ghi đủ chín khung prompt của đề, kết quả, kiểm chứng và phần cá nhân. Nội dung phía trên là nhật ký lịch sử Buổi 1 ngày20/10; cấu trúc/class hiện tại xem GIAI_THICH_MA_NGUON.md. Không thay lịch sử bằng lời khai sinh viên tự làm.

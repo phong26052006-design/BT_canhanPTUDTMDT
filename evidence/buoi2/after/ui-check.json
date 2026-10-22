@@ -1,0 +1,907 @@
+{
+  "date_utc": "2026-10-22T07:25:41.822389+00:00",
+  "performed_by": "Trợ lý trong phiên hỗ trợ; không phải xác nhận sinh viên tự kiểm tra",
+  "html5lib_version": "1.1",
+  "html5_parser_errors": [],
+  "viewports": [
+    {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "gridTag": "UL",
+      "listItems": 4,
+      "gridColumns": "302px 302px 302px 302px",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "headingJump": false,
+      "duplicateIds": [],
+      "h1Count": 1,
+      "cssHref": "css/style.css",
+      "cssLoaded": true,
+      "bodyFont": "Arial, Helvetica, sans-serif",
+      "imagesLoaded": true,
+      "imagesHaveAlt": true,
+      "imageRatios": [
+        1.3333333333333333,
+        1.3333333333333333,
+        1.3333333333333333,
+        1.3333333333333333
+      ],
+      "brokenFragments": [],
+      "applicationScripts": 0,
+      "cardHeight": 572.671875,
+      "contentPadding": "24px",
+      "descriptionMinHeight": "auto",
+      "descriptionHeight": 47.59375,
+      "priceMinHeight": "auto",
+      "gridGap": "24px",
+      "listDefaultPadding": "0px",
+      "filters": [
+        {
+          "group": "input",
+          "actual": 2,
+          "expected": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "label": "2 sản phẩm",
+          "positions": [
+            {
+              "x": 80,
+              "y": 1012
+            },
+            {
+              "x": 406,
+              "y": 1012
+            }
+          ]
+        },
+        {
+          "group": "audio",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "audio"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 80,
+              "y": 1012
+            }
+          ]
+        },
+        {
+          "group": "accessory",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "accessory"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 80,
+              "y": 1012
+            }
+          ]
+        }
+      ],
+      "reset_restores_four": true
+    },
+    {
+      "viewport": 1366,
+      "documentWidth": 1366,
+      "gridTag": "UL",
+      "listItems": 4,
+      "gridColumns": "302px 302px 302px 302px",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "headingJump": false,
+      "duplicateIds": [],
+      "h1Count": 1,
+      "cssHref": "css/style.css",
+      "cssLoaded": true,
+      "bodyFont": "Arial, Helvetica, sans-serif",
+      "imagesLoaded": true,
+      "imagesHaveAlt": true,
+      "imageRatios": [
+        1.3333333333333333,
+        1.3333333333333333,
+        1.3333333333333333,
+        1.3333333333333333
+      ],
+      "brokenFragments": [],
+      "applicationScripts": 0,
+      "cardHeight": 572.671875,
+      "contentPadding": "24px",
+      "descriptionMinHeight": "auto",
+      "descriptionHeight": 47.59375,
+      "priceMinHeight": "auto",
+      "gridGap": "24px",
+      "listDefaultPadding": "0px",
+      "filters": [
+        {
+          "group": "input",
+          "actual": 2,
+          "expected": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "label": "2 sản phẩm",
+          "positions": [
+            {
+              "x": 43,
+              "y": 1011
+            },
+            {
+              "x": 369,
+              "y": 1011
+            }
+          ]
+        },
+        {
+          "group": "audio",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "audio"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 43,
+              "y": 1011
+            }
+          ]
+        },
+        {
+          "group": "accessory",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "accessory"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 43,
+              "y": 1011
+            }
+          ]
+        }
+      ],
+      "reset_restores_four": true
+    },
+    {
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "gridTag": "UL",
+      "listItems": 4,
+      "gridColumns": "472px 472px",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "headingJump": false,
+      "duplicateIds": [],
+      "h1Count": 1,
+      "cssHref": "css/style.css",
+      "cssLoaded": true,
+      "bodyFont": "Arial, Helvetica, sans-serif",
+      "imagesLoaded": true,
+      "imagesHaveAlt": true,
+      "imageRatios": [
+        1.3314447592067988,
+        1.3314447592067988,
+        1.3314447592067988,
+        1.3314447592067988
+      ],
+      "brokenFragments": [],
+      "applicationScripts": 0,
+      "cardHeight": 700.171875,
+      "contentPadding": "24px",
+      "descriptionMinHeight": "auto",
+      "descriptionHeight": 47.59375,
+      "priceMinHeight": "auto",
+      "gridGap": "24px",
+      "listDefaultPadding": "0px",
+      "filters": [
+        {
+          "group": "input",
+          "actual": 2,
+          "expected": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "label": "2 sản phẩm",
+          "positions": [
+            {
+              "x": 28,
+              "y": 992
+            },
+            {
+              "x": 524,
+              "y": 992
+            }
+          ]
+        },
+        {
+          "group": "audio",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "audio"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 28,
+              "y": 992
+            }
+          ]
+        },
+        {
+          "group": "accessory",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "accessory"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 28,
+              "y": 992
+            }
+          ]
+        }
+      ],
+      "reset_restores_four": true
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "gridTag": "UL",
+      "listItems": 4,
+      "gridColumns": "344px 344px",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "headingJump": false,
+      "duplicateIds": [],
+      "h1Count": 1,
+      "cssHref": "css/style.css",
+      "cssLoaded": true,
+      "bodyFont": "Arial, Helvetica, sans-serif",
+      "imagesLoaded": true,
+      "imagesHaveAlt": true,
+      "imageRatios": [
+        1.3307392996108949,
+        1.3307392996108949,
+        1.3307392996108949,
+        1.3307392996108949
+      ],
+      "brokenFragments": [],
+      "applicationScripts": 0,
+      "cardHeight": 604.171875,
+      "contentPadding": "24px",
+      "descriptionMinHeight": "auto",
+      "descriptionHeight": 47.59375,
+      "priceMinHeight": "auto",
+      "gridGap": "24px",
+      "listDefaultPadding": "0px",
+      "filters": [
+        {
+          "group": "input",
+          "actual": 2,
+          "expected": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "label": "2 sản phẩm",
+          "positions": [
+            {
+              "x": 28,
+              "y": 1086
+            },
+            {
+              "x": 396,
+              "y": 1086
+            }
+          ]
+        },
+        {
+          "group": "audio",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "audio"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 28,
+              "y": 1086
+            }
+          ]
+        },
+        {
+          "group": "accessory",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "accessory"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 28,
+              "y": 1086
+            }
+          ]
+        }
+      ],
+      "reset_restores_four": true
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "gridTag": "UL",
+      "listItems": 4,
+      "gridColumns": "354px",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "headingJump": false,
+      "duplicateIds": [],
+      "h1Count": 1,
+      "cssHref": "css/style.css",
+      "cssLoaded": true,
+      "bodyFont": "Arial, Helvetica, sans-serif",
+      "imagesLoaded": true,
+      "imagesHaveAlt": true,
+      "imageRatios": [
+        1.3333333333333333,
+        1.3333333333333333,
+        1.3333333333333333,
+        1.3333333333333333
+      ],
+      "brokenFragments": [],
+      "applicationScripts": 0,
+      "cardHeight": 611.15625,
+      "contentPadding": "20px",
+      "descriptionMinHeight": "auto",
+      "descriptionHeight": 47.59375,
+      "priceMinHeight": "auto",
+      "gridGap": "24px",
+      "listDefaultPadding": "0px",
+      "filters": [
+        {
+          "group": "input",
+          "actual": 2,
+          "expected": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "label": "2 sản phẩm",
+          "positions": [
+            {
+              "x": 18,
+              "y": 1443
+            },
+            {
+              "x": 18,
+              "y": 2078
+            }
+          ]
+        },
+        {
+          "group": "audio",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "audio"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 18,
+              "y": 1443
+            }
+          ]
+        },
+        {
+          "group": "accessory",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "accessory"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 18,
+              "y": 1443
+            }
+          ]
+        }
+      ],
+      "reset_restores_four": true
+    },
+    {
+      "viewport": 375,
+      "documentWidth": 375,
+      "gridTag": "UL",
+      "listItems": 4,
+      "gridColumns": "339px",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "headingJump": false,
+      "duplicateIds": [],
+      "h1Count": 1,
+      "cssHref": "css/style.css",
+      "cssLoaded": true,
+      "bodyFont": "Arial, Helvetica, sans-serif",
+      "imagesLoaded": true,
+      "imagesHaveAlt": true,
+      "imageRatios": [
+        1.33201581027668,
+        1.33201581027668,
+        1.33201581027668,
+        1.33201581027668
+      ],
+      "brokenFragments": [],
+      "applicationScripts": 0,
+      "cardHeight": 599.90625,
+      "contentPadding": "20px",
+      "descriptionMinHeight": "auto",
+      "descriptionHeight": 47.59375,
+      "priceMinHeight": "auto",
+      "gridGap": "24px",
+      "listDefaultPadding": "0px",
+      "filters": [
+        {
+          "group": "input",
+          "actual": 2,
+          "expected": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "label": "2 sản phẩm",
+          "positions": [
+            {
+              "x": 18,
+              "y": 1551
+            },
+            {
+              "x": 18,
+              "y": 2175
+            }
+          ]
+        },
+        {
+          "group": "audio",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "audio"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 18,
+              "y": 1551
+            }
+          ]
+        },
+        {
+          "group": "accessory",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "accessory"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 18,
+              "y": 1551
+            }
+          ]
+        }
+      ],
+      "reset_restores_four": true
+    },
+    {
+      "viewport": 320,
+      "documentWidth": 320,
+      "gridTag": "UL",
+      "listItems": 4,
+      "gridColumns": "284px",
+      "headings": [
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "headingJump": false,
+      "duplicateIds": [],
+      "h1Count": 1,
+      "cssHref": "css/style.css",
+      "cssLoaded": true,
+      "bodyFont": "Arial, Helvetica, sans-serif",
+      "imagesLoaded": true,
+      "imagesHaveAlt": true,
+      "imageRatios": [
+        1.330188679245283,
+        1.330188679245283,
+        1.330188679245283,
+        1.330188679245283
+      ],
+      "brokenFragments": [],
+      "applicationScripts": 0,
+      "cardHeight": 558.65625,
+      "contentPadding": "20px",
+      "descriptionMinHeight": "auto",
+      "descriptionHeight": 47.59375,
+      "priceMinHeight": "auto",
+      "gridGap": "24px",
+      "listDefaultPadding": "0px",
+      "filters": [
+        {
+          "group": "input",
+          "actual": 2,
+          "expected": 2,
+          "categories": [
+            "input",
+            "input"
+          ],
+          "label": "2 sản phẩm",
+          "positions": [
+            {
+              "x": 18,
+              "y": 1607
+            },
+            {
+              "x": 18,
+              "y": 2190
+            }
+          ]
+        },
+        {
+          "group": "audio",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "audio"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 18,
+              "y": 1607
+            }
+          ]
+        },
+        {
+          "group": "accessory",
+          "actual": 1,
+          "expected": 1,
+          "categories": [
+            "accessory"
+          ],
+          "label": "1 sản phẩm",
+          "positions": [
+            {
+              "x": 18,
+              "y": 1607
+            }
+          ]
+        }
+      ],
+      "reset_restores_four": true
+    }
+  ],
+  "browser": "154.0.8037.57",
+  "nav": {
+    "tag": "UL",
+    "items": 3,
+    "display": "flex",
+    "gap": "8px 27px"
+  },
+  "keyboard_details": [
+    {
+      "card": 1,
+      "open_close": true
+    },
+    {
+      "card": 2,
+      "open_close": true
+    },
+    {
+      "card": 3,
+      "open_close": true
+    },
+    {
+      "card": 4,
+      "open_close": true
+    }
+  ],
+  "keyboard_filter_and_reset": true,
+  "navigation_anchor": true,
+  "states": {
+    "normal": {
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(23, 78, 60)",
+      "transition": "0.18s, 0.18s, 0.18s",
+      "height": 48
+    },
+    "hover": {
+      "background": "rgb(23, 78, 60)",
+      "color": "rgb(255, 255, 255)",
+      "height": 48
+    },
+    "focus": {
+      "matches": true,
+      "outline": "solid",
+      "width": "3px",
+      "offset": "3px"
+    },
+    "layout_unchanged_on_hover": true
+  },
+  "reduced_motion_transition": "0s",
+  "box_model": {
+    "cardWidth": 302,
+    "cardBorder": "1px",
+    "cardMargin": "0px",
+    "contentOuterWidth": 300,
+    "contentPadding": "24px",
+    "contentBoxSizing": "border-box",
+    "contentWidth": 252,
+    "descriptionMargin": "20px",
+    "gridGap": "24px"
+  },
+  "flex_experiments": [
+    {
+      "display": "flex",
+      "justifyContent": "flex-start",
+      "alignItems": "center",
+      "gap": "12px",
+      "actualSpace": 12
+    },
+    {
+      "display": "flex",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "gap": "12px",
+      "actualSpace": 12
+    },
+    {
+      "display": "flex",
+      "justifyContent": "space-between",
+      "alignItems": "center",
+      "gap": "12px",
+      "actualSpace": 129.734375
+    }
+  ],
+  "grid_experiments": [
+    {
+      "requested_columns": 2,
+      "display": "grid",
+      "columns": "628px 628px",
+      "gap": "24px"
+    },
+    {
+      "requested_columns": 3,
+      "display": "grid",
+      "columns": "410.656px 410.672px 410.656px",
+      "gap": "24px"
+    }
+  ],
+  "without_grid": {
+    "display": "block",
+    "items": [
+      {
+        "left": 43,
+        "top": -154.625,
+        "width": 1280
+      },
+      {
+        "left": 43,
+        "top": 1127.75,
+        "width": 1280
+      }
+    ]
+  },
+  "live_edit_practice": {
+    "scope": "Thí nghiệm trên DOM/CSS của trình duyệt do trợ lý chạy; không phải kiểm tra trực tiếp của sinh viên",
+    "padding": {
+      "before": {
+        "width": 300,
+        "padding": "24px"
+      },
+      "after": {
+        "width": 300,
+        "padding": "28px"
+      },
+      "passed": true
+    },
+    "price_color": {
+      "after": "rgb(179, 49, 38)",
+      "passed": true
+    },
+    "grid_columns": {
+      "trials": [
+        2,
+        3
+      ],
+      "passed": true
+    },
+    "menu_gap": {
+      "after": "36px",
+      "passed": true
+    },
+    "image_alt": {
+      "after": "Bàn phím cơ K75 mẫu, phím màu kem và xanh",
+      "passed": true
+    }
+  },
+  "price_arithmetic": [
+    {
+      "name": "Bàn phím cơ K75",
+      "price": 600000,
+      "discount": 20.0
+    },
+    {
+      "name": "Chuột không dây M2",
+      "price": 360000,
+      "discount": 20.0
+    },
+    {
+      "name": "Tai nghe chụp tai H1",
+      "price": 850000,
+      "discount": 15.0
+    },
+    {
+      "name": "Giá đỡ laptop L3",
+      "price": 240000,
+      "discount": 20.0
+    }
+  ],
+  "accessibility": {
+    "version": "4.10.3",
+    "passed": 31,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            "article[aria-labelledby=\"ten-keyboard\"] > .product-content > .price-block > .price > .price-value > .currency"
+          ],
+          [
+            "article[aria-labelledby=\"ten-mouse\"] > .product-content > .price-block > .price > .price-value > .currency"
+          ],
+          [
+            "article[aria-labelledby=\"ten-headphones\"] > .product-content > .price-block > .price > .price-value > .currency"
+          ],
+          [
+            "article[aria-labelledby=\"ten-stand\"] > .product-content > .price-block > .price > .price-value > .currency"
+          ]
+        ]
+      }
+    ]
+  },
+  "page_errors": [],
+  "http_errors": [],
+  "source_sha256": {
+    "index.html": "4afb96b55ca6209c4e9d119cf985fc71633adb362eddf0b26de61b769395330b",
+    "css/style.css": "95f40cae7eb2dd426b3c0aeab051a8a0ee107ea0dea4cfc29832823f063fbdc9",
+    "style.css": "745f123b78c97eb30f43b766673a3721c613e4b9ae785e2181ea58a1a1525b35",
+    "products.json": "02ef2543a1223fb0bdf5cfab6d6587db937954359836a5b91679de5e16b18568"
+  },
+  "status": "passed",
+  "manual_contrast_review": {
+    "checked_utc": "2026-10-22T07:33:19.787115+00:00",
+    "scope": "Four currency glyphs; computed colors and WCAG luminance formula, not full WCAG certification",
+    "elements": [
+      {
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 12.09
+      },
+      {
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 12.09
+      },
+      {
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 12.09
+      },
+      {
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 12.09
+      }
+    ],
+    "passed": true
+  },
+  "normal_screenshots_refreshed_utc": "2026-10-22T07:40:03.175868+00:00"
+}

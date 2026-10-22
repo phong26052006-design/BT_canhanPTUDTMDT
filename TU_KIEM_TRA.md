@@ -1,33 +1,30 @@
-# Phần sinh viên tự thực hiện trước khi nộp
+# Phiếu sinh viên tự thực hiện — Buổi 2
 
-Đề bài yêu cầu sinh viên tự mở trang, kiểm tra, chỉnh ít nhất một điểm do bản thân phát hiện và giải thích mã. Các mục này để trống có chủ ý; không coi kiểm tra do AI chạy là xác nhận cá nhân.
+Trương Thanh Phong · EE0002. Đề yêu cầu tự mở, kiểm tra, tự phát hiện/sửa ít nhất một điểm và giải thích mã; các việc trợ lý đã chạy được ghi riêng trong kiểm thử. Không tích thay các ô này.
 
-- [ ] Tôi đã tải mã và mở `index.html` hoặc chạy máy chủ HTTP trên máy của mình.
-- [ ] Tôi đã xem ở màn hình máy tính và điện thoại; kiểm tra bốn ảnh và giá.
-- [ ] Tôi đã thử bốn nhóm lọc, nút đặt lại và mở/đóng thông tin.
-- [ ] Tôi đã tự phát hiện và sửa một điểm phù hợp (ví dụ nội dung mô tả hoặc khoảng cách), kiểm tra lại và lưu commit.
-- [ ] Tôi giải thích được vai trò phần HTML/CSS đã sửa và cách lọc hoạt động.
-- [ ] Tôi đã mở repo Public và đường dẫn website, đối chiếu nhật ký AI.
+- [ ] Mở thư mục website trong VS Code/editor của mình, xác định index.html và css/style.css.
+- [ ] Tự chạy trên trình duyệt; kiểm tra 1366, 768 và 390 px hoặc kích thước tương đương.
+- [ ] Kiểm tra CSS/ảnh/điều hướng, lọc/đặt lại, Xem thông tin, hover và focus bằng Tab/Enter.
+- [ ] Tự phát hiện ít nhất một điểm; dự đoán kết quả, sửa HTML/CSS, lưu và thử lại.
+- [ ] Lưu ảnh sau sửa, ghi nguyên nhân/cách khắc phục và commit nếu giữ thay đổi.
+- [ ] Giải thích được ít nhất ba phần tử HTML, margin/padding/border, selector, Flexbox và Grid.
+- [ ] Tự trả lời bảy câu kiến thức và luyện năm tình huống sửa trực tiếp.
+- [ ] Mở repository Public, kiểm tra README/mã/báo cáo và nhật ký AI.
 
 ## Ghi nhận cá nhân
 
 Ngày, thiết bị, trình duyệt: ..........................................................
 
-Điểm tôi phát hiện và lý do cần sửa: ...................................................
+Khu vực và vấn đề bản thân phát hiện: ................................................
 
-File, đoạn mã trước → sau: ...........................................................
+Nguyên nhân đã xác định; giả thuyết nếu còn: ..........................................
 
-Cách kiểm tra và kết quả sau sửa: ....................................................
+File, selector/phần tử và giá trị trước → sau: ........................................
 
-Commit hoặc ảnh minh chứng cá nhân: ..................................................
+Dự đoán trước khi chạy: ..............................................................
 
-## Câu hỏi tự giải thích
+Kết quả sau khi chạy; ảnh/commit minh chứng: ..........................................
 
-1. Vì sao radio cần cùng `name` và mục “Tất cả” có `checked`?
-2. CSS `:has()` chọn vùng nào; `:not([data-category=...])` loại thẻ nào?
-3. Vì sao nút reset hoạt động mà không cần JavaScript?
-4. Grid và media query đổi số cột như thế nào?
-5. Vì sao tỷ lệ giảm của tai nghe là 15%, không phải 20%?
-6. `summary` cung cấp thao tác gì; vì sao không gọi đây là nút mua hàng?
+Vai trò HTML/CSS đã sửa, diễn đạt bằng lời của mình: ..................................
 
-Gợi ý giải thích ở `GIAI_THICH_MA_NGUON.md`; trả lời bằng cách hiểu của mình.
+Xem docs/buoi2/SUA_MA_TRUC_TIEP.md để luyện; không ghi một thí nghiệm của trợ lý thành thao tác của cá nhân. Phiếu Buổi 1 vẫn có trong báo cáo Word và lịch sử Git.

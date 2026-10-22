@@ -1,79 +1,89 @@
 # E-commerce UI Improvement — Phong Select
 
-**Trương Thanh Phong · EE0002 · Bài tập cá nhân Chương 1**
+**Trương Thanh Phong · EE0002 · Buổi 2: HTML5 & CSS3 · 22/10/2026**
 
 ## 1. Giới thiệu
 
-Phong Select là bản mẫu một trang bán phụ kiện góc làm việc. Cải tiến tập trung vào danh sách sản phẩm: lọc theo nhóm ngay cạnh danh sách, thông tin giá nhất quán và bố cục thích ứng. Đây là thiết kế độc lập, tham khảo cách tổ chức mua sắm của Lazada Việt Nam.
+Bài Buổi 2 tiếp tục **cùng website và repository Buổi 1**, tập trung danh sách/thẻ của bốn phụ kiện góc làm việc. Giữ thương hiệu, dữ liệu, SVG và bộ lọc; cải thiện cấu trúc danh sách, tổ chức CSS, Box Model, Flexbox và phản hồi hover/focus.
 
-## 2. Website tham khảo
+[Hồ sơ Buổi 2](docs/buoi2/README.md) · [Câu hỏi kiến thức](docs/buoi2/CAU_HOI_KIEN_THUC.md) · [Luyện sửa trực tiếp](docs/buoi2/SUA_MA_TRUC_TIEP.md)
 
-- Tên: Lazada Việt Nam — https://www.lazada.vn/
-- Khảo sát ngày 20/10/2026: trang chủ, danh mục laptop, chi tiết sản phẩm, tìm kiếm “bàn phím”, giỏ hàng khách chưa đăng nhập.
-- [Ảnh và nguồn khảo sát](evidence/khao-sat/README.md). Danh mục và tìm kiếm có hộp xác minh; giỏ hàng quan sát được đang trống. Chưa xác minh luồng giỏ hàng có sản phẩm, thanh toán hay hiệu lực bộ lọc của Lazada.
-- Không sử dụng logo, mã nguồn hay ảnh sản phẩm Lazada trong giao diện Phong Select.
+## 2. Website tham khảo và phạm vi
 
-## 3. Chức năng
+- Lazada Việt Nam: https://www.lazada.vn/
+- Năm khu vực khảo sát Buổi 1: trang chủ, danh mục, chi tiết, tìm kiếm và giỏ hàng. [Nguồn và giới hạn](evidence/khao-sat/README.md).
+- Buổi 2 tiếp tục khu vực **danh sách và thẻ sản phẩm**, kiểm tra menu/bộ lọc để tránh mất chức năng cũ. Không khảo sát lại Lazada để thay thế bằng chứng ngày 20/10.
+- Thiết kế và SVG của Phong Select độc lập; sản phẩm/giá/thông số là giả định, không dùng ảnh sản phẩm hoặc mã nguồn Lazada.
 
-- Bốn thẻ sản phẩm, mỗi thẻ có ảnh SVG tự tạo, tên, giá hiện tại, giá trước ưu đãi, tỷ lệ và số tiền giảm.
-- Lọc ngay bằng radio: Tất cả (4), Chuột & bàn phím (2), Âm thanh (1), Phụ kiện (1).
-- Nút **Đặt lại bộ lọc** khôi phục cả bốn thẻ.
-- **Xem thông tin** mở/đóng nội dung bằng `details/summary`, dùng được bằng bàn phím.
-- Lưới 4/2/1 cột; không tràn ngang tại sáu kích thước đã kiểm tra từ 320 đến 1440 px.
+## 3. Chức năng hiện có
 
-Sản phẩm, thông số và giá là dữ liệu giả định. Phạm vi là trang danh sách tĩnh; chưa có tìm kiếm từ khóa tùy ý, lọc giá/thương hiệu, giỏ hàng, đăng nhập, cơ sở dữ liệu hay thanh toán. Nút thao tác trên thẻ mở thông tin thực tế, không giả lập mua hàng thành công.
+- Bốn sản phẩm có ảnh, tên, giá trước/sau ưu đãi, mức giảm, tiền tiết kiệm và thao tác Xem thông tin.
+- Lọc Tất cả/Chuột & bàn phím/Âm thanh/Phụ kiện: kết quả 4/2/1/1; Đặt lại về 4. CSS ẩn cả li để không giữ ô rỗng.
+- Details/summary mở/đóng bằng chuột hoặc Enter. Nút xem thông tin có hành vi thật.
+- Lưới 4/2/1 cột, không tràn ngang trong bảy độ rộng đã thử 320–1440 px.
+- Menu liên kết vị trí trong trang, hover đổi màu, focus-visible có viền, tôn trọng giảm chuyển động.
 
-## 4. Công nghệ
+Chưa có tìm từ khóa tùy ý, lọc kết hợp, tài khoản, giỏ hàng, backend hoặc thanh toán. products.json chỉ đối chiếu, không tự đổ dữ liệu/tính giá ra trang. Không có JavaScript ứng dụng, framework CSS, font hoặc CDN ngoài.
 
-HTML5, CSS3 (Grid, media query, `:has()`), SVG. Không JavaScript, framework, font ngoài hoặc thư viện chạy trên trang. Cần trình duyệt hiện đại hỗ trợ CSS `:has()`; đã kiểm tra bằng Chromium 154.
+## 4. Kỹ thuật thực hành Buổi 2
 
-`products.json` là bảng dữ liệu đối chiếu giá, không được tải để dựng trang. Khi sửa giá cần cập nhật cả HTML và bảng dữ liệu.
+| Nội dung | Áp dụng |
+|---|---|
+| HTML5 ngữ nghĩa | Giữ header/nav/main/section/article/footer; danh sách ul/li cho sản phẩm/menu, một h1, h2/h3 hợp lý, ảnh có alt. |
+| CSS ngoài | HTML link css/style.css; root style.css là @import tương thích đường dẫn cũ. |
+| Selector | body/img; .product-card; .product-card .product-title/.product-toggle. |
+| Box Model | Viền 1 px, radius 18 px, padding nội dung 24/20 px, margin mô tả 20 px, border-box, gap lưới 24 px. |
+| Flexbox | Menu; cột trong thẻ; hai span trong thao tác với space-between, align-items:center, gap:12px. |
+| Grid | Đã thử hai/ba cột; cuối giữ bốn/hai/một; ảnh contain tỷ lệ 4/3. |
+| Hover/focus | Transition màu 180ms, viền focus 3 px, chiều cao thao tác 48 px không nhảy bố cục. |
 
 ## 5. Cách chạy
 
-Tải mã nguồn rồi mở `index.html` bằng trình duyệt hiện đại. Cách đã được kiểm tra trong môi trường đám mây: mở Terminal tại thư mục dự án và chạy:
+Mở index.html bằng Chrome/Edge hiện đại có CSS :has(). Cách đã dùng kiểm thử trong môi trường: mở Terminal tại thư mục dự án, chạy:
 
 ```bash
-python3 -m http.server 8877 --bind 127.0.0.1
+python3 -m http.server 8892 --bind 127.0.0.1
 ```
 
-Sau đó mở địa chỉ máy chủ cục bộ trên chính máy đang chạy Python. Không cần `npm install`, build, tài khoản hay API key. Mở trực tiếp file trên máy cá nhân là cách dùng thông thường; lượt kiểm tra tự động trong môi trường này sử dụng HTTP.
+Sau đó mở máy chủ cục bộ trên chính máy đó. Không cần npm install, build hoặc API key. Công cụ kiểm tra Python ở tools/ là tùy chọn, không cần để xem website; xem [tools/README.md](tools/README.md).
 
-## 6. Cải tiến đã thực hiện
+## 6. Thay đổi và bằng chứng
 
-Khảo sát Lazada cho thấy nhiều nhóm bộ lọc trong thanh bên. Với bộ dữ liệu bốn sản phẩm của bài tập, chọn bộ lọc nhóm gọn ở phía trên, có lựa chọn đang dùng và thao tác đặt lại. Đây là thử nghiệm thiết kế cho phạm vi nhỏ; chưa có nghiên cứu người dùng để khẳng định tốt hơn Lazada.
+Ba vấn đề/cơ hội được ghi nhận: min-height cuối CSS ghi đè media làm dư khoảng trống; tập sản phẩm/menu chưa biểu diễn bằng ul/li; nền summary chưa có transition. [Bảng rà soát và quyết định](docs/buoi2/RA_SOAT_VA_THAY_DOI.md).
 
-Sau lần chạy đầu, đổi “Thiết bị nhập” thành “Chuột & bàn phím”; chuyển bộ lọc sang một cột khi màn hình ≤380 px để nhãn đầy đủ có đủ chỗ. Xem [nhật ký thay đổi](evidence/iteration-log.json), [ảnh trước](evidence/filter-before.png), [ảnh sau](evidence/filter-after.png).
+- [Trước tại 768 px](evidence/buoi2/before/card-768.png) / [sau tại 768 px](evidence/buoi2/after/card-768.png).
+- [Giao diện cuối](evidence/buoi2/after/catalog-1366.png), [điện thoại](evidence/buoi2/after/catalog-390.png).
+- [Hover](evidence/buoi2/after/state-hover.png) / [focus](evidence/buoi2/after/state-focus.png).
+- [Thử Grid hai cột](evidence/buoi2/after/grid-2-columns.png) / [ba cột](evidence/buoi2/after/grid-3-columns.png).
 
-## 7. Hỗ trợ từ AI
+Các ảnh thí nghiệm được ghi riêng, không nhầm là cấu hình cuối. CSS đã thay min-height cứng bằng bố cục flex và cập nhật selector lọc theo cấu trúc li.
 
-Trợ lý OpenAI ChatGPT/Codex hỗ trợ khảo sát, đối chiếu, đề xuất, viết mã, minh họa SVG, kiểm tra và tài liệu trong phiên ngày 20/10/2026. [AI_USAGE.md](AI_USAGE.md) phân biệt yêu cầu thật với khung prompt triển khai. Không ghi thay rằng sinh viên đã tự chạy hoặc tự sửa.
+## 7. AI và kiểm tra
 
-Theo đề bài, sinh viên cần hoàn tất [TU_KIEM_TRA.md](TU_KIEM_TRA.md) bằng trải nghiệm của chính mình trước khi nộp. [GIAI_THICH_MA_NGUON.md](GIAI_THICH_MA_NGUON.md) hỗ trợ đọc và giải thích mã.
+Trợ lý OpenAI ChatGPT/Codex hỗ trợ phân tích, sửa mã, kiểm tra và tài liệu. [Nhật ký chín khung prompt Buổi 2](docs/buoi2/AI_USAGE.md) phân biệt yêu cầu thật với khung triển khai của đề; không giả lập tin nhắn hoặc ảnh hội thoại của sinh viên.
 
-## 8. Kết quả và công khai
+[Kết quả kiểm thử](docs/buoi2/KIEM_THU.md): bảy độ rộng, 21 tình huống lọc, bảy lần đặt lại, bàn phím, CSS/ảnh/liên kết, Flexbox/Grid và năm tình huống sửa trực tiếp. HTML parser không báo lỗi phân tích. Axe có 31 quy tắc đạt, 0 vi phạm phát hiện, 1 quy tắc chưa kết luận tự động; bốn ký hiệu tiền tệ đã đối chiếu màu bổ sung. Không coi đây là chứng nhận WCAG đầy đủ.
 
-- [TEST_RESULTS.md](TEST_RESULTS.md): 6 kích thước, 18 tình huống lọc, đặt lại, bàn phím, giá và tiếp cận.
-- Mã nguồn: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
-- GitHub Pages chưa bật do API tạo site bị từ chối quyền tích hợp (403); xem hướng dẫn và URL dự kiến trong GITHUB_PUBLISH.md.
-- Trạng thái triển khai được ghi tại [GITHUB_PUBLISH.md](GITHUB_PUBLISH.md).
-- [Báo cáo Word hoàn thiện — Trương Thanh Phong](bao-cao/BaiTap_Buoi1_TruongThanhPhong_31241024967_HoanThien.docx).
+Sinh viên cần tự chạy và tự sửa một điểm theo đề, ghi kết quả thật trong [TU_KIEM_TRA.md](TU_KIEM_TRA.md), hiểu và giải thích mã. Không ghi thay hoạt động cá nhân.
 
-## 9. Cấu trúc
+## 8. GitHub và bài Buổi 1
+
+- Repository: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
+- Trạng thái công khai/Pages: [GITHUB_PUBLISH.md](GITHUB_PUBLISH.md). Không tự nhận Pages đã hoạt động.
+- [Báo cáo Word Buổi 1](bao-cao/BaiTap_Buoi1_TruongThanhPhong_31241024967_HoanThien.docx).
+- [Mã và tài liệu Buổi 1 tại commit dbb6bc2](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/tree/dbb6bc2).
+
+## 9. Cấu trúc hiện tại
 
 ```text
-index.html                 Trang giao diện
-style.css                  Toàn bộ trình bày và lọc bằng CSS
-products.json              Dữ liệu giá để đối chiếu
-bao-cao/                   Báo cáo Word hoàn thiện
-images/                    4 hình sản phẩm và favicon tự tạo
-evidence/                  Ảnh trước–sau, log kiểm tra
-  khao-sat/                5 ảnh website tham khảo, nguồn và giới hạn
-AI_USAGE.md                Nhật ký AI
-GIAI_THICH_MA_NGUON.md      Giải thích HTML/CSS
-TEST_RESULTS.md            Kết quả đã chạy
-TU_KIEM_TRA.md             Phần sinh viên tự thực hiện
-GITHUB_PUBLISH.md          Thông tin công khai
+index.html                  Trang tiếp tục từ Buổi 1
+css/style.css               CSS chính của Buổi 2
+style.css                   Tương thích đường dẫn CSS cũ
+images/                     SVG kế thừa tự tạo
+products.json               Dữ liệu giá đối chiếu
+docs/buoi2/                 Các bước, câu hỏi, sửa trực tiếp, AI, kiểm thử
+evidence/buoi2/before/      Ảnh và đo hiện trạng
+evidence/buoi2/after/       Ảnh sau, thí nghiệm và log
+bao-cao/                    Báo cáo Word
+tools/                      Công cụ kiểm tra tùy chọn
 ```
-
-Lịch sử Git giữ bản DevShelf ngày 18/10/2026. Bản ngày 20/10 chuyển sang Lazada/Phong Select, có bằng chứng khảo sát thực tế mới. Báo cáo Word được lưu trong `bao-cao/` theo yêu cầu của sinh viên; giao diện không hiển thị MSSV.
