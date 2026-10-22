@@ -38,7 +38,7 @@ Kết quả: HTML tải trực tiếp css/style.css; root style.css chỉ @impor
 
 > Trên thẻ có sẵn, minh họa element selector, class selector và descendant selector. Dùng border/radius ở product-card, padding ở product-content và margin ở đoạn mô tả/khối giá; giải thích border-box theo số đo thực tế. Không tạo lại nội dung sản phẩm.
 
-Kết quả: body/img là element selector; product-card là class selector; .product-card .product-title và .product-card .product-toggle là descendant selector. Đo tại 1366 px: thẻ 302 px, viền 1 px mỗi bên, vùng nội dung rộng ngoài 300 px, padding 24 px mỗi bên, nội dung 252 px. Tránh nhầm padding con là padding của article.
+Kết quả: body/img là element selector; product-card là class selector; .product-card .product-title và .product-card .product-toggle là descendant selector. Đo tại 1366 px: thẻ 302 px, viền 1 px mỗi bên, vùng nội dung rộng ngoài 300 px, padding 24 px mỗi bên, nội dung 252 px. Tránh nhầm padding con là padding của article. Liên kết a.product-image-link được định dạng thành thao tác Xem hình lớn và thử mở đủ bốn SVG tương ứng.
 
 ### Prompt 5 — Flexbox
 
@@ -88,3 +88,5 @@ Kết quả: README trỏ tới hồ sơ Buổi 2, câu hỏi kiến thức, bà
 Trợ lý hỗ trợ đọc đề, phân tích, viết/sửa mã và SVG kế thừa, chạy công cụ, chụp ảnh, soạn đáp án/tài liệu và cập nhật GitHub. Playwright, html5lib và axe là công cụ kiểm tra bên ngoài trang, không là thư viện ứng dụng; trang có 0 script ứng dụng.
 
 Sinh viên cần tự mở trên máy của mình, thử giao diện, tự phát hiện/sửa ít nhất một điểm, giải thích mã và luyện năm dạng sửa trực tiếp. Ghi ngày, thay đổi, lý do và kết quả thực trong TU_KIEM_TRA.md. Các câu trả lời kiến thức là tài liệu hỗ trợ học từ mã thật, cần được sinh viên hiểu và diễn đạt lại.
+
+Liên kết sản phẩm **Xem hình lớn** trong phần thông tin mở rộng trỏ tới đúng SVG của từng hàng và mở tab mới; class `.product-card .product-image-link` minh họa định dạng thẻ a thành thao tác đơn giản. Không tạo trang chi tiết giả hoặc liên kết mua hàng chưa có chức năng.

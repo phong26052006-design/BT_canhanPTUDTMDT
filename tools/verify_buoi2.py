@@ -145,6 +145,20 @@ async def run(args):
         await page.keyboard.press('Enter')
         assert await page.locator('#filter-all').is_checked()
         result['keyboard_filter_and_reset'] = True
+        result['product_image_links'] = []
+        for i, product in enumerate(data):
+            await page.locator('.product-details').nth(i).evaluate('x=>x.open=true')
+            link=page.locator('.product-image-link').nth(i)
+            assert await link.get_attribute('href') == f'images/{product["slug"]}.svg'
+            async with page.expect_popup() as popup_info:
+                await link.click()
+            popup=await popup_info.value
+            await popup.wait_for_load_state('domcontentloaded')
+            assert popup.url.endswith(f'/images/{product["slug"]}.svg')
+            assert await popup.locator('svg').count() == 1
+            result['product_image_links'].append({'product':product['name'],'href':await link.get_attribute('href'),'opens_svg':True})
+            await popup.close()
+            await page.locator('.product-details').nth(i).evaluate('x=>x.open=false')
         await page.locator('.main-nav a').first.click()
         assert page.url.endswith('#san-pham')
         result['navigation_anchor'] = True

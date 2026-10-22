@@ -104,6 +104,8 @@ h2 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(27px, 2.8v
 .product-detail-content { font-size: 11px; padding: 14px 1px 0; color: var(--body); }
 .product-detail-content p { margin-bottom: 9px; }
 .product-detail-content ul { padding-left: 17px; margin-block: 0 12px; }
+.product-card .product-image-link { display: inline-block; margin-bottom: 12px; padding: 8px 12px; border: 1px solid #b7c9bb; border-radius: 6px; background: white; color: var(--accent); font-size: 12px; font-weight: 700; text-decoration: none; transition: background-color 180ms ease; }
+.product-card .product-image-link:hover { background: #edf4ec; }
 .product-disclaimer { border-top: 1px solid var(--line); padding-top: 10px; color: var(--muted); font-size: 10px; }
 .catalog-footnote { color: var(--muted); margin-block: 23px 0; font-size: 10px; }
 

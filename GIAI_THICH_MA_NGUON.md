@@ -34,3 +34,5 @@ Flexbox cột trong card/content và margin-top:auto ở khối giá thay các m
 product-toggle chuyển màu 180ms, hover nền xanh/chữ trắng; focus-visible viền 3px offset 3px. Chế độ reduced-motion đưa transition về 0s. Kiểm tra cụ thể trong TEST_RESULTS.md; không dùng một kết quả tự động để nhận tuân thủ tiếp cận toàn diện.
 
 Giải thích Buổi 1 được giữ trong [lịch sử commit dbb6bc2](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/blob/dbb6bc2/GIAI_THICH_MA_NGUON.md).
+
+Liên kết sản phẩm **Xem hình lớn** trong phần thông tin mở rộng trỏ tới đúng SVG của từng hàng và mở tab mới; class `.product-card .product-image-link` minh họa định dạng thẻ a thành thao tác đơn giản. Không tạo trang chi tiết giả hoặc liên kết mua hàng chưa có chức năng.

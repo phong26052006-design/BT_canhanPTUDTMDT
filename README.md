@@ -87,3 +87,5 @@ evidence/buoi2/after/       Ảnh sau, thí nghiệm và log
 bao-cao/                    Báo cáo Word
 tools/                      Công cụ kiểm tra tùy chọn
 ```
+
+Liên kết sản phẩm **Xem hình lớn** trong phần thông tin mở rộng trỏ tới đúng SVG của từng hàng và mở tab mới; class `.product-card .product-image-link` minh họa định dạng thẻ a thành thao tác đơn giản. Không tạo trang chi tiết giả hoặc liên kết mua hàng chưa có chức năng.

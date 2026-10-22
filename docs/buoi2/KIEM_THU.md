@@ -27,6 +27,7 @@ Ngày 22/10/2026. Trình duyệt Chromium 154.0.8037.57; Playwright; parser html
 | Flexbox | Thử flex-start/center/space-between; giữ align-items:center và gap:12px. |
 | Grid | Thử hai/ba cột; đổi tạm sang block để quan sát bỏ Grid; khôi phục 4/2/1 cuối. |
 | Sửa trực tiếp | Đã thử padding28, giá đỏ, 2/3 cột, menu gap36 và alt mới; chỉ sửa DOM tạm, không ghi vào mã cuối. |
+| Liên kết sản phẩm | Bốn nút Xem hình lớn mở đúng SVG tương ứng ở tab mới. |
 | Giá | Tên/giá hiện tại khớp products.json; bốn tỷ lệ giảm đúng. |
 | Giảm chuyển động | Transition về 0s khi reduce. |
 | Script/lỗi | 0 script ứng dụng; không pageerror/HTTP lỗi trong lượt thử. |

@@ -15,3 +15,5 @@ Chi tiết và giới hạn: [docs/buoi2/KIEM_THU.md](docs/buoi2/KIEM_THU.md). L
 Công cụ tái chạy tùy chọn: [tools/README.md](tools/README.md). Không có công cụ kiểm tra được tải trong website.
 
 Kết quả Buổi 1 vẫn giữ ở evidence/ui-check.json và lịch sử Git; không ghi đè bằng dữ liệu mới. Chưa thử mọi trình duyệt, thiết bị thật, trình đọc màn hình hoặc khảo sát người dùng.
+
+Bổ sung Buổi 2: bốn liên kết Xem hình lớn đã được click và xác minh mở đúng SVG của từng sản phẩm trong tab mới.

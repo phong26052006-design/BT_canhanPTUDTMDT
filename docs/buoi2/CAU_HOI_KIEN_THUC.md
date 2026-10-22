@@ -17,7 +17,7 @@ Các câu trả lời dựa trên **mã Phong Select hiện tại**, có AI hỗ
 - `h1/h2/h3`: lần lượt là tiêu đề trang, khu vực và từng sản phẩm; chỉ có một h1 và không nhảy cấp trong lượt kiểm tra.
 - `ul > li`: biểu diễn tập sản phẩm và các mục menu; bên trong mỗi li sản phẩm vẫn có article. Các đặc điểm trong phần thông tin mở rộng cũng là danh sách ul/li. Danh sách ol ở khu vực giới thiệu thể hiện ba ý có thứ tự.
 - `img` có `alt`: hình sản phẩm và mô tả thay thế; các hình giữ chiều rộng/cao gốc 640 × 480.
-- `a`: điều hướng tới vị trí có thật như `#san-pham`, `#cai-tien`, `#thong-tin`, không dùng href giả để mô phỏng mua hàng.
+- `a`: điều hướng tới vị trí có thật như `#san-pham`, `#cai-tien`, `#thong-tin`, không dùng href giả để mô phỏng mua hàng. Trong thông tin sản phẩm còn có a.product-image-link mở đúng hình SVG lớn của mặt hàng.
 - `details/summary`: thao tác mở/đóng thông tin có hành vi gốc, dùng được bằng Enter.
 - `form/fieldset/legend/label/input` và `button type=reset`: nhóm lọc có tên và lựa chọn, đặt lại được.
 

@@ -37,3 +37,5 @@ Quy tắc media phía sau có thể ghi đè quy tắc gốc. Khi luyện sửa 
 ## 5. Phần cá nhân
 
 Các thay đổi và thử nghiệm trong phiên này do trợ lý thực hiện. Sinh viên phải tự mở, phát hiện/sửa ít nhất một điểm và giải thích đoạn mã theo mục 11 của đề. Chưa có xác nhận thay hoạt động đó; ghi kết quả thật ở TU_KIEM_TRA.md.
+
+Liên kết sản phẩm **Xem hình lớn** trong phần thông tin mở rộng trỏ tới đúng SVG của từng hàng và mở tab mới; class `.product-card .product-image-link` minh họa định dạng thẻ a thành thao tác đơn giản. Không tạo trang chi tiết giả hoặc liên kết mua hàng chưa có chức năng.

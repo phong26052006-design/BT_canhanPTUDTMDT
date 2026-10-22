@@ -1,5 +1,5 @@
 {
-  "date_utc": "2026-10-22T07:25:41.822389+00:00",
+  "date_utc": "2026-10-22T07:52:52.428662+00:00",
   "performed_by": "Trợ lý trong phiên hỗ trợ; không phải xác nhận sinh viên tự kiểm tra",
   "html5lib_version": "1.1",
   "html5_parser_errors": [],
@@ -703,6 +703,28 @@
     }
   ],
   "keyboard_filter_and_reset": true,
+  "product_image_links": [
+    {
+      "product": "Bàn phím cơ K75",
+      "href": "images/keyboard.svg",
+      "opens_svg": true
+    },
+    {
+      "product": "Chuột không dây M2",
+      "href": "images/mouse.svg",
+      "opens_svg": true
+    },
+    {
+      "product": "Tai nghe chụp tai H1",
+      "href": "images/headphones.svg",
+      "opens_svg": true
+    },
+    {
+      "product": "Giá đỡ laptop L3",
+      "href": "images/stand.svg",
+      "opens_svg": true
+    }
+  ],
   "navigation_anchor": true,
   "states": {
     "normal": {
@@ -843,6 +865,32 @@
       "discount": 20.0
     }
   ],
+  "manual_contrast_review": {
+    "scope": "Four currency glyphs; computed colors and WCAG luminance formula, not full WCAG certification",
+    "elements": [
+      {
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 12.09
+      },
+      {
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 12.09
+      },
+      {
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 12.09
+      },
+      {
+        "foreground": "rgb(24, 60, 53)",
+        "background": "rgb(255, 255, 255)",
+        "ratio": 12.09
+      }
+    ],
+    "passed": true
+  },
   "accessibility": {
     "version": "4.10.3",
     "passed": 31,
@@ -870,38 +918,10 @@
   "page_errors": [],
   "http_errors": [],
   "source_sha256": {
-    "index.html": "4afb96b55ca6209c4e9d119cf985fc71633adb362eddf0b26de61b769395330b",
-    "css/style.css": "95f40cae7eb2dd426b3c0aeab051a8a0ee107ea0dea4cfc29832823f063fbdc9",
+    "index.html": "b3fc654e65d48bc6085e81eb7f7379fac8237e355dbb7158a75d18ff852e2b20",
+    "css/style.css": "fd8bdcba26c98f1c8254f5778041376d225dad0159e2f1cc7cd92ca247bfac75",
     "style.css": "745f123b78c97eb30f43b766673a3721c613e4b9ae785e2181ea58a1a1525b35",
     "products.json": "02ef2543a1223fb0bdf5cfab6d6587db937954359836a5b91679de5e16b18568"
   },
-  "status": "passed",
-  "manual_contrast_review": {
-    "checked_utc": "2026-10-22T07:33:19.787115+00:00",
-    "scope": "Four currency glyphs; computed colors and WCAG luminance formula, not full WCAG certification",
-    "elements": [
-      {
-        "foreground": "rgb(24, 60, 53)",
-        "background": "rgb(255, 255, 255)",
-        "ratio": 12.09
-      },
-      {
-        "foreground": "rgb(24, 60, 53)",
-        "background": "rgb(255, 255, 255)",
-        "ratio": 12.09
-      },
-      {
-        "foreground": "rgb(24, 60, 53)",
-        "background": "rgb(255, 255, 255)",
-        "ratio": 12.09
-      },
-      {
-        "foreground": "rgb(24, 60, 53)",
-        "background": "rgb(255, 255, 255)",
-        "ratio": 12.09
-      }
-    ],
-    "passed": true
-  },
-  "normal_screenshots_refreshed_utc": "2026-10-22T07:40:03.175868+00:00"
+  "status": "passed"
 }
