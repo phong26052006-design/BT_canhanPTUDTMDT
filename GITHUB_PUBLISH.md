@@ -13,7 +13,11 @@
 ## Báo cáo
 
 - [Word Buổi 2](bao-cao/BaiTap_Buoi2_TruongThanhPhong_31241024967.docx)
+- [PDF Buổi 2](bao-cao/BaiTap_Buoi2_TruongThanhPhong_31241024967.pdf)
+- [ZIP đầy đủ bản cuối Buổi 2](ban-giao/BaiTap_Buoi2_TruongThanhPhong_31241024967_BanCuoi.zip)
 - [Word Buổi 1](bao-cao/BaiTap_Buoi1_TruongThanhPhong_31241024967_HoanThien.docx)
+
+PDF và ZIP được tải bổ sung theo yêu cầu người dùng sau lượt rà soát cuối. Gói ZIP giữ nguyên bản đã kiểm định, chứa ảnh chụp mã nguồn tại commit `8578dd8`; không đóng gói lặp ZIP vào chính nó. Mã SHA-256 của ba tệp Buổi 2 ở [ban-giao/SHA256SUMS.txt](ban-giao/SHA256SUMS.txt).
 
 ## GitHub Pages nếu cần triển khai
 

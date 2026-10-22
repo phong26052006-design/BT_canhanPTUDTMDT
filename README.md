@@ -71,6 +71,8 @@ Sinh viên cần tự chạy và tự sửa một điểm theo đề, ghi kết 
 - Repository: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
 - Trạng thái công khai/Pages: [GITHUB_PUBLISH.md](GITHUB_PUBLISH.md). Không tự nhận Pages đã hoạt động.
 - [Báo cáo Word Buổi 2](bao-cao/BaiTap_Buoi2_TruongThanhPhong_31241024967.docx).
+- [Báo cáo PDF Buổi 2](bao-cao/BaiTap_Buoi2_TruongThanhPhong_31241024967.pdf).
+- [ZIP đầy đủ bản cuối Buổi 2](ban-giao/BaiTap_Buoi2_TruongThanhPhong_31241024967_BanCuoi.zip) — mã nguồn, báo cáo, đề và minh chứng đã kiểm định; xem [thông tin gói](ban-giao/README.md).
 - [Báo cáo Word Buổi 1](bao-cao/BaiTap_Buoi1_TruongThanhPhong_31241024967_HoanThien.docx).
 - [Mã và tài liệu Buổi 1 tại commit dbb6bc2](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/tree/dbb6bc2).
 
@@ -85,7 +87,8 @@ products.json               Dữ liệu giá đối chiếu
 docs/buoi2/                 Các bước, câu hỏi, sửa trực tiếp, AI, kiểm thử
 evidence/buoi2/before/      Ảnh và đo hiện trạng
 evidence/buoi2/after/       Ảnh sau, thí nghiệm và log
-bao-cao/                    Báo cáo Word
+bao-cao/                    Báo cáo Word/PDF
+ban-giao/                   ZIP bản cuối và mã băm kiểm tra
 tools/                      Công cụ kiểm tra tùy chọn
 ```
 
