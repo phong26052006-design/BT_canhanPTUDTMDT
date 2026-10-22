@@ -221,6 +221,21 @@ async def run(args):
         after = await content.evaluate('x=>({width:x.getBoundingClientRect().width,padding:getComputedStyle(x).padding})')
         assert before['width'] == after['width'] and after['padding'] == '28px'
         await page.locator('.product-card').first.screenshot(path=str(out/'practice-padding-28.png'))
+        # Phân biệt width:auto/cross-axis stretch với tác dụng của box-sizing.
+        # Width:auto giữ hộp ngoài ngay cả với content-box; width:100% cho thấy
+        # sự khác nhau khi padding được cộng ngoài chiều rộng khai báo.
+        result['box_sizing_comparison'] = []
+        for width, sizing, padding in [
+            ('auto', 'border-box', 24), ('auto', 'content-box', 24),
+            ('auto', 'content-box', 28), ('100%', 'border-box', 28),
+            ('100%', 'content-box', 28),
+        ]:
+            await content.evaluate('(x,v)=>{x.style.width=v[0];x.style.boxSizing=v[1];x.style.padding=v[2]+"px"}', [width, sizing, padding])
+            measurement = await content.evaluate('x=>{const s=getComputedStyle(x),w=x.getBoundingClientRect().width;return {declaredWidth:x.style.width,boxSizing:s.boxSizing,padding:s.padding,outerWidth:w,innerWidth:w-parseFloat(s.paddingLeft)-parseFloat(s.paddingRight)}}')
+            result['box_sizing_comparison'].append(measurement)
+        cases=result['box_sizing_comparison']
+        assert cases[0]['outerWidth']==cases[1]['outerWidth']==cases[2]['outerWidth']
+        assert cases[4]['outerWidth']>cases[3]['outerWidth']
         await load()
         price = page.locator('.price-value').first
         await price.evaluate('x=>x.style.color="#b33126"')
@@ -251,10 +266,19 @@ async def run(args):
             title = (await item.locator('h3').inner_text()).strip()
             price_text = await item.locator('.price-value').inner_text()
             displayed_price = int(''.join(c for c in price_text if c.isdigit()))
+            original_text = await item.locator('.previous-price s').inner_text()
+            saving_text = await item.locator('.previous-price > span:not(.sr-only)').inner_text()
+            discount_text = await item.locator('.discount-badge [aria-hidden=true]').inner_text()
+            displayed_original = int(''.join(c for c in original_text if c.isdigit()))
+            displayed_saving = int(''.join(c for c in saving_text if c.isdigit()))
+            displayed_discount = int(''.join(c for c in discount_text if c.isdigit()))
             assert title == product['name'] and displayed_price == product['price']
+            assert displayed_original == product['original']
+            assert displayed_saving == product['original']-product['price']
+            assert displayed_discount == product['discount']
             ratio = (product['original'] - product['price']) / product['original'] * 100
             assert abs(ratio - product['discount']) < .001
-            result['price_arithmetic'].append({'name': title, 'price': displayed_price, 'discount': ratio})
+            result['price_arithmetic'].append({'name': title, 'price': displayed_price, 'original': displayed_original, 'saving': displayed_saving, 'displayed_discount': displayed_discount, 'discount': ratio})
         currency_colors=await page.locator('.currency').evaluate_all('xs=>xs.map(x=>({foreground:getComputedStyle(x).color,background:getComputedStyle(x.closest(".product-card")).backgroundColor}))')
         for colors in currency_colors:
             colors['ratio']=contrast_ratio(colors['foreground'],colors['background'])
@@ -267,6 +291,12 @@ async def run(args):
               return {version:axe.version,passed:r.passes.length,violations:r.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),incomplete:r.incomplete.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))};
             }''')
             assert not result['accessibility']['violations']
+            await page.locator('.product-details').evaluate_all('xs=>xs.forEach(x=>x.open=true)')
+            result['expanded_accessibility'] = await page.evaluate('''async () => {
+              const r=await axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']}});
+              return {version:axe.version,passed:r.passes.length,violations:r.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),incomplete:r.incomplete.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))};
+            }''')
+            assert not result['expanded_accessibility']['violations']
         else:
             result['accessibility'] = {'status': 'not_run', 'reason': '--axe not supplied'}
         result['page_errors'] = errors

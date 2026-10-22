@@ -25,13 +25,15 @@ Radio cùng name biểu diễn nhóm chọn; mặc định checked ở Tất c�
 
 ## Box Model và bố cục
 
-product-card có margin:0, viền 1px, radius 18px; product-content có padding 24px, điện thoại 20px. Mô tả margin-bottom 20px; khoảng giữa thẻ do Grid gap 24px. Border-box tính padding/viền vào kích thước đã định của chính phần tử.
+product-card có margin:0, viền 1 px, radius 18 px; product-content có padding 24 px, điện thoại 20 px. Mô tả margin-bottom 20 px; khoảng giữa thẻ do Grid gap 24 px. Border-box tính padding/viền vào kích thước đã định của chính phần tử.
 
-Flexbox cột trong card/content và margin-top:auto ở khối giá thay các min-height cạnh tranh. Summary dùng flex hàng, space-between, center và gap 12px. Grid chia 4/2/1 cột ở >1100 / >580–1100 / ≤580 px; ảnh giữ 4/3 và contain.
+Flexbox cột trong card/content và margin-top:auto ở khối giá thay các min-height cạnh tranh. Summary dùng flex hàng, space-between, center và gap 12 px. Grid chia 4/2/1 cột ở >1100 / >580–1100 / ≤580 px; ảnh giữ 4/3 và contain.
+
+Khi tăng padding mà khung nội dung vẫn rộng 300 px, cần xét thêm width:auto và cross-axis stretch của Flexbox. Thí nghiệm width:100% tách riêng tác dụng border-box/content-box; không quy mọi trường hợp giữ chiều rộng cho border-box. Xem [rà soát cuối](docs/buoi2/RA_SOAT_CUOI.md).
 
 ## Hover/focus
 
-product-toggle chuyển màu 180ms, hover nền xanh/chữ trắng; focus-visible viền 3px offset 3px. Chế độ reduced-motion đưa transition về 0s. Kiểm tra cụ thể trong TEST_RESULTS.md; không dùng một kết quả tự động để nhận tuân thủ tiếp cận toàn diện.
+product-toggle chuyển màu 180 ms, hover nền xanh/chữ trắng; focus-visible viền 3 px offset 3 px. Chế độ reduced-motion đưa transition về 0 s. Kiểm tra cụ thể trong TEST_RESULTS.md; không dùng một kết quả tự động để nhận tuân thủ tiếp cận toàn diện.
 
 Giải thích Buổi 1 được giữ trong [lịch sử commit dbb6bc2](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/blob/dbb6bc2/GIAI_THICH_MA_NGUON.md).
 

@@ -12,7 +12,7 @@ Trương Thanh Phong · EE0002 · 22/10/2026. Kế thừa Phong Select từ comm
 | 4. Selector/Box Model | Element/class/descendant; padding/margin/border/radius; ảnh trước–sau. | CSS khu vực sản phẩm; số đo box_model trong log |
 | 5. Flexbox | Căn nhãn/+ và menu, thử ba justify-content. | flex-*.png; mục flex_experiments trong log |
 | 6. Grid mở rộng | Thử hai/ba cột, giữ 4/2/1 và ảnh contain. | grid-2/3-columns.png; phần grid_experiments |
-| 7. Hover/focus | Đổi màu 180ms, focus 3px, không nhảy chiều cao, giảm chuyển động. | state-normal/hover/focus.png |
+| 7. Hover/focus | Đổi màu 180 ms, focus 3 px, không nhảy chiều cao, giảm chuyển động. | state-normal/hover/focus.png |
 | 8. Kiểm tra/sửa | Kiểm tra bảy chiều rộng, hồi quy và sửa CSS; phiếu cá nhân chưa xác nhận thay. | KIEM_THU.md; TU_KIEM_TRA.md |
 
 ## Sản phẩm cần nộp và phần bổ sung của đề
@@ -42,3 +42,7 @@ Năm dạng sửa trực tiếp của mục 13 được giải thích và thử 
 - [Phiếu sinh viên tự thực hiện](../../TU_KIEM_TRA.md)
 
 Đề PDF do người dùng cung cấp là căn cứ yêu cầu; ví dụ ShopMate/áo thun/đường dẫn trang chi tiết trong đề chỉ để minh họa, không sao chép thành sản phẩm hoặc trang không tồn tại trong Phong Select.
+
+## Rà soát cuối ngày 22/10/2026
+
+Đã đính chính cách giải thích width:auto/border-box, chuẩn hóa trình bày và kiểm tra bổ sung 14 chiều rộng ở trạng thái đóng/mở. Bộ cơ sở 21 trường hợp lọc được chạy lại; xem [kết quả rà soát cuối](RA_SOAT_CUOI.md).

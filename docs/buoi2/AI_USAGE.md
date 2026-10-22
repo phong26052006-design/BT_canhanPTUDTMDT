@@ -20,7 +20,7 @@ Chín mục dưới là **khung prompt của đề được trợ lý áp dụng
 
 > Phân tích index.html và style.css của Phong Select ở commit dbb6bc2. Nêu thành phần đã có, ít nhất ba vấn đề/cơ hội cải thiện, hướng sửa và thứ tự thực hiện bằng HTML5/CSS3. Không tạo website mới, không viết lại toàn bộ; phân biệt lỗi đã xác nhận và đề xuất cải thiện.
 
-Kết quả: đã có HTML ngữ nghĩa, alt, Grid, Flexbox và responsive. Xác nhận min-height cuối CSS ghi đè giá trị của media tại 768 px; đề xuất ul/li cho tập sản phẩm/menu và transition cho nền summary vốn 0s. Không gán lỗi “thiếu alt/thiếu header/chưa responsive” cho bài cũ.
+Kết quả: đã có HTML ngữ nghĩa, alt, Grid, Flexbox và responsive. Xác nhận min-height cuối CSS ghi đè giá trị của media tại 768 px; đề xuất ul/li cho tập sản phẩm/menu và transition cho nền summary vốn 0 s. Không gán lỗi “thiếu alt/thiếu header/chưa responsive” cho bài cũ.
 
 ### Prompt 2 — Kiểm tra HTML5
 
@@ -56,7 +56,7 @@ Kết quả: có ảnh thử hai/ba cột; cuối cùng giữ 4/2/1 theo màn h�
 
 > Bổ sung chuyển màu hover nhẹ cho product-toggle, transition 180ms, focus-visible rõ khi dùng bàn phím; không làm đổi kích thước thao tác. Kiểm tra chế độ giảm chuyển động và tương phản, giữ hành vi details/summary.
 
-Kết quả: nền trắng/chữ xanh chuyển thành nền xanh/chữ trắng, chiều cao vẫn 48 px. Focus viền solid 3 px, offset 3 px. Reduced-motion đưa transition về 0s. Công cụ tiếp cận và đối chiếu màu bổ sung được ghi riêng, không nhận là chứng nhận WCAG.
+Kết quả: nền trắng/chữ xanh chuyển thành nền xanh/chữ trắng, chiều cao vẫn 48 px. Focus viền solid 3 px, offset 3 px. Reduced-motion đưa transition về 0 s. Công cụ tiếp cận và đối chiếu màu bổ sung được ghi riêng, không nhận là chứng nhận WCAG.
 
 ### Prompt 8 — Kiểm tra và sửa ít thay đổi
 
@@ -90,3 +90,7 @@ Trợ lý hỗ trợ đọc đề, phân tích, viết/sửa mã và SVG kế th
 Sinh viên cần tự mở trên máy của mình, thử giao diện, tự phát hiện/sửa ít nhất một điểm, giải thích mã và luyện năm dạng sửa trực tiếp. Ghi ngày, thay đổi, lý do và kết quả thực trong TU_KIEM_TRA.md. Các câu trả lời kiến thức là tài liệu hỗ trợ học từ mã thật, cần được sinh viên hiểu và diễn đạt lại.
 
 Liên kết sản phẩm **Xem hình lớn** trong phần thông tin mở rộng trỏ tới đúng SVG của từng hàng và mở tab mới; class `.product-card .product-image-link` minh họa định dạng thẻ a thành thao tác đơn giản. Không tạo trang chi tiết giả hoặc liên kết mua hàng chưa có chức năng.
+
+## 6. Lượt rà soát cuối theo yêu cầu người dùng
+
+Trợ lý đã đo lại width:auto và width:100% với hai box-sizing, sửa cách quy nguyên nhân giữ chiều rộng trong hướng dẫn/đáp án, chuẩn hóa trình bày, kiểm tra sát breakpoint và nội dung mở rộng. Đây là bổ sung kiểm chứng của trợ lý, không khai thay sinh viên tự thực hiện. Chi tiết trong RA_SOAT_CUOI.md.

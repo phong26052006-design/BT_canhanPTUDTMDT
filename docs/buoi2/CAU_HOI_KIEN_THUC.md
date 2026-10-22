@@ -45,6 +45,8 @@ Không thêm header, nav hoặc section vào mọi thẻ chỉ để tăng số 
 
 Tại 1366 px, đo thực tế: article rộng 302 px; hai viền chiếm 2 px; vùng `.product-content` rộng ngoài 300 px; trừ padding 24 × 2 còn **252 px** cho nội dung. Không nói article có padding 24 px: padding nằm ở phần tử con `.product-content`.
 
+Cần phân biệt cơ chế tính kích thước: trong bố cục này `.product-content` có width:auto và được Flexbox kéo giãn theo trục ngang, nên tăng padding 24→28 px vẫn giữ khung ngoài 300 px cả khi thử content-box. Khi thử riêng width:100% và padding 28 px, border-box giữ 300 px còn content-box thành 356 px. Vì vậy không dùng hiện tượng width:auto để kết luận rằng chỉ border-box mới giữ được chiều rộng ngoài.
+
 ### Câu 3. Flexbox dùng ở đâu; justify-content và align-items
 
 Flexbox dùng ở `.header-content`, `.main-nav-list`, `.product-card`, `.product-content`, `.price` và thao tác `.product-toggle`.
@@ -107,4 +109,4 @@ Mã cuối đã chuyển data-category và điều kiện lọc sang li, sau đ�
 
 ## D. Ghi chú object-fit của phần Grid
 
-`object-fit:cover` lấp đầy khung nhưng có thể cắt ảnh nếu tỷ lệ khác khung. Bài giữ `contain` với tỷ lệ 4/3 để hiển thị trọn hình minh họa 640×480. Việc chọn contain có lý do theo tài sản thực tế, không chép cover trong ví dụ rồi để sản phẩm bị cắt.
+`object-fit:cover` lấp đầy khung nhưng có thể cắt ảnh nếu tỷ lệ khác khung. Bài giữ `contain` với tỷ lệ 4/3 để hiển thị trọn hình minh họa 640 × 480. Việc chọn contain có lý do theo tài sản thực tế, không chép cover trong ví dụ rồi để sản phẩm bị cắt.

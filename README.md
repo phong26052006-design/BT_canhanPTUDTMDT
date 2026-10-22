@@ -35,7 +35,7 @@ Chưa có tìm từ khóa tùy ý, lọc kết hợp, tài khoản, giỏ hàng,
 | Box Model | Viền 1 px, radius 18 px, padding nội dung 24/20 px, margin mô tả 20 px, border-box, gap lưới 24 px. |
 | Flexbox | Menu; cột trong thẻ; hai span trong thao tác với space-between, align-items:center, gap:12px. |
 | Grid | Đã thử hai/ba cột; cuối giữ bốn/hai/một; ảnh contain tỷ lệ 4/3. |
-| Hover/focus | Transition màu 180ms, viền focus 3 px, chiều cao thao tác 48 px không nhảy bố cục. |
+| Hover/focus | Transition màu 180 ms, viền focus 3 px, chiều cao thao tác 48 px không nhảy bố cục. |
 
 ## 5. Cách chạy
 
@@ -90,3 +90,7 @@ tools/                      Công cụ kiểm tra tùy chọn
 ```
 
 Liên kết sản phẩm **Xem hình lớn** trong phần thông tin mở rộng trỏ tới đúng SVG của từng hàng và mở tab mới; class `.product-card .product-image-link` minh họa định dạng thẻ a thành thao tác đơn giản. Không tạo trang chi tiết giả hoặc liên kết mua hàng chưa có chức năng.
+
+## Rà soát cuối ngày 22/10/2026
+
+Đã đính chính cách giải thích width:auto/border-box, chuẩn hóa trình bày và kiểm tra bổ sung 14 chiều rộng ở trạng thái đóng/mở. Bộ cơ sở 21 trường hợp lọc được chạy lại; xem [kết quả rà soát cuối](docs/buoi2/RA_SOAT_CUOI.md).

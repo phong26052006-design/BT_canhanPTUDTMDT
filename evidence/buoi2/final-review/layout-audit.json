@@ -1,0 +1,238 @@
+{
+  "checked_utc": "2026-10-22T08:22:08.564932+00:00",
+  "base_commit": "9126b9c",
+  "viewports": [
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "columns": "284px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 320,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 360,
+      "documentWidth": 360,
+      "columns": "324px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 360,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "columns": "354px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 390,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 480,
+      "documentWidth": 480,
+      "columns": "444px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 480,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 580,
+      "documentWidth": 580,
+      "columns": "544px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 580,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 581,
+      "documentWidth": 581,
+      "columns": "250.5px 250.5px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 581,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 760,
+      "documentWidth": 760,
+      "columns": "340px 340px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 760,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 761,
+      "documentWidth": 761,
+      "columns": "340.5px 340.5px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 761,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 900,
+      "documentWidth": 900,
+      "columns": "410px 410px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 900,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 1100,
+      "documentWidth": 1100,
+      "columns": "510px 510px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 1100,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 1101,
+      "documentWidth": 1101,
+      "columns": "237.25px 237.25px 237.25px 237.25px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 1101,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1280,
+      "columns": "282px 282px 282px 282px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 1280,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 1366,
+      "documentWidth": 1366,
+      "columns": "302px 302px 302px 302px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 1366,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "columns": "302px 302px 302px 302px",
+      "overflows": [],
+      "expanded": {
+        "documentWidth": 1440,
+        "overflows": []
+      },
+      "image_link_focus": {
+        "visible": true,
+        "outline": "3px"
+      }
+    }
+  ],
+  "radio_enter": {
+    "before_count": 2,
+    "after_count": 2,
+    "same_url": true,
+    "still_checked": true
+  },
+  "expanded_axe": {
+    "passed": 31,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          [
+            "article[aria-labelledby=\"ten-keyboard\"] > .product-content > .price-block > .price > .price-value > .currency"
+          ],
+          [
+            "article[aria-labelledby=\"ten-mouse\"] > .product-content > .price-block > .price > .price-value > .currency"
+          ],
+          [
+            "article[aria-labelledby=\"ten-headphones\"] > .product-content > .price-block > .price > .price-value > .currency"
+          ],
+          [
+            "article[aria-labelledby=\"ten-stand\"] > .product-content > .price-block > .price > .price-value > .currency"
+          ]
+        ]
+      }
+    ]
+  },
+  "scope": "Final review of unchanged application sources; closed/expanded layouts and extra keyboard checks",
+  "source_sha256": {
+    "index.html": "b3fc654e65d48bc6085e81eb7f7379fac8237e355dbb7158a75d18ff852e2b20",
+    "css/style.css": "fd8bdcba26c98f1c8254f5778041376d225dad0159e2f1cc7cd92ca247bfac75",
+    "style.css": "745f123b78c97eb30f43b766673a3721c613e4b9ae785e2181ea58a1a1525b35",
+    "products.json": "02ef2543a1223fb0bdf5cfab6d6587db937954359836a5b91679de5e16b18568"
+  }
+}

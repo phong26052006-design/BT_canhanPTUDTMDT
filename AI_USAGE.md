@@ -58,4 +58,4 @@ Chi tiết ở `GIAI_THICH_MA_NGUON.md`. Chưa có xác nhận sinh viên đã t
 
 ## Buổi 2 — 22/10/2026
 
-Tiếp tục cùng Phong Select. [Nhật ký Buổi 2](docs/buoi2/AI_USAGE.md) ghi đủ chín khung prompt của đề, kết quả, kiểm chứng và phần cá nhân. Nội dung phía trên là nhật ký lịch sử Buổi 1 ngày20/10; cấu trúc/class hiện tại xem GIAI_THICH_MA_NGUON.md. Không thay lịch sử bằng lời khai sinh viên tự làm.
+Tiếp tục cùng Phong Select. [Nhật ký Buổi 2](docs/buoi2/AI_USAGE.md) ghi đủ chín khung prompt của đề, kết quả, kiểm chứng, lượt rà soát cuối và phần cá nhân. Nội dung phía trên là nhật ký lịch sử Buổi 1 ngày 20/10; cấu trúc/class hiện tại xem GIAI_THICH_MA_NGUON.md. Không thay lịch sử bằng lời khai sinh viên tự làm.

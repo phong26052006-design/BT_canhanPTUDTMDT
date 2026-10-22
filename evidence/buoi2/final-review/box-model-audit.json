@@ -1,0 +1,37 @@
+[
+  {
+    "declaredWidth": "auto",
+    "boxSizing": "border-box",
+    "padding": "24px",
+    "outerWidth": 300,
+    "innerWidth": 252
+  },
+  {
+    "declaredWidth": "auto",
+    "boxSizing": "content-box",
+    "padding": "24px",
+    "outerWidth": 300,
+    "innerWidth": 252
+  },
+  {
+    "declaredWidth": "auto",
+    "boxSizing": "content-box",
+    "padding": "28px",
+    "outerWidth": 300,
+    "innerWidth": 244
+  },
+  {
+    "declaredWidth": "100%",
+    "boxSizing": "border-box",
+    "padding": "28px",
+    "outerWidth": 300,
+    "innerWidth": 244
+  },
+  {
+    "declaredWidth": "100%",
+    "boxSizing": "content-box",
+    "padding": "28px",
+    "outerWidth": 356,
+    "innerWidth": 300
+  }
+]

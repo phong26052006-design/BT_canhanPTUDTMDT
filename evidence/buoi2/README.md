@@ -3,6 +3,7 @@
 - baseline-meta.json: commit nguồn và phạm vi kế thừa.
 - before/: ảnh thật của Phong Select trước sửa tại 1366/768/390/320 px, có baseline-check.json và SHA-256 ảnh.
 - after/: ảnh thực của bản cập nhật, log ui-check.json và các thí nghiệm.
+- final-review/: log chạy lại bộ cơ sở, kiểm tra bổ sung 14 chiều rộng và thí nghiệm phân biệt width/box-sizing. Bốn tệp nguồn giao diện giữ nguyên; SHA-256 trong log dùng để đối chiếu với bộ ảnh after/.
 
 Ảnh catalog-*.png/card-*.png, desktop-full.png và header.png trong after là **cấu hình cuối**. state-normal/hover/focus.png và details-open.png là các trạng thái thao tác của cấu hình đó.
 

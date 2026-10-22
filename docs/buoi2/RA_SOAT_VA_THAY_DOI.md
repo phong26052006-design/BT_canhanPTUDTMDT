@@ -12,7 +12,7 @@ HTML có doctype, lang=vi, UTF-8, viewport; header, nav, main, section, article,
 |---|---|---|---|
 | Các min-height cuối CSS ghi đè quy tắc màn hình nhỏ, tạo khoảng trống cứng trong thẻ. | Bất nhất CSS đã xác nhận: tại 768 px, mô tả và khối giá vẫn min-height 72/118 px, dù nhóm media trước đó định 44/108 px. | Bỏ các min-height cạnh tranh; dùng Flexbox cột và margin-top:auto ở khối giá; giữ các media sau quy tắc gốc. | Mô tả đo khoảng 47,59 px theo nội dung thay 72 px; không dùng chiều cao cứng để căn thẻ. |
 | Tập sản phẩm và tập liên kết menu chưa thể hiện bằng danh sách. | Cơ hội cải thiện ngữ nghĩa: div chứa bốn article; nav chứa trực tiếp ba a. Đây không phải lỗi HTML bắt buộc. | Dùng ul/li đúng nội dung; giữ article và nav; reset list-style, margin, padding. | DOM có bốn li sản phẩm và ba li menu, không marker/khoảng lề mặc định. |
-| Nền thao tác Xem thông tin đổi tức thời khi hover. | Cơ hội cải thiện phản hồi: summary có transition-duration:0s, dù biểu tượng + có chuyển đổi riêng. Focus đã có, không nhận là thiếu hoàn toàn. | Transition màu 180ms; hover xanh/trắng; focus-visible viền 3 px; giữ giảm chuyển động. | Hover không đổi chiều cao 48 px; focus thấy bằng bàn phím; reduce đưa transition về 0s. |
+| Nền thao tác Xem thông tin đổi tức thời khi hover. | Cơ hội cải thiện phản hồi: summary có transition-duration:0s, dù biểu tượng + có chuyển đổi riêng. Focus đã có, không nhận là thiếu hoàn toàn. | Transition màu 180 ms; hover xanh/trắng; focus-visible viền 3 px; giữ giảm chuyển động. | Hover không đổi chiều cao 48 px; focus thấy bằng bàn phím; reduce đưa transition về 0 s. |
 
 Ảnh thực tế trước sửa ở `evidence/buoi2/before/`, kèm baseline-check.json và mã băm. Đề xuất có lý do nhưng chưa phải bằng chứng tăng hiệu quả mua sắm.
 
@@ -22,7 +22,7 @@ HTML có doctype, lang=vi, UTF-8, viewport; header, nav, main, section, article,
 - Sản phẩm: `ul.product-grid > li.product-item > article.product-card`. Data-category nằm trên li; CSS lọc ẩn li. Không để li trống tiếp tục chiếm ô.
 - Menu: nav chứa ul.main-nav-list; Flexbox đặt ở ul; các liên kết vẫn trỏ đến vị trí cũ.
 - Dùng class product-title, product-details, product-toggle, product-detail-content, product-disclaimer thay các tên plan còn sót từ mẫu trước. Đây là cải thiện khả năng đọc mã.
-- Box Model: thẻ margin:0, border:1px, radius:18px; vùng nội dung padding:24px, điện thoại 20px; mô tả margin-bottom:20px; lưới gap:24px.
+- Box Model: thẻ margin:0, border:1px, radius:18 px; vùng nội dung padding:24px, điện thoại 20 px; mô tả margin-bottom:20px; lưới gap:24px.
 - Flexbox dùng trên thẻ/nội dung để căn khối giá và trên thao tác để căn nhãn/+; thử ba justify-content, giữ space-between.
 - Grid vẫn dùng dữ liệu bốn sản phẩm cũ; đã thử hai/ba cột, cuối cùng giữ 4/2/1. Ảnh contain tỷ lệ 4/3 để không cắt minh họa.
 - Hover/focus/transition có trạng thái rõ; reduced-motion giữ hiệu lực bằng quy tắc đã kế thừa.

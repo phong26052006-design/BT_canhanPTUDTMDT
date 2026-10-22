@@ -21,4 +21,6 @@ Script mặc định tìm chromium hoặc google-chrome; có thể truyền `--b
 
 Kiểm tra axe chỉ thực hiện khi truyền `--axe /duong/dan/axe.min.js` với bundle axe-core đã chuẩn bị; thiếu tham số được ghi **not_run**, không giả là đã kiểm tra. Phiên hỗ trợ dùng axe-core 4.10.3 và kết quả ở evidence/buoi2/after/ui-check.json. Không tự thêm thư viện này vào index.html.
 
+Lượt rà soát cuối bổ sung đối chiếu bốn trường giá trong HTML, năm biến thể width/box-sizing và axe khi mở cả bốn thông tin sản phẩm. Kết quả chạy lại ở [core-ui-check.json](../evidence/buoi2/final-review/core-ui-check.json); lượt kiểm tra bố cục 14 chiều rộng được ghi riêng trong [báo cáo rà soát cuối](../docs/buoi2/RA_SOAT_CUOI.md).
+
 Không ghi kết quả chạy mới đè bằng chứng gốc khi chưa cần; sử dụng --out như ví dụ để tách kết quả cá nhân. Trình phân tích html5lib kiểm tra lỗi phân tích cú pháp, không thay thế toàn bộ kiểm định chuẩn HTML hoặc tiếp cận thủ công.

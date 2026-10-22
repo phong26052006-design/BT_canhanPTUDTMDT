@@ -8,10 +8,10 @@ Ngày 22/10/2026. Trình duyệt Chromium 154.0.8037.57; Playwright; parser html
 |---|---|---|
 | Trang HTML mở được | Đạt | HTTP 200; tiêu đề và bốn thẻ đúng. |
 | CSS được áp dụng | Đạt | Link css/style.css, stylesheet có cssRules; font và Box Model đo được. |
-| Hình ảnh hiển thị đúng | Đạt | Bốn SVG 640×480 tải đủ, có alt, tỷ lệ 4/3; object-fit:contain. |
+| Hình ảnh hiển thị đúng | Đạt | Bốn SVG 640 × 480 tải đủ, có alt, tỷ lệ 4/3; object-fit:contain. |
 | Liên kết hoạt động | Đạt trong phạm vi thử | Các fragment có đích; click menu tới #san-pham. Liên kết tham khảo bên ngoài không được tính là luồng mua hàng đã kiểm thử. |
 | Bố cục không tràn nghiêm trọng | Đạt | Bảy độ rộng từ 320 đến 1440 px; documentWidth không vượt viewport. |
-| Hover/focus hoạt động | Đạt | Hover đổi màu 180ms, cao 48px không đổi; focus-visible viền solid 3px/offset 3px. |
+| Hover/focus hoạt động | Đạt | Hover đổi màu 180 ms, cao 48 px không đổi; focus-visible viền solid 3 px/offset 3 px. |
 | Đã tự sửa ít nhất một vấn đề | Chờ sinh viên xác nhận | Trợ lý đã sửa CSS và kiểm tra; đề yêu cầu sinh viên tự làm, ghi thật trong TU_KIEM_TRA.md. |
 
 ## Các trường hợp kiểm tra thêm
@@ -26,10 +26,10 @@ Ngày 22/10/2026. Trình duyệt Chromium 154.0.8037.57; Playwright; parser html
 | HTML | 0 lỗi phân tích html5lib; một h1, không nhảy cấp/ID trùng; bốn li sản phẩm và ba li menu. Đây không thay cho mọi kiểm định chuẩn HTML. |
 | Flexbox | Thử flex-start/center/space-between; giữ align-items:center và gap:12px. |
 | Grid | Thử hai/ba cột; đổi tạm sang block để quan sát bỏ Grid; khôi phục 4/2/1 cuối. |
-| Sửa trực tiếp | Đã thử padding28, giá đỏ, 2/3 cột, menu gap36 và alt mới; chỉ sửa DOM tạm, không ghi vào mã cuối. |
+| Sửa trực tiếp | Đã thử padding 28, giá đỏ, 2/3 cột, menu gap 36 và alt mới; chỉ sửa DOM tạm, không ghi vào mã cuối. |
 | Liên kết sản phẩm | Bốn nút Xem hình lớn mở đúng SVG tương ứng ở tab mới. |
 | Giá | Tên/giá hiện tại khớp products.json; bốn tỷ lệ giảm đúng. |
-| Giảm chuyển động | Transition về 0s khi reduce. |
+| Giảm chuyển động | Transition về 0 s khi reduce. |
 | Script/lỗi | 0 script ứng dụng; không pageerror/HTTP lỗi trong lượt thử. |
 | Axe | 31 quy tắc đạt, 0 vi phạm phát hiện, 1 quy tắc chưa kết luận tự động. |
 
@@ -39,10 +39,14 @@ Quy tắc axe chưa kết luận liên quan bốn ký hiệu ₫ vì công cụ 
 
 | Vấn đề | Nguyên nhân đã xác nhận | Cách sửa và kiểm tra lại |
 |---|---|---|
-| Mô tả ở 768 px vẫn min-height72 thay vì44; khối giá118 thay vì108 | Quy tắc cùng selector ở cuối CSS ghi đè media trước đó. | Bỏ chiều cao tối thiểu cạnh tranh, dùng Flexbox cột và margin-top:auto; mô tả cuối khoảng47,59px theo nội dung. |
+| Mô tả ở 768 px vẫn min-height 72 thay vì44; khối giá 118 thay vì108 | Quy tắc cùng selector ở cuối CSS ghi đè media trước đó. | Bỏ chiều cao tối thiểu cạnh tranh, dùng Flexbox cột và margin-top:auto; mô tả cuối khoảng 47,59 px theo nội dung. |
 | Danh sách chưa thể hiện tập mục qua ul/li | Lựa chọn cấu trúc div/nav trực tiếp trong bản cũ; không phải lỗi cú pháp. | Bổ sung li đúng nội dung; reset khoảng cách danh sách; kiểm tra bốn mục và không lệch lề. |
-| Nền summary đổi tức thời | Chưa có transition trên summary; hiệu ứng cũ chỉ ở biểu tượng. | Transition màu180ms, kiểm tra nền/chữ, focus và reduce. |
+| Nền summary đổi tức thời | Chưa có transition trên summary; hiệu ứng cũ chỉ ở biểu tượng. | Transition màu 180 ms, kiểm tra nền/chữ, focus và reduce. |
 
 Sau thay đổi cấu trúc, lọc li thay article để phòng ô rỗng. Không ghi rủi ro này là lỗi nguồn đã xảy ra nếu chưa tái hiện. Không có lỗi chức năng còn chưa giải thích trong các trường hợp đã chạy.
 
 Log và ảnh: [evidence/buoi2/after](../../evidence/buoi2/after/). Tái chạy: [tools/README.md](../../tools/README.md). Kiểm tra do trợ lý thực hiện; sinh viên bổ sung phần độc lập theo đề. Chưa kiểm tra thiết bị thật, mọi Safari/Firefox, dữ liệu lớn hoặc hiệu quả người mua.
+
+## Rà soát cuối ngày 22/10/2026
+
+Đã đính chính cách giải thích width:auto/border-box, chuẩn hóa trình bày và kiểm tra bổ sung 14 chiều rộng ở trạng thái đóng/mở. Bộ cơ sở 21 trường hợp lọc được chạy lại; xem [kết quả rà soát cuối](RA_SOAT_CUOI.md).

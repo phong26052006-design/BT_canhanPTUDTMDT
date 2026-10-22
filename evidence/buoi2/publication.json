@@ -7,5 +7,14 @@
   "default_branch": "main",
   "pages_get_http_status": 404,
   "pages_live_verified": false,
-  "note": "Previous create-Pages permission failure was recorded on 2026-10-20; not retried without a changed prerequisite."
+  "note": "Previous create-Pages permission failure was recorded on 2026-10-20; not retried without a changed prerequisite.",
+  "final_review": {
+    "date": "2026-10-22",
+    "base_commit": "9126b9c58cd3418f6c716cefe09b365938bb0a10",
+    "ui_source_unchanged": true,
+    "report_path": "bao-cao/BaiTap_Buoi2_TruongThanhPhong_31241024967.docx",
+    "scope": "Box Model explanation corrected; prose proofread; base suite rerun, 14 additional layout widths, expanded accessibility and all displayed price fields checked.",
+    "evidence": "evidence/buoi2/final-review/",
+    "summary": "docs/buoi2/RA_SOAT_CUOI.md"
+  }
 }

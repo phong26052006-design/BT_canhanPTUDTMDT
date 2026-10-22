@@ -4,7 +4,9 @@ Mở `index.html` và **css/style.css**. `style.css` ở gốc chỉ là tệp t
 
 ## 1. Thay khoảng cách bên trong thẻ
 
-Tìm `.product-content { ... padding:24px; }`, đổi thành `padding:28px`. Tại 1366 px, khung rộng ngoài vẫn giữ 300 px do border-box; vùng nội dung giảm từ 252 xuống 244 px. Ở màn hình ≤580 px còn quy tắc padding:20px phía sau: nếu muốn thay riêng điện thoại phải sửa quy tắc media đó, tránh tưởng CSS không áp dụng.
+Tìm `.product-content { ... padding:24px; }`, đổi thành `padding:28px`. Tại 1366 px, vùng nội dung giảm từ 252 xuống 244 px, còn khung rộng ngoài vẫn 300 px. Trong bố cục hiện tại, phần tử có `width:auto` và được Flexbox kéo giãn theo chiều ngang; không quy việc giữ chiều rộng ngoài chỉ cho `border-box`. Ở màn hình ≤580 px còn quy tắc padding:20px phía sau: nếu muốn thay riêng điện thoại phải sửa quy tắc media đó, tránh tưởng CSS không áp dụng.
+
+Để phân biệt hai cơ chế, đã thử riêng `width:100%` với padding 28 px: border-box cho chiều rộng ngoài 300 px; content-box cho 356 px vì cộng thêm 56 px padding. Đây là thí nghiệm tạm, không phải cấu hình lưu trong trang.
 
 Kiểm tra: chữ cách mép nhiều hơn, ảnh vẫn sát viền vì padding ở vùng nội dung; không xuất hiện cuộn ngang. Hoàn nguyên về 24 px sau thử nếu không chọn làm thay đổi cuối.
 
