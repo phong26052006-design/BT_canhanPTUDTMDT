@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-22",
+  "code_commit": "afdd5c8a42352d0ca484881719483fa0c93c7efa",
+  "base_commit": "dbb6bc2",
+  "repository": "https://github.com/phong26052006-design/BT_canhanPTUDTMDT",
+  "visibility": "public",
+  "default_branch": "main",
+  "pages_get_http_status": 404,
+  "pages_live_verified": false,
+  "note": "Previous create-Pages permission failure was recorded on 2026-10-20; not retried without a changed prerequisite."
+}

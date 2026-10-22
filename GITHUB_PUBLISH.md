@@ -1,24 +1,30 @@
-# Công khai mã nguồn và GitHub Pages
+# Công khai mã nguồn và báo cáo
 
-## Trạng thái đã xác minh ngày 20/10/2026
+## Buổi 2 — xác minh ngày 22/10/2026
 
-- Repository **Public**, nhánh mặc định **main**.
-- URL mã nguồn: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
-- Commit triển khai mã Phong Select: `9fc845b417f218ee803ed6b2dc37c63484766c1b`.
-- Git push lên main thành công; README, HTML/CSS, SVG và minh chứng đã có trên GitHub.
-- **GitHub Pages chưa được bật.** GET cấu hình trả 404. Yêu cầu tạo Pages qua API trả 403 `Resource not accessible by integration`: quyền tích hợp hiện tại cho phép đẩy mã nhưng không cho tạo site Pages. Không dùng lỗi này để kết luận repository không Public.
+- Cùng repository Public: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
+- Nhánh mặc định/đích push: main. Nhánh làm việc trong môi trường là work; đã push HEAD lên main, không force push.
+- Commit mã Buổi 2 hoàn thiện: `afdd5c8a42352d0ca484881719483fa0c93c7efa`; kế thừa bản Buổi 1 `dbb6bc2`.
+- API cây tệp được kiểm tra sau push; HTML, css/style.css, hồ sơ và minh chứng Buổi 2 có trên GitHub.
+- Báo cáo Word Buổi 2 được bổ sung vào bao-cao/; các cập nhật tài liệu tiếp theo giữ nguyên mã giao diện đã kiểm thử. Log công khai ở evidence/buoi2/publication.json.
+- API đọc Pages ngày22/10 trả404; **chưa xác nhận có website Pages hoạt động**. Không coi repository Public là đã có website trực tiếp.
 
-## Thao tác còn lại trong tài khoản GitHub
+## Báo cáo
 
-1. Mở repository → **Settings → Pages**.
-2. Trong **Build and deployment**, chọn **Deploy from a branch**.
-3. Chọn nhánh **main**, thư mục **/ (root)**, rồi **Save**.
-4. Chờ trạng thái triển khai thành công; mở URL GitHub hiển thị, kiểm tra CSS, ảnh và bộ lọc.
+- [Word Buổi 2](bao-cao/BaiTap_Buoi2_TruongThanhPhong_31241024967.docx)
+- [Word Buổi 1](bao-cao/BaiTap_Buoi1_TruongThanhPhong_31241024967_HoanThien.docx)
 
-Đường dẫn dự kiến: https://phong26052006-design.github.io/BT_canhanPTUDTMDT/
+## GitHub Pages nếu cần triển khai
 
-Chỉ coi đường dẫn trên là website đã hoạt động sau khi Pages triển khai và mở thành công. `index.html` ở gốc, `.nojekyll` có sẵn, tài nguyên dùng đường dẫn tương đối nên mã đã chuẩn bị cho Pages. Pages là phần công khai giao diện tùy chọn; repository Public đã hoàn tất yêu cầu công khai mã.
+1. Mở repository → Settings → Pages.
+2. Chọn Deploy from a branch.
+3. Chọn main và / (root), Save.
+4. Chờ thành công, mở URL GitHub cấp; kiểm tra CSS, ảnh, bộ lọc và liên kết ảnh.
+
+HTML nằm ở gốc, có .nojekyll, tài nguyên dùng đường dẫn tương đối. URL dự kiến: https://phong26052006-design.github.io/BT_canhanPTUDTMDT/ — chưa coi là đang hoạt động khi chưa mở kiểm tra thành công.
+
+## Lịch sử trạng thái
+
+Ngày20/10, thao tác tạo Pages qua API bị từ chối403 “Resource not accessible by integration”; push mã vẫn thành công. Ngày22/10 chỉ kiểm tra trạng thái đọc, không nhận rằng đã được cấp thêm quyền tạo Pages. Không cần gửi mật khẩu/token trong hội thoại để xem bài HTML/CSS.
 
 Tài liệu: https://docs.github.com/en/pages
-
-Log trạng thái không chứa thông tin xác thực: `evidence/publication.json`.
