@@ -1,0 +1,1422 @@
+{
+  "date": "2026-10-27",
+  "url": "http://127.0.0.1:8878/buoi-2/",
+  "checks": [
+    {
+      "name": "layout 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 4,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "20px"
+      }
+    },
+    {
+      "name": "images and fragments 1366",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 1366",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 1366",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 1366",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filtered card starts in first grid cell",
+      "pass": true,
+      "details": {
+        "firstX": 43,
+        "gridX": 43
+      }
+    },
+    {
+      "name": "filter filter-accessory 1366",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 1366",
+      "pass": true
+    },
+    {
+      "name": "layout 1101",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 4,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "20px"
+      }
+    },
+    {
+      "name": "images and fragments 1101",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 1101",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 1101",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 1101",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-accessory 1101",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 1101",
+      "pass": true
+    },
+    {
+      "name": "layout 1100",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 2,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "23px"
+      }
+    },
+    {
+      "name": "images and fragments 1100",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 1100",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 1100",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 1100",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-accessory 1100",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 1100",
+      "pass": true
+    },
+    {
+      "name": "layout 1024",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 2,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "23px"
+      }
+    },
+    {
+      "name": "images and fragments 1024",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 1024",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 1024",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 1024",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-accessory 1024",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 1024",
+      "pass": true
+    },
+    {
+      "name": "layout 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 2,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "23px"
+      }
+    },
+    {
+      "name": "images and fragments 768",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 768",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 768",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 768",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-accessory 768",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 768",
+      "pass": true
+    },
+    {
+      "name": "layout 581",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 2,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "23px"
+      }
+    },
+    {
+      "name": "images and fragments 581",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 581",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 581",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 581",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-accessory 581",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 581",
+      "pass": true
+    },
+    {
+      "name": "layout 580",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 1,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "24px"
+      }
+    },
+    {
+      "name": "images and fragments 580",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 580",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 580",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 580",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-accessory 580",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 580",
+      "pass": true
+    },
+    {
+      "name": "layout 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 1,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "24px"
+      }
+    },
+    {
+      "name": "images and fragments 390",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 390",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 390",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 390",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-accessory 390",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 390",
+      "pass": true
+    },
+    {
+      "name": "layout 375",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 1,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "24px"
+      }
+    },
+    {
+      "name": "images and fragments 375",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 375",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 375",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 375",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-accessory 375",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 375",
+      "pass": true
+    },
+    {
+      "name": "layout 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "columns": 1,
+        "imageCount": 4,
+        "imagesLoaded": true,
+        "badFragments": [],
+        "listChildren": [
+          "LI",
+          "LI",
+          "LI",
+          "LI"
+        ],
+        "gap": "24px"
+      }
+    },
+    {
+      "name": "images and fragments 320",
+      "pass": true
+    },
+    {
+      "name": "filter filter-all 320",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input",
+          "audio",
+          "accessory"
+        ],
+        "cards": 4,
+        "label": "4 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-input 320",
+      "pass": true,
+      "details": {
+        "items": [
+          "input",
+          "input"
+        ],
+        "cards": 2,
+        "label": "2 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-audio 320",
+      "pass": true,
+      "details": {
+        "items": [
+          "audio"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "filter filter-accessory 320",
+      "pass": true,
+      "details": {
+        "items": [
+          "accessory"
+        ],
+        "cards": 1,
+        "label": "1 sản phẩm"
+      }
+    },
+    {
+      "name": "reset 320",
+      "pass": true
+    },
+    {
+      "name": "HTML semantics",
+      "pass": true,
+      "details": {
+        "lang": "vi",
+        "h1": 1,
+        "main": 1,
+        "header": true,
+        "nav": true,
+        "footer": true,
+        "sections": true,
+        "list": "UL",
+        "items": 4,
+        "menu": 3,
+        "alt": true,
+        "ids": [
+          "dau-trang",
+          "noi-dung",
+          "tieu-de-chinh",
+          "san-pham",
+          "tieu-de-san-pham",
+          "filter-form",
+          "filter-all",
+          "filter-input",
+          "filter-audio",
+          "filter-accessory",
+          "product-grid",
+          "ten-keyboard",
+          "ten-mouse",
+          "ten-headphones",
+          "ten-stand",
+          "cai-tien",
+          "tieu-de-cai-tien",
+          "thong-tin",
+          "tieu-de-bai-tap"
+        ],
+        "css": "css/style.css",
+        "bodyFont": "Arial, Helvetica, sans-serif",
+        "scripts": 0
+      }
+    },
+    {
+      "name": "external CSS and no runtime JavaScript",
+      "pass": true
+    },
+    {
+      "name": "details open by Enter 1",
+      "pass": true
+    },
+    {
+      "name": "image anchor resource 1",
+      "pass": true
+    },
+    {
+      "name": "keyboard focus visible on image link",
+      "pass": true,
+      "details": {
+        "active": true,
+        "visible": true,
+        "outline": "3px"
+      }
+    },
+    {
+      "name": "hover changes background with transition",
+      "pass": true,
+      "details": {
+        "normal": "rgb(23, 78, 60)",
+        "bg": "rgb(16, 59, 46)",
+        "transition": "0.18s, 0.18s"
+      }
+    },
+    {
+      "name": "image anchor opens intended SVG",
+      "pass": true,
+      "details": {
+        "url": "http://127.0.0.1:8878/buoi-2/images/keyboard.svg"
+      }
+    },
+    {
+      "name": "details close by Enter 1",
+      "pass": true
+    },
+    {
+      "name": "details open by Enter 2",
+      "pass": true
+    },
+    {
+      "name": "image anchor resource 2",
+      "pass": true
+    },
+    {
+      "name": "details close by Enter 2",
+      "pass": true
+    },
+    {
+      "name": "details open by Enter 3",
+      "pass": true
+    },
+    {
+      "name": "image anchor resource 3",
+      "pass": true
+    },
+    {
+      "name": "details close by Enter 3",
+      "pass": true
+    },
+    {
+      "name": "details open by Enter 4",
+      "pass": true
+    },
+    {
+      "name": "image anchor resource 4",
+      "pass": true
+    },
+    {
+      "name": "details close by Enter 4",
+      "pass": true
+    },
+    {
+      "name": "radio keyboard changes category",
+      "pass": true
+    },
+    {
+      "name": "reset works with keyboard",
+      "pass": true
+    },
+    {
+      "name": "Box Model actual values",
+      "pass": true,
+      "details": {
+        "card": {
+          "selector": ".product-card",
+          "width": 305,
+          "height": 645.25,
+          "boxSizing": "border-box",
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "border": [
+            "1px",
+            "1px",
+            "1px",
+            "1px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "fontSize": "16px",
+          "borderRadius": "16px"
+        },
+        "content": {
+          "selector": ".product-content",
+          "width": 303,
+          "height": 416,
+          "boxSizing": "border-box",
+          "padding": [
+            "24px",
+            "24px",
+            "24px",
+            "24px"
+          ],
+          "border": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "fontSize": "16px",
+          "borderRadius": "0px"
+        },
+        "title": {
+          "selector": ".product-title",
+          "width": 255,
+          "height": 60,
+          "boxSizing": "border-box",
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "border": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "12px",
+            "0px"
+          ],
+          "fontSize": "22px",
+          "borderRadius": "0px"
+        },
+        "priceContext": {
+          "selector": ".price-context",
+          "width": 255,
+          "height": 19.1875,
+          "boxSizing": "border-box",
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "border": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "11px",
+            "0px"
+          ],
+          "fontSize": "12px",
+          "borderRadius": "0px"
+        },
+        "gap": "20px"
+      }
+    },
+    {
+      "name": "product values keyboard",
+      "pass": true
+    },
+    {
+      "name": "product values mouse",
+      "pass": true
+    },
+    {
+      "name": "product values headphones",
+      "pass": true
+    },
+    {
+      "name": "product values stand",
+      "pass": true
+    },
+    {
+      "name": "Grid experiment 2 columns",
+      "pass": true
+    },
+    {
+      "name": "Grid experiment 3 columns",
+      "pass": true
+    },
+    {
+      "name": "Flexbox experiment flex-start",
+      "pass": true
+    },
+    {
+      "name": "Flexbox experiment space-between",
+      "pass": true
+    },
+    {
+      "name": "without Grid items stack vertically",
+      "pass": true
+    },
+    {
+      "name": "reduced motion removes transition",
+      "pass": true
+    },
+    {
+      "name": "file protocol loads styles and images",
+      "pass": true
+    },
+    {
+      "name": "file protocol filtering",
+      "pass": true
+    },
+    {
+      "name": "file protocol reset",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1366,
+      "overflow": false,
+      "columns": 4,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "20px"
+    },
+    {
+      "width": 1101,
+      "overflow": false,
+      "columns": 4,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "20px"
+    },
+    {
+      "width": 1100,
+      "overflow": false,
+      "columns": 2,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "23px"
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "columns": 2,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "23px"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "columns": 2,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "23px"
+    },
+    {
+      "width": 581,
+      "overflow": false,
+      "columns": 2,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "23px"
+    },
+    {
+      "width": 580,
+      "overflow": false,
+      "columns": 1,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "24px"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "columns": 1,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "24px"
+    },
+    {
+      "width": 375,
+      "overflow": false,
+      "columns": 1,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "24px"
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "columns": 1,
+      "imageCount": 4,
+      "imagesLoaded": true,
+      "badFragments": [],
+      "listChildren": [
+        "LI",
+        "LI",
+        "LI",
+        "LI"
+      ],
+      "gap": "24px"
+    }
+  ],
+  "experiments": [
+    {
+      "type": "grid",
+      "columns": 2
+    },
+    {
+      "type": "grid",
+      "columns": 3
+    },
+    {
+      "type": "flex",
+      "value": "flex-start",
+      "positions": [
+        {
+          "x": 417.59375,
+          "width": 136.921875
+        },
+        {
+          "x": 578.515625,
+          "width": 86.375
+        },
+        {
+          "x": 688.890625,
+          "width": 66.140625
+        }
+      ],
+      "display": "flex",
+      "justify": "flex-start",
+      "align": "center",
+      "gap": "8px 24px"
+    },
+    {
+      "type": "flex",
+      "value": "space-between",
+      "positions": [
+        {
+          "x": 417.59375,
+          "width": 136.921875
+        },
+        {
+          "x": 719.796875,
+          "width": 86.375
+        },
+        {
+          "x": 971.453125,
+          "width": 66.140625
+        }
+      ],
+      "display": "flex",
+      "justify": "space-between",
+      "align": "center",
+      "gap": "8px 24px"
+    }
+  ],
+  "browser": "155.0.8059.85",
+  "semantics": {
+    "lang": "vi",
+    "h1": 1,
+    "main": 1,
+    "header": true,
+    "nav": true,
+    "footer": true,
+    "sections": true,
+    "list": "UL",
+    "items": 4,
+    "menu": 3,
+    "alt": true,
+    "ids": [
+      "dau-trang",
+      "noi-dung",
+      "tieu-de-chinh",
+      "san-pham",
+      "tieu-de-san-pham",
+      "filter-form",
+      "filter-all",
+      "filter-input",
+      "filter-audio",
+      "filter-accessory",
+      "product-grid",
+      "ten-keyboard",
+      "ten-mouse",
+      "ten-headphones",
+      "ten-stand",
+      "cai-tien",
+      "tieu-de-cai-tien",
+      "thong-tin",
+      "tieu-de-bai-tap"
+    ],
+    "css": "css/style.css",
+    "bodyFont": "Arial, Helvetica, sans-serif",
+    "scripts": 0
+  },
+  "boxModel": {
+    "card": {
+      "selector": ".product-card",
+      "width": 305,
+      "height": 645.25,
+      "boxSizing": "border-box",
+      "padding": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ],
+      "border": [
+        "1px",
+        "1px",
+        "1px",
+        "1px"
+      ],
+      "margin": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ],
+      "fontSize": "16px",
+      "borderRadius": "16px"
+    },
+    "content": {
+      "selector": ".product-content",
+      "width": 303,
+      "height": 416,
+      "boxSizing": "border-box",
+      "padding": [
+        "24px",
+        "24px",
+        "24px",
+        "24px"
+      ],
+      "border": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ],
+      "margin": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ],
+      "fontSize": "16px",
+      "borderRadius": "0px"
+    },
+    "title": {
+      "selector": ".product-title",
+      "width": 255,
+      "height": 60,
+      "boxSizing": "border-box",
+      "padding": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ],
+      "border": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ],
+      "margin": [
+        "0px",
+        "0px",
+        "12px",
+        "0px"
+      ],
+      "fontSize": "22px",
+      "borderRadius": "0px"
+    },
+    "priceContext": {
+      "selector": ".price-context",
+      "width": 255,
+      "height": 19.1875,
+      "boxSizing": "border-box",
+      "padding": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ],
+      "border": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ],
+      "margin": [
+        "0px",
+        "0px",
+        "11px",
+        "0px"
+      ],
+      "fontSize": "12px",
+      "borderRadius": "0px"
+    },
+    "gap": "20px"
+  },
+  "withoutGrid": [
+    {
+      "x": 43,
+      "y": 1011.375,
+      "width": 1280
+    },
+    {
+      "x": 43,
+      "y": 2387.875,
+      "width": 1280
+    },
+    {
+      "x": 43,
+      "y": 3764.375,
+      "width": 1280
+    },
+    {
+      "x": 43,
+      "y": 5140.875,
+      "width": 1280
+    }
+  ],
+  "summary": {
+    "total": 104,
+    "passed": 104,
+    "failed": 0
+  }
+}
