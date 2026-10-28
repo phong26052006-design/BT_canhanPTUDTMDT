@@ -37,3 +37,7 @@ Playwright chạy trên Chrome 155, 104 kiểm tra đạt. Có đo computed styl
 ## Phần cần hiểu và tự thực hành
 
 Người học cần theo được cấu trúc ul/li/article; giải thích vì sao CSS đặt trên cha; phân biệt padding vùng nội dung với viền thẻ; sửa một thuộc tính trong CSS và dự đoán ảnh hưởng breakpoint; giải thích bộ lọc kế thừa `:has()`. Có năm bài sửa trực tiếp và phiếu ghi nhận trong `SUA_MA_TRUC_TIEP.md`.
+
+## Rà soát cuối ngày 28 tháng 10 năm 2026
+
+Người dùng yêu cầu rà soát sai sót còn lại và xuất DOCX. Đã đối chiếu lại đề gốc, bổ sung thử thay đổi align-items, sửa công cụ để ghi ngày thực tế và tách thư mục minh chứng. Lượt mới đạt 106/106 trên Chrome 156; log ở evidence/final-20261028/results.json. Kết quả 104/104 ở trên là lịch sử ngày 27/10. Không khai thay phần sinh viên tự sửa mã.

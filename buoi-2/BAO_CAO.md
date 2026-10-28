@@ -1,6 +1,8 @@
 # Bài tập cá nhân buổi 2 HTML và CSS
 
-**Sinh viên:** Trương Thanh Phong. **Ngày thực hiện:** 27/10/2026. **Sản phẩm:** Phong Select, tiếp tục từ buổi 1. Phạm vi hoàn thiện là danh sách/thẻ sản phẩm và menu hỗ trợ điều hướng. Dữ liệu bốn phụ kiện là giả định, được giữ nguyên từ bài trước.
+**Sinh viên:** Trương Thanh Phong. **Ngày triển khai:** 27/10/2026. **Rà soát cuối:** 28/10/2026. **Sản phẩm:** Phong Select, tiếp tục từ buổi 1. Phạm vi hoàn thiện là danh sách/thẻ sản phẩm và menu hỗ trợ điều hướng. Dữ liệu bốn phụ kiện là giả định, được giữ nguyên từ bài trước.
+
+Bản rà soát cuối xác nhận 106/106 kiểm tra đạt trên Chrome 156. Phần tự sửa mã của sinh viên cần được người học thực hiện và ghi nhận riêng; kết quả công cụ do trợ lý thực hiện không thay thế yêu cầu này.
 
 ## 1 Phân tích đề và phương án thực hiện
 
@@ -14,14 +16,14 @@
 | CSS ngoài được liên kết đúng | css/style.css; style.css ở gốc chỉ giữ tương thích |
 | Ít nhất một cặp ảnh trước/sau | evidence/before/card-390.png và evidence/after/card-390.png; có thêm cặp products-1366.png |
 | Ảnh khu vực hoàn thiện | evidence/after/products-1366.png, page-768.png và các ảnh mobile |
-| Báo cáo kiểm thử và cách sửa | Mục 7 và evidence/after/results.json |
+| Báo cáo kiểm thử và cách sửa | Mục 7 và evidence/final-20261028/results.json |
 | Báo cáo AI | AI_USAGE.md và mục 8 |
 | Bảy câu trả lời | Mục 9, dựa vào mã và thử nghiệm của bài |
 | Cùng repository và README | Thư mục buoi-2 trong repository buổi 1; xuất bản bằng nhánh và PR được người dùng cho phép |
 
 ## 2 Rà soát nền buổi 1
 
-Baseline là bản buổi 1 được khôi phục từ commit `dbb6bc22bbf86fdf3914a5ebcc28eda82e0b8630`. Đã chụp trang và đo DOM/CSS trước khi sửa. Bản cũ đã có header/nav/main/section/article/footer, h1/h2/h3, ảnh, CSS ngoài, Grid responsive và lọc nhóm; các mục dưới đây là điểm cần hoàn thiện, không được mô tả sai thành trang chưa có CSS hoặc không chạy.
+Baseline là bản buổi 1 được khôi phục từ commit `dbb6bc22bbf86fdf3914a5ebcc28eda82e0b8630`. Đã chụp trang và đo DOM/CSS trước khi sửa. Bản cũ đã có header/nav/main/section/article/footer, h1/h2/h3, ảnh, CSS ngoài, Grid responsive và lọc nhóm; các mục dưới đây là hướng cải thiện cấu trúc và khả năng giải thích mã. Dùng div để nhóm sản phẩm hoặc đặt CSS ở gốc không tự động là lỗi HTML; bản buổi 1 đã hoạt động trước khi sửa.
 
 | Điểm quan sát trong mã cũ | Hướng hoàn thiện | Kết quả mong muốn |
 |---|---|---|
@@ -111,7 +113,7 @@ Menu là khu vực Flexbox nhỏ dùng ba li làm flex item:
 }
 ```
 
-Flex đặt trên cha ul. Justify-content căn theo trục chính; align-items căn theo trục vuông góc. Với row mặc định trong trang này, các item được sắp theo chiều ngang. Gap hai giá trị lần lượt là khoảng hàng và cột. Đã thử flex-start và space-between trên cùng vùng rộng 620 px: cấu hình thứ hai phân phối thêm không gian trống giữa item; gap vẫn là mức khoảng cách tối thiểu, không phải toàn bộ khoảng trống cuối. Ảnh thử có nhãn rõ trong evidence/after. [MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox).
+Flex đặt trên cha ul. Justify-content căn theo trục chính; align-items căn theo trục vuông góc. Với row mặc định trong trang này, các item được sắp theo chiều ngang. Gap hai giá trị lần lượt là khoảng hàng và cột. Đã thử flex-start và space-between trên cùng vùng rộng 620 px: cấu hình thứ hai phân phối thêm không gian trống giữa item; gap vẫn là mức khoảng cách tối thiểu, không phải toàn bộ khoảng trống cuối. Ảnh thử ngày 28/10/2026 nằm trong evidence/final-20261028. Ngoài ra đã thử align-items:flex-start và flex-end trên cùng khung cao 100 px: ba item cao 44 px lần lượt cách mép trên 0 px và 56 px, cho thấy sự thay đổi theo trục vuông góc. Sau mỗi thử nghiệm, style tạm được gỡ và mã cuối giữ align-items:center. [MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox).
 
 Danh sách tiếp tục dùng Grid:
 
@@ -141,7 +143,7 @@ Hover là trạng thái con trỏ ở trên phần tử; focus là phần tử �
 
 ## 7 Kiểm thử thay đổi và minh chứng
 
-Môi trường: Windows, Chrome 155.0.8059.85, Playwright từ runtime có sẵn; qua HTTP cục bộ và file://. Ngày thực hiện 27/10/2026. **104 kiểm tra, 104 đạt, 0 thất bại**, không ghi nhận lỗi HTTP/request/JavaScript trong lượt thử.
+Môi trường rà soát cuối: Windows, Chrome 156.0.8078.48, Playwright; qua HTTP cục bộ và file://. Lượt chạy bắt đầu 13:41 ngày 28/10/2026, giờ Việt Nam. **106 kiểm tra, 106 đạt, 0 thất bại**; không ghi nhận lỗi HTTP/request/JavaScript trong lượt này. Log ngày 27/10/2026 ghi 104/104 trên Chrome 155 được giữ riêng làm lịch sử, không dùng thay kết quả mới.
 
 | Nhóm | Số kiểm tra | Kết quả |
 |---|---:|---|
@@ -152,14 +154,14 @@ Môi trường: Windows, Chrome 155.0.8059.85, Playwright từ runtime có sẵn
 | Details, tài nguyên ảnh, hover/focus và popup | 15 | Bốn thẻ mở/đóng; link/outline/chuyển màu hoạt động |
 | Radio/reset bằng bàn phím | 2 | Hoạt động bằng mũi tên và Enter |
 | Box Model và bốn bộ giá | 5 | Computed style và phép tính đúng |
-| Grid 2/3, Flex hai kiểu và bỏ Grid | 5 | Kết quả phù hợp dự đoán |
+| Grid 2/3, hai kiểu justify-content, hai kiểu align-items và bỏ Grid | 7 | Kết quả phù hợp dự đoán |
 | Reduced-motion và mở trực tiếp tệp | 4 | Tắt transition; ảnh/CSS/filter/reset hoạt động |
 
 Các độ rộng và số cột: 1366/1101 → 4; 1100/1024/768/581 → 2; 580/390/375/320 → 1. Ba kích thước đề gợi ý đã được thử; có thêm các cặp sát breakpoint để kiểm tra điều kiện media query.
 
 **Điều chỉnh sau rà soát:** chữ giá phụ ở 11 px được tăng lên 12 px và xem lại trên mobile. Đây là quyết định cải thiện khả năng đọc, chưa phải kết luận từ một nghiên cứu người dùng. Khi chuyển danh sách sang li, selector lọc được sửa để ẩn `.product-item`, bảo vệ bố cục Grid thay vì chỉ ẩn article bên trong. Test lọc nhóm âm thanh xác nhận thẻ còn lại xuất hiện ngay ô đầu, không để khoảng trống từ hai item đã ẩn.
 
-Ảnh trước/sau được chụp ở cùng viewport: before/card-390.png và after/card-390.png; before/products-1366.png và after/products-1366.png. Ảnh focus, hover, các thử nghiệm Flex/Grid và log nằm trong evidence. Nội dung buổi 1 được kiểm mã băm trước/sau và giữ nguyên.
+Ảnh trước/sau được chụp ở cùng viewport: before/card-390.png và after/card-390.png; before/products-1366.png và after/products-1366.png. Các ảnh trước/sau là minh chứng ngày 27/10/2026. Ảnh và log chạy lại, gồm thử align-items, nằm riêng trong evidence/final-20261028; không đổi ngày của ảnh cũ. Nội dung buổi 1 được kiểm mã băm trước/sau và giữ nguyên.
 
 Chưa thử thiết bị thật, Safari/Firefox, trình đọc màn hình hoặc audit WCAG đầy đủ. Không báo kết quả của công cụ chưa chạy. Việc chụp, kiểm thử và sửa mã trong phiên này do trợ lý thực hiện; phiếu tự thực hành của sinh viên được để riêng.
 
@@ -193,7 +195,7 @@ Khi không còn display:grid và không có quy tắc display khác thay thế, 
 
 ### Câu 6 Vì sao ảnh cần alt
 
-Alt cung cấp văn bản thay thế khi hình không tải hoặc người dùng tiếp cận bằng công nghệ đọc văn bản. Ví dụ ảnh bàn phím mô tả K75, phím kem và điểm nhấn xanh, phù hợp nội dung SVG. Không viết mọi ảnh là “ảnh sản phẩm”, không biến alt thành quảng cáo hoặc khẳng định tính năng không có căn cứ. Width/height giúp xác định tỷ lệ và chỗ cho ảnh, còn alt có vai trò nội dung khác.
+Alt cung cấp văn bản thay thế khi hình không tải hoặc người dùng tiếp cận bằng công nghệ đọc văn bản. Ví dụ ảnh bàn phím mô tả K75, phím kem và điểm nhấn xanh, phù hợp nội dung SVG. Không viết mọi ảnh là “ảnh sản phẩm”, không biến alt thành quảng cáo hoặc khẳng định tính năng không có căn cứ. Với ảnh chỉ trang trí hoặc lặp lại nội dung đã đủ trong cùng ngữ cảnh, cân nhắc alt rỗng; bốn hình sản phẩm trong bài có mô tả theo nội dung hình. Width/height giúp xác định tỷ lệ và chỗ cho ảnh, còn alt có vai trò nội dung khác.
 
 ### Câu 7 Một đề xuất AI đã kiểm tra hoặc điều chỉnh
 
@@ -203,13 +205,19 @@ Phương án thêm ul/li được kiểm tra cùng bộ lọc CSS kế thừa. V
 
 Năm yêu cầu giảng viên có thể chọn đã được hướng dẫn trong SUA_MA_TRUC_TIEP.md: đổi padding nội dung, màu giá, số cột, gap menu và alt. Mỗi ví dụ chỉ ra selector, kết quả dự đoán và ảnh hưởng media query. Người học nên tự thực hiện một thay đổi và ghi ảnh/commit của chính mình vào phiếu cuối tệp.
 
-Bài buổi 2 tiếp tục trong cùng repository của buổi 1, ở thư mục riêng để giữ mốc. GitHub được cập nhật bằng nhánh và PR theo xác nhận của người dùng; main giữ nguyên đến khi được merge theo quyết định sau. Link và commit xác minh nằm trong hồ sơ xuất bản của gói bàn giao.
+Bài tiếp tục trong cùng repository [BT_canhanPTUDTMDT](https://github.com/phong26052006-design/BT_canhanPTUDTMDT), thư mục buoi-2, nhánh codex/buoi2-html-css-2026-10-27. [PR số 1](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/pull/1) đã được kiểm tra ngày 28/10/2026: đang mở ở trạng thái draft, chưa merge. Main vẫn tại mốc 1292b593a89e4d870d870571cbab2cf2ee1a3993 tại lần đối chiếu. Đường dẫn này xem mã, chưa phải website GitHub Pages.
 
 Nền cho buổi 3: giữ cấu trúc danh sách, data-category, tên/giá và vùng thông tin để sau này bổ sung JavaScript theo đề. Chưa tự thêm tìm kiếm từ khóa, sắp xếp hay giỏ hàng vào buổi 2.
 
+## 11 Nội dung được bổ sung trong lần rà soát cuối
+
+Đối chiếu lại yêu cầu các trang 1 và 3–23, giữ phạm vi của danh sách sản phẩm đã chọn. Bổ sung thử nghiệm align-items vì lượt trước mới đối chiếu justify-content. Công cụ kiểm tra đã bỏ ngày cố định, ghi thời điểm thực tế theo Asia/Bangkok và cho phép EVIDENCE_DIR để tách kết quả các lần chạy. HTML, CSS, bốn sản phẩm và giá không thay đổi trong lượt rà soát này.
+
+Bản Word kèm đủ nội dung nhật ký AI tiêu biểu, năm yêu cầu sửa mã trực tiếp, bảng kiểm theo đề và ảnh trước/sau; người đọc có thể theo dõi báo cáo mà không phải mở các tệp Markdown phụ.
+
 ## Nguồn
 
-- TS. Nguyễn Mạnh Tuấn, BaiTap_CaNhan_Buoi2.pdf do người dùng cung cấp; yêu cầu chính trang 3-23, infographic trang 2.
+- TS. Nguyễn Mạnh Tuấn, BaiTap_CaNhan_Buoi2.pdf do người dùng cung cấp; mục tiêu và phạm vi trang 1, infographic trang 2, các bước và yêu cầu nộp trang 3–23; bảy câu hỏi và sửa mã trực tiếp trang 21.
 - Mã Phong Select buổi 1, snapshot dbb6bc22bbf86fdf3914a5ebcc28eda82e0b8630.
 - HTML Living Standard và các tài liệu MDN đã dẫn gần nội dung; đối chiếu ngày 27/10/2026.
 - Minh chứng tự thu và kết quả máy đọc trong evidence/before và evidence/after.

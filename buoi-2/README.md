@@ -62,3 +62,9 @@ Khi sửa giá, cập nhật HTML và `products.json` cùng lúc. Không có gi�
 ## GitHub
 
 Bản buổi 2 nằm trong **cùng repository buổi 1**, ở thư mục riêng `buoi-2/`. Nhánh bàn giao là `codex/buoi2-html-css-2026-10-27`, dùng PR để người dùng xem trước khi hợp nhất vào main. Trạng thái xuất bản được ghi riêng trong hồ sơ bàn giao.
+
+## Rà soát cuối ngày 28 tháng 10 năm 2026
+
+Đã đối chiếu lại đề, bổ sung thử nghiệm align-items và chạy lại **106/106 kiểm tra đạt** trên Chrome 156.0.8078.48. [Log mới](evidence/final-20261028/results.json) và ảnh cùng thư mục tách riêng với minh chứng ngày 27/10. HTML/CSS và dữ liệu sản phẩm giữ nguyên trong lần rà soát cuối.
+
+Công cụ verify.mjs ghi ngày thực tế theo Asia/Bangkok. Đặt EVIDENCE_DIR thành thư mục riêng khi chạy lại để giữ log cũ; SITE_URL chọn URL máy chủ và PLAYWRIGHT_PACKAGE_PATH chọn bản Playwright cài ở máy đang dùng. File DOCX bàn giao riêng gồm báo cáo, ảnh, nhật ký AI tiêu biểu và hướng dẫn sửa mã. [PR số 1](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/pull/1) vẫn là bản nháp.

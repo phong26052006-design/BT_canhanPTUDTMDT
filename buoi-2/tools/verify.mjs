@@ -6,8 +6,8 @@ const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.PLAYWRIGHT_PACKAGE_PATH||'C:/Users/PC/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const url=process.env.SITE_URL||'http://127.0.0.1:8878/buoi-2/';
-const out=path.join(root,'evidence/after');await fs.mkdir(out,{recursive:true});
-const report={date:'2026-10-27',url,checks:[],errors:[],viewports:[],experiments:[]};
+const out=process.env.EVIDENCE_DIR?path.resolve(process.env.EVIDENCE_DIR):path.join(root,'evidence/after');await fs.mkdir(out,{recursive:true});
+const report={date:new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Bangkok',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()),startedAt:new Date().toISOString(),url,checks:[],errors:[],viewports:[],experiments:[]};
 const check=(name,pass,details)=>{report.checks.push({name,pass,details});if(!pass)report.errors.push(name);};
 const browser=await chromium.launch({channel:'chrome',headless:true});report.browser=browser.version();
 const context=await browser.newContext({locale:'vi-VN',deviceScaleFactor:1,reducedMotion:'no-preference'});
@@ -101,6 +101,13 @@ for(const value of ['flex-start','space-between']){
   const computed=await page.locator('.main-nav-list').evaluate(e=>({display:getComputedStyle(e).display,justify:getComputedStyle(e).justifyContent,align:getComputedStyle(e).alignItems,gap:getComputedStyle(e).gap}));
   check(`Flexbox experiment ${value}`,computed.display==='flex'&&computed.justify===value&&computed.align==='center');report.experiments.push({type:'flex',value,positions,...computed});
   await page.locator('.main-nav-list').screenshot({path:path.join(out,`experiment-flex-${value}.png`)});await style.evaluate(e=>e.remove());
+}
+for(const value of ['flex-start','flex-end']){
+  const style=await page.addStyleTag({content:`.main-nav-list { width: 620px; height: 100px; align-items: ${value} !important; }`});
+  const state=await page.locator('.main-nav-list').evaluate(e=>{const r=e.getBoundingClientRect(),c=getComputedStyle(e);return{align:c.alignItems,height:r.height,items:[...e.children].map(x=>{const b=x.getBoundingClientRect();return{top:b.top-r.top,bottom:r.bottom-b.bottom,height:b.height};})};});
+  check(`Flexbox align-items experiment ${value}`,state.align===value&&state.items.every(x=>Math.abs(value==='flex-start'?x.top:x.bottom)<1),state);
+  report.experiments.push({type:'align-items',value,...state});
+  await page.locator('.main-nav-list').screenshot({path:path.join(out,`experiment-align-${value}.png`)});await style.evaluate(e=>e.remove());
 }
 const blockStyle=await page.addStyleTag({content:'.product-grid { display: block !important; }'});
 report.withoutGrid=await page.locator('.product-item').evaluateAll(es=>es.map(e=>({x:e.getBoundingClientRect().x,y:e.getBoundingClientRect().y,width:e.getBoundingClientRect().width})));
