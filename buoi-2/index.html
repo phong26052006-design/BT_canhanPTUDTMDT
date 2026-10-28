@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Phong Select — bản mẫu danh sách phụ kiện góc làm việc, thông tin giá rõ ràng và lọc nhóm sản phẩm bằng HTML/CSS.">
+  <meta name="color-scheme" content="light">
+  <title>Phong Select — Gọn góc làm việc, rõ từng lựa chọn</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="dau-trang">
+  <a class="skip-link" href="#noi-dung">Chuyển đến nội dung chính</a>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#dau-trang" aria-label="Phong Select — về đầu trang"><span class="brand-mark" aria-hidden="true">p.</span><span>Phong Select<span class="brand-dot">.</span></span></a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="main-nav-list" role="list">
+          <li><a href="#san-pham">Khám phá sản phẩm</a></li>
+          <li><a href="#cai-tien">Điểm cải tiến</a></li>
+          <li><a href="#thong-tin">Về bài tập</a></li>
+        </ul>
+      </nav>
+      <span class="header-label"><span class="status-dot" aria-hidden="true"></span>Bản mẫu học tập</span>
+    </div>
+  </header>
+  <main id="noi-dung">
+    <section class="hero container" aria-labelledby="tieu-de-chinh">
+      <div class="hero-copy">
+        <p class="eyebrow">MỘT CHÚT GỌN GÀNG CHO MỖI NGÀY</p>
+        <h1 id="tieu-de-chinh">Gọn góc làm việc.<br><span>Rõ từng lựa chọn.</span></h1>
+        <p class="hero-description">Bốn món đồ cho bàn làm việc. Chọn đúng nhóm, đọc rõ giá và xem thông tin cần thiết ngay trên từng thẻ.</p>
+        <a class="primary-link" href="#san-pham">Khám phá sản phẩm<svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+        <p class="demo-note">Sản phẩm, giá và thông số là dữ liệu giả định cho bài tập. Không phải gian hàng hay chương trình khuyến mãi thật.</p>
+      </div>
+      <aside class="hero-note" aria-label="Ba thông tin giúp lựa chọn sản phẩm">
+        <div class="note-heading"><span class="note-spark" aria-hidden="true">✳</span><span>Ít rối mắt hơn.<br>Dễ lựa chọn hơn.</span></div>
+        <ol class="clarity-list">
+          <li><span class="item-number" aria-hidden="true">01</span><div><strong>Nhóm rõ theo nhu cầu</strong><span>Chọn nhóm để thu gọn danh sách.</span></div></li>
+          <li><span class="item-number" aria-hidden="true">02</span><div><strong>Giá bán và ưu đãi đi cùng nhau</strong><span>Đọc được mức giảm và số tiền tiết kiệm.</span></div></li>
+          <li><span class="item-number" aria-hidden="true">03</span><div><strong>Thông tin ở ngay bên dưới</strong><span>Mở chi tiết bằng chuột hoặc bàn phím.</span></div></li>
+        </ol>
+        <p class="note-footer">Một bố cục. Bốn sản phẩm. Thông tin nhất quán.</p>
+      </aside>
+    </section>
+
+    <section id="san-pham" class="catalog-section" aria-labelledby="tieu-de-san-pham">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">ĐỒ DÙNG CHO GÓC LÀM VIỆC</p><h2 id="tieu-de-san-pham">Chọn món phù hợp với bạn.</h2></div>
+          <p class="catalog-count" aria-live="polite"><span class="result-all">4 sản phẩm</span><span class="result-input">2 sản phẩm</span><span class="result-audio">1 sản phẩm</span><span class="result-accessory">1 sản phẩm</span></p>
+        </div>
+        <p class="catalog-description">Giá bán, giá trước ưu đãi và mức tiết kiệm được hiển thị theo cùng một thứ tự.</p>
+        <form id="filter-form" class="catalog-filter">
+          <fieldset><legend>Lọc sản phẩm theo nhóm</legend><div class="filter-options">
+            <label class="filter-option"><input type="radio" name="group" id="filter-all" checked aria-controls="product-grid"><span>Tất cả <span class="filter-count">4</span></span></label>
+            <label class="filter-option"><input type="radio" name="group" id="filter-input" aria-controls="product-grid"><span>Chuột &amp; bàn phím <span class="filter-count">2</span></span></label>
+            <label class="filter-option"><input type="radio" name="group" id="filter-audio" aria-controls="product-grid"><span>Âm thanh <span class="filter-count">1</span></span></label>
+            <label class="filter-option"><input type="radio" name="group" id="filter-accessory" aria-controls="product-grid"><span>Phụ kiện <span class="filter-count">1</span></span></label>
+          </div></fieldset>
+          <button type="reset" class="reset-button">Đặt lại bộ lọc</button>
+        </form>
+        <p class="filter-instruction">Danh sách thay đổi ngay khi chọn nhóm. Đặt lại để xem cả bốn sản phẩm.</p>
+        <ul id="product-grid" class="product-grid" role="list">
+          <li class="product-item" data-category="input">
+            <article class="product-card" aria-labelledby="ten-keyboard">
+              <div class="product-visual visual-purple">
+                <img src="images/keyboard.svg" width="640" height="480" alt="Minh họa bàn phím cơ K75 nhỏ gọn với phím màu kem và điểm nhấn xanh">
+                <span class="discount-badge"><span aria-hidden="true">−20%</span><span class="sr-only">Giảm 20 phần trăm</span></span>
+              </div>
+              <div class="product-content">
+                <p class="product-category">BÀN PHÍM</p>
+                <h3 class="product-title" id="ten-keyboard">Bàn phím cơ K75</h3>
+                <p class="product-description">Bố cục nhỏ gọn cho việc nhập liệu và những ý tưởng đang thành hình.</p>
+                <div class="price-block">
+                  <p class="price"><span class="price-value">600.000 <span class="currency">₫</span></span><span class="price-period">/ sản phẩm</span></p>
+                  <p class="price-context">Giá minh họa · Chưa gồm phí giao hàng</p>
+                  <p class="previous-price"><span class="sr-only">Giá trước ưu đãi: </span><s>750.000 ₫</s><span>Tiết kiệm 150.000 ₫</span></p>
+                </div>
+                <details class="product-details">
+                  <summary class="product-toggle"><span>Xem thông tin<span class="sr-only"> Bàn phím cơ K75</span></span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+                  <div class="product-detail-content"><p><strong>Thông tin Bàn phím cơ K75:</strong></p><ul><li>Bố cục 75% minh họa.</li><li>Phím màu kem, điểm nhấn xanh.</li><li>Thông tin chỉ dùng cho bản mẫu.</li></ul><a class="product-image-link" href="images/keyboard.svg" target="_blank" rel="noopener noreferrer">Xem hình lớn<span class="sr-only"> Bàn phím cơ K75 (mở tab mới)</span></a><p class="product-disclaimer">Sản phẩm giả định để thực hành giao diện. Không có giao dịch mua hàng.</p></div>
+                </details>
+              </div>
+            </article>
+          </li>
+          <li class="product-item" data-category="input">
+            <article class="product-card" aria-labelledby="ten-mouse">
+              <div class="product-visual visual-blue">
+                <img src="images/mouse.svg" width="640" height="480" alt="Minh họa chuột không dây với con lăn và thân bo tròn">
+                <span class="discount-badge"><span aria-hidden="true">−20%</span><span class="sr-only">Giảm 20 phần trăm</span></span>
+              </div>
+              <div class="product-content">
+                <p class="product-category">CHUỘT</p>
+                <h3 class="product-title" id="ten-mouse">Chuột không dây M2</h3>
+                <p class="product-description">Một thiết kế đơn giản để bàn làm việc gọn hơn và thao tác dễ theo dõi.</p>
+                <div class="price-block">
+                  <p class="price"><span class="price-value">360.000 <span class="currency">₫</span></span><span class="price-period">/ sản phẩm</span></p>
+                  <p class="price-context">Giá minh họa · Chưa gồm phí giao hàng</p>
+                  <p class="previous-price"><span class="sr-only">Giá trước ưu đãi: </span><s>450.000 ₫</s><span>Tiết kiệm 90.000 ₫</span></p>
+                </div>
+                <details class="product-details">
+                  <summary class="product-toggle"><span>Xem thông tin<span class="sr-only"> Chuột không dây M2</span></span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+                  <div class="product-detail-content"><p><strong>Thông tin Chuột không dây M2:</strong></p><ul><li>Kết nối không dây minh họa.</li><li>Thân bo tròn và con lăn giữa.</li><li>Thông tin chỉ dùng cho bản mẫu.</li></ul><a class="product-image-link" href="images/mouse.svg" target="_blank" rel="noopener noreferrer">Xem hình lớn<span class="sr-only"> Chuột không dây M2 (mở tab mới)</span></a><p class="product-disclaimer">Sản phẩm giả định để thực hành giao diện. Không có giao dịch mua hàng.</p></div>
+                </details>
+              </div>
+            </article>
+          </li>
+          <li class="product-item" data-category="audio">
+            <article class="product-card" aria-labelledby="ten-headphones">
+              <div class="product-visual visual-green">
+                <img src="images/headphones.svg" width="640" height="480" alt="Minh họa tai nghe chụp tai với quai nối và hai đệm tai">
+                <span class="discount-badge"><span aria-hidden="true">−15%</span><span class="sr-only">Giảm 15 phần trăm</span></span>
+              </div>
+              <div class="product-content">
+                <p class="product-category">ÂM THANH</p>
+                <h3 class="product-title" id="ten-headphones">Tai nghe chụp tai H1</h3>
+                <p class="product-description">Khoảng riêng cho những giờ tập trung, với hình dáng mềm và vừa mắt.</p>
+                <div class="price-block">
+                  <p class="price"><span class="price-value">850.000 <span class="currency">₫</span></span><span class="price-period">/ sản phẩm</span></p>
+                  <p class="price-context">Giá minh họa · Chưa gồm phí giao hàng</p>
+                  <p class="previous-price"><span class="sr-only">Giá trước ưu đãi: </span><s>1.000.000 ₫</s><span>Tiết kiệm 150.000 ₫</span></p>
+                </div>
+                <details class="product-details">
+                  <summary class="product-toggle"><span>Xem thông tin<span class="sr-only"> Tai nghe chụp tai H1</span></span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+                  <div class="product-detail-content"><p><strong>Thông tin Tai nghe chụp tai H1:</strong></p><ul><li>Thiết kế chụp tai minh họa.</li><li>Quai nối và đệm tai màu xanh.</li><li>Thông tin chỉ dùng cho bản mẫu.</li></ul><a class="product-image-link" href="images/headphones.svg" target="_blank" rel="noopener noreferrer">Xem hình lớn<span class="sr-only"> Tai nghe chụp tai H1 (mở tab mới)</span></a><p class="product-disclaimer">Sản phẩm giả định để thực hành giao diện. Không có giao dịch mua hàng.</p></div>
+                </details>
+              </div>
+            </article>
+          </li>
+          <li class="product-item" data-category="accessory">
+            <article class="product-card" aria-labelledby="ten-stand">
+              <div class="product-visual visual-peach">
+                <img src="images/stand.svg" width="640" height="480" alt="Minh họa giá đỡ laptop màu bạc với mặt kê nghiêng và chân đế">
+                <span class="discount-badge"><span aria-hidden="true">−20%</span><span class="sr-only">Giảm 20 phần trăm</span></span>
+              </div>
+              <div class="product-content">
+                <p class="product-category">PHỤ KIỆN</p>
+                <h3 class="product-title" id="ten-stand">Giá đỡ laptop L3</h3>
+                <p class="product-description">Thêm một điểm tựa cho laptop, bớt một chút lộn xộn trên mặt bàn.</p>
+                <div class="price-block">
+                  <p class="price"><span class="price-value">240.000 <span class="currency">₫</span></span><span class="price-period">/ sản phẩm</span></p>
+                  <p class="price-context">Giá minh họa · Chưa gồm phí giao hàng</p>
+                  <p class="previous-price"><span class="sr-only">Giá trước ưu đãi: </span><s>300.000 ₫</s><span>Tiết kiệm 60.000 ₫</span></p>
+                </div>
+                <details class="product-details">
+                  <summary class="product-toggle"><span>Xem thông tin<span class="sr-only"> Giá đỡ laptop L3</span></span><span class="summary-symbol" aria-hidden="true">+</span></summary>
+                  <div class="product-detail-content"><p><strong>Thông tin Giá đỡ laptop L3:</strong></p><ul><li>Giá đỡ để bàn minh họa.</li><li>Mặt kê nghiêng, màu bạc.</li><li>Thông tin chỉ dùng cho bản mẫu.</li></ul><a class="product-image-link" href="images/stand.svg" target="_blank" rel="noopener noreferrer">Xem hình lớn<span class="sr-only"> Giá đỡ laptop L3 (mở tab mới)</span></a><p class="product-disclaimer">Sản phẩm giả định để thực hành giao diện. Không có giao dịch mua hàng.</p></div>
+                </details>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <p class="catalog-footnote">Đơn vị giá: VND. Giá và ưu đãi chỉ phục vụ minh họa, không lấy từ bảng giá Lazada. Không có giỏ hàng hoặc thanh toán thật.</p>
+      </div>
+    </section>
+
+    <section id="cai-tien" class="improvement-section container" aria-labelledby="tieu-de-cai-tien">
+      <div class="section-heading"><div><p class="eyebrow">MỖI CHI TIẾT ĐỀU CÓ LÝ DO</p><h2 id="tieu-de-cai-tien">Dễ đọc hơn, từ từng lựa chọn.</h2></div><span class="small-label">Cải tiến danh sách sản phẩm</span></div>
+      <div class="improvement-grid">
+        <article><span class="feature-number">01 / BỘ LỌC</span><h3>Một nhóm, một thao tác.</h3><p>Bộ lọc nằm gần danh sách. Nhóm đang chọn được đánh dấu rõ; nút đặt lại đưa bạn về danh sách ban đầu.</p></article>
+        <article><span class="feature-number">02 / GIÁ BÁN</span><h3>Đọc rõ khoản tiết kiệm.</h3><p>Giá hiện tại, giá trước ưu đãi, tỷ lệ giảm và số tiền giảm được đặt gần nhau để dễ đối chiếu.</p></article>
+        <article><span class="feature-number">03 / MÀN HÌNH NHỎ</span><h3>Thẻ sản phẩm có chỗ để thở.</h3><p>Danh sách đổi số cột theo màn hình; nút thao tác đủ rộng và thông tin không cần cuộn ngang.</p></article>
+      </div>
+    </section>
+    <section id="thong-tin" class="assignment-section" aria-labelledby="tieu-de-bai-tap"><div class="container assignment-content">
+      <div><p class="eyebrow">PHÁT TRIỂN ỨNG DỤNG WEB / TMĐT</p><h2 id="tieu-de-bai-tap">Tiếp nối buổi 1, hoàn thiện từng chi tiết.</h2><p>Thiết kế độc lập tham khảo cách tổ chức mua sắm tại <a href="https://www.lazada.vn/" target="_blank" rel="noopener noreferrer">Lazada Việt Nam<span class="sr-only"> (mở tab mới)</span> <svg class="arrow-icon external-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>. Không sử dụng logo, ảnh sản phẩm hoặc mã nguồn của Lazada.</p></div>
+      <dl class="student-details"><div><dt>Sinh viên</dt><dd>Trương Thanh Phong</dd></div><div><dt>Bài tập</dt><dd>Buổi 02 - HTML &amp; CSS</dd></div><div><dt>Lớp</dt><dd>EE0002</dd></div></dl>
+    </div></section>
+  </main>
+  <footer class="site-footer container"><a class="brand footer-brand" href="#dau-trang">Phong Select.</a><p>Buổi 02 · HTML5 &amp; CSS3</p><a href="#dau-trang">Về đầu trang ↑</a></footer>
+</body></html>
