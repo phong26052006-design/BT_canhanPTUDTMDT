@@ -1,0 +1,2261 @@
+{
+  "startedAt": "2026-11-05T08:58:40.817Z",
+  "scope": "Automated tests of local coursework only; no external game completion.",
+  "checks": [
+    {
+      "name": "BaiTap1.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap1.css",
+          "index.html",
+          "minh-chung/tro-choi/nhat-ky.csv",
+          "css/BaiTap1.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap1.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link css/BaiTap1.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/nhat-ky.csv",
+      "pass": true
+    },
+    {
+      "name": "BaiTap2.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap2.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap2.css",
+          "index.html",
+          "css/BaiTap2.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap2.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap2.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap2.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap2.html link css/BaiTap2.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap2.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "index.html",
+          "BaiTap4.html",
+          "BaiTap5.html",
+          "BaiTap6.html",
+          "BaiTap7.html"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap3.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html link BaiTap4.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html link BaiTap5.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html link BaiTap6.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html link BaiTap7.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap4.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap4.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap4.css",
+          "index.html",
+          "css/BaiTap4.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap4.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap4.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap4.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap4.html link css/BaiTap4.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap4.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap5.css",
+          "index.html",
+          "assets/BIT_logo.png",
+          "./",
+          "./",
+          "css/BaiTap5.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap5.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html link css/BaiTap5.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html link assets/BIT_logo.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html link ./",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap6.css",
+          "index.html",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "css/BaiTap6.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap6.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html link css/BaiTap6.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html link ./",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html link assets/img_350x260.png",
+      "pass": true
+    },
+    {
+      "name": "Portfolio 7 tabs, 9 images, columns 1366",
+      "pass": true,
+      "details": {
+        "columns": 3
+      }
+    },
+    {
+      "name": "BaiTap7.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap7.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "wrapper"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap7.css",
+          "index.html",
+          "css/BaiTap7.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap7.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap7.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap7.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap7.html link css/BaiTap7.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap7.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "index.html",
+          "BaiTap8a.html",
+          "BaiTap8b.html"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap8.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html link BaiTap8a.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html link BaiTap8b.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "root"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap8a.css",
+          "index.html",
+          "assets/css1/fe.png",
+          "assets/css1/mobile.jpg",
+          "assets/css1/web.jpg",
+          "assets/css1/qa.jpg",
+          "css/BaiTap8a.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap8a.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html link css/BaiTap8a.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html link assets/css1/fe.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html link assets/css1/mobile.jpg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html link assets/css1/web.jpg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html link assets/css1/qa.jpg",
+      "pass": true
+    },
+    {
+      "name": "Heroes description fits 1366",
+      "pass": true,
+      "details": [
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 239,
+            "y": 404.390625,
+            "width": 214.546875,
+            "height": 236,
+            "top": 404.390625,
+            "right": 453.546875,
+            "bottom": 640.390625,
+            "left": 239
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 461.046875,
+            "y": 404.390625,
+            "width": 214.546875,
+            "height": 236,
+            "top": 404.390625,
+            "right": 675.59375,
+            "bottom": 640.390625,
+            "left": 461.046875
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 683.09375,
+            "y": 404.390625,
+            "width": 214.546875,
+            "height": 236,
+            "top": 404.390625,
+            "right": 897.640625,
+            "bottom": 640.390625,
+            "left": 683.09375
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 905.140625,
+            "y": 404.390625,
+            "width": 214.546875,
+            "height": 236,
+            "top": 404.390625,
+            "right": 1119.6875,
+            "bottom": 640.390625,
+            "left": 905.140625
+          }
+        }
+      ]
+    },
+    {
+      "name": "BaiTap8b.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "root",
+          "site-header"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap8b.css",
+          "index.html",
+          "assets/css2/superhero-1.jpg",
+          "assets/css2/superhero-2.jpg",
+          "assets/css2/superhero-3.jpg",
+          "assets/css2/superhero-4.jpg",
+          "assets/css2/superhero-5.jpg",
+          "css/BaiTap8b.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap8b.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html link css/BaiTap8b.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html link assets/css2/superhero-1.jpg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html link assets/css2/superhero-2.jpg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html link assets/css2/superhero-3.jpg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html link assets/css2/superhero-4.jpg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html link assets/css2/superhero-5.jpg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap9.css",
+          "index.html",
+          "assets/fontawesome/LICENSE.txt",
+          "css/BaiTap9.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap9.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html link css/BaiTap9.css",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html link assets/fontawesome/LICENSE.txt",
+      "pass": true
+    },
+    {
+      "name": "index.html HTTP 1366",
+      "pass": true
+    },
+    {
+      "name": "index.html layout and assets 1366",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "bai-tap"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/index.css",
+          "index.html",
+          "assets/avatar.svg",
+          "BaiTap1.html",
+          "BaiTap2.html",
+          "BaiTap3.html",
+          "BaiTap4.html",
+          "BaiTap5.html",
+          "BaiTap6.html",
+          "BaiTap7.html",
+          "BaiTap8.html",
+          "BaiTap9.html",
+          "HUONG_DAN.md",
+          "NGUON.md",
+          "minh-chung/ket-qua-kiem-tra.json"
+        ]
+      }
+    },
+    {
+      "name": "index.html link assets/avatar.svg",
+      "pass": true
+    },
+    {
+      "name": "index.html link css/common.css",
+      "pass": true
+    },
+    {
+      "name": "index.html link assets/fontawesome/css/all.min.css",
+      "pass": true
+    },
+    {
+      "name": "index.html link css/index.css",
+      "pass": true
+    },
+    {
+      "name": "index.html link index.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link BaiTap1.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link BaiTap2.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link BaiTap3.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link BaiTap4.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link BaiTap5.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link BaiTap6.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link BaiTap7.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link BaiTap8.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link BaiTap9.html",
+      "pass": true
+    },
+    {
+      "name": "index.html link HUONG_DAN.md",
+      "pass": true
+    },
+    {
+      "name": "index.html link NGUON.md",
+      "pass": true
+    },
+    {
+      "name": "index.html link minh-chung/ket-qua-kiem-tra.json",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap1.css",
+          "index.html",
+          "minh-chung/tro-choi/nhat-ky.csv",
+          "css/BaiTap1.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap2.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap2.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap2.css",
+          "index.html",
+          "css/BaiTap2.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap3.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "index.html",
+          "BaiTap4.html",
+          "BaiTap5.html",
+          "BaiTap6.html",
+          "BaiTap7.html"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap4.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap4.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap4.css",
+          "index.html",
+          "css/BaiTap4.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap5.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap5.css",
+          "index.html",
+          "assets/BIT_logo.png",
+          "./",
+          "./",
+          "css/BaiTap5.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap6.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap6.css",
+          "index.html",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "css/BaiTap6.css"
+        ]
+      }
+    },
+    {
+      "name": "Portfolio 7 tabs, 9 images, columns 768",
+      "pass": true,
+      "details": {
+        "columns": 3
+      }
+    },
+    {
+      "name": "BaiTap7.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap7.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "wrapper"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap7.css",
+          "index.html",
+          "css/BaiTap7.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap8.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "index.html",
+          "BaiTap8a.html",
+          "BaiTap8b.html"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap8a.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "root"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap8a.css",
+          "index.html",
+          "assets/css1/fe.png",
+          "assets/css1/mobile.jpg",
+          "assets/css1/web.jpg",
+          "assets/css1/qa.jpg",
+          "css/BaiTap8a.css"
+        ]
+      }
+    },
+    {
+      "name": "Heroes description fits 768",
+      "pass": true,
+      "details": [
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 32,
+            "y": 424.390625,
+            "width": 332.953125,
+            "height": 236,
+            "top": 424.390625,
+            "right": 364.953125,
+            "bottom": 660.390625,
+            "left": 32
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 381.453125,
+            "y": 424.390625,
+            "width": 332.953125,
+            "height": 236,
+            "top": 424.390625,
+            "right": 714.40625,
+            "bottom": 660.390625,
+            "left": 381.453125
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 32,
+            "y": 844.390625,
+            "width": 332.953125,
+            "height": 236,
+            "top": 844.390625,
+            "right": 364.953125,
+            "bottom": 1080.390625,
+            "left": 32
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 381.453125,
+            "y": 844.390625,
+            "width": 332.953125,
+            "height": 236,
+            "top": 844.390625,
+            "right": 714.40625,
+            "bottom": 1080.390625,
+            "left": 381.453125
+          }
+        }
+      ]
+    },
+    {
+      "name": "BaiTap8b.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "root",
+          "site-header"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap8b.css",
+          "index.html",
+          "assets/css2/superhero-1.jpg",
+          "assets/css2/superhero-2.jpg",
+          "assets/css2/superhero-3.jpg",
+          "assets/css2/superhero-4.jpg",
+          "assets/css2/superhero-5.jpg",
+          "css/BaiTap8b.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap9.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap9.css",
+          "index.html",
+          "assets/fontawesome/LICENSE.txt",
+          "css/BaiTap9.css"
+        ]
+      }
+    },
+    {
+      "name": "index.html HTTP 768",
+      "pass": true
+    },
+    {
+      "name": "index.html layout and assets 768",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "bai-tap"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/index.css",
+          "index.html",
+          "assets/avatar.svg",
+          "BaiTap1.html",
+          "BaiTap2.html",
+          "BaiTap3.html",
+          "BaiTap4.html",
+          "BaiTap5.html",
+          "BaiTap6.html",
+          "BaiTap7.html",
+          "BaiTap8.html",
+          "BaiTap9.html",
+          "HUONG_DAN.md",
+          "NGUON.md",
+          "minh-chung/ket-qua-kiem-tra.json"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap1.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap1.css",
+          "index.html",
+          "minh-chung/tro-choi/nhat-ky.csv",
+          "css/BaiTap1.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap2.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap2.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap2.css",
+          "index.html",
+          "css/BaiTap2.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap3.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "index.html",
+          "BaiTap4.html",
+          "BaiTap5.html",
+          "BaiTap6.html",
+          "BaiTap7.html"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap4.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap4.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap4.css",
+          "index.html",
+          "css/BaiTap4.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap5.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap5.css",
+          "index.html",
+          "assets/BIT_logo.png",
+          "./",
+          "./",
+          "css/BaiTap5.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap6.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap6.css",
+          "index.html",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "css/BaiTap6.css"
+        ]
+      }
+    },
+    {
+      "name": "Portfolio 7 tabs, 9 images, columns 390",
+      "pass": true,
+      "details": {
+        "columns": 1
+      }
+    },
+    {
+      "name": "BaiTap7.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap7.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "wrapper"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap7.css",
+          "index.html",
+          "css/BaiTap7.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap8.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "index.html",
+          "BaiTap8a.html",
+          "BaiTap8b.html"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap8a.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "root"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap8a.css",
+          "index.html",
+          "assets/css1/fe.png",
+          "assets/css1/mobile.jpg",
+          "assets/css1/web.jpg",
+          "assets/css1/qa.jpg",
+          "css/BaiTap8a.css"
+        ]
+      }
+    },
+    {
+      "name": "Heroes description fits 390",
+      "pass": true,
+      "details": [
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 65,
+            "y": 508.78125,
+            "width": 248,
+            "height": 236,
+            "top": 508.78125,
+            "right": 313,
+            "bottom": 744.78125,
+            "left": 65
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 65,
+            "y": 928.78125,
+            "width": 248,
+            "height": 236,
+            "top": 928.78125,
+            "right": 313,
+            "bottom": 1164.78125,
+            "left": 65
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 65,
+            "y": 1348.78125,
+            "width": 248,
+            "height": 236,
+            "top": 1348.78125,
+            "right": 313,
+            "bottom": 1584.78125,
+            "left": 65
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 65,
+            "y": 1768.78125,
+            "width": 248,
+            "height": 236,
+            "top": 1768.78125,
+            "right": 313,
+            "bottom": 2004.78125,
+            "left": 65
+          }
+        }
+      ]
+    },
+    {
+      "name": "BaiTap8b.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "root",
+          "site-header"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap8b.css",
+          "index.html",
+          "assets/css2/superhero-1.jpg",
+          "assets/css2/superhero-2.jpg",
+          "assets/css2/superhero-3.jpg",
+          "assets/css2/superhero-4.jpg",
+          "assets/css2/superhero-5.jpg",
+          "css/BaiTap8b.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap9.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap9.css",
+          "index.html",
+          "assets/fontawesome/LICENSE.txt",
+          "css/BaiTap9.css"
+        ]
+      }
+    },
+    {
+      "name": "index.html HTTP 390",
+      "pass": true
+    },
+    {
+      "name": "index.html layout and assets 390",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "bai-tap"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/index.css",
+          "index.html",
+          "assets/avatar.svg",
+          "BaiTap1.html",
+          "BaiTap2.html",
+          "BaiTap3.html",
+          "BaiTap4.html",
+          "BaiTap5.html",
+          "BaiTap6.html",
+          "BaiTap7.html",
+          "BaiTap8.html",
+          "BaiTap9.html",
+          "HUONG_DAN.md",
+          "NGUON.md",
+          "minh-chung/ket-qua-kiem-tra.json"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap1.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap1.css",
+          "index.html",
+          "minh-chung/tro-choi/nhat-ky.csv",
+          "css/BaiTap1.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap2.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap2.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap2.css",
+          "index.html",
+          "css/BaiTap2.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap3.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap3.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "index.html",
+          "BaiTap4.html",
+          "BaiTap5.html",
+          "BaiTap6.html",
+          "BaiTap7.html"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap4.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap4.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap4.css",
+          "index.html",
+          "css/BaiTap4.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap5.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap5.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap5.css",
+          "index.html",
+          "assets/BIT_logo.png",
+          "./",
+          "./",
+          "css/BaiTap5.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap6.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap6.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap6.css",
+          "index.html",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "./",
+          "assets/img_350x260.png",
+          "css/BaiTap6.css"
+        ]
+      }
+    },
+    {
+      "name": "Portfolio 7 tabs, 9 images, columns 320",
+      "pass": true,
+      "details": {
+        "columns": 1
+      }
+    },
+    {
+      "name": "BaiTap7.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap7.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "wrapper"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap7.css",
+          "index.html",
+          "css/BaiTap7.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap8.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "index.html",
+          "BaiTap8a.html",
+          "BaiTap8b.html"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap8a.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8a.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "root"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap8a.css",
+          "index.html",
+          "assets/css1/fe.png",
+          "assets/css1/mobile.jpg",
+          "assets/css1/web.jpg",
+          "assets/css1/qa.jpg",
+          "css/BaiTap8a.css"
+        ]
+      }
+    },
+    {
+      "name": "Heroes description fits 320",
+      "pass": true,
+      "details": [
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 32,
+            "y": 548.78125,
+            "width": 244,
+            "height": 236,
+            "top": 548.78125,
+            "right": 276,
+            "bottom": 784.78125,
+            "left": 32
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 32,
+            "y": 968.78125,
+            "width": 244,
+            "height": 236,
+            "top": 968.78125,
+            "right": 276,
+            "bottom": 1204.78125,
+            "left": 32
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 32,
+            "y": 1388.78125,
+            "width": 244,
+            "height": 236,
+            "top": 1388.78125,
+            "right": 276,
+            "bottom": 1624.78125,
+            "left": 32
+          }
+        },
+        {
+          "height": 230,
+          "scroll": 230,
+          "rect": {
+            "x": 32,
+            "y": 1808.78125,
+            "width": 244,
+            "height": 236,
+            "top": 1808.78125,
+            "right": 276,
+            "bottom": 2044.78125,
+            "left": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "BaiTap8b.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap8b.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "root",
+          "site-header"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap8b.css",
+          "index.html",
+          "assets/css2/superhero-1.jpg",
+          "assets/css2/superhero-2.jpg",
+          "assets/css2/superhero-3.jpg",
+          "assets/css2/superhero-4.jpg",
+          "assets/css2/superhero-5.jpg",
+          "css/BaiTap8b.css"
+        ]
+      }
+    },
+    {
+      "name": "BaiTap9.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "BaiTap9.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/BaiTap9.css",
+          "index.html",
+          "assets/fontawesome/LICENSE.txt",
+          "css/BaiTap9.css"
+        ]
+      }
+    },
+    {
+      "name": "index.html HTTP 320",
+      "pass": true
+    },
+    {
+      "name": "index.html layout and assets 320",
+      "pass": true,
+      "details": {
+        "overflow": false,
+        "images": [],
+        "missingAlt": 0,
+        "ids": [
+          "bai-tap"
+        ],
+        "scripts": 0,
+        "localLinks": [
+          "assets/avatar.svg",
+          "css/common.css",
+          "assets/fontawesome/css/all.min.css",
+          "css/index.css",
+          "index.html",
+          "assets/avatar.svg",
+          "BaiTap1.html",
+          "BaiTap2.html",
+          "BaiTap3.html",
+          "BaiTap4.html",
+          "BaiTap5.html",
+          "BaiTap6.html",
+          "BaiTap7.html",
+          "BaiTap8.html",
+          "BaiTap9.html",
+          "HUONG_DAN.md",
+          "NGUON.md",
+          "minh-chung/ket-qua-kiem-tra.json"
+        ]
+      }
+    },
+    {
+      "name": "2a required typography",
+      "pass": true,
+      "details": {
+        "color": "rgb(0, 0, 255)",
+        "textAlign": "center",
+        "fontWeight": "700",
+        "textDecorationLine": "underline",
+        "fontSize": "30px"
+      }
+    },
+    {
+      "name": "2b text-only transparency and border",
+      "pass": true,
+      "details": {
+        "color": "rgba(255, 0, 0, 0.5)",
+        "textAlign": "right",
+        "fontStyle": "italic",
+        "borderTopStyle": "dotted",
+        "borderTopColor": "rgb(255, 255, 0)",
+        "borderRadius": "14px",
+        "backgroundColor": "rgb(128, 128, 128)",
+        "fontSize": "15px",
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "2c multiple text shadows",
+      "pass": true
+    },
+    {
+      "name": "2d repeat fixed logo 30px",
+      "pass": true,
+      "details": {
+        "backgroundSize": "30px auto",
+        "backgroundRepeat": "repeat",
+        "backgroundAttachment": "fixed",
+        "backgroundImage": "url(\"http://127.0.0.1:8879/Tuan3/VeNha/assets/BIT_logo.png\")"
+      }
+    },
+    {
+      "name": "2e box .hidden",
+      "pass": true,
+      "details": {
+        "width": "100px",
+        "height": "50px",
+        "overflow": "hidden",
+        "whiteSpace": "normal",
+        "textOverflow": "clip"
+      }
+    },
+    {
+      "name": "2e hidden overflow",
+      "pass": true
+    },
+    {
+      "name": "2e box .ellipsis",
+      "pass": true,
+      "details": {
+        "width": "100px",
+        "height": "50px",
+        "overflow": "hidden",
+        "whiteSpace": "nowrap",
+        "textOverflow": "ellipsis"
+      }
+    },
+    {
+      "name": "2e visible ellipsis conditions",
+      "pass": true
+    },
+    {
+      "name": "2e box .nowrap",
+      "pass": true,
+      "details": {
+        "width": "100px",
+        "height": "50px",
+        "overflow": "visible",
+        "whiteSpace": "nowrap",
+        "textOverflow": "clip"
+      }
+    },
+    {
+      "name": "2e nowrap",
+      "pass": true
+    },
+    {
+      "name": "4 inline-block aqua menu",
+      "pass": true,
+      "details": {
+        "display": "inline-block",
+        "backgroundColor": "rgb(0, 255, 255)"
+      }
+    },
+    {
+      "name": "5 200px logo",
+      "pass": true
+    },
+    {
+      "name": "5 centered title and buttons",
+      "pass": true
+    },
+    {
+      "name": "7 semantic layout positions",
+      "pass": true,
+      "details": [
+        {
+          "tag": "HEADER",
+          "x": 502,
+          "y": 146.78125,
+          "w": 362
+        },
+        {
+          "tag": "NAV",
+          "x": 502,
+          "y": 218.78125,
+          "w": 68
+        },
+        {
+          "tag": "MAIN",
+          "x": 578,
+          "y": 218.78125,
+          "w": 286
+        },
+        {
+          "tag": "FOOTER",
+          "x": 502,
+          "y": 526.78125,
+          "w": 362
+        }
+      ]
+    },
+    {
+      "name": "8a 960px width",
+      "pass": true
+    },
+    {
+      "name": "8a four inline-block heroes",
+      "pass": true
+    },
+    {
+      "name": "8a positioned overlap layers",
+      "pass": true,
+      "details": {
+        "desc": {
+          "position": "relative",
+          "zIndex": "2"
+        },
+        "img": {
+          "position": "absolute",
+          "zIndex": "1"
+        }
+      }
+    },
+    {
+      "name": "8b 1024px width",
+      "pass": true
+    },
+    {
+      "name": "8b hover enlarges and reveals underline",
+      "pass": true,
+      "details": {
+        "normal": 175,
+        "hover": 205,
+        "normalStyle": "0",
+        "hoverStyle": {
+          "opacity": "1",
+          "decoration": "underline"
+        }
+      }
+    },
+    {
+      "name": "8b Tab reveals Nightwing",
+      "pass": true,
+      "details": {
+        "name": "Read more about Nightwing",
+        "opacity": "1",
+        "width": 205,
+        "decoration": "underline"
+      }
+    },
+    {
+      "name": "9 six real Font Awesome icons",
+      "pass": true,
+      "details": [
+        {
+          "font": "\"Font Awesome 5 Free\"",
+          "content": "\"\"",
+          "hidden": "true"
+        },
+        {
+          "font": "\"Font Awesome 5 Brands\"",
+          "content": "\"\"",
+          "hidden": "true"
+        },
+        {
+          "font": "\"Font Awesome 5 Free\"",
+          "content": "\"\"",
+          "hidden": "true"
+        },
+        {
+          "font": "\"Font Awesome 5 Free\"",
+          "content": "\"\"",
+          "hidden": "true"
+        },
+        {
+          "font": "\"Font Awesome 5 Free\"",
+          "content": "\"\"",
+          "hidden": "true"
+        },
+        {
+          "font": "\"Font Awesome 5 Brands\"",
+          "content": "\"\"",
+          "hidden": "true"
+        }
+      ]
+    },
+    {
+      "name": "offline local CSS and icons",
+      "pass": true
+    },
+    {
+      "name": "no runtime or HTTP errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "giao-dien/BaiTap1-1366.png",
+    "giao-dien/BaiTap2-1366.png",
+    "giao-dien/BaiTap3-1366.png",
+    "giao-dien/BaiTap4-1366.png",
+    "giao-dien/BaiTap5-1366.png",
+    "giao-dien/BaiTap6-1366.png",
+    "giao-dien/BaiTap7-1366.png",
+    "giao-dien/BaiTap8-1366.png",
+    "giao-dien/BaiTap8a-1366.png",
+    "giao-dien/BaiTap8b-1366.png",
+    "giao-dien/BaiTap9-1366.png",
+    "giao-dien/index-1366.png",
+    "giao-dien/BaiTap1-390.png",
+    "giao-dien/BaiTap2-390.png",
+    "giao-dien/BaiTap3-390.png",
+    "giao-dien/BaiTap4-390.png",
+    "giao-dien/BaiTap5-390.png",
+    "giao-dien/BaiTap6-390.png",
+    "giao-dien/BaiTap7-390.png",
+    "giao-dien/BaiTap8-390.png",
+    "giao-dien/BaiTap8a-390.png",
+    "giao-dien/BaiTap8b-390.png",
+    "giao-dien/BaiTap9-390.png",
+    "giao-dien/index-390.png"
+  ],
+  "browser": "157.0.8103.39",
+  "finishedAt": "2026-11-05T08:59:09.927Z",
+  "summary": {
+    "total": 218,
+    "passed": 218,
+    "failed": 0
+  },
+  "unfinished": [
+    "Two external selector games: per-level completion screenshots not captured",
+    "Week 3 GitHub publication not performed"
+  ]
+}

@@ -1,0 +1,4 @@
+.lesson-note table {width:100%;border-collapse:collapse;font-size:14px;}
+.lesson-note th,.lesson-note td {text-align:left;border:1px solid #cad7d3;padding:12px;vertical-align:top;}
+.lesson-note th {background:#e7efe9;}
+@media(max-width:600px){.lesson-note table{display:block;overflow:auto}.lesson-note td{min-width:130px}}
