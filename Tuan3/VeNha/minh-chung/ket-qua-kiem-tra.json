@@ -2255,7 +2255,12 @@
     "failed": 0
   },
   "unfinished": [
-    "Two external selector games: per-level completion screenshots not captured",
-    "Week 3 GitHub publication not performed"
-  ]
+    "Two external selector games: per-level completion screenshots not captured"
+  ],
+  "publication": {
+    "pr": "https://github.com/phong26052006-design/BT_canhanPTUDTMDT/pull/2",
+    "branch": "codex/tuan3-css-basic-2026-11-05",
+    "draft": true,
+    "note": "Publication was performed after the recorded test run; source verification is recorded separately in GITHUB.md."
+  }
 }

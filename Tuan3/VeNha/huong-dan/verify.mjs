@@ -109,7 +109,8 @@ check('offline local CSS and icons',await page.evaluate(()=>document.fonts.check
 await context.setOffline(false);
 check('no runtime or HTTP errors',network.length===0,network);
 report.finishedAt=new Date().toISOString();report.summary={total:report.checks.length,passed:report.checks.filter(x=>x.pass).length,failed:report.errors.length};
-report.unfinished=['Two external selector games: per-level completion screenshots not captured','Week 3 GitHub publication not performed'];
+report.unfinished=['Two external selector games: per-level completion screenshots not captured'];
+report.publication={note:'See GITHUB.md; this test script does not verify GitHub publication.'};
 await fs.writeFile(path.join(out,'ket-qua-kiem-tra.json'),JSON.stringify(report,null,2));
 await browser.close();console.log(JSON.stringify({summary:report.summary,errors:report.errors,failed:report.checks.filter(x=>!x.pass)},null,2));
 process.exitCode=report.errors.length?1:0;

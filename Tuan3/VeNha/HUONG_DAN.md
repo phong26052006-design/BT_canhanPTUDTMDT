@@ -26,7 +26,7 @@ Cấu trúc nộp theo mục 10: `Tuan3/VeNha/`. Giữ nguyên tên và chữ ho
 | 8a, trang 4–5 | BaiTap8a.html | Từ css1.zip; khung 960px desktop, 4 hero, relative/absolute, z-index. |
 | 8b, trang 5–6 | BaiTap8b.html | Từ css2.zip; khung 1024px desktop, hover tăng rộng và hiện Read more gạch chân; có focus-within cho bàn phím. |
 | 9, trang 6 | BaiTap9.html và thanh điều hướng | Font Awesome Free 5.15.4 lưu cục bộ; fas/fab; nhãn chữ, aria-hidden cho icon trang trí. |
-| 10, trang 6 | index.html và thư mục hiện tại | Mục lục liên kết đủ bài, tên, MSSV, ảnh đại diện chữ TP, social link GitHub. Chưa tự công bố tuần 3 lên GitHub. |
+| 10, trang 6 | index.html và thư mục hiện tại | Mục lục liên kết đủ bài, tên, MSSV, ảnh đại diện chữ TP, social link GitHub. Đã đưa lên nhánh riêng; xem GITHUB.md. |
 
 ## Những lựa chọn cần hiểu
 
@@ -45,7 +45,7 @@ Cấu trúc nộp theo mục 10: `Tuan3/VeNha/`. Giữ nguyên tên và chữ ho
 
 1. Chơi hai trò chơi, chụp minh chứng **mỗi màn được chấp nhận**, cập nhật nhật ký và trang bài 1 theo thực tế.
 2. Kiểm tra hiểu mã bằng cách tự thay cỡ chữ, số cột, z-index rồi phục hồi bản chuẩn.
-3. Công bố thư mục trên nhánh GitHub dành cho tuần 3 khi được người dùng yêu cầu/ủy quyền cụ thể. Không tự nộp LMS hoặc gửi email cho giảng viên.
+3. Kiểm tra PR tuần 3 ở GITHUB.md. PR đang là bản nháp do còn thiếu bài 1. Không tự nộp LMS hoặc gửi email cho giảng viên.
 
 Kết quả kiểm tra mã được ghi trong `minh-chung/ket-qua-kiem-tra.json`. Các ảnh trong `minh-chung/giao-dien/` là ảnh kiểm tra bài HTML/CSS, **không phải ảnh vượt màn trò chơi**.
 
