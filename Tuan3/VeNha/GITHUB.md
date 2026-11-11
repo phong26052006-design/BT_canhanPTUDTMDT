@@ -9,4 +9,6 @@ Commit đầu chứa bộ mã và minh chứng giao diện: `05cf0cd845a04b513c8
 
 Nhánh main lúc đối chiếu: `1292b593a89e4d870d870571cbab2cf2ee1a3993`. Main được giữ nguyên. PR tuần 2 cũng không bị sửa hoặc merge.
 
+Bản Word hiện hành đã được trình bày lại theo mẫu báo cáo chi tiết mới do người dùng gửi tiếp ngày 11/11: 7 trang, 11 hình minh họa của Phong, đủ phần 8a và 8b. Bản này thay bản tóm tắt 2 trang trong thư mục bao-cao; mã HTML/CSS và bộ minh chứng không đổi. Đã kiểm tra đầy đủ các trang và bảo toàn các thành phần mẫu ngoài phạm vi chỉnh sửa.
+
 Đây là mã trong nhánh GitHub, không phải xác nhận đã triển khai website GitHub Pages hoặc đã nộp bài trên LMS. Mở `index.html` trong thư mục để xem các bài; không cần nén tệp.
