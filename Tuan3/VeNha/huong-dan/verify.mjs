@@ -109,7 +109,14 @@ check('offline local CSS and icons',await page.evaluate(()=>document.fonts.check
 await context.setOffline(false);
 check('no runtime or HTTP errors',network.length===0,network);
 report.finishedAt=new Date().toISOString();report.summary={total:report.checks.length,passed:report.checks.filter(x=>x.pass).length,failed:report.errors.length};
-report.unfinished=['Two external selector games: per-level completion screenshots not captured'];
+const games=JSON.parse(await fs.readFile(path.join(out,'tro-choi/kiem-chung.json'),'utf8'));
+const crypto=await import('node:crypto');
+const hashMismatches=[];
+for(const entry of games.files){const actual=crypto.createHash('sha256').update(await fs.readFile(path.join(out,'tro-choi',entry.name))).digest('hex');if(actual!==entry.sha256)hashMismatches.push(entry.name);}
+check('game evidence 32 Diner and 10 Speedrun plus Intro',games.cssDiner.completed===32&&games.cssSpeedrun.completed===10&&games.cssSpeedrun.intro&&games.perLevelScreenshots===43&&games.files.length===45&&hashMismatches.length===0,{hashMismatches});
+report.gameEvidence=games;
+report.summary={total:report.checks.length,passed:report.checks.filter(x=>x.pass).length,failed:report.errors.length};
+report.unfinished=[];
 report.publication={note:'See GITHUB.md; this test script does not verify GitHub publication.'};
 await fs.writeFile(path.join(out,'ket-qua-kiem-tra.json'),JSON.stringify(report,null,2));
 await browser.close();console.log(JSON.stringify({summary:report.summary,errors:report.errors,failed:report.checks.filter(x=>!x.pass)},null,2));

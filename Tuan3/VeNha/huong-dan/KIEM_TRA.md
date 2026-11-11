@@ -1,6 +1,6 @@
 # Chạy lại kiểm tra mã
 
-Đây là kiểm tra trang HTML/CSS cục bộ, không điều khiển hoặc xác nhận tiến độ hai trò chơi bên ngoài.
+Đây là kiểm tra trang HTML/CSS cục bộ, không điều khiển hai trò chơi bên ngoài. Phần kiểm tra minh chứng đối chiếu số màn, nhật ký và hash ảnh đã ghi; tiến độ trò chơi đã được quan sát trực tiếp trong lượt thực hiện ngày 11/11/2026.
 
 Môi trường lần chạy bàn giao: Node.js, Playwright và Google Chrome headless. Xem phiên bản Chrome và thời điểm trong `../minh-chung/ket-qua-kiem-tra.json`.
 

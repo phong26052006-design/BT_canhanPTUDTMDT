@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-11-05T08:58:40.817Z",
+  "startedAt": "2026-11-11T02:52:25.498Z",
   "scope": "Automated tests of local coursework only; no external game completion.",
   "checks": [
     {
@@ -22,7 +22,55 @@
           "css/BaiTap1.css",
           "index.html",
           "minh-chung/tro-choi/nhat-ky.csv",
-          "css/BaiTap1.css"
+          "minh-chung/tro-choi/kiem-chung.json",
+          "minh-chung/tro-choi/README.md",
+          "minh-chung/tro-choi/css-diner-completed.png",
+          "minh-chung/tro-choi/css-diner-completed.png",
+          "minh-chung/tro-choi/css-diner-level-01.png",
+          "minh-chung/tro-choi/css-diner-level-02.png",
+          "minh-chung/tro-choi/css-diner-level-03.png",
+          "minh-chung/tro-choi/css-diner-level-04.png",
+          "minh-chung/tro-choi/css-diner-level-05.png",
+          "minh-chung/tro-choi/css-diner-level-06.png",
+          "minh-chung/tro-choi/css-diner-level-07.png",
+          "minh-chung/tro-choi/css-diner-level-08.png",
+          "minh-chung/tro-choi/css-diner-level-09.png",
+          "minh-chung/tro-choi/css-diner-level-10.png",
+          "minh-chung/tro-choi/css-diner-level-11.png",
+          "minh-chung/tro-choi/css-diner-level-12.png",
+          "minh-chung/tro-choi/css-diner-level-13.png",
+          "minh-chung/tro-choi/css-diner-level-14.png",
+          "minh-chung/tro-choi/css-diner-level-15.png",
+          "minh-chung/tro-choi/css-diner-level-16.png",
+          "minh-chung/tro-choi/css-diner-level-17.png",
+          "minh-chung/tro-choi/css-diner-level-18.png",
+          "minh-chung/tro-choi/css-diner-level-19.png",
+          "minh-chung/tro-choi/css-diner-level-20.png",
+          "minh-chung/tro-choi/css-diner-level-21.png",
+          "minh-chung/tro-choi/css-diner-level-22.png",
+          "minh-chung/tro-choi/css-diner-level-23.png",
+          "minh-chung/tro-choi/css-diner-level-24.png",
+          "minh-chung/tro-choi/css-diner-level-25.png",
+          "minh-chung/tro-choi/css-diner-level-26.png",
+          "minh-chung/tro-choi/css-diner-level-27.png",
+          "minh-chung/tro-choi/css-diner-level-28.png",
+          "minh-chung/tro-choi/css-diner-level-29.png",
+          "minh-chung/tro-choi/css-diner-level-30.png",
+          "minh-chung/tro-choi/css-diner-level-31.png",
+          "minh-chung/tro-choi/css-diner-level-32.png",
+          "minh-chung/tro-choi/css-speedrun-completed.png",
+          "minh-chung/tro-choi/css-speedrun-completed.png",
+          "minh-chung/tro-choi/css-speedrun-intro.png",
+          "minh-chung/tro-choi/css-speedrun-level-01.png",
+          "minh-chung/tro-choi/css-speedrun-level-02.png",
+          "minh-chung/tro-choi/css-speedrun-level-03.png",
+          "minh-chung/tro-choi/css-speedrun-level-04.png",
+          "minh-chung/tro-choi/css-speedrun-level-05.png",
+          "minh-chung/tro-choi/css-speedrun-level-06.png",
+          "minh-chung/tro-choi/css-speedrun-level-07.png",
+          "minh-chung/tro-choi/css-speedrun-level-08.png",
+          "minh-chung/tro-choi/css-speedrun-level-09.png",
+          "minh-chung/tro-choi/css-speedrun-level-10.png"
         ]
       }
     },
@@ -48,6 +96,194 @@
     },
     {
       "name": "BaiTap1.html link minh-chung/tro-choi/nhat-ky.csv",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/kiem-chung.json",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/README.md",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-completed.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-01.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-02.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-03.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-04.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-05.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-06.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-07.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-08.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-09.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-10.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-11.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-12.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-13.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-14.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-15.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-16.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-17.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-18.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-19.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-20.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-21.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-22.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-23.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-24.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-25.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-26.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-27.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-28.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-29.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-30.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-31.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-diner-level-32.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-completed.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-intro.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-01.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-02.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-03.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-04.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-05.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-06.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-07.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-08.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-09.png",
+      "pass": true
+    },
+    {
+      "name": "BaiTap1.html link minh-chung/tro-choi/css-speedrun-level-10.png",
       "pass": true
     },
     {
@@ -793,7 +1029,55 @@
           "css/BaiTap1.css",
           "index.html",
           "minh-chung/tro-choi/nhat-ky.csv",
-          "css/BaiTap1.css"
+          "minh-chung/tro-choi/kiem-chung.json",
+          "minh-chung/tro-choi/README.md",
+          "minh-chung/tro-choi/css-diner-completed.png",
+          "minh-chung/tro-choi/css-diner-completed.png",
+          "minh-chung/tro-choi/css-diner-level-01.png",
+          "minh-chung/tro-choi/css-diner-level-02.png",
+          "minh-chung/tro-choi/css-diner-level-03.png",
+          "minh-chung/tro-choi/css-diner-level-04.png",
+          "minh-chung/tro-choi/css-diner-level-05.png",
+          "minh-chung/tro-choi/css-diner-level-06.png",
+          "minh-chung/tro-choi/css-diner-level-07.png",
+          "minh-chung/tro-choi/css-diner-level-08.png",
+          "minh-chung/tro-choi/css-diner-level-09.png",
+          "minh-chung/tro-choi/css-diner-level-10.png",
+          "minh-chung/tro-choi/css-diner-level-11.png",
+          "minh-chung/tro-choi/css-diner-level-12.png",
+          "minh-chung/tro-choi/css-diner-level-13.png",
+          "minh-chung/tro-choi/css-diner-level-14.png",
+          "minh-chung/tro-choi/css-diner-level-15.png",
+          "minh-chung/tro-choi/css-diner-level-16.png",
+          "minh-chung/tro-choi/css-diner-level-17.png",
+          "minh-chung/tro-choi/css-diner-level-18.png",
+          "minh-chung/tro-choi/css-diner-level-19.png",
+          "minh-chung/tro-choi/css-diner-level-20.png",
+          "minh-chung/tro-choi/css-diner-level-21.png",
+          "minh-chung/tro-choi/css-diner-level-22.png",
+          "minh-chung/tro-choi/css-diner-level-23.png",
+          "minh-chung/tro-choi/css-diner-level-24.png",
+          "minh-chung/tro-choi/css-diner-level-25.png",
+          "minh-chung/tro-choi/css-diner-level-26.png",
+          "minh-chung/tro-choi/css-diner-level-27.png",
+          "minh-chung/tro-choi/css-diner-level-28.png",
+          "minh-chung/tro-choi/css-diner-level-29.png",
+          "minh-chung/tro-choi/css-diner-level-30.png",
+          "minh-chung/tro-choi/css-diner-level-31.png",
+          "minh-chung/tro-choi/css-diner-level-32.png",
+          "minh-chung/tro-choi/css-speedrun-completed.png",
+          "minh-chung/tro-choi/css-speedrun-completed.png",
+          "minh-chung/tro-choi/css-speedrun-intro.png",
+          "minh-chung/tro-choi/css-speedrun-level-01.png",
+          "minh-chung/tro-choi/css-speedrun-level-02.png",
+          "minh-chung/tro-choi/css-speedrun-level-03.png",
+          "minh-chung/tro-choi/css-speedrun-level-04.png",
+          "minh-chung/tro-choi/css-speedrun-level-05.png",
+          "minh-chung/tro-choi/css-speedrun-level-06.png",
+          "minh-chung/tro-choi/css-speedrun-level-07.png",
+          "minh-chung/tro-choi/css-speedrun-level-08.png",
+          "minh-chung/tro-choi/css-speedrun-level-09.png",
+          "minh-chung/tro-choi/css-speedrun-level-10.png"
         ]
       }
     },
@@ -1200,7 +1484,55 @@
           "css/BaiTap1.css",
           "index.html",
           "minh-chung/tro-choi/nhat-ky.csv",
-          "css/BaiTap1.css"
+          "minh-chung/tro-choi/kiem-chung.json",
+          "minh-chung/tro-choi/README.md",
+          "minh-chung/tro-choi/css-diner-completed.png",
+          "minh-chung/tro-choi/css-diner-completed.png",
+          "minh-chung/tro-choi/css-diner-level-01.png",
+          "minh-chung/tro-choi/css-diner-level-02.png",
+          "minh-chung/tro-choi/css-diner-level-03.png",
+          "minh-chung/tro-choi/css-diner-level-04.png",
+          "minh-chung/tro-choi/css-diner-level-05.png",
+          "minh-chung/tro-choi/css-diner-level-06.png",
+          "minh-chung/tro-choi/css-diner-level-07.png",
+          "minh-chung/tro-choi/css-diner-level-08.png",
+          "minh-chung/tro-choi/css-diner-level-09.png",
+          "minh-chung/tro-choi/css-diner-level-10.png",
+          "minh-chung/tro-choi/css-diner-level-11.png",
+          "minh-chung/tro-choi/css-diner-level-12.png",
+          "minh-chung/tro-choi/css-diner-level-13.png",
+          "minh-chung/tro-choi/css-diner-level-14.png",
+          "minh-chung/tro-choi/css-diner-level-15.png",
+          "minh-chung/tro-choi/css-diner-level-16.png",
+          "minh-chung/tro-choi/css-diner-level-17.png",
+          "minh-chung/tro-choi/css-diner-level-18.png",
+          "minh-chung/tro-choi/css-diner-level-19.png",
+          "minh-chung/tro-choi/css-diner-level-20.png",
+          "minh-chung/tro-choi/css-diner-level-21.png",
+          "minh-chung/tro-choi/css-diner-level-22.png",
+          "minh-chung/tro-choi/css-diner-level-23.png",
+          "minh-chung/tro-choi/css-diner-level-24.png",
+          "minh-chung/tro-choi/css-diner-level-25.png",
+          "minh-chung/tro-choi/css-diner-level-26.png",
+          "minh-chung/tro-choi/css-diner-level-27.png",
+          "minh-chung/tro-choi/css-diner-level-28.png",
+          "minh-chung/tro-choi/css-diner-level-29.png",
+          "minh-chung/tro-choi/css-diner-level-30.png",
+          "minh-chung/tro-choi/css-diner-level-31.png",
+          "minh-chung/tro-choi/css-diner-level-32.png",
+          "minh-chung/tro-choi/css-speedrun-completed.png",
+          "minh-chung/tro-choi/css-speedrun-completed.png",
+          "minh-chung/tro-choi/css-speedrun-intro.png",
+          "minh-chung/tro-choi/css-speedrun-level-01.png",
+          "minh-chung/tro-choi/css-speedrun-level-02.png",
+          "minh-chung/tro-choi/css-speedrun-level-03.png",
+          "minh-chung/tro-choi/css-speedrun-level-04.png",
+          "minh-chung/tro-choi/css-speedrun-level-05.png",
+          "minh-chung/tro-choi/css-speedrun-level-06.png",
+          "minh-chung/tro-choi/css-speedrun-level-07.png",
+          "minh-chung/tro-choi/css-speedrun-level-08.png",
+          "minh-chung/tro-choi/css-speedrun-level-09.png",
+          "minh-chung/tro-choi/css-speedrun-level-10.png"
         ]
       }
     },
@@ -1607,7 +1939,55 @@
           "css/BaiTap1.css",
           "index.html",
           "minh-chung/tro-choi/nhat-ky.csv",
-          "css/BaiTap1.css"
+          "minh-chung/tro-choi/kiem-chung.json",
+          "minh-chung/tro-choi/README.md",
+          "minh-chung/tro-choi/css-diner-completed.png",
+          "minh-chung/tro-choi/css-diner-completed.png",
+          "minh-chung/tro-choi/css-diner-level-01.png",
+          "minh-chung/tro-choi/css-diner-level-02.png",
+          "minh-chung/tro-choi/css-diner-level-03.png",
+          "minh-chung/tro-choi/css-diner-level-04.png",
+          "minh-chung/tro-choi/css-diner-level-05.png",
+          "minh-chung/tro-choi/css-diner-level-06.png",
+          "minh-chung/tro-choi/css-diner-level-07.png",
+          "minh-chung/tro-choi/css-diner-level-08.png",
+          "minh-chung/tro-choi/css-diner-level-09.png",
+          "minh-chung/tro-choi/css-diner-level-10.png",
+          "minh-chung/tro-choi/css-diner-level-11.png",
+          "minh-chung/tro-choi/css-diner-level-12.png",
+          "minh-chung/tro-choi/css-diner-level-13.png",
+          "minh-chung/tro-choi/css-diner-level-14.png",
+          "minh-chung/tro-choi/css-diner-level-15.png",
+          "minh-chung/tro-choi/css-diner-level-16.png",
+          "minh-chung/tro-choi/css-diner-level-17.png",
+          "minh-chung/tro-choi/css-diner-level-18.png",
+          "minh-chung/tro-choi/css-diner-level-19.png",
+          "minh-chung/tro-choi/css-diner-level-20.png",
+          "minh-chung/tro-choi/css-diner-level-21.png",
+          "minh-chung/tro-choi/css-diner-level-22.png",
+          "minh-chung/tro-choi/css-diner-level-23.png",
+          "minh-chung/tro-choi/css-diner-level-24.png",
+          "minh-chung/tro-choi/css-diner-level-25.png",
+          "minh-chung/tro-choi/css-diner-level-26.png",
+          "minh-chung/tro-choi/css-diner-level-27.png",
+          "minh-chung/tro-choi/css-diner-level-28.png",
+          "minh-chung/tro-choi/css-diner-level-29.png",
+          "minh-chung/tro-choi/css-diner-level-30.png",
+          "minh-chung/tro-choi/css-diner-level-31.png",
+          "minh-chung/tro-choi/css-diner-level-32.png",
+          "minh-chung/tro-choi/css-speedrun-completed.png",
+          "minh-chung/tro-choi/css-speedrun-completed.png",
+          "minh-chung/tro-choi/css-speedrun-intro.png",
+          "minh-chung/tro-choi/css-speedrun-level-01.png",
+          "minh-chung/tro-choi/css-speedrun-level-02.png",
+          "minh-chung/tro-choi/css-speedrun-level-03.png",
+          "minh-chung/tro-choi/css-speedrun-level-04.png",
+          "minh-chung/tro-choi/css-speedrun-level-05.png",
+          "minh-chung/tro-choi/css-speedrun-level-06.png",
+          "minh-chung/tro-choi/css-speedrun-level-07.png",
+          "minh-chung/tro-choi/css-speedrun-level-08.png",
+          "minh-chung/tro-choi/css-speedrun-level-09.png",
+          "minh-chung/tro-choi/css-speedrun-level-10.png"
         ]
       }
     },
@@ -2218,6 +2598,13 @@
       "name": "no runtime or HTTP errors",
       "pass": true,
       "details": []
+    },
+    {
+      "name": "game evidence 32 Diner and 10 Speedrun plus Intro",
+      "pass": true,
+      "details": {
+        "hashMismatches": []
+      }
     }
   ],
   "errors": [],
@@ -2247,20 +2634,218 @@
     "giao-dien/BaiTap9-390.png",
     "giao-dien/index-390.png"
   ],
-  "browser": "157.0.8103.39",
-  "finishedAt": "2026-11-05T08:59:09.927Z",
+  "browser": "157.0.8103.50",
+  "finishedAt": "2026-11-11T02:52:57.619Z",
   "summary": {
-    "total": 218,
-    "passed": 218,
+    "total": 266,
+    "passed": 266,
     "failed": 0
   },
-  "unfinished": [
-    "Two external selector games: per-level completion screenshots not captured"
-  ],
+  "gameEvidence": {
+    "date": "2026-11-11",
+    "actor": "Trợ lý AI thao tác qua giao diện trò chơi gốc",
+    "method": "Nhập selector và gửi bằng ô nhập của trò chơi, chờ DOM đánh dấu completed/done, chụp ảnh. Không chỉnh localStorage hoặc trạng thái tiến độ.",
+    "cssDiner": {
+      "url": "https://flukeout.github.io/",
+      "completed": 32,
+      "total": 32,
+      "final": "css-diner-completed.png"
+    },
+    "cssSpeedrun": {
+      "url": "https://css-speedrun.netlify.app/",
+      "intro": true,
+      "completed": 10,
+      "total": 10,
+      "timerDisplayed": "01:37:8",
+      "final": "css-speedrun-completed.png"
+    },
+    "perLevelScreenshots": 43,
+    "totalScreenshots": 45,
+    "files": [
+      {
+        "name": "css-diner-completed.png",
+        "sha256": "4ade40ecb16abea388a231e668d440b3c1f78d5a1e8ef9b44734f21811547122"
+      },
+      {
+        "name": "css-diner-level-01.png",
+        "sha256": "38d6400893a0c0f71739d25a79dbbb76022ad1d193d3f7ee354e97976a36ee0a"
+      },
+      {
+        "name": "css-diner-level-02.png",
+        "sha256": "6d8f1ba1ffb07e38bec9259aa5832c549e8d196a0ee34f37df8d4c45d3f21c20"
+      },
+      {
+        "name": "css-diner-level-03.png",
+        "sha256": "501c444c953b80cbbdfbd5339490f196dcbcd8e4d5d7c0f1be968e2738528acb"
+      },
+      {
+        "name": "css-diner-level-04.png",
+        "sha256": "2e83e537e58642ecf3cf9799b147a3001ff8dfe2c8285099c730fae4ab8c6808"
+      },
+      {
+        "name": "css-diner-level-05.png",
+        "sha256": "18b1e23fc6c43f43106a88daab61d928c1420f4f5b051e15ccdc6689a75c24be"
+      },
+      {
+        "name": "css-diner-level-06.png",
+        "sha256": "3c74d5611767403c3032822dad57ef75bf6285d27a6a331cdd821c332efd2a38"
+      },
+      {
+        "name": "css-diner-level-07.png",
+        "sha256": "7c8b88177185002e57d0fd08474d102c2eb242814d37a9000d696e448bc97352"
+      },
+      {
+        "name": "css-diner-level-08.png",
+        "sha256": "70e42ca6fbb75c8e8a4111cbaa4bd52611d68e1701b27de91486931e3559722d"
+      },
+      {
+        "name": "css-diner-level-09.png",
+        "sha256": "e21bb470ea12f022f56818c0a5dcc7c51c4659e35403f1e6f53069cc3b649f3f"
+      },
+      {
+        "name": "css-diner-level-10.png",
+        "sha256": "30e6d9b8d523a9e31bb12cd4fb67a132386264b6e00936eb0828c8053b639373"
+      },
+      {
+        "name": "css-diner-level-11.png",
+        "sha256": "f19833161eebebbdfcf10eab2256203ac774b213c025d0aabe23abba19179566"
+      },
+      {
+        "name": "css-diner-level-12.png",
+        "sha256": "cd190d33fa5e9a948f7254e49ef9bc4cadda790ce85c9c8b0960e1704d1e643a"
+      },
+      {
+        "name": "css-diner-level-13.png",
+        "sha256": "8d8a2dca06ff72c13ffed6d76a54382af9551b3d84b2e8fadda6a1a72385d2bf"
+      },
+      {
+        "name": "css-diner-level-14.png",
+        "sha256": "0d6fb90b17017b45bad5c653c88460f6298d939cce62e34a798f7c33d4b85b24"
+      },
+      {
+        "name": "css-diner-level-15.png",
+        "sha256": "5212154c707d5b4e3a149cbb4fbabbfae7c85cc95363197b09da69f8310b6b3a"
+      },
+      {
+        "name": "css-diner-level-16.png",
+        "sha256": "66fa84bfaae78ec63b3b1c97c44da16d48033d9ba410bb3e3f54fe5c5ab8e3f2"
+      },
+      {
+        "name": "css-diner-level-17.png",
+        "sha256": "2424cbda669a525b0b8122b19e248396fdc6568a7a28d6e09d54984263b7d095"
+      },
+      {
+        "name": "css-diner-level-18.png",
+        "sha256": "37fe2ce94393b4953fb3e62c95deec61cbc958bfb8e042346946f91ce8fa1da0"
+      },
+      {
+        "name": "css-diner-level-19.png",
+        "sha256": "eb96a61355d6aca9061ac9ab3ff4c89babb5482d15785fa5630f258684395bb9"
+      },
+      {
+        "name": "css-diner-level-20.png",
+        "sha256": "d150a62d17167c3a7f1c943426473c761d23d1bced2d13e736ead9d1badde25b"
+      },
+      {
+        "name": "css-diner-level-21.png",
+        "sha256": "c68a80ea5669adbddfc9cb7a59f2336e8da7b434cadc718f6165e2b5383e7f5c"
+      },
+      {
+        "name": "css-diner-level-22.png",
+        "sha256": "f3a10968c8e25139c68a6cd6e1a01859d2be0758ca2ac03238b167e5f47304f4"
+      },
+      {
+        "name": "css-diner-level-23.png",
+        "sha256": "83ae86dc58603d629c9cab994432f5207f1841d4b5a7a5c00b8bf3085b41018e"
+      },
+      {
+        "name": "css-diner-level-24.png",
+        "sha256": "4422ad51ca28b706f8b9cc92825b35477829447e1dbd923551570f8411486a4b"
+      },
+      {
+        "name": "css-diner-level-25.png",
+        "sha256": "bf840523f87e15d2bf1aff03195e36e29f96ee51851593842b4923077b72ffe4"
+      },
+      {
+        "name": "css-diner-level-26.png",
+        "sha256": "c15a86d9f2fe6a468d6dfcfbdbf8de3222155a5396a06cc523089c91b6566ddd"
+      },
+      {
+        "name": "css-diner-level-27.png",
+        "sha256": "2bda4c3ef81775d07b7eb322e3c38a3c28af95363ac8c0e47675bfe59b4ee25a"
+      },
+      {
+        "name": "css-diner-level-28.png",
+        "sha256": "f513ab7b4a701c3154eaad5ba24e37b00372a7781aacd16cfa41c22ca3bde71e"
+      },
+      {
+        "name": "css-diner-level-29.png",
+        "sha256": "652b3affeb57d0fe09fa674d8909755780712de990eddedeae3616ac2319c510"
+      },
+      {
+        "name": "css-diner-level-30.png",
+        "sha256": "e7ac10f868575c4c8bc90263b835b7c1ed6afd892dd2d6f5517a3eca603a2714"
+      },
+      {
+        "name": "css-diner-level-31.png",
+        "sha256": "b4c5d719e48d42f34ced2987a5692bc774cf07e0a081a88a74a223501aabe35c"
+      },
+      {
+        "name": "css-diner-level-32.png",
+        "sha256": "69f2826ed219fe0a74e150ccce16a38ebbdf632ba5ffc5852657bd0702852698"
+      },
+      {
+        "name": "css-speedrun-completed.png",
+        "sha256": "f929c85fc981e21c4878991e6ca5b903f1f647fdc2a63ac1888c12cb83e4f6d4"
+      },
+      {
+        "name": "css-speedrun-intro.png",
+        "sha256": "e7d282eb5b941867caf0dbf8e4d22cc59c6b8efca33f0779f251b4f82f22645b"
+      },
+      {
+        "name": "css-speedrun-level-01.png",
+        "sha256": "d58f4b1cff13b519fb0e5a5cd4b52e2311e145df5516da5dc804f722c9667390"
+      },
+      {
+        "name": "css-speedrun-level-02.png",
+        "sha256": "ee98e7cbc356791bb2fc84918c06d1cb3e48b90db37fbc02afb29f690f3dd092"
+      },
+      {
+        "name": "css-speedrun-level-03.png",
+        "sha256": "f064f4b9e2a3ecd54cd597961184f5559a5bb0b6e95fb097b98bc8b0a063be04"
+      },
+      {
+        "name": "css-speedrun-level-04.png",
+        "sha256": "794692e59150eacec6ae3186d6d5ff81028ddd2cfedbe33967c703363360e5fe"
+      },
+      {
+        "name": "css-speedrun-level-05.png",
+        "sha256": "843c7f94722419e0ac5e8e9f32569180b99cfef6db72e8710afd2ca63efac992"
+      },
+      {
+        "name": "css-speedrun-level-06.png",
+        "sha256": "7590013331c39e2b0aedbbc43b1d7706c795209762d890e3f18352da62cf9222"
+      },
+      {
+        "name": "css-speedrun-level-07.png",
+        "sha256": "bc568c5b79da5fc4d0b445e0662b75b7618ee514f9f2c931b08235ebd4fe516b"
+      },
+      {
+        "name": "css-speedrun-level-08.png",
+        "sha256": "160867e6726c815317e45cb84c262bcc910002c0429e399faece526b0ed4ce66"
+      },
+      {
+        "name": "css-speedrun-level-09.png",
+        "sha256": "f776f82dc674279afc5e266746e795e7eae75f81e8bb2dcf9bb9b251b5be207c"
+      },
+      {
+        "name": "css-speedrun-level-10.png",
+        "sha256": "b8769c72a2bb54aa059b65c312997bd21ff5629e0717baa632aa79dbe6f786b0"
+      }
+    ]
+  },
+  "unfinished": [],
   "publication": {
-    "pr": "https://github.com/phong26052006-design/BT_canhanPTUDTMDT/pull/2",
-    "branch": "codex/tuan3-css-basic-2026-11-05",
-    "draft": true,
-    "note": "Publication was performed after the recorded test run; source verification is recorded separately in GITHUB.md."
+    "note": "See GITHUB.md; this test script does not verify GitHub publication."
   }
 }

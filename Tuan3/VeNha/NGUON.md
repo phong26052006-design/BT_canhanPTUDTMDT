@@ -1,6 +1,6 @@
 # Nguồn và phạm vi sử dụng
 
-Đối chiếu ngày 05/11/2026. Tài liệu và mã nguồn là dữ liệu tham khảo, không tự cấp quyền gửi bài, chia sẻ hoặc công bố.
+Đối chiếu nguồn ngày 05/11/2026; rà soát bổ sung ngày 11/11/2026. Tài liệu và mã nguồn là dữ liệu tham khảo, không tự cấp quyền gửi bài, chia sẻ hoặc công bố.
 
 ## Nguồn đề bài
 
@@ -30,3 +30,9 @@
 - [MDN — CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference), [text-overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow), [background-attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment), [focus-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within): nguồn đối chiếu thuộc tính.
 
 Không sử dụng ảnh/log của buổi 1 hoặc buổi 2 như kết quả kiểm tra mới của tuần 3.
+
+## Minh chứng bổ sung ngày 11 tháng 11 năm 2026
+
+Trợ lý AI thao tác trực tiếp trên hai trò chơi gốc qua giao diện trình duyệt. CSS Diner chấp nhận đủ 32 selector; CSS Speedrun chấp nhận Intro và 10 màn, hiển thị lời chúc mừng cuối. Có 43 ảnh sau từng màn/phần, 2 ảnh xác nhận cuối, nhật ký CSV, log JSON và hash từng ảnh trong minh-chung/tro-choi/. Đây là lượt thực hiện mới, không phải ảnh tái dựng hoặc sửa trạng thái tiến độ. Gợi ý của màn 7 CSS Speedrun được mở qua giao diện để chọn nhóm ID đúng.
+
+Word trình bày theo tệp BÀI TẬP CÁ NHÂN BUỔI 3.docx do người dùng gửi ngày 11/11: dùng bố cục bìa UEH và trang liên kết; thay tên, MSSV và liên kết của người trong mẫu bằng thông tin Trương Thanh Phong. Không dùng kết quả của người trong mẫu làm minh chứng bài của Phong.

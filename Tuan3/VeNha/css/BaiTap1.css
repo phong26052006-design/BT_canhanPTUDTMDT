@@ -1,4 +1,9 @@
 .lesson-note table {width:100%;border-collapse:collapse;font-size:14px;}
 .lesson-note th,.lesson-note td {text-align:left;border:1px solid #cad7d3;padding:12px;vertical-align:top;}
 .lesson-note th {background:#e7efe9;}
-@media(max-width:600px){.lesson-note table{display:block;overflow:auto}.lesson-note td{min-width:130px}}
+.lesson-note h2 {margin-top:32px;}
+.game-result {display:block;width:100%;height:auto;margin:18px 0 24px;}
+.proof-table {overflow-x:auto;}
+.proof-table th:first-child {width:48px;}
+.proof-table td code {overflow-wrap:anywhere;}
+@media(max-width:600px){.proof-table table{min-width:640px}.lesson-note td{padding:10px}}

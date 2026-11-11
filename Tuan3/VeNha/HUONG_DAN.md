@@ -1,6 +1,6 @@
 # Bài tập cá nhân tuần 3 — CSS cơ bản
 
-**Sinh viên:** Trương Thanh Phong · **MSSV:** 31241024967 · **Ngày thực hiện:** 05/11/2026.
+**Sinh viên:** Trương Thanh Phong · **MSSV:** 31241024967 · **Cập nhật rà soát:** 11/11/2026.
 
 ## Mở và xem bài
 
@@ -12,7 +12,7 @@ Cấu trúc nộp theo mục 10: `Tuan3/VeNha/`. Giữ nguyên tên và chữ ho
 
 | Mục đề | Tệp / kết quả | Ghi chú |
 |---|---|---|
-| 1, trang 1 | BaiTap1.html | Chưa có minh chứng vượt từng màn của hai trò chơi. Có hướng dẫn và nhật ký trống, không đánh dấu hoàn thành giả. |
+| 1, trang 1 | BaiTap1.html | CSS Diner 32/32; CSS Speedrun Intro và 10/10; 45 ảnh minh chứng và nhật ký selector, thực hiện ngày 11/11/2026. |
 | 2a, trang 1 | BaiTap2.html / .ueh | Blue, center, bold, underline, 30px. |
 | 2b, trang 1 | BaiTap2.html / .faculty | Đúng chữ “Khoa CNTTD”; red alpha 0.5, right, italic, yellow dotted rounded border, gray, 15px. |
 | 2c, trang 1 | BaiTap2.html / .shadow-text | Bóng nhiều lớp đỏ/đen/xanh tái hiện hình BIT-UEH. Đề không nêu các giá trị shadow cụ thể. |
@@ -41,14 +41,14 @@ Cấu trúc nộp theo mục 10: `Tuan3/VeNha/`. Giữ nguyên tên và chữ ho
 - HTML nguồn css2 có `<span>` đóng sai; đã sửa thành `</span>`. Ảnh được bổ sung alt, các liên kết Read more có tên truy cập xác định nhân vật.
 - Thanh quay về mục lục và phần giải thích được tách khỏi vùng mô phỏng hình mẫu, không thay đổi nội dung bài mẫu.
 
-## Cần hoàn tất trước khi nộp
+## Kiểm tra trước khi nộp
 
-1. Chơi hai trò chơi, chụp minh chứng **mỗi màn được chấp nhận**, cập nhật nhật ký và trang bài 1 theo thực tế.
+1. Đối chiếu trang bài 1 và nhật ký: đã có 43 lượt vượt màn/phần và 45 ảnh từ trò chơi gốc.
 2. Kiểm tra hiểu mã bằng cách tự thay cỡ chữ, số cột, z-index rồi phục hồi bản chuẩn.
-3. Kiểm tra PR tuần 3 ở GITHUB.md. PR đang là bản nháp do còn thiếu bài 1. Không tự nộp LMS hoặc gửi email cho giảng viên.
+3. Kiểm tra PR tuần 3 ở GITHUB.md. PR được cập nhật với phần minh chứng đã hoàn thành; giữ main theo phạm vi ủy quyền. Không tự nộp LMS hoặc gửi email cho giảng viên.
 
 Kết quả kiểm tra mã được ghi trong `minh-chung/ket-qua-kiem-tra.json`. Các ảnh trong `minh-chung/giao-dien/` là ảnh kiểm tra bài HTML/CSS, **không phải ảnh vượt màn trò chơi**.
 
 ## Minh bạch hỗ trợ
 
-AI hỗ trợ đọc đề, đối chiếu ảnh, lấy mã mẫu, viết CSS, tổ chức hồ sơ và chạy kiểm tra tự động. Không ghi những thao tác này thành trải nghiệm tự thực hiện của sinh viên. Minh chứng trò chơi và việc công bố GitHub được ghi riêng theo trạng thái thực tế.
+AI hỗ trợ đọc đề, đối chiếu ảnh, lấy mã mẫu, viết CSS, tổ chức hồ sơ và chạy kiểm tra tự động. Không ghi những thao tác này thành trải nghiệm tự thực hiện của sinh viên. Trợ lý AI thực hiện hai trò chơi qua giao diện gốc; việc vượt màn không được gán thành thành tích tự thực hiện của sinh viên. Xem nhật ký, ảnh và nguồn trong thư mục minh-chung/tro-choi/.
