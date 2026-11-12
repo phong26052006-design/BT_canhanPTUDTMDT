@@ -1,0 +1,36 @@
+body {background:#f8f7f2;color:#203f42;margin:0;font-family:Arial,sans-serif;}
+.course-bar {margin:0;background:#fffdf7;padding:14px 32px;}
+.home {max-width:1120px;margin:auto;padding:0 28px;}
+.home-hero {display:grid;grid-template-columns:1.65fr 1fr;gap:70px;padding:64px 0 56px;border-bottom:1px solid #d5ded5;align-items:center;}
+.eyebrow {font-size:11px;font-weight:bold;letter-spacing:1.8px;color:#55716e;line-height:1.7;}
+.home h1 {font:700 52px/1.13 Arial,sans-serif;letter-spacing:-1.6px;margin:20px 0;color:#004f53;}
+.home h1 span {color:#46716a;}
+.home-intro {font-size:16px;line-height:1.8;color:#5b6e6b;max-width:600px;}
+.primary-link {display:inline-flex;gap:32px;align-items:center;background:#005d62;color:white;text-decoration:none;padding:15px 20px;border-radius:5px;margin-top:16px;font-size:14px;}
+.primary-link:hover {background:#00464a;}
+.student {border-left:1px solid #cbd8cc;padding:10px 0 10px 38px;}
+.student img {display:block;margin-bottom:22px;}
+.student-label {font-size:10px;letter-spacing:1.7px;color:#6d7b6f;font-weight:bold;}
+.student h2 {font-size:23px;letter-spacing:-.5px;margin:10px 0;}
+.student p {font-size:14px;line-height:1.8;}
+.student a {font-size:12px;color:#005d62;text-decoration:none;overflow-wrap:anywhere;}
+.student a:hover {text-decoration:underline;}
+.section-title {display:flex;justify-content:space-between;align-items:center;gap:12px;margin:35px 0 24px;}
+.section-title h2 {font-size:26px;letter-spacing:-.5px;margin:0;}
+.section-title span {font-size:12px;color:#718075;}
+.lesson-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.lesson-card {display:block;position:relative;border:1px solid #d9e0d5;border-radius:7px;background:#fffef9;padding:24px;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s;}
+.lesson-card:hover {border-color:#478273;box-shadow:0 5px 14px #214e4110;}
+.lesson-number {font-size:30px;font-weight:bold;color:#b0c2b2;}
+.lesson-tag {float:right;font-size:10px;letter-spacing:.4px;color:#58715f;background:#edf2e6;padding:6px 8px;border-radius:3px;}
+.lesson-card h3 {font-size:20px;margin:22px 0 10px;letter-spacing:-.4px;}
+.lesson-card p {font-size:13px;color:#6a786d;line-height:1.7;min-height:44px;margin:0 0 22px;}
+.open-label {font-size:12px;font-weight:bold;color:#005d62;display:flex;justify-content:space-between;}
+.submission-note {display:flex;gap:22px;background:#eaf0e4;border:1px solid #d5decf;padding:24px;margin:32px 0;border-radius:6px;}
+.submission-note>i {font-size:24px;color:#46715e;margin-top:4px;}
+.submission-note h2 {font-size:18px;margin:0 0 10px;}
+.submission-note p {font-size:13px;line-height:1.8;margin:8px 0;color:#50674f;}
+.submission-note a {color:#005d62;}
+.home-footer {display:flex;justify-content:space-between;gap:12px;font-size:11px;color:#7b8579;border-top:1px solid #d5ded5;padding:20px 0 35px;}
+@media(max-width:850px){.home-hero{gap:28px;grid-template-columns:1.4fr 1fr}.home h1{font-size:42px}.student{padding-left:24px}.lesson-card{padding:20px}}
+@media(max-width:650px){.home{padding:0 18px}.home-hero{grid-template-columns:1fr;padding:36px 0;gap:32px}.home h1{font-size:38px}.student{border-left:0;border-top:1px solid #cbd8cc;padding:24px 0 0}.student img{float:left;width:80px;height:80px;margin:8px 22px 55px 0}.lesson-grid{grid-template-columns:1fr}.lesson-card p{min-height:0}.section-title{align-items:flex-start;flex-direction:column}.submission-note{padding:18px;gap:14px}.home-footer{flex-direction:column}.course-bar{padding:12px}}

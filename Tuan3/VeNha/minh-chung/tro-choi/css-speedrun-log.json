@@ -1,0 +1,120 @@
+[
+  {
+    "level": 0,
+    "label": "Intro",
+    "selector": "li:first-child",
+    "accepted": true,
+    "image": "css-speedrun-intro.png",
+    "acceptedAt": "2026-11-11T02:47:14.886Z"
+  },
+  {
+    "level": 1,
+    "selector": "p:not(.foo)",
+    "accepted": true,
+    "image": "css-speedrun-level-01.png",
+    "acceptedAt": "2026-11-11T02:47:30.067Z",
+    "challenge": {
+      "goal": "\n➡️\n\n➡️\n➡️\n\n",
+      "html": "<div>\n  <p></p>\n  <p class=\"foo\"></p>\n  <p></p>\n  <p></p>\n</div>"
+    }
+  },
+  {
+    "level": 2,
+    "selector": "li:nth-child(2n+3)",
+    "accepted": true,
+    "image": "css-speedrun-level-02.png",
+    "acceptedAt": "2026-11-11T02:47:38.195Z",
+    "challenge": {
+      "goal": "\n\n\n➡️\n\n➡️\n\n➡️\n\n",
+      "html": "<ul>\n  <li></li>\n  <li></li>\n  <li></li>\n  <li></li>\n  <li></li>\n  <li></li>\n  <li></li>\n</ul>"
+    }
+  },
+  {
+    "level": 3,
+    "selector": "div > *",
+    "accepted": true,
+    "image": "css-speedrun-level-03.png",
+    "acceptedAt": "2026-11-11T02:47:46.551Z",
+    "challenge": {
+      "goal": "\n➡️\n➡️\n\n\n\n\n",
+      "html": "<div>\n  <span></span>\n  <p>\n    <a></a>\n    <span></span>\n  </p>\n</div>"
+    }
+  },
+  {
+    "level": 4,
+    "selector": "[data-item]",
+    "accepted": true,
+    "image": "css-speedrun-level-04.png",
+    "acceptedAt": "2026-11-11T02:47:53.134Z",
+    "challenge": {
+      "goal": "\n➡️\n\n\n\n➡️\n\n\n\n",
+      "html": "<div>\n  <span data-item=\"foo\"></span>\n  <span></span>\n  <div>\n    <span></span>\n    <span data-item=\"bar\"></span>\n    <span></span>\n  </div>\n</div>"
+    }
+  },
+  {
+    "level": 5,
+    "selector": "p ~ span",
+    "accepted": true,
+    "image": "css-speedrun-level-05.png",
+    "acceptedAt": "2026-11-11T02:47:58.535Z",
+    "challenge": {
+      "goal": "\n\n\n\n\n➡️\n➡️\n\n\n➡️\n\n\n",
+      "html": "<div>\n  <span></span>\n  <code></code>\n  <span></span>\n  <p></p>\n  <span></span>\n  <span></span>\n  <p></p>\n  <code></code>\n  <span></span>\n  <p></p>\n</div>"
+    }
+  },
+  {
+    "level": 6,
+    "selector": ":enabled",
+    "accepted": true,
+    "image": "css-speedrun-level-06.png",
+    "acceptedAt": "2026-11-11T02:48:04.553Z",
+    "challenge": {
+      "goal": "\n➡️\n\n➡️\n➡️\n\n➡️\n\n",
+      "html": "<form>\n  <input />\n  <input disabled />\n  <input />\n  <input />\n  <button disabled></button>\n  <button></button>\n</form>"
+    }
+  },
+  {
+    "level": 7,
+    "selector": "#one, #two, #five, #six, #nine",
+    "accepted": true,
+    "image": "css-speedrun-level-07.png",
+    "acceptedAt": "2026-11-11T02:48:35.365Z",
+    "challenge": {
+      "goal": "\n➡️\n➡️\n\n\n➡️\n➡️\n\n\n➡️\n\n\n",
+      "html": "<ol>\n  <li class=\"me\" id=\"one\"></li>\n  <li class=\"you\" id=\"two\"></li>\n  <li class=\"me\" id=\"three\"></li>\n  <li class=\"you\" id=\"four\"></li>\n  <li class=\"me\" id=\"five\"></li>\n  <li class=\"you\" id=\"six\"></li>\n  <li class=\"me\" id=\"seven\"></li>\n  <li class=\"you\" id=\"eight\"></li>\n  <li class=\"me\" id=\"nine\"></li>\n  <li class=\"you\" id=\"ten\"></li>\n</ol>"
+    }
+  },
+  {
+    "level": 8,
+    "selector": "a + span",
+    "accepted": true,
+    "image": "css-speedrun-level-08.png",
+    "acceptedAt": "2026-11-11T02:48:41.068Z",
+    "challenge": {
+      "goal": "\n\n\n\n➡️\n\n\n\n\n➡️\n\n\n\n➡️\n",
+      "html": "<div>\n  <span></span>\n  <p>\n    <a></a>\n    <span></span>\n  </p>\n  <p>\n    <span></span>\n    <a></a>\n    <span></span>\n    <span></span>\n  </p>\n  <a></a>\n  <span></span>\n</div>"
+    }
+  },
+  {
+    "level": 9,
+    "selector": "#foo > .foo",
+    "accepted": true,
+    "image": "css-speedrun-level-09.png",
+    "acceptedAt": "2026-11-11T02:48:45.849Z",
+    "challenge": {
+      "goal": "\n➡️\n\n\n\n\n\n➡️\n\n",
+      "html": "<div id=\"foo\">\n  <div class=\"foo\"></div>\n  <div></div>\n  <div>\n    <div class=\"foo\"></div>\n    <div></div>\n  </div>\n  <div class=\"foo\"></div>\n</div>"
+    }
+  },
+  {
+    "level": 10,
+    "selector": "div > div > code:last-child:not(.foo)",
+    "accepted": true,
+    "image": "css-speedrun-level-10.png",
+    "acceptedAt": "2026-11-11T02:48:55.532Z",
+    "challenge": {
+      "goal": "\n\n\n➡️\n\n\n\n\n➡️\n\n\n\n\n\n\n\n",
+      "html": "<div>\n  <div>\n    <span></span>\n    <code></code>\n  </div>\n  <div>\n    <code></code>\n    <span></span>\n    <code></code>\n  </div>\n  <div>\n    <span></span>\n    <code class=\"foo\"></code>\n  </div>\n  <span></span>\n  <code></code>\n</div>"
+    }
+  }
+]

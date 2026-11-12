@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bài 2 · Định dạng CSS | Trương Thanh Phong</title><link rel="icon" href="assets/avatar.svg" type="image/svg+xml"><link rel="stylesheet" href="css/common.css"><link rel="stylesheet" href="assets/fontawesome/css/all.min.css"><link rel="stylesheet" href="css/BaiTap2.css"></head>
+<body><div class="course-bar"><a href="index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Tuần 3 · CSS cơ bản</a><span>Trương Thanh Phong · 31241024967</span></div>
+<main class="text-lab"><h1>Bài 2 — Định dạng văn bản</h1>
+<section><h2>2a. Chữ xanh, 30px, đậm, gạch chân, canh giữa</h2><p class="ueh">Đại học UEH</p></section>
+<section><h2>2b. Chữ đỏ mờ 50%, 15px; nền xám, viền chấm vàng</h2><p class="faculty">Khoa CNTTD</p><p class="annotation">Giữ nguyên “Khoa CNTTD” như đề. Alpha của màu chữ là 0.5; nền và viền không bị làm mờ.</p></section>
+<section><h2>2c. Text shadow</h2><p class="shadow-text">BIT-UEH</p><p class="annotation">Bóng chữ nhiều lớp tái hiện hiệu ứng đỏ, đen và xanh trong hình mẫu (đề, trang 1).</p></section>
+<section><h2>2d. Logo BIT lặp lại, kích thước 30px, cố định</h2><div class="repeat-logo"><p>Cuộn trang để quan sát nền cố định theo cửa sổ trình duyệt.</p></div><p class="annotation">background-size: 30px auto; background-repeat: repeat; background-attachment: fixed.</p></section>
+<section><h2>2e. So sánh ba cách xử lý tràn</h2><div class="overflow-examples">
+<figure><figcaption>i. Hộp 100 × 50px, overflow: hidden</figcaption><p class="overflow-box hidden">Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam đã trở nên sôi động hơn khi có nhiều</p></figure>
+<figure><figcaption>ii. Hộp 100 × 50px, dấu ba chấm</figcaption><p class="overflow-box ellipsis">Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam đã trở nên sôi động hơn khi có nhiều</p></figure>
+<figure><figcaption>iii. Hộp 100 × 50px, nowrap</figcaption><p class="overflow-box nowrap">Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam đã trở nên sôi động hơn khi có nhiều</p></figure></div><p class="annotation">Dấu … một dòng cần phối hợp overflow: hidden, white-space: nowrap và text-overflow: ellipsis. Ví dụ iii cố ý cho chữ tràn ngang để thấy tác dụng riêng của nowrap.</p><details><summary>Đọc toàn bộ đoạn văn</summary><p>Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam đã trở nên sôi động hơn khi có nhiều</p></details></section></main><details class="code-panel"><summary>Xem CSS của bài</summary><p>Tệp: <a href="css/BaiTap2.css">css/BaiTap2.css</a></p><pre><code>.text-lab {max-width:1000px;margin:36px auto;font:16px/1.6 Arial,sans-serif;padding:0 20px;}
+.text-lab h1 {font-size:30px;color:#005d62;}
+.text-lab h2 {font-size:18px;color:#344647;}
+.text-lab section {margin:28px 0 40px;}
+.ueh {color:blue;text-align:center;font-weight:bold;text-decoration:underline;font-size:30px;}
+.faculty {color:rgba(255,0,0,0.5);text-align:right;font-style:italic;border:3px dotted yellow;border-radius:14px;background:gray;font-size:15px;padding:20px;}
+.shadow-text {display:inline-block;font:700 60px/1.5 Arial,sans-serif;color:#b9dc36;padding:10px 22px;margin:0;background:#e8efcf;text-shadow:3px 0 0 #a00000,6px 1px 2px #c00000,10px 2px 10px #171700,0 0 18px #519400;}
+.repeat-logo {height:220px;background-image:url(&#x27;../assets/BIT_logo.png&#x27;);background-size:30px auto;background-repeat:repeat;background-attachment:fixed;border:1px solid #d2dcda;}
+.repeat-logo p {display:inline-block;background:rgba(255,255,255,.95);padding:12px;margin:20px;}
+.annotation {font-size:14px;color:#526568;}
+.overflow-examples {overflow-x:auto;display:flex;gap:30px;padding:0 0 18px;}
+.overflow-examples figure {margin:0;min-width:210px;}
+.overflow-examples figcaption {font-size:14px;max-width:210px;min-height:48px;}
+.overflow-box {box-sizing:content-box;width:100px;height:50px;background:#edf4ea;outline:1px solid #005d62;margin:10px 0;line-height:20px;}
+.hidden {overflow:hidden;}
+.ellipsis {overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.nowrap {white-space:nowrap;}
+@media(max-width:600px){.shadow-text{font-size:42px}.text-lab{padding:0 12px}}</code></pre></details></body></html>
