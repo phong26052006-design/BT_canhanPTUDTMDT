@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27",
+  "browser": "155.0.8059.85",
+  "source": "buoi-1",
+  "listContainer": "DIV",
+  "directChildren": [
+    "ARTICLE",
+    "ARTICLE",
+    "ARTICLE",
+    "ARTICLE"
+  ],
+  "productTitleClasses": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "productImageLinks": 0,
+  "productContentPadding": "21px 19px 18px",
+  "cardBox": {
+    "padding": "0px",
+    "margin": "0px",
+    "border": "1px"
+  },
+  "detailsClass": "plan-details",
+  "stylesheet": "style.css"
+}
