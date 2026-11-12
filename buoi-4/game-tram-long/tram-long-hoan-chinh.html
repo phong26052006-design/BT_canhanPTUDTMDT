@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101519">
+  <meta name="description" content="Mô phỏng anh hùng đấu rồng theo lượt, với hoạt ảnh, hiệu ứng và âm thanh. HTML, CSS và JavaScript thuần.">
+  <title>Trảm Long — Đấu trường JavaScript</title>
+  <style>
+/* Giao diện và hoạt ảnh độc lập, không cần thư viện hoặc tài nguyên mạng. */
+:root{color-scheme:dark;--bg:#101519;--panel:#181e22;--panel-light:#1e252a;--line:#303638;--gold:#edbc76;--text:#e9ece5;--muted:#929e9f;--teal:#78b6ae;--red:#e38169;--speed:1;font-family:"Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 45% 10%,#26302e55,transparent 55%),var(--bg);color:var(--text);font-size:14px;line-height:1.5}button,input,select{font:inherit}button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.4}button,select,input{transition:background .18s,border-color .18s,opacity .18s}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,.battle-log:focus-visible{outline:2px solid var(--gold);outline-offset:4px}button svg,.brand svg,.class-icon svg,.avatar svg,.stats-grid svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}button{display:inline-flex;align-items:center;justify-content:center;gap:8px}svg{display:block}fieldset{border:0;padding:0;margin:0;min-width:0}.icon-library{position:absolute;width:0;height:0;overflow:hidden}[hidden]{display:none!important}
+.app-shell{width:min(1376px,100%);margin:0 auto;padding:0 48px}.site-header{height:100px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:13px;font-size:20px;font-weight:700;letter-spacing:2px}.brand-mark{width:44px;height:50px;display:grid;place-items:center;color:var(--gold);background:linear-gradient(135deg,#e5b77d1c,#e5b77d05);border:1px solid #c8a16655;clip-path:polygon(0 0,100% 0,100% 75%,50% 100%,0 75%)}.brand-mark svg{width:27px;height:27px}.brand small{display:block;font-size:8px;letter-spacing:2.2px;color:var(--muted);font-weight:500;margin-top:1px}.header-tools{display:flex;align-items:center;gap:26px}.lesson-tag{font-size:10px;letter-spacing:1.3px;color:var(--muted)}.lesson-tag span{margin:0 8px;color:#58615f}.sound-button{font-size:12px;padding:9px 12px;color:#c6cdca;background:#1d2528;border:1px solid #3b4545;border-radius:6px}.sound-button svg{width:16px;height:16px}.sound-button[aria-pressed="true"]{color:var(--gold);border-color:#a28651}.sound-button:hover{background:#2a3436}
+.page-intro{display:flex;align-items:center;justify-content:space-between;padding:34px 0 27px}.eyebrow{display:flex;align-items:center;gap:9px;color:#ba9b70;font-size:9px;letter-spacing:2px;font-weight:600;margin:0 0 9px}.small-line{width:22px;height:1px;background:var(--gold)}h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(28px,3vw,40px);line-height:1.2;margin:0;font-weight:500;letter-spacing:-.6px}h1 em{font-style:normal;color:var(--gold)}.intro-copy{color:var(--muted);font-size:12px;margin:9px 0 0}.live-tag{display:flex;align-items:center;gap:9px;font-size:9px;letter-spacing:1.3px;color:#a8b4ad}.live-tag>span,.location-dot{width:5px;height:5px;border-radius:50%;background:#88b8a0;box-shadow:0 0 9px #88b8a04d}.game-layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:20px;align-items:start}.battle-column{min-width:0}.arena-card,.journal-card,.command-panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}.arena-topline{height:36px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff08;color:#94a2a2;font-size:8px;letter-spacing:1.5px}.arena-topline>span:first-child{display:flex;align-items:center;gap:8px}.location-dot{width:4px;height:4px;background:var(--gold)}#round-label{color:#b4aca0;letter-spacing:1px}.combat-hud{display:grid;grid-template-columns:minmax(0,1fr) 60px minmax(0,1fr);padding:21px 24px 16px;position:relative;z-index:2;background:linear-gradient(#1b2225,#1b222500);gap:3px}.fighter-heading{display:flex;gap:10px;align-items:center;min-width:0}.fighter-heading>div{min-width:0}.avatar{width:36px;height:39px;border-radius:5px;border:1px solid #73928d55;display:grid;place-items:center;color:#9fc4bb;background:#293b3c;flex-shrink:0}.dragon-avatar{background:#3d2c2a;border-color:#ba735b55;color:#d7a280;font-family:serif;font-size:25px}.combatant-type{display:block;font-size:8px;letter-spacing:1px;color:#94b8b0;margin-bottom:2px}.dragon-hud .combatant-type{color:#d29b82}.fighter-heading h2{font-size:13px;line-height:1.5;font-weight:600;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.health-info{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);margin:11px 0 5px}.health-info strong{font-weight:500;color:#d1e7df;font-variant-numeric:tabular-nums}.health-info strong>span+span{color:#81908e}.health-track{height:7px;background:#0f1719;border:1px solid #70847e22;border-radius:2px;position:relative;overflow:hidden}.health-fill,.health-trail{position:absolute;inset:0;transform-origin:left;transition:transform .35s;background:linear-gradient(90deg,#5e978a,#a9d2b1)}.health-trail{background:#dce4bc;transition:transform .9s .2s}.dragon-hud .health-fill{background:linear-gradient(90deg,#b75c42,#e9a877)}.dragon-hud .health-trail{background:#f6c99b}.health-track.low .health-fill{background:linear-gradient(90deg,#bb493b,#ed8970)}.versus{align-self:center;justify-self:center;color:#a18a6b;font-family:Georgia,serif;font-size:18px;font-style:italic;margin-top:7px}.versus span{display:block;font-size:5px;text-align:center;margin-top:4px;color:#5e685f}.combatant-hud.is-active .avatar{box-shadow:0 0 16px #b9d0a51c;border-color:#acc99e99}
+.stage{height:359px;isolation:isolate;position:relative;overflow:hidden;background:#20323a;--motion:calc(1 / var(--speed))}.landscape{position:absolute;width:100%;height:100%;inset:0;z-index:-3}.stage::after{content:"";position:absolute;inset:0;background:linear-gradient(#181e2270,transparent 18%,transparent 77%,#141b20b0);pointer-events:none;z-index:5}.mist{position:absolute;bottom:21%;left:-25%;width:150%;height:60px;background:radial-gradient(ellipse,#b1c9b51a,transparent 65%);filter:blur(10px);animation:mist 18s ease-in-out infinite alternate;z-index:-1}.mist-two{bottom:39%;left:-10%;opacity:.4;animation-delay:-5s}.arena-rune{position:absolute;top:40%;left:49%;color:#e9bc6d22;font-family:Georgia,serif;font-size:58px;transform:translate(-50%,-50%)}.fighter{position:absolute;bottom:13%;will-change:transform}.hero{left:12%;width:23%;max-width:210px;z-index:2;--cape-color:#397a83}.dragon{right:4%;width:43%;max-width:355px;z-index:1}.character{width:100%;height:auto;overflow:visible;filter:drop-shadow(0 6px 4px #06101655);animation:breathe 3.5s ease-in-out infinite}.dragon-character{animation-delay:-1s}.fighter-shadow{position:absolute;bottom:4%;left:12%;right:6%;height:14px;border-radius:50%;background:#07101899;filter:blur(5px);z-index:-1}.hero .fighter-shadow{left:14%;right:15%;bottom:3%}.hero-cape{transform-origin:115px 100px;animation:cape 3s ease-in-out infinite alternate}.dragon-wing{transform-origin:215px 190px;animation:wing 4s ease-in-out infinite alternate}.dragon-head{transform-origin:130px 160px;animation:head 4s ease-in-out infinite alternate}.fighter-nameplate{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);font-size:7px;letter-spacing:1.5px;white-space:nowrap;color:#a3b6ac;background:#0c1719a8;padding:3px 10px;border:1px solid #72827826;border-radius:2px}.dragon .fighter-nameplate{color:#d1ac92;left:53%}.stage-message{position:absolute;left:0;right:0;bottom:13px;display:flex;align-items:center;justify-content:center;gap:12px;color:#d2c4ac;font-family:Georgia,"Times New Roman",serif;font-size:13px;z-index:6;pointer-events:none}.message-diamond{font-size:5px;color:#b99b6d}.stage-message span:nth-child(2){text-align:center;padding:0 6px}.arena-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:41px;padding:8px 20px;background:#171f22;border-top:1px solid #3d484333;font-size:9px;color:#a4b1aa}.arena-bottom-hint{color:#778783;font-size:8px;white-space:nowrap}.arena-bottom-hint i{font-style:normal;padding:0 5px;color:#b5a583}
+.command-panel{padding:21px 20px 18px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:21px}.section-heading h2{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;margin:0}.section-number{font-size:9px;color:#a68d68;font-weight:400}.tiny-diamond{font-size:7px;color:#a38a63}.field-label{display:block;color:#96a2a0;font-size:8px;letter-spacing:1.2px;margin-bottom:7px;font-weight:600}#player-name{display:block;width:100%;background:#10181b;border:1px solid #3b4545;border-radius:5px;padding:10px 12px;color:#d5ddd6;font-size:12px;height:39px}#player-name:hover{border-color:#7d7e69}#player-name:disabled{color:#9da8a0;background:#172023}.input-hint{font-size:9px;line-height:1.5;color:#8a9991;margin:6px 0 18px}.class-label{margin-bottom:9px}.class-options{display:grid;gap:7px}.class-option{display:flex;align-items:center;position:relative;gap:11px;border:1px solid #343f40;border-radius:6px;padding:11px;cursor:pointer;background:#1a2226;transition:background .2s,border-color .2s}.class-option:hover{border-color:#8a8066;background:#282c28}.class-option:has(input:checked){border-color:#c2995d;background:linear-gradient(105deg,#b8985520,#b8985508);box-shadow:inset 2px 0 #d5ae72}.class-option:has(input:focus-visible){outline:2px solid var(--gold);outline-offset:3px}.class-option input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}.class-icon{width:31px;height:31px;display:grid;place-items:center;border:1px solid #ffffff0c;border-radius:4px;color:#8daba5;background:#253235}.class-option:has(input:checked) .class-icon{color:#e0bb7e;background:#a5864f1a;border-color:#a2865233}.class-copy{flex:1;min-width:0}.class-copy strong{display:block;font-size:11px;font-weight:600;color:#d0d7cd}.class-copy small{display:block;font-size:9px;color:#8f9d97;margin-top:2px}.radio-mark{width:11px;height:11px;border:1px solid #56625d;border-radius:50%;display:grid;place-items:center}.class-option:has(input:checked) .radio-mark{border-color:#e1b878}.class-option:has(input:checked) .radio-mark::after{content:"";width:5px;height:5px;background:var(--gold);border-radius:50%}fieldset:disabled .class-option{cursor:default}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);margin:20px 0 13px}.stats-grid>div{display:grid;justify-items:center;gap:4px;border-right:1px solid var(--line)}.stats-grid>div:last-child{border:0}.stats-grid svg{width:14px;height:14px;color:#9d9477}.stats-grid strong{font-size:21px;font-weight:500;color:#e3d1a9;font-variant-numeric:tabular-nums}.stats-grid span{font-size:7px;letter-spacing:.6px;color:#9ca7a1}.progression{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:11px;color:#9ca9a0;font-size:9px}.progression strong{font-weight:500;color:#d2c4a6}.progression-divider{margin:0 9px;color:#53635a}.progression>span+span{font-size:8px;color:#7e8e84}.primary-button{min-height:43px;padding:10px 15px;border:1px solid #e6bc7f;border-radius:5px;background:linear-gradient(115deg,#edc48c,#d4aa70);color:#25271e;font-size:11px;font-weight:700;box-shadow:0 3px 16px #c49b4c0f}.primary-button:hover:not(:disabled){background:linear-gradient(115deg,#f5d2a2,#e7be85);box-shadow:0 3px 18px #d9b16a26}.primary-button svg{width:17px;height:17px}.start-button{width:100%;margin-top:18px;justify-content:flex-start;padding-left:14px}.button-arrow{margin-left:auto;font-size:18px;font-weight:400}.secondary-actions{display:flex;gap:8px;margin-top:8px}.secondary-actions button{flex:1;background:#20292b;border:1px solid #3c4745;border-radius:5px;min-height:34px;padding:6px;font-size:10px;color:#c8d0c6}.secondary-actions svg{width:13px;height:13px}.secondary-actions button:hover:not(:disabled){border-color:#8a8d71;background:#303935}.playback-setting{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:10px;color:#aab5aa;margin-top:19px;padding-top:15px;border-top:1px solid var(--line)}.playback-setting select{background:#161e21;color:#c4cfc0;border:1px solid #394641;border-radius:4px;font-size:10px;padding:5px;max-width:134px}.sound-hint{font-size:9px;line-height:1.7;color:#809086;margin:11px 0 0}.opponent-note{display:flex;gap:10px;border-top:1px solid var(--line);padding-top:16px;margin-top:17px}.opponent-symbol{color:#95775e;font-family:Georgia,serif;font-size:27px}.opponent-note strong{font-family:Georgia,"Times New Roman",serif;font-size:12px;color:#c3b294;font-weight:400}.opponent-note p{font-size:9px;line-height:1.8;color:#919f94;margin:4px 0 0}
+.journal-card{margin-top:16px;padding:16px 20px 9px}.journal-card .section-heading{margin-bottom:12px}.journal-card .section-heading>span{font-size:8px;letter-spacing:1px;color:#8a9b90}.battle-log{list-style:none;padding:0;margin:0;height:116px;overflow:auto;scrollbar-width:thin;scrollbar-color:#4b5c51 transparent}.battle-log li{display:grid;grid-template-columns:38px 8px 1fr;align-items:baseline;gap:9px;font-size:10px;line-height:1.7;color:#a6b2a8;padding:6px 0;border-top:1px solid #ffffff06}.log-round{font-family:Consolas,monospace;font-size:9px;color:#788c7e}.log-dot{width:4px;height:4px;border-radius:50%;background:#899581;align-self:center}.battle-log li.critical{color:#e7bd78}.battle-log li.damage .log-dot{background:#de997e}.battle-log li.dodge .log-dot{background:#7db6ba}.battle-log li.victory{color:#bada9e}.battle-log li.defeat{color:#e6a293}.rules{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:27px}.rules summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;padding:15px 0;list-style:none;font-size:9px;color:#9aa79b}.rules summary::-webkit-details-marker{display:none}.rules summary>span:first-child{font-size:8px;letter-spacing:1.2px;color:#b0b4a1}.rules summary b{font-size:16px;margin-left:14px;font-weight:400;color:#bda878}.rules[open] summary b{display:inline-block;transform:rotate(45deg)}.rules-content{display:grid;gap:20px;grid-template-columns:repeat(3,1fr);padding:0 0 16px;font-size:10px;color:#9dab9e;line-height:1.8}.rules-content p{margin:0}.rules-content strong{color:#c0cabb;font-weight:500}code{font-family:Consolas,monospace;font-size:.95em;color:#d9ba88;overflow-wrap:anywhere}.site-footer{display:flex;justify-content:space-between;gap:12px;padding:20px 0 25px;font-size:8px;letter-spacing:.6px;color:#7f9083}.footer-divider{margin:0 8px;color:#56695a}.noscript{position:fixed;inset:0 0 auto;background:#b66342;color:#fff;padding:20px;text-align:center;z-index:30}
+/* Một hiệu ứng gắn với từng đòn, được xóa khi lượt đó kết thúc. */
+.hero.attacking{animation:hero-lunge calc(860ms / var(--speed)) ease-in-out both;z-index:4}.hero.attacking .hero-sword{transform-origin:177px 151px;animation:sword-swing calc(600ms / var(--speed)) ease-in-out both}.dragon.attacking .dragon-head{animation:dragon-cast calc(850ms / var(--speed)) ease-in-out both}.fighter.hurt .character{animation:hurt calc(500ms / var(--speed)) ease-out both}.hero.dodging{animation:hero-dodge calc(650ms / var(--speed)) ease-out both}.dragon.dodging{animation:dragon-dodge calc(650ms / var(--speed)) ease-out both}.fighter.fallen .character{animation:fall calc(850ms / var(--speed)) ease-out forwards}.stage.impact{animation:shake calc(320ms / var(--speed)) ease-out}.stage.paused *{animation-play-state:paused!important}.stage.paused::before{content:"TẠM DỪNG";position:absolute;inset:0;display:grid;place-items:center;background:#0d171b88;color:#edd2a5;font-size:17px;letter-spacing:5px;z-index:15;backdrop-filter:blur(3px)}.effects-layer{position:absolute;inset:0;pointer-events:none;z-index:7;overflow:hidden}.slash{position:absolute;width:24%;height:23%;left:52%;top:39%;border:5px solid transparent;border-top-color:#fff3cb;border-left-color:#deb56b;border-radius:50%;filter:drop-shadow(0 0 8px #eec17b);transform:rotate(-35deg);animation:slash calc(430ms / var(--speed)) ease-out both}.slash.critical{width:32%;height:38%;top:27%;border-width:7px;filter:drop-shadow(0 0 13px #ffc469)}.fireball{position:absolute;left:63%;top:48%;width:10%;height:9%;background:radial-gradient(ellipse at 25% 50%,#fff5b9,#ffb948 26%,#ee6433 52%,transparent 73%);border-radius:50%;box-shadow:8px 0 20px #ea6e354d;animation:fireball calc(430ms / var(--speed)) ease-in both;filter:drop-shadow(0 0 12px #ef773c)}.fireball::after{content:"";position:absolute;left:35%;top:15%;width:160%;height:70%;background:linear-gradient(90deg,#ef853caa,transparent);clip-path:polygon(0 0,100% 50%,0 100%)}.damage-number{position:absolute;transform:translate(-50%,-50%);font-size:28px;font-family:Georgia,serif;font-weight:700;color:#ffe0bb;text-shadow:0 2px 0 #5b2824,0 0 18px #e97345a0;white-space:nowrap;animation:float-number calc(1100ms / var(--speed)) ease-out both}.damage-number.critical{color:#ffe29c;font-size:39px}.damage-number small{font-family:"Segoe UI",sans-serif;display:block;text-align:center;font-size:9px;letter-spacing:2px;margin-bottom:-5px}.damage-number.miss{font-family:"Segoe UI",sans-serif;color:#b2e8e5;font-size:16px;letter-spacing:2px;text-shadow:0 0 14px #7ce3e440}.spark{position:absolute;width:4px;height:4px;border-radius:1px;background:var(--spark-color,#f8c17b);box-shadow:0 0 6px var(--spark-color,#f8c17b);animation:spark calc(650ms / var(--speed)) ease-out both}.ambient-ember{position:absolute;bottom:12%;width:2px;height:2px;box-shadow:0 0 7px #eda85c;background:#f3b76c;border-radius:50%;animation:ember 6s linear infinite;pointer-events:none;z-index:-1}.result-overlay{position:absolute;inset:0;z-index:20;display:grid;place-items:center;background:#0a141bbf;backdrop-filter:blur(5px);padding:20px;animation:appear .5s ease-out}.result-card{text-align:center;max-width:340px;width:100%;padding:17px 25px}.result-kicker{font-size:8px;letter-spacing:2.5px;color:#d2bd95}.result-emblem{display:block;font-size:53px;color:var(--gold);height:66px;text-shadow:0 0 25px #d7a55955}.result-card h2{font-family:Georgia,"Times New Roman",serif;font-size:37px;color:#f0d4a2;font-weight:400;margin:0}.result-card p{color:#b9c8b9;font-size:11px;line-height:1.8;margin:9px 0 17px}.result-card .primary-button{font-size:10px;min-height:36px}.result-overlay.defeat .result-emblem,.result-overlay.defeat h2{color:#e4a287}.result-overlay.defeat .result-kicker{color:#c9a692}
+@keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}@keyframes cape{to{transform:skewX(-4deg) rotate(2deg)}}@keyframes wing{to{transform:rotate(-5deg) scaleY(.97)}}@keyframes head{to{transform:rotate(-3deg)}}@keyframes mist{to{transform:translateX(8%)}}@keyframes hero-lunge{0%,100%{transform:translateX(0)}35%,60%{transform:translateX(90%) translateY(-3%)}}@keyframes sword-swing{0%{transform:rotate(-35deg)}45%{transform:rotate(65deg)}100%{transform:rotate(0)}}@keyframes dragon-cast{25%{transform:rotate(12deg)}50%{transform:rotate(-8deg)}100%{transform:rotate(0)}}@keyframes hurt{0%,40%{filter:brightness(2) sepia(.5) drop-shadow(0 0 10px #e88561);transform:translateX(5%)}20%,60%{filter:brightness(1);transform:translateX(-2%)}100%{transform:translateX(0)}}@keyframes hero-dodge{35%{transform:translate(-35%,-6%) rotate(-10deg);opacity:.5}100%{transform:none}}@keyframes dragon-dodge{35%{transform:translate(15%,-8%);opacity:.5}100%{transform:none}}@keyframes slash{0%{opacity:0;transform:rotate(-70deg) scale(.5)}30%{opacity:1}100%{opacity:0;transform:rotate(20deg) scale(1.25)}}@keyframes fireball{0%{transform:translateX(0) scale(.5);opacity:0}20%{opacity:1}100%{transform:translateX(-405%) scale(1.4)}}@keyframes float-number{0%{opacity:0;translate:0 8px;scale:.7}20%{opacity:1;scale:1.05}70%{opacity:1}100%{opacity:0;translate:0 -65px;scale:1}}@keyframes spark{0%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.1)}}@keyframes shake{20%,60%{transform:translateX(-3px)}40%,80%{transform:translateX(3px)}100%{transform:none}}@keyframes fall{100%{transform:translateY(9%) rotate(15deg);opacity:.25;filter:grayscale(1)}}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@keyframes ember{0%{transform:translateY(0);opacity:0}20%{opacity:.6}100%{transform:translate(25px,-190px);opacity:0}}
+@media(min-width:1450px){.stage{height:390px}.battle-log{height:103px}}
+@media(max-width:1100px){.app-shell{padding:0 26px}.game-layout{grid-template-columns:minmax(0,1fr) 284px;gap:16px}.command-panel{padding:19px 16px}.combat-hud{padding:19px 18px 16px;grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr)}.fighter-heading{gap:7px}.fighter-heading h2{font-size:11px}.combatant-type{font-size:7px}.stage{height:344px}.arena-bottom-hint{display:none}.arena-topline{padding:0 18px;font-size:7px}.stage-message{font-size:12px}.live-tag{font-size:8px}.hero{left:8%;width:27%}.dragon{right:0;width:49%}.journal-card{padding:16px 16px 9px}}
+@media(max-width:820px){.game-layout{grid-template-columns:1fr}.command-panel{display:block}.stage{height:370px}.command-panel .class-options{grid-template-columns:repeat(3,minmax(0,1fr))}.class-option{gap:8px;padding:12px 9px}.class-copy strong{font-size:11px}.class-copy small{font-size:8px}.radio-mark{display:none}.stats-grid{max-width:400px;margin:20px auto}.progression{max-width:400px;margin:0 auto}.secondary-actions{margin-top:10px}.class-icon{width:26px;height:29px}.playback-setting{margin-top:13px}.opponent-note{margin-top:13px;padding-top:12px}.command-panel .section-heading{margin-bottom:17px}.stage .hero{left:12%;width:23%}.stage .dragon{right:4%;width:43%}.fighter-heading h2{font-size:13px}.combatant-type{font-size:8px}.combat-hud{grid-template-columns:minmax(0,1fr) 60px minmax(0,1fr)}.live-tag{display:none}.rules-content{grid-template-columns:1fr;gap:12px}.site-header{height:83px}.page-intro{padding:26px 0}.battle-log{height:130px}}
+@media(max-width:520px){.app-shell{padding:0 16px}.site-header{height:78px}.brand{gap:8px;font-size:15px;letter-spacing:1.5px}.brand small{font-size:6px;letter-spacing:1.5px}.brand-mark{width:33px;height:39px}.brand-mark svg{width:23px;height:23px}.lesson-tag{display:none}.sound-button{padding:8px;font-size:10px;gap:6px}.sound-button svg{width:14px;height:14px}.header-tools{gap:0}.eyebrow{font-size:7px;letter-spacing:1.2px}.page-intro{padding:25px 0 22px}h1{font-size:30px;letter-spacing:-.7px}.intro-copy{font-size:11px}.arena-topline{height:32px;padding:0 12px;font-size:6px;letter-spacing:1px}.combat-hud{padding:16px 12px 13px;grid-template-columns:minmax(0,1fr) 29px minmax(0,1fr);gap:0}.avatar{width:26px;height:29px}.avatar svg{width:16px;height:16px}.dragon-avatar{font-size:21px}.fighter-heading{gap:6px}.fighter-heading h2{font-size:10px}.combatant-type{font-size:6px;letter-spacing:.6px}.health-info{font-size:8px;margin-top:10px}.health-track{height:6px}.versus{font-size:14px}.stage{height:282px}.stage .hero{left:3%;width:31%;bottom:17%}.stage .dragon{right:0;width:53%;bottom:17%}.fighter-nameplate{font-size:6px;letter-spacing:1px;bottom:-10px}.stage-message{font-size:11px;bottom:15px;gap:6px}.arena-bottom{padding:9px 12px;font-size:8px;min-height:37px}.journal-card{padding:15px 13px 8px}.section-heading h2{font-size:12px}.journal-card .section-heading>span{font-size:7px}.battle-log{height:133px}.battle-log li{font-size:9px;grid-template-columns:30px 5px 1fr;gap:7px}.log-round{font-size:8px}.command-panel{padding:20px 16px}.command-panel .class-options{grid-template-columns:1fr}.class-option{padding:10px 12px;gap:12px}.class-icon{width:32px;height:32px}.class-copy strong{font-size:12px}.class-copy small{font-size:10px}.radio-mark{display:grid}.field-label{font-size:8px}#player-name{font-size:13px}.input-hint{font-size:10px}.stats-grid span{font-size:8px}.stats-grid strong{font-size:24px}.primary-button{font-size:12px;min-height:46px}.secondary-actions button{font-size:11px;min-height:38px}.playback-setting{font-size:11px}.playback-setting select{font-size:11px}.opponent-note p,.sound-hint{font-size:10px}.site-footer{font-size:7px;flex-direction:column;gap:7px;padding:18px 0 22px}.rules summary{font-size:8px}.rules summary>span:first-child{font-size:7px}.damage-number{font-size:24px}.damage-number.critical{font-size:30px}.result-card{padding:8px}.result-card h2{font-size:30px}.result-card p{font-size:10px}.result-emblem{height:54px;font-size:44px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important}.character,.hero-cape,.dragon-wing,.dragon-head,.mist,.ambient-ember{animation:none!important}.hero.attacking,.dragon.attacking,.fighter.dodging,.fighter.hurt .character,.stage.impact{animation:none!important}.hero.attacking .hero-sword{animation:none!important}.health-fill,.health-trail{transition:none}.slash,.fireball{animation:none!important;opacity:.8}.fireball{left:20%}.damage-number{animation:none;opacity:1}.spark{display:none}.fighter.fallen .character{opacity:.3;filter:grayscale(1)}.result-overlay{animation:none}}
+
+/* Font hỗ trợ đầy đủ dấu tiếng Việt; đồng nhất tiêu đề và nội dung. */
+:root{--font-ui:"Segoe UI",Tahoma,Arial,sans-serif;font-family:var(--font-ui);font-synthesis:none;text-rendering:optimizeLegibility}
+button,input,select{font-family:var(--font-ui)}
+h1{font-family:var(--font-ui);font-weight:600;font-size:clamp(28px,3vw,38px);line-height:1.3;letter-spacing:-.8px}
+.stage-message,.result-card h2,.opponent-note strong,.damage-number,.versus{font-family:var(--font-ui)}
+.stage-message{font-size:13px;line-height:1.6;font-weight:500}
+.result-card h2{font-size:34px;font-weight:600;line-height:1.3}
+.opponent-note strong{font-size:13px;font-weight:600}
+.brand small{font-size:9px;letter-spacing:1.3px}.eyebrow{font-size:10px;letter-spacing:1.3px}
+.intro-copy{font-size:13px}.live-tag,.lesson-tag{font-size:10px}
+.arena-topline{font-size:9px;letter-spacing:1px}.combatant-type{font-size:9px;letter-spacing:.6px}
+.fighter-heading h2{font-size:14px}.health-info{font-size:11px}.arena-bottom{font-size:11px}
+.arena-bottom-hint{font-size:10px}.field-label{font-size:10px;letter-spacing:.8px}
+#player-name{font-size:13px}.input-hint,.class-copy small,.sound-hint,.opponent-note p{font-size:11px}
+.class-copy strong{font-size:13px}.stats-grid span{font-size:9px;letter-spacing:.3px}
+.progression{font-size:11px}.progression>span+span{font-size:10px}.primary-button{font-size:12px}
+.secondary-actions button,.playback-setting,.playback-setting select{font-size:11px}
+.battle-log li{font-size:12px;line-height:1.7}.log-round{font-size:10px}
+.battle-log{height:138px}.journal-card .section-heading>span{font-size:9px}
+.rules summary,.rules summary>span:first-child{font-size:10px}.rules-content{font-size:12px}
+.site-footer{font-size:10px;letter-spacing:.1px}.fighter-nameplate{font-size:8px;letter-spacing:1px}
+@media(max-width:1100px){.arena-topline{font-size:8px}.combatant-type{font-size:8px}.fighter-heading h2{font-size:12px}.progression>span+span{font-size:9px}}
+@media(max-width:520px){h1{font-size:29px;letter-spacing:-.8px}.eyebrow{font-size:8px;letter-spacing:.8px}.brand small{font-size:7px;letter-spacing:.8px}.intro-copy{font-size:12px}.arena-topline{font-size:7px;letter-spacing:.5px}.combatant-type{font-size:7px;letter-spacing:.1px}.fighter-heading h2{font-size:11px}.health-info{font-size:10px}.arena-bottom{font-size:10px}.stage-message{font-size:12px}.fighter-nameplate{font-size:7px}.battle-log li{font-size:11px}.rules summary,.rules summary>span:first-child{font-size:9px}.site-footer{font-size:9px}.result-card h2{font-size:29px}.result-card p{font-size:11px}}
+
+</style>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23101519'/%3E%3Cpath d='M20 5 33 11v10L20 35 7 21V11Z' fill='none' stroke='%23edbc76' stroke-width='3'/%3E%3Cpath d='m13 25 14-14m-3 0h3v3M12 22l6 6' stroke='%23edbc76' stroke-width='3'/%3E%3C/svg%3E">
+  
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-sword" viewBox="0 0 24 24"><path d="m14 4 6-1-1 6-10 10-4-4ZM4 14l6 6M3 21l4-4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 4-8 9-8 9s-8-5-8-9V6ZM12 7v9m-4-5h8"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m14 2-9 12h6l-1 8 9-12h-6Z"/></symbol>
+    <symbol id="i-bow" viewBox="0 0 24 24"><path d="M5 4c17 0 15 15 15 15L5 4l-1 16L20 19M3 21 20 4m-5 0h5v5"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5ZM16 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8Z"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#main" aria-label="Trảm Long, đến đấu trường">
+        <span class="brand-mark"><svg><use href="#i-sword"/></svg></span>
+        <span>TRẢM LONG<small>ĐẤU TRƯỜNG JAVASCRIPT</small></span>
+      </a>
+      <div class="header-tools">
+        <span class="lesson-tag">BUỔI 04 <span>/</span> BÀI 1–5</span>
+        <button class="sound-button" id="sound-toggle" type="button" aria-pressed="false" title="Bật hoặc tắt âm thanh">
+          <svg><use href="#i-sound"/></svg><span id="sound-label">Bật âm thanh</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="page-intro">
+        <div><p class="eyebrow"><span class="small-line"></span> MỘT ANH HÙNG. MỘT HUYỀN THOẠI.</p>
+          <h1>Đối mặt với <em>hỏa long.</em></h1>
+          <p class="intro-copy">Chọn phân cấp. Rút kiếm. Để trận chiến bắt đầu.</p>
+        </div>
+        <div class="live-tag"><span></span> MÔ PHỎNG THEO LƯỢT</div>
+      </div>
+
+      <div class="game-layout">
+        <div class="battle-column">
+          <section class="arena-card" aria-label="Đấu trường anh hùng và rồng">
+            <div class="arena-topline"><span><span class="location-dot"></span> TÀN TÍCH HẮC THẠCH</span><span id="round-label">CHƯA VÀO TRẬN</span></div>
+            <div class="combat-hud">
+              <div class="combatant-hud" id="hero-hud">
+                <div class="fighter-heading"><span class="avatar hero-avatar"><svg><use href="#i-shield"/></svg></span><div><span class="combatant-type" id="hero-class-label">CHIẾN BINH · CẤP 4</span><h2 id="hero-name">Trương Thanh Phong</h2></div></div>
+                <div class="health-info"><span>Sinh lực</span><strong><span id="hero-hp">105</span> <span>/ 105</span></strong></div>
+                <div class="health-track" id="hero-health" role="progressbar" aria-label="Sinh lực anh hùng" aria-valuemin="0" aria-valuemax="105" aria-valuenow="105"><div class="health-trail"></div><div class="health-fill"></div></div>
+              </div>
+              <div class="versus" aria-hidden="true">VS<span>◆</span></div>
+              <div class="combatant-hud dragon-hud" id="dragon-hud">
+                <div class="fighter-heading"><span class="avatar dragon-avatar">龍</span><div><span class="combatant-type">HỎA LONG · BOSS</span><h2>Rồng Hắc Diệm</h2></div></div>
+                <div class="health-info"><span>Sinh lực</span><strong><span id="dragon-hp">600</span> <span>/ 600</span></strong></div>
+                <div class="health-track" id="dragon-health" role="progressbar" aria-label="Sinh lực rồng" aria-valuemin="0" aria-valuemax="600" aria-valuenow="600"><div class="health-trail"></div><div class="health-fill"></div></div>
+              </div>
+            </div>
+
+            <div class="stage" id="stage" data-state="ready">
+              <svg class="landscape" viewBox="0 0 1000 490" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+                <defs>
+                  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#152a35"/><stop offset=".65" stop-color="#283943"/><stop offset="1" stop-color="#624135"/></linearGradient>
+                  <linearGradient id="rock" x2="0" y2="1"><stop stop-color="#364349"/><stop offset="1" stop-color="#171f25"/></linearGradient>
+                  <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#383d39"/><stop offset=".2" stop-color="#252d2c"/><stop offset="1" stop-color="#131b20"/></linearGradient>
+                  <radialGradient id="moon-glow"><stop stop-color="#dbdec0" stop-opacity=".2"/><stop offset="1" stop-color="#b3d0cd" stop-opacity="0"/></radialGradient>
+                  <linearGradient id="lava"><stop stop-color="#d64d2c" stop-opacity="0"/><stop offset=".5" stop-color="#f6a452"/><stop offset="1" stop-color="#e9532f" stop-opacity="0"/></linearGradient>
+                </defs>
+                <path fill="url(#sky)" d="M0 0h1000v490H0z"/>
+                <circle cx="535" cy="100" r="130" fill="url(#moon-glow)"/><circle cx="535" cy="100" r="36" fill="#c4cbb8"/><circle cx="524" cy="91" r="28" fill="#263b44"/>
+                <g fill="#a0bdbb" opacity=".5"><circle cx="85" cy="51" r="1"/><circle cx="340" cy="60" r="1.5"/><circle cx="650" cy="40" r="1"/><circle cx="770" cy="100" r="1"/><circle cx="415" cy="20" r="1"/><circle cx="188" cy="111" r="1"/><circle cx="920" cy="55" r="1.5"/></g>
+                <path d="m0 250 100-106 80 72 95-148 120 177 75-84 62 66 92-85 120 134 98-114 158 97v231H0Z" fill="#1b2f38"/>
+                <path d="m200 200 75-132 60 89-63-33-18 37-18-8Z" fill="#52616a" opacity=".35"/>
+                <path d="m0 320 130-93 90 79 119-105 80 117 120-66 80 60 124-112 134 111 123-73v252H0Z" fill="#20323a"/>
+                <g fill="url(#rock)" stroke="#4b514c" stroke-width="2">
+                  <path d="M51 377V168l-13-5v-21h23v13h22v-13h23v23l-12 5v207Z"/><path d="M67 181h11v52H67Z" fill="#15262d"/>
+                  <path d="M132 377V246h54v-13h17v36h-51v108Z"/><path d="M46 264H0v27h46Z"/>
+                  <path d="M864 379V114h-10V92h22v13h19V92h22v22h-11v265Z"/><path d="M879 136h12v44h-12Z" fill="#15262d"/>
+                  <path d="M959 379V221h-15v-20h56v178Z"/><path d="M908 230h37v23h-37Z"/>
+                </g>
+                <path d="m0 391 66-18 93 8 72-13 124 17 115-8 131 6 102-14 91 15 106-4v110H0Z" fill="url(#ground)"/>
+                <path d="m0 397 158-7 80 2 119 4 120-7 135 4 150-6 138 5" fill="none" stroke="#69706a" stroke-opacity=".4" stroke-width="3"/>
+                <g fill="#182225" stroke="#464b43"><path d="m90 402 57-4 24 15-17 7-65-2Z"/><path d="m666 419 30-8 57 8-10 12-66 3Z"/><path d="m278 457 46-11 45 14-6 10h-81Z"/><path d="m863 453 53-9 35 19-74 8Z"/></g>
+                <path d="m0 477 148-12 49 8 94-3 41 20m411 0 48-37 44 8 66-23 99 6" fill="none" stroke="url(#lava)" stroke-width="3"/>
+              </svg>
+              <div class="mist mist-one" aria-hidden="true"></div><div class="mist mist-two" aria-hidden="true"></div>
+              <div class="arena-rune" aria-hidden="true">✧</div>
+              <div class="fighter hero" id="hero" aria-label="Nhân vật anh hùng">
+                <div class="fighter-shadow"></div>
+                <svg class="character hero-character" viewBox="0 0 240 290" aria-hidden="true">
+                  <defs><linearGradient id="armor" x1="0" x2="1" y2="1"><stop stop-color="#e1e8dd"/><stop offset=".45" stop-color="#98b5b7"/><stop offset="1" stop-color="#3d646e"/></linearGradient><linearGradient id="gold" x2="1" y2="1"><stop stop-color="#fce1a2"/><stop offset="1" stop-color="#b98038"/></linearGradient><linearGradient id="cape" x2="1" y2=".5"><stop stop-color="#143f4b"/><stop offset="1" stop-color="#397a83"/></linearGradient></defs>
+                  <g class="hero-cape"><path d="M106 90c-39 7-35 42-62 81l-13 68 43-12 22 13 33-79Z" fill="url(#cape)" stroke="#102e39" stroke-width="3"/><path d="m99 110-40 110 28-25" fill="none" stroke="#52929a" stroke-width="3" opacity=".5"/></g>
+                  <g stroke="#233c48" stroke-width="4" stroke-linejoin="round">
+                    <path d="m100 175-12 46-2 39h27l8-38 12-44Z" fill="url(#armor)"/><path d="m129 177 8 43 22 37 23-10-17-38-7-38Z" fill="url(#armor)"/>
+                    <path d="m83 249-8 22h39l3-20M154 249l8 19h34l-17-24" fill="#34525e"/>
+                    <path d="m100 98-11 52 10 36 57-1 13-41-19-47Z" fill="url(#armor)"/>
+                    <path d="m109 112 20 12 19-12-5 35-14 10-14-9Z" fill="url(#gold)"/><path d="m129 124v26" fill="none" stroke="#b18245" stroke-width="3"/>
+                    <path d="m98 173 62-1-4 17-59-1Z" fill="#344a51"/><path d="M123 173h15v17h-15Z" fill="url(#gold)"/>
+                    <path d="m149 101 21 10 12 32-15 13-18-25Z" fill="url(#armor)"/>
+                    <path d="m91 106-21 22 5 32 24-7 10-27Z" fill="url(#armor)"/>
+                  </g>
+                  <g class="hero-sword" stroke="#263d47" stroke-linejoin="round"><path d="m169 141 36-93 10-13 1 19-31 96Z" fill="#dbf2e9" stroke-width="3"/><path d="m181 134 28-78" stroke="#fffbe0" stroke-width="3"/><path d="m165 133 26 10-3 9-27-10Z" fill="url(#gold)" stroke-width="3"/><path d="m171 147-7 17 8 4 7-18Z" fill="#74543d" stroke-width="3"/><circle cx="178" cy="148" r="8" fill="url(#armor)" stroke-width="3"/></g>
+                  <g class="hero-head" stroke="#263d47" stroke-width="3"><path d="M102 45q22-22 43 0l7 34-22 23-27-17-7-23Z" fill="url(#armor)"/><path d="m101 48 43-5 6 13-48 9Z" fill="#c1d1c7"/><path d="m103 67 42-9-5 16-13 4-22-2Z" fill="#152e37"/><path d="m128 79 1 17 19-18-3-15" fill="#607f85"/><path d="m105 34 22-13 19 18-19-5-18 11Z" fill="url(#gold)"/><path d="m110 68 12-2m11-2 7-2" stroke="#f6dba1" stroke-width="3"/></g>
+                  <g class="hero-shield" stroke="#283e47" stroke-width="4"><path d="m53 141 31-13 29 16-8 45-28 24-26-31Z" fill="#3f7780"/><path d="m60 147 23-10 22 12-7 34-21 20-19-24Z" fill="none" stroke="url(#gold)"/><path d="m80 148 10 16-11 23-10-21Z" fill="url(#gold)"/><path d="m80 153-1 29" stroke="#fce3ac" stroke-width="2"/></g>
+                </svg>
+                <span class="fighter-nameplate" id="hero-nameplate">CHIẾN BINH</span>
+              </div>
+              <div class="fighter dragon" id="dragon" aria-label="Nhân vật rồng">
+                <div class="fighter-shadow"></div>
+                <svg class="character dragon-character" viewBox="0 0 400 330" aria-hidden="true">
+                  <defs><linearGradient id="scales" x1="0" y1="0" x2=".6" y2="1"><stop stop-color="#af5d45"/><stop offset=".5" stop-color="#7b3d35"/><stop offset="1" stop-color="#382e30"/></linearGradient><linearGradient id="wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dc855a"/><stop offset=".5" stop-color="#883d32"/><stop offset="1" stop-color="#45282e"/></linearGradient><linearGradient id="belly" x2="0" y2="1"><stop stop-color="#e2a269"/><stop offset="1" stop-color="#925c48"/></linearGradient></defs>
+                  <g class="dragon-wing" stroke="#4d2d30" stroke-width="4" stroke-linejoin="round"><path d="m210 170 4-77 93-82-6 84 67-19-34 61 43 34-76 4-43 47Z" fill="url(#wing)"/><path d="m216 166 91-155-28 119 89-54-64 74 73 21-86-7-33 58" fill="none" stroke="#d18a62" stroke-width="5"/><path d="m279 130-63 36 88-16-13 14" fill="none"/></g>
+                  <g stroke="#402b2e" stroke-width="4" stroke-linejoin="round">
+                    <path d="M257 221c68 28 96 12 105-21 26 68-26 94-106 59Z" fill="url(#scales)"/><path d="m353 216 14-22 8 31-13 4" fill="#e7bb7f"/>
+                    <path d="m220 211 29 19 2 50 22 9-7 10h-43l-11-44-15-21" fill="url(#scales)"/><path d="m239 288 2 10m13-9 2 9" stroke="#e7b67d"/>
+                    <path d="M99 157c16-37 60-42 96-19 20 14 30 42 59 61l18 46c-55 26-103 15-136-9l-30-39Z" fill="url(#scales)"/>
+                    <path d="M102 166c17 9 16 44 46 62l49 21c-40 5-72-3-87-24-16-21-23-41-8-59Z" fill="url(#belly)"/>
+                    <path d="m113 186 18-3m-12 18 20-2m-9 16 21-4m-5 18 23-7" fill="none" stroke="#74463a" stroke-width="3"/>
+                    <path d="m168 219-16 38-10 24 20 12-6 9h-46l7-47 16-38" fill="url(#scales)"/><path d="m124 292-1 10m13-10 1 10" stroke="#e7b67d"/>
+                    <path d="m160 174-20 21-29-3-4 14 39 9 34-24" fill="url(#scales)"/><path d="m110 194-7-6-5 12 10 6" fill="#e7b67d"/>
+                  </g>
+                  <g class="dragon-head" stroke="#402b2e" stroke-width="4" stroke-linejoin="round">
+                    <path d="m104 106 12-43 20 49 25-8-21 29-35 13Z" fill="#d8ae7b"/>
+                    <path d="m79 119-30 20-23 32 14 21 47-3 36-26 18-33-29-18Z" fill="url(#scales)"/>
+                    <path d="m40 176 39 4 23-9-15 24-44 6-15-18Z" fill="#36272b"/>
+                    <path d="m46 180 5 12 8-11m14 1 4 9 8-11" fill="#f4d8a0" stroke-width="2"/>
+                    <path d="m74 143 20-6-8 15-12 2Z" fill="#ffd278"/><path d="m84 142-1 9" stroke="#261f22" stroke-width="3"/>
+                    <path d="m91 124 25-5-11 17" fill="#bd7956"/><path d="m30 171 9-5" stroke="#211e23"/>
+                  </g>
+                  <g fill="#d3a06d" stroke="#4c3030" stroke-width="2"><path d="m142 132 9-21 14 28m7 2 15-22 10 37m8 1 17-16 4 31m9 6 20-11 1 32"/></g>
+                  <g fill="none" stroke="#be7451" stroke-width="2" opacity=".45"><path d="m168 156 6 7 6-4m13 9 6 7 6-4m-35 12 6 7 6-4m16 11 6 7 6-4m13 6 6 7 6-4m-35-47 6 7 6-4"/></g>
+                </svg>
+                <span class="fighter-nameplate">HẮC DIỆM</span>
+              </div>
+              <div class="effects-layer" id="effects" aria-hidden="true"></div>
+              <div class="stage-message" id="stage-message"><span class="message-diamond">◆</span><span id="stage-message-text">Huyền thoại đang chờ bạn</span><span class="message-diamond">◆</span></div>
+              <div class="result-overlay" id="result" hidden>
+                <div class="result-card"><span class="result-kicker" id="result-kicker">TRẬN ĐẤU KẾT THÚC</span><span class="result-emblem" id="result-emblem" aria-hidden="true">✧</span><h2 id="result-title"></h2><p id="result-copy"></p><button class="primary-button" id="result-replay" type="button"><svg><use href="#i-reset"/></svg>Thử sức lần nữa</button></div>
+              </div>
+            </div>
+            <div class="arena-bottom"><span id="battle-status" role="status">Sẵn sàng · Anh hùng tấn công trước</span><span class="arena-bottom-hint">Né đòn <i>·</i> Chí mạng <i>·</i> Phản công</span></div>
+          </section>
+
+          <section class="journal-card" aria-labelledby="journal-heading">
+            <div class="section-heading"><h2 id="journal-heading"><span class="section-number">02</span> Nhật ký trận chiến</h2><span id="event-count">0 SỰ KIỆN</span></div>
+            <ol class="battle-log" id="battle-log" tabindex="0" aria-label="Các sự kiện của trận đấu"></ol>
+          </section>
+        </div>
+
+        <aside class="command-panel" aria-labelledby="prepare-heading">
+          <div class="section-heading"><h2 id="prepare-heading"><span class="section-number">01</span> Chọn anh hùng</h2><span class="tiny-diamond">◆</span></div>
+          <form id="setup-form">
+            <fieldset id="setup-fields">
+              <label class="field-label" for="player-name">TÊN ANH HÙNG</label>
+              <input id="player-name" name="playerName" value="Trương Thanh Phong" maxlength="48" required autocomplete="off">
+              <p class="input-hint" id="name-hint">Đúng tên trong mã gốc: trí tuệ +5.</p>
+              <div class="field-label class-label">PHÂN CẤP NHÂN VẬT</div>
+              <div class="class-options">
+                <label class="class-option"><input type="radio" name="heroClass" value="a" checked><span class="class-icon"><svg><use href="#i-sword"/></svg></span><span class="class-copy"><strong>Chiến Binh</strong><small>Sức mạnh của lưỡi kiếm</small></span><span class="radio-mark"></span></label>
+                <label class="class-option"><input type="radio" name="heroClass" value="b"><span class="class-icon"><svg><use href="#i-bolt"/></svg></span><span class="class-copy"><strong>Sát Thủ</strong><small>Tốc độ trong bóng tối</small></span><span class="radio-mark"></span></label>
+                <label class="class-option"><input type="radio" name="heroClass" value="c"><span class="class-icon"><svg><use href="#i-bow"/></svg></span><span class="class-copy"><strong>Thợ Săn</strong><small>Bản năng của kẻ săn rồng</small></span><span class="radio-mark"></span></label>
+              </div>
+            </fieldset>
+            <div class="stats-grid" aria-label="Chỉ số sau khi chọn phân cấp">
+              <div><svg><use href="#i-sword"/></svg><strong id="strength">74</strong><span>SỨC MẠNH</span></div>
+              <div><svg><use href="#i-bolt"/></svg><strong id="agility">68</strong><span>NHANH NHẸN</span></div>
+              <div><svg><use href="#i-shield"/></svg><strong id="intel">28</strong><span>TRÍ TUỆ</span></div>
+            </div>
+            <div class="progression"><span>Cấp <strong id="level-value">4</strong><span class="progression-divider">/</span>XP <strong id="xp-value">1.250</strong></span><span>40 điểm kỹ năng</span></div>
+            <button class="primary-button start-button" id="start-button" type="submit"><svg><use href="#i-sword"/></svg><span>Bắt đầu trận chiến</span><span class="button-arrow">→</span></button>
+          </form>
+          <div class="secondary-actions"><button id="pause-button" type="button" disabled><svg><use href="#i-pause"/></svg><span>Tạm dừng</span></button><button id="reset-button" type="button"><svg><use href="#i-reset"/></svg>Làm lại</button></div>
+          <div class="playback-setting"><label for="speed">Tốc độ trận đấu</label><select id="speed"><option value="0.75">0,75× · Chậm</option><option value="1" selected>1× · Thường</option><option value="1.5">1,5× · Nhanh</option><option value="2">2× · Rất nhanh</option></select></div>
+          <p class="sound-hint" id="sound-hint">Bật âm thanh để nghe kiếm chém, hỏa cầu và hiệu ứng trúng đòn.</p>
+          <div class="opponent-note"><span class="opponent-symbol" aria-hidden="true">龍</span><div><strong>Biết địch, biết ta.</strong><p>Rồng có 100 sức mạnh, 15 nhanh nhẹn và 80 trí tuệ. Mỗi lượt là một cơ hội.</p></div></div>
+        </aside>
+      </div>
+
+      <details class="rules">
+        <summary><span>QUY TẮC TRẬN ĐẤU</span><span>Công thức từ mã gốc <b>+</b></span></summary>
+        <div class="rules-content"><p><strong>Giữ nguyên xử lý:</strong> Bài 1–3 khởi tạo cấp 3, XP 550, 40 điểm kỹ năng và STR/AGI/INT = 59/78/28. Bài 4 kiểm tra tên và cộng chỉ số phân cấp một lần, lên cấp 4, XP 1.250. Bắt đầu trận ở cấp 5, HP = cấp + 100 = 105; rồng 600 HP.</p><p>Anh hùng đánh trước. Né khi <code>Math.random() * 100 &lt; agility</code> của bên bị đánh; chí mạng khi <code>Math.random() * 100 &gt; intel</code> của bên tấn công, sát thương bằng sức mạnh ×3. HP ≤ 0 kết thúc ngay. Thắng được cấp 6 và +600 XP.</p><p><strong>Phần mô phỏng bổ sung:</strong> chọn trực tiếp trên giao diện thay cho <code>prompt()</code>; vòng lặp bất đồng bộ để trình duyệt vẽ hoạt ảnh. Tên hiển thị dùng tên bạn nhập, nhưng kiểm tra +5/−5 trí tuệ vẫn so với “Trương Thanh Phong”. Thanh máu hiển thị tối thiểu 0. Không thêm hồi máu hoặc thay đổi độ khó.</p></div>
+      </details>
+    </main>
+    <footer class="site-footer"><span>TRƯƠNG THANH PHONG <span class="footer-divider">/</span> 31241024967</span><span>Được tạo bằng HTML · CSS · JavaScript thuần</span></footer>
+  </div>
+  <noscript><p class="noscript">Hãy bật JavaScript trong trình duyệt để chạy mô phỏng.</p></noscript>
+<script>
+"use strict";
+
+/*
+ * Kế thừa công thức trong anhhung.js của Trương Thanh Phong (bài 1–5).
+ * Mã gốc có ghi tham chiếu C#4_JS_New.pdf, trang 19–31; bản này không
+ * đối chiếu lại PDF. Phần giao diện/hoạt ảnh/âm thanh là phần bổ sung.
+ * Không đổi HP, sức mạnh, điều kiện né/chí mạng hoặc phần thưởng.
+ */
+(() => {
+  const ORIGINAL_NAME = "Trương Thanh Phong";
+  const HERO_MAX_HP = 105;
+  const DRAGON = Object.freeze({ maxHp: 600, strength: 100, agility: 15, intel: 80 });
+  const CLASSES = Object.freeze({
+    a: { name: "Chiến Binh", strength: 15, agility: -10, intel: -5 },
+    b: { name: "Sát Thủ", strength: -15, agility: 10, intel: 5 },
+    c: { name: "Thợ Săn", strength: -15, agility: 0, intel: 15 }
+  });
+  const $ = (id) => document.getElementById(id);
+  const ui = {
+    form: $("setup-form"), fields: $("setup-fields"), name: $("player-name"),
+    start: $("start-button"), pause: $("pause-button"), reset: $("reset-button"),
+    speed: $("speed"), stage: $("stage"), effects: $("effects"),
+    hero: $("hero"), dragon: $("dragon"), log: $("battle-log"), result: $("result")
+  };
+  // phase: ready -> running <-> paused -> won/lost/stopped. session hủy lượt cũ.
+  const state = { phase: "ready", session: 0, round: 0, heroHp: HERO_MAX_HP,
+    dragonHp: DRAGON.maxHp, stats: null, speed: 1, level: 4, xp: 1250, events: 0 };
+  const format = (value) => new Intl.NumberFormat("vi-VN").format(value);
+
+  // BÀI 1–4: tính lại từ đầu khi xem trước để không cộng lặp chỉ số.
+  function calculateStats(name, classKey) {
+    let level = 1;
+    let xp = 0;
+    let skillPoints = 5;
+    level++;
+    xp = 150 * (level - 1) + 200; // 350
+    skillPoints += xp / 10;       // 40
+    let strength = 0.6 * skillPoints + 0.1 * xp; // 59
+    let agility = 0.2 * skillPoints + 0.2 * xp;  // 78
+    let intel = 0.2 * skillPoints + 10 * level;  // 28
+    level = 3;
+    xp += 200; // 550; các chỉ số ở trên không tính lại.
+    const correctName = name.trim().normalize("NFC") === ORIGINAL_NAME;
+    intel += correctName ? 5 : -5;
+    const chosenClass = CLASSES[classKey] || CLASSES.a;
+    strength += chosenClass.strength;
+    agility += chosenClass.agility;
+    intel += chosenClass.intel;
+    level = 4;
+    xp += 700;
+    return { name: name.trim(), className: chosenClass.name, strength, agility,
+      intel, level, xp, skillPoints, correctName };
+  }
+
+  // Một đòn có hai lần random độc lập; không roll chí mạng nếu đã né.
+  function resolveAttack(attacker, defenderAgility) {
+    if (Math.random() * 100 < defenderAgility) return { dodged: true, critical: false, damage: 0 };
+    const critical = Math.random() * 100 > attacker.intel;
+    return { dodged: false, critical, damage: attacker.strength * (critical ? 3 : 1) };
+  }
+
+  function selectedClass() { return ui.form.elements.heroClass.value; }
+
+  function updatePreview() {
+    if (state.phase !== "ready") return;
+    state.stats = calculateStats(ui.name.value, selectedClass());
+    $("hero-name").textContent = state.stats.name || "Anh hùng chưa đặt tên";
+    $("hero-nameplate").textContent = state.stats.className.toLocaleUpperCase("vi-VN");
+    $("name-hint").textContent = state.stats.correctName
+      ? "Đúng tên trong mã gốc: trí tuệ +5."
+      : "Khác tên trong mã gốc: trí tuệ −5.";
+    updateStats();
+  }
+
+  function updateStats() {
+    $("strength").textContent = state.stats.strength;
+    $("agility").textContent = state.stats.agility;
+    $("intel").textContent = state.stats.intel;
+    $("level-value").textContent = state.level;
+    $("xp-value").textContent = format(state.xp);
+    $("hero-class-label").textContent = `${state.stats.className.toLocaleUpperCase("vi-VN")} · CẤP ${state.level}`;
+  }
+
+  function updateHealth() {
+    [["hero", state.heroHp, HERO_MAX_HP], ["dragon", state.dragonHp, DRAGON.maxHp]].forEach(([id, hp, max]) => {
+      const visibleHp = Math.max(0, hp);
+      $(id + "-hp").textContent = format(visibleHp);
+      const track = $(id + "-health");
+      track.setAttribute("aria-valuenow", String(visibleHp));
+      track.classList.toggle("low", visibleHp / max < 0.25);
+      track.querySelectorAll("div").forEach((bar) => { bar.style.transform = `scaleX(${visibleHp / max})`; });
+    });
+  }
+
+  function log(message, type = "info", round = state.round) {
+    const row = document.createElement("li");
+    row.className = type;
+    const roundTag = document.createElement("span");
+    roundTag.className = "log-round";
+    roundTag.textContent = round ? String(round).padStart(2, "0") : "—";
+    const dot = document.createElement("span");
+    dot.className = "log-dot";
+    dot.setAttribute("aria-hidden", "true");
+    const text = document.createElement("span");
+    text.textContent = message; // Tên người dùng luôn là văn bản, không phải HTML.
+    row.append(roundTag, dot, text);
+    ui.log.appendChild(row);
+    // Giới hạn DOM trong trường hợp cực đoan 10.000 lượt.
+    if (ui.log.children.length > 150) ui.log.firstElementChild.remove();
+    ui.log.scrollTop = ui.log.scrollHeight;
+    state.events++;
+    $("event-count").textContent = `${state.events} SỰ KIỆN`;
+  }
+
+  function announce(message, status) {
+    $("stage-message-text").textContent = message;
+    if (status) $("battle-status").textContent = status;
+  }
+
+  // Đồng hồ chỉ đếm thời gian đang chạy. Hủy ngay khi session đổi.
+  // await trả quyền về trình duyệt để hiển thị animation giữa các đòn.
+  function wait(ms, session) {
+    return new Promise((resolve) => {
+      let remaining = ms;
+      let previous = performance.now();
+      function frame(now) {
+        if (session !== state.session) { resolve(false); return; }
+        if (state.phase !== "paused") remaining -= Math.min(now - previous, 64) * state.speed;
+        previous = now;
+        if (remaining <= 0) resolve(true);
+        else requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    });
+  }
+
+  function effect(className, x, y, content) {
+    const element = document.createElement("span");
+    element.className = className;
+    if (x !== undefined) element.style.left = x + "%";
+    if (y !== undefined) element.style.top = y + "%";
+    if (content !== undefined) element.textContent = content;
+    ui.effects.appendChild(element);
+    return element;
+  }
+
+  function burst(x, y, critical) {
+    // Hiệu ứng dùng random riêng; không ảnh hưởng quy tắc xác suất của từng đòn.
+    const count = critical ? 20 : 12;
+    for (let index = 0; index < count; index++) {
+      const spark = effect("spark", x, y);
+      const angle = (index / count) * Math.PI * 2;
+      const distance = 20 + (index % 5) * 13;
+      spark.style.setProperty("--dx", Math.cos(angle) * distance + "px");
+      spark.style.setProperty("--dy", Math.sin(angle) * distance + "px");
+      spark.style.setProperty("--spark-color", index % 3 ? "#ffd59c" : "#e98160");
+    }
+  }
+
+  function clearTurn() {
+    ui.hero.classList.remove("attacking", "hurt", "dodging");
+    ui.dragon.classList.remove("attacking", "hurt", "dodging");
+    ui.stage.classList.remove("impact");
+    ui.effects.replaceChildren();
+    $("hero-hud").classList.remove("is-active");
+    $("dragon-hud").classList.remove("is-active");
+  }
+
+  async function attack(isHero, session) {
+    const source = isHero ? ui.hero : ui.dragon;
+    const target = isHero ? ui.dragon : ui.hero;
+    const attacker = isHero ? state.stats : DRAGON;
+    const defenderAgility = isHero ? DRAGON.agility : state.stats.agility;
+    clearTurn();
+    $(isHero ? "hero-hud" : "dragon-hud").classList.add("is-active");
+    source.classList.add("attacking");
+    announce(isHero ? "Anh hùng xuất chiêu…" : "Hỏa long phản công…",
+      `Lượt ${state.round} · ${isHero ? "Anh hùng tấn công" : "Rồng phản công"}`);
+    sound.play(isHero ? "sword" : "fire");
+    if (!isHero) effect("fireball");
+    if (!(await wait(isHero ? 350 : 430, session))) return false;
+    const outcome = resolveAttack(attacker, defenderAgility);
+    // Tọa độ tính theo phần trăm nên hiệu ứng theo được màn hình nhỏ.
+    const x = isHero ? 70 : 24;
+    const y = isHero ? 40 : 43;
+    if (outcome.dodged) {
+      target.classList.add("dodging");
+      effect("damage-number miss", x, y, "NÉ ĐÒN");
+      log(isHero ? "Rồng né được đòn tấn công của anh hùng." : "Anh hùng né được hỏa cầu của rồng.", "dodge");
+      announce(isHero ? "Lưỡi kiếm lướt qua không khí" : "Một bước né hoàn hảo!");
+      sound.play("dodge");
+    } else {
+      if (isHero) {
+        state.dragonHp = Math.max(0, state.dragonHp - outcome.damage);
+        effect("slash" + (outcome.critical ? " critical" : ""));
+      } else {
+        state.heroHp = Math.max(0, state.heroHp - outcome.damage);
+      }
+      target.classList.add("hurt");
+      ui.stage.classList.add("impact");
+      const damage = effect("damage-number" + (outcome.critical ? " critical" : ""), x, y, "−" + outcome.damage);
+      if (outcome.critical) {
+        const label = document.createElement("small");
+        label.textContent = "CHÍ MẠNG";
+        damage.prepend(label);
+      }
+      burst(x, y + 14, outcome.critical);
+      updateHealth();
+      log(`${outcome.critical ? "CHÍ MẠNG! " : ""}${isHero ? "Anh hùng trảm long" : "Rồng phóng hỏa cầu"}: ${outcome.damage} sát thương. ${isHero ? "Rồng" : "Anh hùng"} còn ${isHero ? state.dragonHp : state.heroHp} HP.`, outcome.critical ? "critical" : "damage");
+      announce(outcome.critical ? "Chí mạng! Sát thương ×3" : (isHero ? "Trảm long! Một đòn chính xác." : "Hỏa cầu! Anh hùng trúng đòn."));
+      sound.play(outcome.critical ? "critical" : "hit");
+    }
+    // Khoảng nghỉ giúp đọc số sát thương và xem nhân vật trở về vị trí.
+    if (!(await wait(1100, session))) return false;
+    clearTurn();
+    return true;
+  }
+
+  async function battle(session) {
+    if (!(await wait(700, session))) return;
+    // BÀI 5: vẫn dùng vòng lặp while, anh hùng luôn đánh trước.
+    while (session === state.session) {
+      state.round++;
+      if (state.round > 10000) { finish("stopped"); return; }
+      $("round-label").textContent = "LƯỢT " + String(state.round).padStart(2, "0");
+      if (!(await attack(true, session))) return;
+      if (state.dragonHp <= 0) { finish("won"); return; } // Rồng không phản công khi chết.
+      if (!(await wait(250, session))) return;
+      if (!(await attack(false, session))) return;
+      if (state.heroHp <= 0) { finish("lost"); return; }
+      if (!(await wait(450, session))) return;
+    }
+  }
+
+  function start(event) {
+    if (event) event.preventDefault();
+    if (state.phase !== "ready") return; // Chặn bấm nhanh tạo nhiều trận.
+    ui.name.value = ui.name.value.trim();
+    ui.name.setCustomValidity(ui.name.value ? "" : "Hãy nhập tên anh hùng.");
+    if (!ui.form.reportValidity()) return;
+    updatePreview();
+    state.session++;
+    state.phase = "running";
+    state.round = 0;
+    state.level = 5;
+    state.heroHp = HERO_MAX_HP;
+    state.dragonHp = DRAGON.maxHp;
+    state.events = 0;
+    ui.log.replaceChildren();
+    ui.fields.disabled = true;
+    ui.start.disabled = true;
+    ui.start.querySelector("span").textContent = "Trận chiến đang diễn ra";
+    ui.pause.disabled = false;
+    ui.stage.dataset.state = "running";
+    $("round-label").textContent = "CHUẨN BỊ GIAO CHIẾN";
+    updateStats();
+    updateHealth();
+    log(`${state.stats.name} · ${state.stats.className} vào trận ở cấp 5. Anh hùng 105 HP, rồng 600 HP.`, "info", 0);
+    log(`STR ${state.stats.strength} · AGI ${state.stats.agility} · INT ${state.stats.intel}. Anh hùng tấn công trước.`, "info", 0);
+    announce("Rút kiếm. Trận chiến bắt đầu!", "Trận chiến bắt đầu · Anh hùng đi trước");
+    sound.unlock(); // Khởi tạo trong thao tác người dùng, không tự phát khi tải trang.
+    sound.play("start");
+    const session = state.session;
+    battle(session).catch((error) => {
+      console.error("Không thể tiếp tục mô phỏng:", error);
+      if (session === state.session && (state.phase === "running" || state.phase === "paused")) finish("stopped");
+    });
+  }
+
+  function finish(result) {
+    state.phase = result;
+    clearTurn();
+    ui.stage.dataset.state = result;
+    ui.pause.disabled = true;
+    ui.start.querySelector("span").textContent = "Trận chiến đã kết thúc";
+    ui.result.hidden = false;
+    ui.result.classList.toggle("defeat", result !== "won");
+    if (result === "won") {
+      state.level = 6;
+      state.xp += 600;
+      ui.dragon.classList.add("fallen");
+      $("result-kicker").textContent = "DŨNG SĨ DIỆT RỒNG";
+      $("result-emblem").textContent = "✧";
+      $("result-title").textContent = "Chiến thắng!";
+      $("result-copy").textContent = `Hắc Diệm đã gục ngã sau ${state.round} lượt. Cấp 6 · +600 XP · Tổng ${format(state.xp)} XP.`;
+      log("CHIẾN THẮNG! Nhận danh hiệu Dũng sĩ diệt Rồng. Lên cấp 6, +600 XP.", "victory");
+      announce("Một huyền thoại được viết nên", "Chiến thắng · Dũng sĩ diệt Rồng · Cấp 6");
+      sound.play("victory");
+    } else if (result === "lost") {
+      ui.hero.classList.add("fallen");
+      $("result-kicker").textContent = "HÀNH TRÌNH CHƯA KẾT THÚC";
+      $("result-emblem").textContent = "◇";
+      $("result-title").textContent = "Bại trận…";
+      $("result-copy").textContent = `Anh hùng hết sinh lực ở lượt ${state.round}. Hãy thử lại vận may hoặc chọn phân cấp khác.`;
+      log("THẤT BẠI! Anh hùng đã hết máu. Có thể làm lại để thử sức lần nữa.", "defeat");
+      announce("Người anh hùng sẽ trở lại", "Thất bại · Anh hùng đã hết máu");
+      sound.play("defeat");
+    } else {
+      $("result-kicker").textContent = "TRẬN ĐẤU ĐÃ DỪNG";
+      $("result-emblem").textContent = "◇";
+      $("result-title").textContent = "Chưa có kết quả";
+      $("result-copy").textContent = "Mô phỏng đã dừng bất thường. Hãy làm lại để bắt đầu trận mới.";
+      log("Dừng bất thường; không tính thắng hoặc thua.", "info");
+      announce("Trận đấu đã dừng", "Đã dừng · Chưa xác định kết quả");
+    }
+    updateStats();
+    $("result-replay").focus({ preventScroll: true });
+  }
+
+  function togglePause() {
+    if (state.phase !== "running" && state.phase !== "paused") return;
+    const paused = state.phase === "running";
+    state.phase = paused ? "paused" : "running";
+    ui.stage.classList.toggle("paused", paused);
+    ui.pause.querySelector("span").textContent = paused ? "Tiếp tục" : "Tạm dừng";
+    ui.pause.querySelector("use").setAttribute("href", paused ? "#i-play" : "#i-pause");
+    $("battle-status").textContent = paused ? `Tạm dừng ở lượt ${state.round} · Nhấn Tiếp tục để chơi` : `Tiếp tục lượt ${state.round}`;
+    if (paused) sound.silence();
+    else sound.unlock();
+  }
+
+  function reset() {
+    state.session++; // Mọi await của trận cũ sẽ trả false trước khi ghi trạng thái.
+    state.phase = "ready";
+    state.round = 0;
+    state.heroHp = HERO_MAX_HP;
+    state.dragonHp = DRAGON.maxHp;
+    state.level = 4;
+    state.xp = 1250;
+    state.events = 0;
+    sound.silence();
+    clearTurn();
+    ui.hero.classList.remove("fallen");
+    ui.dragon.classList.remove("fallen");
+    ui.stage.classList.remove("paused");
+    ui.stage.dataset.state = "ready";
+    ui.fields.disabled = false;
+    ui.start.disabled = false;
+    ui.start.querySelector("span").textContent = "Bắt đầu trận chiến";
+    ui.pause.disabled = true;
+    ui.pause.querySelector("span").textContent = "Tạm dừng";
+    ui.pause.querySelector("use").setAttribute("href", "#i-pause");
+    ui.result.hidden = true;
+    ui.log.replaceChildren();
+    $("round-label").textContent = "CHƯA VÀO TRẬN";
+    updatePreview();
+    updateHealth();
+    announce("Huyền thoại đang chờ bạn", "Sẵn sàng · Anh hùng tấn công trước");
+    log("Chọn phân cấp và bắt đầu trận chiến. Mọi chỉ số đã được khôi phục.", "info", 0);
+    ui.start.focus({ preventScroll: true });
+  }
+
+  // Âm thanh tổng hợp bằng Web Audio: không cần tệp MP3 hay kết nối Internet.
+  // Nếu API/thiết bị không sẵn sàng, game tiếp tục chạy ở chế độ im lặng.
+  class SoundSynth {
+    constructor() { this.context = null; this.master = null; this.enabled = false; this.nodes = new Set(); }
+
+    unlock() {
+      if (!this.enabled) return;
+      try {
+        if (!this.context) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (!AudioContext) throw new Error("Web Audio không được hỗ trợ");
+          this.context = new AudioContext();
+          this.master = this.context.createGain();
+          this.master.gain.value = 0.2;
+          this.master.connect(this.context.destination);
+        }
+        if (this.context.state === "suspended") this.context.resume().catch(() => this.unavailable());
+      } catch (_) { this.unavailable(); }
+    }
+
+    unavailable() {
+      this.enabled = false;
+      this.silence();
+      $("sound-toggle").setAttribute("aria-pressed", "false");
+      $("sound-label").textContent = "Âm thanh tắt";
+      $("sound-hint").textContent = "Trình duyệt chưa phát được âm thanh. Bạn vẫn có thể chơi bình thường.";
+    }
+
+    toggle() {
+      this.enabled = !this.enabled;
+      if (this.enabled) this.unlock();
+      else this.silence();
+      $("sound-toggle").setAttribute("aria-pressed", String(this.enabled));
+      $("sound-label").textContent = this.enabled ? "Âm thanh bật" : "Bật âm thanh";
+      if (this.enabled) {
+        $("sound-hint").textContent = "Âm thanh đã bật · Kiếm chém, hỏa cầu, trúng đòn và kết quả trận đấu.";
+        if (state.phase !== "paused") this.play("start");
+      } else if (this.context) {
+        $("sound-hint").textContent = "Âm thanh đang tắt. Nhấn nút âm thanh phía trên để bật lại.";
+      }
+    }
+
+    track(node) {
+      this.nodes.add(node);
+      node.onended = () => { this.nodes.delete(node); node.disconnect(); };
+    }
+
+    tone(frequency, endFrequency, duration, type = "sine", volume = 0.5, offset = 0) {
+      const ctx = this.context;
+      const start = ctx.currentTime + offset;
+      const oscillator = ctx.createOscillator();
+      const envelope = ctx.createGain();
+      oscillator.type = type;
+      oscillator.frequency.setValueAtTime(frequency, start);
+      oscillator.frequency.exponentialRampToValueAtTime(Math.max(1, endFrequency), start + duration);
+      envelope.gain.setValueAtTime(0.001, start);
+      envelope.gain.linearRampToValueAtTime(volume, start + 0.012);
+      envelope.gain.exponentialRampToValueAtTime(0.001, start + duration);
+      oscillator.connect(envelope);
+      envelope.connect(this.master);
+      this.track(oscillator);
+      oscillator.addEventListener("ended", () => envelope.disconnect(), { once: true });
+      oscillator.start(start);
+      oscillator.stop(start + duration + 0.03);
+    }
+
+    noise(duration, filterFrequency, volume) {
+      const ctx = this.context;
+      const buffer = ctx.createBuffer(1, Math.ceil(ctx.sampleRate * duration), ctx.sampleRate);
+      const samples = buffer.getChannelData(0);
+      for (let index = 0; index < samples.length; index++) samples[index] = (Math.random() * 2 - 1) * (1 - index / samples.length);
+      const source = ctx.createBufferSource();
+      const filter = ctx.createBiquadFilter();
+      const envelope = ctx.createGain();
+      source.buffer = buffer;
+      filter.type = "lowpass";
+      filter.frequency.value = filterFrequency;
+      envelope.gain.setValueAtTime(volume, ctx.currentTime);
+      envelope.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
+      source.connect(filter); filter.connect(envelope); envelope.connect(this.master);
+      this.track(source);
+      source.addEventListener("ended", () => { filter.disconnect(); envelope.disconnect(); }, { once: true });
+      source.start();
+    }
+
+    play(kind) {
+      if (!this.enabled || !this.context || this.context.state !== "running") return;
+      try {
+        switch (kind) {
+          case "sword": this.noise(0.22, 5000, 0.5); this.tone(850, 260, 0.18, "triangle", 0.22); break;
+          case "fire": this.noise(0.6, 800, 0.9); this.tone(85, 38, 0.5, "sawtooth", 0.32); break;
+          case "hit": this.noise(0.16, 1600, 0.7); this.tone(140, 45, 0.2, "sine", 0.8); break;
+          case "critical": this.noise(0.3, 2200, 0.8); this.tone(170, 32, 0.35, "triangle", 0.8); this.tone(960, 380, 0.25, "sine", 0.25); break;
+          case "dodge": this.tone(400, 1100, 0.22, "sine", 0.3); break;
+          case "start": [261.63, 392, 523.25].forEach((note, index) => this.tone(note, note, 0.23, "triangle", 0.32, index * 0.1)); break;
+          case "victory": [392, 523.25, 659.25, 783.99, 1046.5].forEach((note, index) => this.tone(note, note, 0.5, "triangle", 0.45, index * 0.17)); break;
+          case "defeat": [311.13, 261.63, 196, 130.81].forEach((note, index) => this.tone(note, note * 0.96, 0.5, "triangle", 0.4, index * 0.22)); break;
+        }
+      } catch (error) { console.warn("Không phát được hiệu ứng âm thanh:", error); }
+    }
+
+    silence() {
+      for (const node of this.nodes) { try { node.stop(); } catch (_) { /* Nốt đã dừng. */ } }
+      this.nodes.clear();
+    }
+  }
+
+  const sound = new SoundSynth();
+  ui.form.addEventListener("submit", start);
+  ui.name.addEventListener("input", () => { ui.name.setCustomValidity(""); updatePreview(); });
+  ui.form.querySelectorAll("input[type=radio]").forEach((radio) => radio.addEventListener("change", updatePreview));
+  ui.pause.addEventListener("click", togglePause);
+  ui.reset.addEventListener("click", reset);
+  $("result-replay").addEventListener("click", reset);
+  $("sound-toggle").addEventListener("click", () => sound.toggle());
+  ui.speed.addEventListener("change", () => {
+    state.speed = Number(ui.speed.value);
+    document.documentElement.style.setProperty("--speed", state.speed);
+  });
+  // Tự tạm dừng khi rời tab để không bỏ lỡ kết quả hay phát tiếng nền.
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden && state.phase === "running") togglePause();
+    if (document.hidden) sound.silence();
+  });
+  window.addEventListener("pagehide", () => { state.session++; sound.silence(); });
+
+  // Tàn lửa nền chỉ để trang trí; không liên quan Math.random của giao tranh.
+  for (let index = 0; index < 14; index++) {
+    const ember = document.createElement("span");
+    ember.className = "ambient-ember";
+    ember.setAttribute("aria-hidden", "true");
+    ember.style.left = (5 + (index * 37) % 93) + "%";
+    ember.style.animationDelay = -(index * 0.53) + "s";
+    ember.style.animationDuration = (5 + index % 4) + "s";
+    ui.stage.appendChild(ember);
+  }
+  updatePreview();
+  updateHealth();
+  log("Đã chuẩn bị chỉ số bài 1–4. Chọn phân cấp và bắt đầu trận chiến.", "info", 0);
+})();
+
+</script>
+</body>
+</html>
