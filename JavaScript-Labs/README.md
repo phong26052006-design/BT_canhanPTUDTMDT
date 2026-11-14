@@ -16,9 +16,9 @@ Bộ này là bài cá nhân tuần 4 theo `BaiTap_CaNhan_JS.pdf` gồm 9 trang.
 - Lab 09: `Lab09/index.html`.
 - Lab 10: `Lab10/index.html`.
 - Repository: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
-- GitHub Pages dự kiến: https://phong26052006-design.github.io/BT_canhanPTUDTMDT/JavaScript-Labs/
+- GitHub Pages: https://phong26052006-design.github.io/BT_canhanPTUDTMDT/JavaScript-Labs/
 
-**Trạng thái ngày 15/11/2026:** người dùng đã cho phép công bố tuần 4. Mã nguồn, ảnh minh chứng và báo cáo đã được đưa lên [nhánh main](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/tree/main/JavaScript-Labs), giữ nguyên các file cũ. GitHub Pages đang chờ cấu hình bằng phiên đăng nhập của chủ repository; đường dẫn Pages ở trên chưa được xác nhận hoạt động. Không nộp LMS tự động.
+**Trạng thái ngày 15/11/2026:** đã công bố mã nguồn, ảnh minh chứng và báo cáo trên [nhánh main](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/tree/main/JavaScript-Labs), giữ nguyên các file cũ. GitHub Pages đã bật từ `main` / `/ (root)`; [lần triển khai đầu tiên thành công](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/actions/runs/43637679830). Portfolio và GET 8 thành phố mẫu đã được kiểm tra trực tiếp trên website công khai. Không nộp LMS tự động.
 
 ## Chạy qua HTTP
 
