@@ -1,0 +1,16 @@
+#root {box-sizing:border-box;width:1024px;max-width:100%;margin:40px auto 70px;text-align:center;font-family:'Times New Roman',serif;}
+#site-header {margin:0 0 36px;padding:18px 12px;text-align:center;background:#ccc;color:white;text-shadow:2px 2px 2px black;font-size:30px;}
+#site-header span {display:inline-block;padding-left:72px;background:url('../assets/css2/logo.png') no-repeat left center;background-size:60px auto;}
+.superheroes {list-style:none;padding:0;margin:0;font-size:0;min-height:255px;}
+.superheroes li {display:inline-block;position:relative;width:175px;margin:0 2px;vertical-align:bottom;font-size:18px;}
+.superheroes img {display:block;width:100%;max-width:100%;aspect-ratio:1;object-fit:cover;border:0 solid white;border-radius:16px;}
+.hero-header {position:absolute;top:12px;left:0;width:100%;color:#fff;opacity:.55;text-shadow:1px 1px 2px #333;pointer-events:none;}
+.superheroes a {display:block;width:100%;box-sizing:border-box;padding:10px 0;background:#666;color:#fff;text-decoration:none;position:absolute;left:0;top:calc(100% + 4px);}
+.superheroes li:hover,.superheroes li:focus-within {width:205px;}
+.superheroes li:hover a,.superheroes li:focus-within a {text-decoration:underline;}
+.superheroes li:hover .hero-header,.superheroes li:focus-within .hero-header {opacity:1;}
+/* Link remains keyboard-focusable while visually hidden: opacity replaces visibility. */
+.superheroes a {opacity:0;pointer-events:none;}
+.superheroes li:hover a,.superheroes li:focus-within a {opacity:1;pointer-events:auto;}
+@media(max-width:650px){.superheroes{display:flex;flex-wrap:wrap;justify-content:center;gap:48px 8px}.superheroes li{width:140px}.superheroes li:hover,.superheroes li:focus-within{width:165px}#site-header{font-size:25px}}
+@media(hover:none){.superheroes a{opacity:1;pointer-events:auto}.superheroes{display:flex;flex-wrap:wrap;gap:48px 8px;justify-content:center}}
