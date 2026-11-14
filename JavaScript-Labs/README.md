@@ -15,10 +15,10 @@ Bộ này là bài cá nhân tuần 4 theo `BaiTap_CaNhan_JS.pdf` gồm 9 trang.
 - Lab 08: `Lab08/index.html`.
 - Lab 09: `Lab09/index.html`.
 - Lab 10: `Lab10/index.html`.
-- Repository dự kiến bổ sung: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
+- Repository: https://github.com/phong26052006-design/BT_canhanPTUDTMDT
 - GitHub Pages dự kiến: https://phong26052006-design.github.io/BT_canhanPTUDTMDT/JavaScript-Labs/
 
-**Trạng thái bàn giao cục bộ:** mã nguồn và minh chứng đã được tạo tại máy. Chưa công bố thư mục này hoặc xác nhận đường dẫn GitHub Pages ở trên hoạt động. Việc xuất bản cần được người dùng cho phép riêng; hướng dẫn nộp bài trong PDF không được coi là lệnh công bố. Không nộp LMS tự động.
+**Trạng thái ngày 15/11/2026:** người dùng đã cho phép công bố tuần 4. Mã nguồn, ảnh minh chứng và báo cáo đã được đưa lên [nhánh main](https://github.com/phong26052006-design/BT_canhanPTUDTMDT/tree/main/JavaScript-Labs), giữ nguyên các file cũ. GitHub Pages đang chờ cấu hình bằng phiên đăng nhập của chủ repository; đường dẫn Pages ở trên chưa được xác nhận hoạt động. Không nộp LMS tự động.
 
 ## Chạy qua HTTP
 
