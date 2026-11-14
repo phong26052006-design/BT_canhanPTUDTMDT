@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>  
+	<title>Exercise 9.3 · Modifying the DOM</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../../vendor/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../css/lab09.css">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../css/exercise.css"></head>
+<body>
+<nav class="labbar" aria-label="Điều hướng bài thực hành"><a href="../../index.html">JavaScript Labs</a><a href="../index.html">Lab 09</a><span>Exercise 9.3</span><a href="main.js" download>Mã JavaScript</a><a href="index.html" download>Mã HTML</a></nav>
+<aside class="labintro"><p>Trương Thanh Phong · 31241024967 · 26C1INF50902702</p><h1>Exercise 9.3 · Modifying the DOM</h1><p>Tạo đoạn văn bằng createElement, appendChild và xóa một mục danh sách.</p></aside><p id="exercise-result" class="exercise-result" role="status"></p>
+
+<div class="container">
+    <div class="row" id="first">
+        <h1 id="pageTitle">DOM Example</h1>
+        <p>This is a sample file to be used with DOM manipulation.</p>   
+    </div>
+    
+    
+    <div class="row" id="stories">
+        <div class="col-md-4">
+              <img alt="Ảnh mẫu trong tài liệu thực hành" src="../images/5857298322.jpg" class="img-responsive">            
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.  </p>
+              <p><button class="btn btn-primary" type="button">View details</button></p>
+
+        </div>
+        <div class="col-md-4">
+            <img alt="Ảnh mẫu trong tài liệu thực hành" src="../images/8710320515.jpg" class="img-responsive">  
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.  </p>
+            <p><button class="btn btn-primary" type="button">View details</button></p>
+        </div>
+        <div class="col-md-4">
+            <img alt="Ảnh mẫu trong tài liệu thực hành" src="../images/9494464567.jpg" class="img-responsive">  
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
+            <p><button class="btn btn-primary" type="button">View details</button></p>
+        </div>
+    </div>  <!-- end stories row -->
+  
+  
+    <div class="row" id="features">
+        <ul id="iconList" class="list-unstyled">
+            <li>
+                <div class="col-md-3 ">
+                    <div class="center-icons">
+                        <i class="fa fa-coffee fa-3x"></i> 
+                        <div class="count-number">20000</div>
+                        <span class="count-title">cups of coffee</span>
+                    </div>
+                </div>                
+            </li>
+            <li id="deleteThisOne">
+                <div class="col-md-3 ">
+                    <div class="center-icons">
+                        <i class="fa fa-book fa-3x"></i> 
+                        <div class="count-number">24</div>
+                        <span class="count-title">chapters</span>
+                    </div>
+                </div>                
+            </li>
+            <li>
+                <div class="col-md-3 ">
+                    <div class="center-icons">
+                        <i class="fa fa-desktop fa-3x"></i> 
+                        <div class="count-number">48</div>
+                        <span class="count-title">presentations</span>
+                    </div>
+                </div>                
+            </li>
+            <li>
+                <div class="col-md-3 ">
+                    <div class="center-icons">
+                        <i class="fa fa-file-image-o fa-3x"></i> 
+                        <div class="count-number">560</div>
+                        <span class="count-title">diagrams</span>
+                    </div>
+                </div>                
+            </li>                                    
+        </ul>
+    </div> <!-- end features row -->
+
+
+</div> <!-- end container -->
+
+<script type="text/javascript" src="main.js"></script>
+
+<details class="labnotes"><summary>Yêu cầu và cách kiểm tra</summary><p>Nguồn Lab 09, trang 5. Tạo đoạn văn bằng createElement, appendChild và xóa một mục danh sách.</p><p>Mở F12 để xem Console và Sources. Tải lại trang để khôi phục trạng thái ban đầu. Bài dựa trên mã khởi đầu của Randy Connolly và Ricardo Hoar, có hỗ trợ AI và kiểm tra thực tế.</p></details></body>
+</html>

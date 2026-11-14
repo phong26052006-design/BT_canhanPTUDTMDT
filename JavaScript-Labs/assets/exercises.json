@@ -1,0 +1,263 @@
+[
+  {
+    "lab": 8,
+    "exercise": 1,
+    "title": "Enabling Disabling JavaScript",
+    "description": "So sánh kết quả khi JavaScript bật và tắt trong trình duyệt.",
+    "source_page": 2,
+    "path": "Lab08/Exercise01/",
+    "js": "main.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 2,
+    "title": "Embedded JavaScript",
+    "description": "Nhúng script trong head và hiển thị Hello World bằng alert.",
+    "source_page": 2,
+    "path": "Lab08/Exercise02/",
+    "js": "main.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 3,
+    "title": "External JavaScript",
+    "description": "Nạp hello.js bên ngoài, tăng count từ 1 lên 2 và xuất kết quả.",
+    "source_page": 4,
+    "path": "Lab08/Exercise03/",
+    "js": "hello.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 4,
+    "title": "Using noscript",
+    "description": "Dùng noscript để hiển thị nội dung khi JavaScript bị tắt.",
+    "source_page": 5,
+    "path": "Lab08/Exercise04/",
+    "js": "hello.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 5,
+    "title": "Using the Browser Console",
+    "description": "Kiểm tra count, output, temp; quan sát log, warning và lỗi chủ đích.",
+    "source_page": 5,
+    "path": "Lab08/Exercise05/",
+    "js": "hello.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 6,
+    "title": "Using Built in JavaScript Objects",
+    "description": "Phân biệt String object với chuỗi nguyên thủy; dùng Date và Math.",
+    "source_page": 8,
+    "path": "Lab08/Exercise06/",
+    "js": "main.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 7,
+    "title": "Arrays",
+    "description": "Thêm cuối, thêm đầu mảng và tạo lịch 30 ngày bắt đầu Chủ nhật.",
+    "source_page": 9,
+    "path": "Lab08/Exercise07/",
+    "js": "main.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 8,
+    "title": "JavaScript Functions",
+    "description": "Truyền tham số, trả về chuỗi HTML và minh họa phạm vi biến.",
+    "source_page": 11,
+    "path": "Lab08/Exercise08/",
+    "js": "main.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 9,
+    "title": "Functions as Objects",
+    "description": "Truyền hàm ẩn danh để tính thuế và tổng tiền $31.50.",
+    "source_page": 13,
+    "path": "Lab08/Exercise09/",
+    "js": "main.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 10,
+    "title": "Creating JavaScript Objects",
+    "description": "Tạo object literal, constructor và phương thức dùng this.",
+    "source_page": 14,
+    "path": "Lab08/Exercise10/",
+    "js": "main.js"
+  },
+  {
+    "lab": 8,
+    "exercise": 11,
+    "title": "Arrays of Objects",
+    "description": "Duyệt mảng đối tượng Country và thuộc tính bằng for in.",
+    "source_page": 17,
+    "path": "Lab08/Exercise11/",
+    "js": "main.js"
+  },
+  {
+    "lab": 9,
+    "exercise": 1,
+    "title": "Basic DOM Selection",
+    "description": "Chọn node theo ID, thẻ, class và CSS selector; đọc thuộc tính và đổi kiểu.",
+    "source_page": 2,
+    "path": "Lab09/Exercise01/",
+    "js": "main.js"
+  },
+  {
+    "lab": 9,
+    "exercise": 2,
+    "title": "DOM Family Relations",
+    "description": "Khảo sát firstChild, nextSibling, parentNode và phân biệt text node.",
+    "source_page": 4,
+    "path": "Lab09/Exercise02/",
+    "js": "main.js"
+  },
+  {
+    "lab": 9,
+    "exercise": 3,
+    "title": "Modifying the DOM",
+    "description": "Tạo đoạn văn bằng createElement, appendChild và xóa một mục danh sách.",
+    "source_page": 5,
+    "path": "Lab09/Exercise03/",
+    "js": "main.js"
+  },
+  {
+    "lab": 9,
+    "exercise": 4,
+    "title": "Simple Event Handling",
+    "description": "Bắt click, mouseover, mouseout; ẩn hiện nội dung có chuyển tiếp.",
+    "source_page": 6,
+    "path": "Lab09/Exercise04/",
+    "js": "main.js"
+  },
+  {
+    "lab": 9,
+    "exercise": 5,
+    "title": "Responding to Load Events",
+    "description": "Chờ load trước khi truy cập phần tử và đọc nội dung div1.",
+    "source_page": 7,
+    "path": "Lab09/Exercise05/",
+    "js": "main.js"
+  },
+  {
+    "lab": 9,
+    "exercise": 6,
+    "title": "Debugging Events",
+    "description": "Dừng tại debugger trong handler, xem event.target và biến cục bộ.",
+    "source_page": 8,
+    "path": "Lab09/Exercise06/",
+    "js": "main.js"
+  },
+  {
+    "lab": 9,
+    "exercise": 7,
+    "title": "Working with Forms",
+    "description": "Đổi nền trường nhập theo focus và blur; dùng bàn phím Tab.",
+    "source_page": 10,
+    "path": "Lab09/Exercise07/",
+    "js": "main.js"
+  },
+  {
+    "lab": 9,
+    "exercise": 8,
+    "title": "Form Validation",
+    "description": "Chặn biểu mẫu rỗng, chỉ rõ trường lỗi và xử lý lần nhập hợp lệ.",
+    "source_page": 10,
+    "path": "Lab09/Exercise08/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 1,
+    "title": "Set Up jQuery",
+    "description": "Nạp jQuery cục bộ và xác nhận phiên bản khi DOM sẵn sàng.",
+    "source_page": 2,
+    "path": "Lab10/Exercise01/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 2,
+    "title": "Basic Selectors",
+    "description": "Dùng val, html, attr, css và addClass trên tập phần tử.",
+    "source_page": 2,
+    "path": "Lab10/Exercise02/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 3,
+    "title": "Advanced Selectors",
+    "description": "Dùng :password, :nth-child và :contains để chọn phần tử.",
+    "source_page": 3,
+    "path": "Lab10/Exercise03/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 4,
+    "title": "jQuery Listeners",
+    "description": "Gắn chuỗi handler mousemove, mouseleave, click và gỡ mousemove.",
+    "source_page": 4,
+    "path": "Lab10/Exercise04/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 5,
+    "title": "Inserting DOM Elements",
+    "description": "So sánh after, before, append, prepend và các phương thức đảo chiều.",
+    "source_page": 5,
+    "path": "Lab10/Exercise05/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 6,
+    "title": "Simple jQuery Animation",
+    "description": "Thực hiện fadeIn, fadeOut, fadeToggle, slideUp, slideDown, slideToggle.",
+    "source_page": 6,
+    "path": "Lab10/Exercise06/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 7,
+    "title": "More jQuery Animation",
+    "description": "Tạo ảnh xem trước lớn hơn khi hover, di chuyển theo chuột và xóa khi rời.",
+    "source_page": 7,
+    "path": "Lab10/Exercise07/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 8,
+    "title": "Complex Animations",
+    "description": "Nối ba animate để thay đổi vị trí, độ mờ và chiều cao.",
+    "source_page": 9,
+    "path": "Lab10/Exercise08/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 9,
+    "title": "GET Requests",
+    "description": "Gọi $.get nhận JSON; duyệt bằng $.each và hiển thị danh sách.",
+    "source_page": 10,
+    "path": "Lab10/Exercise09/",
+    "js": "main.js"
+  },
+  {
+    "lab": 10,
+    "exercise": 10,
+    "title": "jqXHR Handling",
+    "description": "Theo dõi done, fail, always; quản lý trạng thái chờ và lỗi HTTP.",
+    "source_page": 12,
+    "path": "Lab10/Exercise10/",
+    "js": "main.js"
+  }
+]

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>  
+    <title>Exercise 9.8 · Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="../css/lab09.css" />
+    <link rel="stylesheet" type='text/css' href="../../vendor/font-awesome/css/font-awesome.min.css" />
+    
+   <script type="text/javascript" src="main.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../css/exercise.css"></head>
+<body class="form-body">
+<nav class="labbar" aria-label="Điều hướng bài thực hành"><a href="../../index.html">JavaScript Labs</a><a href="../index.html">Lab 09</a><span>Exercise 9.8</span><a href="main.js" download>Mã JavaScript</a><a href="index.html" download>Mã HTML</a></nav>
+<aside class="labintro"><p>Trương Thanh Phong · 31241024967 · 26C1INF50902702</p><h1>Exercise 9.8 · Form Validation</h1><p>Chặn biểu mẫu rỗng, chỉ rõ trường lỗi và xử lý lần nhập hợp lệ.</p></aside><p id="exercise-result" class="exercise-result" role="status"></p>
+
+
+<div class="form-box">
+  <h1>Registration</h1>
+
+  <form method="get" action="#" id="sampleForm">
+
+  <hr>
+  <label class="field-icon" for="name"><i class="fa fa-user fa-fw"></i></label>
+  <input type="text" name="name" id="name" aria-label="name" placeholder="Name" />
+  <label class="field-icon" for="phone"><i class="fa fa-phone fa-fw"></i></label>
+  <input type="text" name="phone" id="phone" aria-label="phone" placeholder="Phone" />
+  <label class="field-icon" for="email"><i class="fa fa-envelope fa-fw"></i></label>
+  <input type="text" name="email" id="email" aria-label="email" placeholder="Email" />    
+  <label class="field-icon" for="pass"><i class="fa fa-key fa-fw"></i></label>
+  <input type="password" name="pass" id="pass" aria-label="pass" placeholder="Password" />
+
+   <button type="submit" ><i class="fa fa-reply fa-fw"></i> Register</button> 
+   
+  </form>
+</div>
+      
+<div id="errors" class="hidden" role="alert">
+</div>      
+       
+<details class="labnotes"><summary>Yêu cầu và cách kiểm tra</summary><p>Nguồn Lab 09, trang 10. Chặn biểu mẫu rỗng, chỉ rõ trường lỗi và xử lý lần nhập hợp lệ.</p><p>Mở F12 để xem Console và Sources. Tải lại trang để khôi phục trạng thái ban đầu. Bài dựa trên mã khởi đầu của Randy Connolly và Ricardo Hoar, có hỗ trợ AI và kiểm tra thực tế.</p></details></body>
+</html>

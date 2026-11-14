@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>  
+    <title>Exercise 9.6 · Debugging Events</title>
+   <link rel="stylesheet" type="text/css" href="../css/lab09.css" />
+   <script type="text/javascript" src="main.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../css/exercise.css"></head>
+<body>
+<nav class="labbar" aria-label="Điều hướng bài thực hành"><a href="../../index.html">JavaScript Labs</a><a href="../index.html">Lab 09</a><span>Exercise 9.6</span><a href="main.js" download>Mã JavaScript</a><a href="index.html" download>Mã HTML</a></nav>
+<aside class="labintro"><p>Trương Thanh Phong · 31241024967 · 26C1INF50902702</p><h1>Exercise 9.6 · Debugging Events</h1><p>Dừng tại debugger trong handler, xem event.target và biến cục bộ.</p></aside><p id="exercise-result" class="exercise-result" role="status"></p>
+<header>
+  <h1>Debugging Events</h1>
+</header>
+
+<script>
+   // add function calls here
+   for (count=1; count<6; count++) {
+      document.write(outputBox(count));
+   }
+</script>
+
+<footer>
+  <p><em>Copyright &copy; 2015</em></p>
+</footer>
+<details class="labnotes"><summary>Yêu cầu và cách kiểm tra</summary><p>Nguồn Lab 09, trang 8. Dừng tại debugger trong handler, xem event.target và biến cục bộ.</p><p>Mở F12 để xem Console và Sources. Tải lại trang để khôi phục trạng thái ban đầu. Bài dựa trên mã khởi đầu của Randy Connolly và Ricardo Hoar, có hỗ trợ AI và kiểm tra thực tế.</p><p>Mở Sources, bật dừng tại debugger, hover div1 đến div5, xem biến e, e.target.id và triggeredBy, rồi Resume. Nhật ký kiểm thử kèm theo lưu các lần dừng thật bằng Chrome DevTools Protocol.</p></details></body>
+</html>

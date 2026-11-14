@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>      
+    <title>Exercise 10.9 · GET Requests</title>    
+    
+        
+          
+    
+<script src="../../vendor/jquery-3.7.1.min.js"></script>
+<script src="main.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../../css/exercise.css"></head>
+<body >
+<nav class="labbar" aria-label="Điều hướng bài thực hành"><a href="../../index.html">JavaScript Labs</a><a href="../index.html">Lab 10</a><span>Exercise 10.9</span><a href="main.js" download>Mã JavaScript</a><a href="index.html" download>Mã HTML</a></nav>
+<aside class="labintro"><p>Trương Thanh Phong · 31241024967 · 26C1INF50902702</p><h1>Exercise 10.9 · GET Requests</h1><p>Gọi $.get nhận JSON; duyệt bằng $.each và hiển thị danh sách.</p></aside><p id="exercise-result" class="exercise-result" role="status"></p>
+
+<label for="data-source">Nguồn dữ liệu</label><select id="data-source">
+<option value="../data/cities.json">Dữ liệu mẫu cục bộ qua HTTP GET</option>
+<option value="https://www.randyconnolly.com/funwebdev/services/travel/cities.php">Dịch vụ gốc của tác giả qua HTTPS</option>
+<option value="../data/does-not-exist.json">Kiểm tra lỗi HTTP 404</option></select>
+<p>Dữ liệu cục bộ do bài làm tạo để minh họa, không phải kết quả tải từ dịch vụ gốc.</p>
+<p id="request-status" role="status">Chưa gửi yêu cầu.</p><button id="consume">Consume</button> 
+<div id="results"></div>
+       
+<details class="labnotes"><summary>Yêu cầu và cách kiểm tra</summary><p>Nguồn Lab 10, trang 10. Gọi $.get nhận JSON; duyệt bằng $.each và hiển thị danh sách.</p><p>Mở F12 để xem Console và Sources. Tải lại trang để khôi phục trạng thái ban đầu. Bài dựa trên mã khởi đầu của Randy Connolly và Ricardo Hoar, có hỗ trợ AI và kiểm tra thực tế.</p><p>Phải chạy qua máy chủ HTTP hoặc GitHub Pages; file:// không hỗ trợ GET JSON nhất quán. Có ba nguồn để kiểm tra thành công, lỗi 404 và dịch vụ gốc. Không tự thay dữ liệu khi yêu cầu dịch vụ gốc thất bại.</p></details></body>
+  
+    
+</html>

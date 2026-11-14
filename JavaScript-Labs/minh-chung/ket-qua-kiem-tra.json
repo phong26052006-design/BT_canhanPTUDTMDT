@@ -1,0 +1,994 @@
+{
+  "time": "2026-11-14T19:44:00.513Z",
+  "base": "http://127.0.0.1:55718/JavaScript-Labs/",
+  "passed": 187,
+  "failures": [],
+  "errors": [],
+  "checks": [
+    {
+      "name": "8.1 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.1 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.1 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.1 JavaScript enabled",
+      "passed": true
+    },
+    {
+      "name": "8.2 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.2 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.2 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.2 alert Hello World thật",
+      "passed": true
+    },
+    {
+      "name": "8.3 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.3 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.3 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.3 external script count tăng đến 2",
+      "passed": true
+    },
+    {
+      "name": "8.4 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.4 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.4 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.4 external script count tăng đến 2",
+      "passed": true
+    },
+    {
+      "name": "8.5 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.5 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.5 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.5 Console count và temp",
+      "passed": true
+    },
+    {
+      "name": "8.5 lỗi chủ đích đã bắt",
+      "passed": true
+    },
+    {
+      "name": "8.6 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.6 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.6 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.6 so sánh String object khác primitive",
+      "passed": true
+    },
+    {
+      "name": "8.7 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.7 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.7 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.7 lịch đủ 30 ngày và 7 cột",
+      "passed": true
+    },
+    {
+      "name": "8.7 thứ tự Sun đến Sat",
+      "passed": true
+    },
+    {
+      "name": "8.8 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.8 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.8 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.8 tạo 5 hộp từ hàm có tham số",
+      "passed": true
+    },
+    {
+      "name": "8.8 box ở scope cục bộ",
+      "passed": true
+    },
+    {
+      "name": "8.9 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.9 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.9 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.9 callback thuế tổng $31.50",
+      "passed": true
+    },
+    {
+      "name": "8.9 nhánh không phải Canada",
+      "passed": true
+    },
+    {
+      "name": "8.10 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.10 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.10 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.10 hai constructor instance độc lập",
+      "passed": true
+    },
+    {
+      "name": "8.11 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "8.11 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "8.11 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "8.11 hiển thị 5 Country",
+      "passed": true
+    },
+    {
+      "name": "8.11 property population từ constructor",
+      "passed": true
+    },
+    {
+      "name": "9.1 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "9.1 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "9.1 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "9.1 tiêu đề đã thay đổi",
+      "passed": true
+    },
+    {
+      "name": "9.1 textarea hidden và features green",
+      "passed": true
+    },
+    {
+      "name": "9.2 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "9.2 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "9.2 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "9.2 firstChild là whitespace text node",
+      "passed": true
+    },
+    {
+      "name": "9.2 non-text child đổi nền",
+      "passed": true
+    },
+    {
+      "name": "9.3 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "9.3 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "9.3 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "9.3 tạo paragraph mới",
+      "passed": true
+    },
+    {
+      "name": "9.3 xóa node yêu cầu",
+      "passed": true
+    },
+    {
+      "name": "9.4 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "9.4 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "9.4 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "9.4 hover grayscale",
+      "passed": true
+    },
+    {
+      "name": "9.4 mouseout khôi phục",
+      "passed": true
+    },
+    {
+      "name": "9.4 click ẩn nội dung",
+      "passed": true
+    },
+    {
+      "name": "9.4 click hiện nội dung",
+      "passed": true
+    },
+    {
+      "name": "9.5 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "9.5 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "9.5 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "9.5 load đọc div1 sau khi DOM có sẵn",
+      "passed": true
+    },
+    {
+      "name": "9.6 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "9.6 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "9.6 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "9.6 debugger dừng thật và đọc event.target",
+      "passed": true
+    },
+    {
+      "name": "9.7 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "9.7 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "9.7 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "9.7 focus nền vàng",
+      "passed": true
+    },
+    {
+      "name": "9.7 blur nền trắng",
+      "passed": true
+    },
+    {
+      "name": "9.8 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "9.8 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "9.8 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "9.8 chặn form trống và hiển thị 4 trường lỗi",
+      "passed": true
+    },
+    {
+      "name": "9.8 nhập hợp lệ xóa lỗi, không gửi mật khẩu qua URL",
+      "passed": true
+    },
+    {
+      "name": "10.1 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.1 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.1 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.1 jQuery cục bộ 3.7.1",
+      "passed": true
+    },
+    {
+      "name": "10.2 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.2 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.2 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.2 setters và class trên tập phần tử",
+      "passed": true
+    },
+    {
+      "name": "10.3 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.3 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.3 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.3 password selector",
+      "passed": true
+    },
+    {
+      "name": "10.4 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.4 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.4 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.4 mousemove báo tọa độ",
+      "passed": true
+    },
+    {
+      "name": "10.4 click gỡ mousemove",
+      "passed": true
+    },
+    {
+      "name": "10.5 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.5 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.5 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.5 chèn after đúng vị trí",
+      "passed": true
+    },
+    {
+      "name": "10.5 chèn before đúng vị trí",
+      "passed": true
+    },
+    {
+      "name": "10.5 chèn append đúng vị trí",
+      "passed": true
+    },
+    {
+      "name": "10.5 chèn prepend đúng vị trí",
+      "passed": true
+    },
+    {
+      "name": "10.5 chèn appendTo đúng vị trí",
+      "passed": true
+    },
+    {
+      "name": "10.5 chèn prependTo đúng vị trí",
+      "passed": true
+    },
+    {
+      "name": "10.5 chèn insertBefore đúng vị trí",
+      "passed": true
+    },
+    {
+      "name": "10.6 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.6 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.6 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.6 btnFadeIn",
+      "passed": true
+    },
+    {
+      "name": "10.6 btnFadeOut",
+      "passed": true
+    },
+    {
+      "name": "10.6 btnFade",
+      "passed": true
+    },
+    {
+      "name": "10.6 btnSlideUp",
+      "passed": true
+    },
+    {
+      "name": "10.6 btnSlideDown",
+      "passed": true
+    },
+    {
+      "name": "10.6 btnSlide",
+      "passed": true
+    },
+    {
+      "name": "10.7 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.7 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.7 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.7 preview ảnh lớn và caption",
+      "passed": true
+    },
+    {
+      "name": "10.7 preview image tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.7 xóa preview khi rời",
+      "passed": true
+    },
+    {
+      "name": "10.8 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.8 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.8 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.8 chuỗi animate hoàn tất",
+      "passed": true
+    },
+    {
+      "name": "10.9 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.9 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.9 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.9 GET JSON qua HTTP thật, 8 thành phố",
+      "passed": true
+    },
+    {
+      "name": "10.9 HTTP 404 có thông báo, cho phép thử lại",
+      "passed": true
+    },
+    {
+      "name": "10.10 tải trang và có tiêu đề",
+      "passed": true
+    },
+    {
+      "name": "10.10 không có exception chưa xử lý",
+      "passed": true
+    },
+    {
+      "name": "10.10 ảnh tải đủ",
+      "passed": true
+    },
+    {
+      "name": "10.10 GET JSON qua HTTP thật, 8 thành phố",
+      "passed": true
+    },
+    {
+      "name": "10.10 done rồi always",
+      "passed": true
+    },
+    {
+      "name": "10.10 HTTP 404 có thông báo, cho phép thử lại",
+      "passed": true
+    },
+    {
+      "name": "10.10 fail rồi always",
+      "passed": true
+    },
+    {
+      "name": "10.10 loader ẩn sau lỗi",
+      "passed": true
+    },
+    {
+      "name": "Portfolio đúng tên và lớp",
+      "passed": true
+    },
+    {
+      "name": "Index Lab 8 đủ liên kết",
+      "passed": true
+    },
+    {
+      "name": "Tìm kiếm Lab 8",
+      "passed": true
+    },
+    {
+      "name": "Index Lab 9 đủ liên kết",
+      "passed": true
+    },
+    {
+      "name": "Tìm kiếm Lab 9",
+      "passed": true
+    },
+    {
+      "name": "Index Lab 10 đủ liên kết",
+      "passed": true
+    },
+    {
+      "name": "Tìm kiếm Lab 10",
+      "passed": true
+    },
+    {
+      "name": "8.1 noscript visible khi JavaScript tắt",
+      "passed": true
+    },
+    {
+      "name": "8.4 noscript visible khi JavaScript tắt",
+      "passed": true
+    },
+    {
+      "name": "Portfolio 390px không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.1 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.2 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.3 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.4 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.5 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.6 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.7 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.8 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.9 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.10 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "8.11 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "9.1 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "9.2 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "9.3 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "9.4 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "9.5 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "9.6 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "9.7 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "9.8 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.1 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.2 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.3 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.4 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.5 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.6 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.7 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.8 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.9 mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "10.10 mobile không tràn ngang",
+      "passed": true
+    }
+  ],
+  "logs": [
+    {
+      "exercise": "8.1",
+      "type": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    },
+    {
+      "exercise": "8.2",
+      "type": "alert",
+      "message": "Hello World!"
+    },
+    {
+      "exercise": "8.5",
+      "type": "log",
+      "message": "script within the <head> element"
+    },
+    {
+      "exercise": "8.5",
+      "type": "log",
+      "message": "count = 2 output = <br>Count = 2 temp = 14"
+    },
+    {
+      "exercise": "8.5",
+      "type": "warning",
+      "message": "oh no this is a warning — thông báo chủ đích của Exercise 8.5"
+    },
+    {
+      "exercise": "8.5",
+      "type": "error",
+      "message": "panic!! error!! — thông báo chủ đích của Exercise 8.5"
+    },
+    {
+      "exercise": "8.5",
+      "type": "log",
+      "message": "Lỗi đã bắt để minh họa: ReferenceError: doccumment is not defined\n    at http://127.0.0.1:55718/JavaScript-Labs/Lab08/Exercise05/hello.js:15:7"
+    },
+    {
+      "exercise": "9.5",
+      "type": "alert",
+      "message": "This is div 1"
+    },
+    {
+      "exercise": "10.9",
+      "type": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    },
+    {
+      "exercise": "10.10",
+      "type": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    },
+    {
+      "exercise": "8.2",
+      "type": "alert",
+      "message": "Hello World!"
+    },
+    {
+      "exercise": "8.5",
+      "type": "log",
+      "message": "script within the <head> element"
+    },
+    {
+      "exercise": "8.5",
+      "type": "log",
+      "message": "count = 2 output = <br>Count = 2 temp = 14"
+    },
+    {
+      "exercise": "8.5",
+      "type": "warning",
+      "message": "oh no this is a warning — thông báo chủ đích của Exercise 8.5"
+    },
+    {
+      "exercise": "8.5",
+      "type": "error",
+      "message": "panic!! error!! — thông báo chủ đích của Exercise 8.5"
+    },
+    {
+      "exercise": "8.5",
+      "type": "log",
+      "message": "Lỗi đã bắt để minh họa: ReferenceError: doccumment is not defined\n    at http://127.0.0.1:55718/JavaScript-Labs/Lab08/Exercise05/hello.js:15:7"
+    },
+    {
+      "exercise": "9.5",
+      "type": "alert",
+      "message": "This is div 1"
+    }
+  ],
+  "debuggerPauses": [
+    {
+      "reason": "other",
+      "url": "",
+      "line": 10,
+      "scope": {
+        "id": "div3",
+        "type": "mouseover",
+        "triggeredBy": "div3"
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "exercise": "8.1",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise01.png"
+    },
+    {
+      "exercise": "8.2",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise02.png"
+    },
+    {
+      "exercise": "8.3",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise03.png"
+    },
+    {
+      "exercise": "8.4",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise04.png"
+    },
+    {
+      "exercise": "8.5",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise05.png"
+    },
+    {
+      "exercise": "8.6",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise06.png"
+    },
+    {
+      "exercise": "8.7",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise07.png"
+    },
+    {
+      "exercise": "8.8",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise08.png"
+    },
+    {
+      "exercise": "8.9",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise09.png"
+    },
+    {
+      "exercise": "8.10",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise10.png"
+    },
+    {
+      "exercise": "8.11",
+      "path": "JavaScript-Labs/minh-chung/Lab08-Exercise11.png"
+    },
+    {
+      "exercise": "9.1",
+      "path": "JavaScript-Labs/minh-chung/Lab09-Exercise01.png"
+    },
+    {
+      "exercise": "9.2",
+      "path": "JavaScript-Labs/minh-chung/Lab09-Exercise02.png"
+    },
+    {
+      "exercise": "9.3",
+      "path": "JavaScript-Labs/minh-chung/Lab09-Exercise03.png"
+    },
+    {
+      "exercise": "9.4",
+      "path": "JavaScript-Labs/minh-chung/Lab09-Exercise04.png"
+    },
+    {
+      "exercise": "9.5",
+      "path": "JavaScript-Labs/minh-chung/Lab09-Exercise05.png"
+    },
+    {
+      "exercise": "9.6",
+      "path": "JavaScript-Labs/minh-chung/Lab09-Exercise06.png"
+    },
+    {
+      "exercise": "9.7",
+      "path": "JavaScript-Labs/minh-chung/Lab09-Exercise07.png"
+    },
+    {
+      "exercise": "9.8",
+      "path": "JavaScript-Labs/minh-chung/Lab09-Exercise08-loi.png"
+    },
+    {
+      "exercise": "9.8",
+      "path": "JavaScript-Labs/minh-chung/Lab09-Exercise08.png"
+    },
+    {
+      "exercise": "10.1",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise01.png"
+    },
+    {
+      "exercise": "10.2",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise02.png"
+    },
+    {
+      "exercise": "10.3",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise03.png"
+    },
+    {
+      "exercise": "10.4",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise04.png"
+    },
+    {
+      "exercise": "10.5",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise05.png"
+    },
+    {
+      "exercise": "10.6",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise06.png"
+    },
+    {
+      "exercise": "10.7",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise07.png"
+    },
+    {
+      "exercise": "10.8",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise08.png"
+    },
+    {
+      "exercise": "10.9",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise09-thanh-cong.png"
+    },
+    {
+      "exercise": "10.9",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise09.png"
+    },
+    {
+      "exercise": "10.10",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise10-thanh-cong.png"
+    },
+    {
+      "exercise": "10.10",
+      "path": "JavaScript-Labs/minh-chung/Lab10-Exercise10.png"
+    },
+    {
+      "exercise": "portfolio",
+      "path": "JavaScript-Labs/minh-chung/portfolio-desktop.png"
+    },
+    {
+      "exercise": "portfolio",
+      "path": "JavaScript-Labs/minh-chung/portfolio-mobile.png"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "time": "2026-11-14T20:02:01.419Z",
+  "checks": [
+    {
+      "name": "10.3 Form selector không đưa mật khẩu vào URL",
+      "passed": true
+    },
+    {
+      "name": "10.3 Có thông báo đây là biểu mẫu minh họa",
+      "passed": true
+    }
+  ]
+}
