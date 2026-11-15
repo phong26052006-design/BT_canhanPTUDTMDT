@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-27",
+  "baseline_commit": "dbb6bc22bbf86fdf3914a5ebcc28eda82e0b8630",
+  "baseline_files_checked": 57,
+  "baseline_unchanged": true,
+  "html_tag_stack_valid": true,
+  "markdown_local_links_valid": true,
+  "browser_checks": {
+    "total": 104,
+    "passed": 104,
+    "failed": 0
+  }
+}
