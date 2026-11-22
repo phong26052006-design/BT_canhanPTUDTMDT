@@ -27,7 +27,6 @@ Mở [trang portfolio local](http://127.0.0.1:8882/CSS-NangCao/). Các bài ch�
 | `UngDung/Game/` | Game Canvas, máy bay giấy và tháp gió, ArrowDown, các cấp độ và chiến thắng |
 | `vendor/` và `fonts/` | Thư viện trò chơi và cửa hàng, được nạp cục bộ |
 | `minh-chung/` | Ảnh Chrome local và kết quả kiểm tra. Ảnh có tiền tố `ma-` là trích đoạn mã nguồn được mở trong trình duyệt |
-| `bao-cao/` | Báo cáo Word theo cấu trúc của đề |
 
 **Lab 07.** Quan sát 7.1–7.4 để phân biệt luồng và stacking context. Chuyển float trái/phải ở 7.5 và thu cửa sổ khi xem 7.7. So sánh 7.12/7.13 ở 480 px và 481 px. Hover hoặc Tab ở 7.15–7.17. Đổi chế độ hoạt ảnh ở 7.18 và kiểm tra hàng lồng nhau ở 7.19.
 
@@ -39,7 +38,7 @@ Mở [trang portfolio local](http://127.0.0.1:8882/CSS-NangCao/). Các bài ch�
 
 ## Triển khai và bàn giao
 
-Kho môn học dự kiến là [BT_canhanPTUDTMDT](https://github.com/phong26052006-design/BT_canhanPTUDTMDT). Gói local đã được tổ chức dưới `CSS-NangCao` với đường dẫn tương đối. URL Pages của bài sẽ được ghi sau khi có bản triển khai kiểm chứng được. Dữ liệu HTML rút gọn và ảnh thống kê thật của lớp chỉ nằm trong bộ bàn giao local. Bản công bố có thể dùng ảnh kết quả với dữ liệu mô phỏng.
+Kho môn học: [BT_canhanPTUDTMDT](https://github.com/phong26052006-design/BT_canhanPTUDTMDT). Bản công khai đã được kiểm tra tại [GitHub Pages — Advanced Front End](https://phong26052006-design.github.io/BT_canhanPTUDTMDT/CSS-NangCao/). Báo cáo Word và PDF được bàn giao riêng, không nằm trong thư mục mã nguồn công khai. Dữ liệu HTML rút gọn và ảnh thống kê thật của lớp chỉ nằm trong bộ bàn giao local. Bản công bố dùng nội dung mô phỏng cho ứng dụng LMS.
 
 Việc phân tích, triển khai và chuẩn bị báo cáo có hỗ trợ AI. Đoạn tự đánh giá trên portfolio là bản gợi ý. Sinh viên cần đọc và sửa lại cho phù hợp trải nghiệm cá nhân.
 
