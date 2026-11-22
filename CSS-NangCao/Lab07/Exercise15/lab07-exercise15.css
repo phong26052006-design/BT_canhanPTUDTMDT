@@ -1,0 +1,12 @@
+button {
+   height: 3em;
+   width: 6em;
+   color: white;
+   font-size: 1.25em;
+   background-color: #146d37;
+
+}
+
+/* Exercise 7.15 */
+body > button { transition:background-color 1s ease-out; }
+body > button:is(:hover,:focus-visible) { background-color:#60b946; }

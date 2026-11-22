@@ -1,0 +1,78 @@
+[
+  [
+    "Document Flow",
+    "Đổi span tiêu đề và ảnh sang block, đưa các mục điều hướng về inline."
+  ],
+  [
+    "Relative Positioning",
+    "Dịch figure xuống 150 px và sang phải 200 px. Khoảng trống ban đầu vẫn giữ nguyên."
+  ],
+  [
+    "Absolute Positioning",
+    "Đưa figure ra khỏi luồng. Figcaption lấy figure làm mốc định vị gần nhất."
+  ],
+  [
+    "Stacking Using Z Index",
+    "So sánh ba cặp z-index của figure và figcaption để quan sát stacking context."
+  ],
+  [
+    "Floating Elements",
+    "Đổi float trái và phải để đoạn văn bao quanh ảnh."
+  ],
+  [
+    "Floating in a Container",
+    "Figure trôi sát mép article, vì article là khối bao quanh."
+  ],
+  [
+    "Floating Multiple Items",
+    "Cho các figure trôi liên tiếp, thu cửa sổ để thấy ảnh chuyển hàng."
+  ],
+  [
+    "Floating and Clearing",
+    "Dùng clear: left cho figure thứ ba và đoạn văn sau bộ ảnh."
+  ],
+  [
+    "Using Positioning",
+    "Đặt caption và nhãn NEW lên ảnh, dùng figure làm mốc định vị."
+  ],
+  [
+    "Two Column Layout",
+    "Float nav rộng 10em và chừa margin-left 12em cho nội dung."
+  ],
+  [
+    "Three Column Layout",
+    "Định vị nav và aside hai bên container, chừa hai lề cho nội dung."
+  ],
+  [
+    "Media Queries",
+    "Nạp CSS desktop từ 481 px và CSS mobile đến 480 px. Mobile bỏ float và lề trái."
+  ],
+  [
+    "Setting the Viewport",
+    "Tiếp nối 7.12, thêm viewport và đổi danh sách điều hướng thành select trên mobile."
+  ],
+  [
+    "Transforms",
+    "Thử rotate, skew, translate và rotate kết hợp scale."
+  ],
+  [
+    "Transitions",
+    "Chuyển nền nút trong 1 giây khi hover hoặc focus."
+  ],
+  [
+    "More Transitions",
+    "Phối hợp nền, chữ, bóng và scale khi vào và rời thẻ ảnh."
+  ],
+  [
+    "Filters",
+    "9 filter và 2 tổ hợp. Di chuột hoặc dùng Tab để xem ảnh gốc."
+  ],
+  [
+    "Animations",
+    "Hai @keyframes với thời lượng, độ trễ và số lần lặp khác nhau."
+  ],
+  [
+    "Using Bootstrap",
+    "Grid 3/9, navbar, panel, list-group, jumbotron và bốn cột con."
+  ]
+]

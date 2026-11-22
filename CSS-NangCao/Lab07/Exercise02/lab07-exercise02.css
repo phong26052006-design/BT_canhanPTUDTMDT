@@ -1,0 +1,6 @@
+figure {
+ background-color: #EDEDDD;
+}
+
+/* Exercise 7.2 */
+figure { width:150px; padding:5px; border:1pt solid #a8a8a8; background:#ededdd; position:relative; top:150px; left:min(200px, 28vw); }

@@ -1,0 +1,29 @@
+body {
+   font-size: 1.1em;
+}
+figure {  
+   background-color: #EDEDDD;
+   border: 1pt solid #A8A8A8;
+   padding: 5px;
+   width: 150px;
+   top: 150px;
+   left: 200px;
+
+}
+
+figcaption {
+   font-size: 1.25em;
+   background-color: yellow;
+   padding: 5px;
+   top: 90px;
+   left: 140px;
+
+}
+
+/* Exercise 7.4 */
+body { isolation:isolate; }
+figure { width:150px; padding:5px; border:1pt solid #a8a8a8; background:#ededdd; position:absolute; top:150px; left:min(200px, 24vw); z-index:5; }
+figcaption { position:absolute; top:90px; left:min(140px, 28vw); padding:5px; background:#ffdf52; font-size:1.25em; z-index:1; }
+body[data-case="1"] figure { z-index:1; }
+body[data-case="1"] figcaption { z-index:-1; }
+body[data-case="2"] figure { z-index:-1; }

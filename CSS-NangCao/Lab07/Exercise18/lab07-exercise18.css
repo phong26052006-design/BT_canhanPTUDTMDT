@@ -1,0 +1,16 @@
+.box {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+
+
+}
+
+/* Exercise 7.18 */
+.animation-stage { min-height:360px; padding:30px; overflow:hidden; background:#eef1ef; }
+.box { margin:15px; animation:animTwo 5s ease-out 1s 3; }
+body[data-case="1"] .box { animation:animOne 1.5s ease 0.5s infinite; }
+body[data-case="2"] .box { animation-play-state:paused; }
+@keyframes animOne { to {opacity:.5;transform:translateX(min(300px,42vw)) scale(1.5) rotate(90deg)} }
+@keyframes animTwo { 25%{background:red;transform:translateX(min(300px,42vw)) scale(1.5) rotate(90deg)} 50%{background:#edc517;border-radius:100%;transform:translateY(185px)} 75%{background:blue;transform:translateY(185px) scale(.5)} 100%{background:green;border-radius:0;transform:none} }

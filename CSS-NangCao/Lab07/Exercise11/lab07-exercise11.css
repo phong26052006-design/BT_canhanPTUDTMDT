@@ -1,0 +1,66 @@
+html, body, header, footer, aside, div, p, h1, h2, h3, li, ul
+{
+   margin: 0;
+   padding: 0;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 1rem;
+}
+
+h1 { font-size: 1.5em; margin: 0.25em;}
+h2 { font-size: 1.25em; margin: 0.25em;}
+h3 { font-size: 1em; margin: 0.25em;}
+p { margin: 0.25em 0; }
+a:link, a:visited { color: #090388; }
+
+li { list-style-type: none; margin: 0.25em 0; }
+
+header {
+   color: white;
+   background-color: #262626;
+   height: 3em;
+   padding: 0.5em;
+}
+
+div#container {
+
+}
+
+nav {
+  color: white;
+  background-color: #A9A9A9;
+  padding: 0.5em;  
+
+}
+
+div#main {
+    padding: 0.5em;
+
+}
+
+aside {
+  color: white;
+  background-color: #D3C6BA;
+  padding: 0.5em;  
+
+}
+
+footer {
+  color: white;
+  background-color: #2F4F4F;
+  height: 3em;
+  padding: 0.5em;
+}
+
+.box { 
+   border: 1pt solid black;
+   margin: 3px 3px 10px 3px;
+   padding: 5px;
+}
+
+/* Exercise 7.11 */
+#container { position:relative; }
+#container nav,#container aside { position:absolute; top:0; width:10em; }
+#container nav { left:0; }
+#container aside { right:0; }
+#main { margin-inline:12em; }
+@media(max-width:680px){#container nav,#container aside{position:static;width:auto} #main{margin-inline:0}}

@@ -1,0 +1,18 @@
+div.entry {
+ background-color: #FFF8DC;
+}
+
+div.entryContent {
+ background-color: #F0F8FF;
+}
+
+h1 span {
+  color: #8B0000;
+  font-size: 1.5em;
+
+}
+
+/* Exercise 7.1 */
+h1 span { color: #8b0000; font-size: 1.5em; display: block; }
+nav li { display: inline; }
+div img { display: block; }

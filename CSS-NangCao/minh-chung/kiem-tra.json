@@ -1,0 +1,557 @@
+{
+  "at": "2026-11-22T14:20:36.185Z",
+  "checks": [
+    {
+      "name": "19 liên kết Exercise",
+      "passed": true
+    },
+    {
+      "name": "Portfolio mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "7.1 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.1 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.1 block, inline và block",
+      "passed": true
+    },
+    {
+      "name": "7.1 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.2 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.2 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.2 relative giữ ngữ cảnh luồng",
+      "passed": true
+    },
+    {
+      "name": "7.2 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.3 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.3 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.3 caption có offsetParent là figure",
+      "passed": true
+    },
+    {
+      "name": "7.3 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.4 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.4 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.4 ba mức stacking",
+      "passed": true,
+      "details": [
+        [
+          "5",
+          "1"
+        ],
+        [
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "7.4 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.5 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.5 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.5 mặc định float phải",
+      "passed": true
+    },
+    {
+      "name": "7.5 chuyển float trái",
+      "passed": true
+    },
+    {
+      "name": "7.5 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.6 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.6 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.6 figure nằm trong article",
+      "passed": true
+    },
+    {
+      "name": "7.6 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.7 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.7 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.7 float xuống hàng ở 390px",
+      "passed": true,
+      "details": [
+        142,
+        300,
+        424,
+        551,
+        684,
+        819
+      ]
+    },
+    {
+      "name": "7.7 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.8 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.8 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.8 figure 3 và p có clear trái",
+      "passed": true
+    },
+    {
+      "name": "7.8 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.9 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.9 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.9 overlay và caption absolute trên figure",
+      "passed": true
+    },
+    {
+      "name": "7.9 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.10 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.10 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.10 nav float trái và có lề nội dung",
+      "passed": true
+    },
+    {
+      "name": "7.10 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.11 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.11 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.11 nav và aside định vị theo container",
+      "passed": true
+    },
+    {
+      "name": "7.11 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.12 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.12 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.12 480px bỏ float và lề",
+      "passed": true
+    },
+    {
+      "name": "7.12 481px dùng desktop",
+      "passed": true
+    },
+    {
+      "name": "7.12 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.13 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.13 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.13 có viewport, mobile hiển thị select",
+      "passed": true
+    },
+    {
+      "name": "7.13 desktop hiển thị ul",
+      "passed": true
+    },
+    {
+      "name": "7.13 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.14 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.14 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.14 bốn chế độ transform khác nhau",
+      "passed": true
+    },
+    {
+      "name": "7.14 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.15 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.15 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.15 đổi nền sau transition",
+      "passed": true
+    },
+    {
+      "name": "7.15 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.16 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.16 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.16 hover áp dụng scale, bóng và màu chữ",
+      "passed": true
+    },
+    {
+      "name": "7.16 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.17 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.17 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.17 đủ 11 biến thể filter",
+      "passed": true
+    },
+    {
+      "name": "7.17 hover trả về ảnh gốc",
+      "passed": true
+    },
+    {
+      "name": "7.17 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.18 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.18 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.18 shorthand animTwo 5s, trễ 1s, lặp 3",
+      "passed": true
+    },
+    {
+      "name": "7.18 tạm dừng hoạt ảnh",
+      "passed": true
+    },
+    {
+      "name": "7.18 animOne 1.5s và lặp vô hạn",
+      "passed": true
+    },
+    {
+      "name": "7.18 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "7.19 HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "7.19 ảnh tải được",
+      "passed": true
+    },
+    {
+      "name": "7.19 Bootstrap grid và 4 cột lồng",
+      "passed": true
+    },
+    {
+      "name": "7.19 nút Giỏ phản hồi",
+      "passed": true
+    },
+    {
+      "name": "7.19 không tràn ngang ở 390px",
+      "passed": true,
+      "details": 390
+    },
+    {
+      "name": "Cửa hàng tải 4 thẻ, năm sao plugin, kho và nhãn",
+      "passed": true
+    },
+    {
+      "name": "Carousel chuyển banner",
+      "passed": true
+    },
+    {
+      "name": "Lọc danh mục Âm thanh",
+      "passed": true
+    },
+    {
+      "name": "Tìm kiếm không khớp có thông báo",
+      "passed": true
+    },
+    {
+      "name": "Trang chi tiết tải plugin xZoom và sao",
+      "passed": true
+    },
+    {
+      "name": "xZoom chuyển ảnh cận cảnh",
+      "passed": true
+    },
+    {
+      "name": "xZoom mở vùng phóng to thật",
+      "passed": true
+    },
+    {
+      "name": "Mở ảnh lớn với ảnh đang chọn",
+      "passed": true
+    },
+    {
+      "name": "Giỏ tăng theo số lượng",
+      "passed": true
+    },
+    {
+      "name": "Giỏ giữ sau khi tải lại",
+      "passed": true
+    },
+    {
+      "name": "Tổng giỏ cho 2 × 600000",
+      "passed": true
+    },
+    {
+      "name": "Chặn nhập vượt kho",
+      "passed": true
+    },
+    {
+      "name": "Đặt đơn mô phỏng, giỏ rỗng, giảm tồn kho",
+      "passed": true
+    },
+    {
+      "name": "Lưu đánh giá sao bằng giao diện",
+      "passed": true,
+      "details": "3"
+    },
+    {
+      "name": "Trạng thái đơn hiển thị mã, sản phẩm và số tiền",
+      "passed": true
+    },
+    {
+      "name": "Sản phẩm hết hàng khóa mua",
+      "passed": true
+    },
+    {
+      "name": "Slug không tồn tại có thông báo",
+      "passed": true
+    },
+    {
+      "name": "Cửa hàng mobile không tràn ngang",
+      "passed": true
+    },
+    {
+      "name": "LMS mẫu chọn đúng bài 5 và ghi rõ nguồn mẫu",
+      "passed": true
+    },
+    {
+      "name": "LMS thật 14 chủ đề và 16 bài tập",
+      "passed": true
+    },
+    {
+      "name": "LMS thật xác định bài 5 và ngày due",
+      "passed": true
+    },
+    {
+      "name": "LMS không gọi ngày Opened là hạn nộp",
+      "passed": true
+    },
+    {
+      "name": "LMS xử lý nguồn dưới 5 bài và trơ với script",
+      "passed": true
+    },
+    {
+      "name": "Game phím P tạm dừng",
+      "passed": true
+    },
+    {
+      "name": "Game tiếp tục khi nhấn P lần hai",
+      "passed": true
+    },
+    {
+      "name": "Game va chạm biên và cho chơi lại",
+      "passed": true
+    },
+    {
+      "name": "Game đủ mốc Level và interval",
+      "passed": true,
+      "details": [
+        [
+          1,
+          40
+        ],
+        [
+          1,
+          40
+        ],
+        [
+          2,
+          30
+        ],
+        [
+          2,
+          30
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          3,
+          25
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          4,
+          20
+        ]
+      ]
+    },
+    {
+      "name": "Game mô phỏng lượt chơi vật lý qua đủ 50 cổng",
+      "passed": true,
+      "details": {
+        "state": "won",
+        "score": 50
+      }
+    },
+    {
+      "name": "Game dừng cập nhật sau chiến thắng",
+      "passed": true
+    },
+    {
+      "name": "Trình duyệt hiện chiến thắng và điểm 50/50",
+      "passed": true,
+      "details": {
+        "heading": "Chiến thắng!",
+        "score": "50 / 50"
+      }
+    },
+    {
+      "name": "Không lỗi JavaScript hoặc HTTP tài nguyên",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "issues": [],
+  "passed": 116,
+  "total": 116
+}

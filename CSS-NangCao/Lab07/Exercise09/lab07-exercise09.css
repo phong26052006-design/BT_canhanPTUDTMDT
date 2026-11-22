@@ -1,0 +1,38 @@
+body {
+   font-size: 1.1em;
+}
+
+h1 { font-size: 1.5 em; }
+
+article {
+   background-color: #898989;
+   margin: 5px 100px;
+   padding: 5px 20px;
+}
+
+
+
+figure {    
+   border: 1pt solid #262626; 
+   background-color: #c1c1c1;
+   padding: 10px;
+   width: 200px;
+   margin: 10px;
+
+}
+figcaption {
+   width: 100px;
+   background-color: black;
+   color:white;
+   opacity: 0.6;
+   width: 140px;
+   height: 20px;
+   padding: 5px;
+
+   
+}
+
+/* Exercise 7.9 */
+figure { position:relative; width:200px; padding:10px; margin:10px; border:1pt solid #262626; background:#c1c1c1; }
+figcaption { position:absolute; top:130px; left:10px; width:140px; min-height:20px; background:#000a; color:white; padding:5px; }
+.overlayed { position:absolute; top:10px; left:10px; }

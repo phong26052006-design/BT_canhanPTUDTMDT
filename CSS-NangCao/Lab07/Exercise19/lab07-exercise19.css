@@ -1,0 +1,8 @@
+
+
+/* Exercise 7.19 */
+.lab-bootstrap { padding-block:24px; }
+.lab-bootstrap .jumbotron { background:#eaf3ff; }
+.lab-bootstrap .thumbnail img { width:100%; aspect-ratio:4/3; object-fit:cover; }
+.lab-bootstrap .thumbnail { padding:8px; }
+.lab-bootstrap .thumbnail .btn { margin-bottom:4px; }

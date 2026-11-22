@@ -1,0 +1,15 @@
+figure {
+    margin: 2em;
+    padding: 1em;
+    background: #FFCC80;
+    width: 200px;
+
+}
+
+/* Exercise 7.14 */
+figure { transform:rotate(15deg); }
+figure img { transform:rotate(45deg) scale(.5); }
+body[data-case="1"] figure { transform:rotate(45deg); }
+body[data-case="2"] figure, body[data-case="3"] figure { transform:skew(-20deg); }
+body[data-case="1"] figure img, body[data-case="2"] figure img { transform:none; }
+body[data-case="3"] figure img { transform:translateX(min(100px, 16vw)) translateY(-30px); }

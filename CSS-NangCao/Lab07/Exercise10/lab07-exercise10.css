@@ -1,0 +1,44 @@
+html, body, header, footer, aside, div, p, h1, h2, h3, li, ul
+{
+   margin: 0;
+   padding: 0;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 1rem;
+}
+
+h1 { font-size: 1.5em; margin: 0.25em;}
+h2 { font-size: 1.25em; margin: 0.25em;}
+h3 { font-size: 1em; margin: 0.25em;}
+p { margin: 0.25em 0; }
+a:link, a:visited { color: #090388; }
+
+li { list-style-type: none; margin: 0.25em 0; }
+
+header {
+   color: white;
+   background-color: #262626;
+   height: 3em;
+   padding: 0.5em;
+}
+div#main {
+   padding: 0.5em;
+
+}
+nav {
+   color: white;
+   background-color: #A9A9A9;
+   padding: 0.5em;
+
+}
+footer {
+   color: white;
+   background-color: #2F4F4F;
+   height: 3em;
+   padding: 0.5em;
+}
+
+/* Exercise 7.10 */
+nav { width:10em; float:left; }
+#main { margin-left:12em; }
+footer { clear:both; }
+@media(max-width:520px){nav{float:none;width:auto} #main{margin-left:0}}
