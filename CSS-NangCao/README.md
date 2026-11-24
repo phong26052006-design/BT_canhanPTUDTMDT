@@ -28,11 +28,11 @@ Mở [trang portfolio local](http://127.0.0.1:8882/CSS-NangCao/). Các bài ch�
 | `vendor/` và `fonts/` | Thư viện trò chơi và cửa hàng, được nạp cục bộ |
 | `minh-chung/` | Ảnh Chrome local và kết quả kiểm tra. Ảnh có tiền tố `ma-` là trích đoạn mã nguồn được mở trong trình duyệt |
 
-**Lab 07.** Quan sát 7.1–7.4 để phân biệt luồng và stacking context. Chuyển float trái/phải ở 7.5 và thu cửa sổ khi xem 7.7. So sánh 7.12/7.13 ở 480 px và 481 px. Hover hoặc Tab ở 7.15–7.17. Đổi chế độ hoạt ảnh ở 7.18 và kiểm tra hàng lồng nhau ở 7.19.
+**Lab 07.** Quan sát 7.1–7.4 để phân biệt luồng hiển thị và ngữ cảnh xếp chồng. Chuyển float trái/phải ở 7.5 và thu cửa sổ ở 7.7. Exercise 7.12/7.13 dùng hai truy vấn bù nhau, với bố cục hẹp đến 480 px và bố cục rộng trên 480 px. Ở 7.17, nhãn bộ lọc phản ánh giá trị CSS đã áp dụng.
 
-**Phong Select.** Mở bàn phím K75, chọn ảnh cận cảnh rồi rê chuột qua ảnh. Thử thêm 2 sản phẩm, thay số lượng và tạo đơn mô phỏng. Mở “Xem trạng thái đơn” để xem mã đơn. Giỏ, đơn, tồn kho mô phỏng và nhận xét nằm trong `localStorage` của trình duyệt. Sử dụng cùng origin trong suốt buổi trình bày. Thanh tiến trình biểu thị hàng còn lại trên sức chứa của kho, ví dụ 18/24 tương ứng 75%.
+**Phong Select.** Mở bàn phím K75, chọn ảnh cận cảnh rồi rê chuột qua ảnh. Thêm hai sản phẩm và tạo đơn mô phỏng. Mục “Xem trạng thái đơn” hiển thị mã và tổng tiền theo đơn giá lưu tại thời điểm tạo. Dữ liệu cũ thiếu đơn giá dùng giá hiện hành trong danh mục. Thanh tiến trình biểu thị tỷ lệ tồn kho trên sức chứa, ví dụ 18/24 tương ứng 75%. Dữ liệu mô phỏng có phạm vi lưu trữ của trình duyệt.
 
-**LMS.** Chọn tệp HTML đã lưu từ trang lớp học hoặc dán HTML vào ô nhập. Nút dữ liệu mẫu giúp xem cách dùng. Bộ phân tích tính các hoạt động kiểu `assign`, đúng selector của đề. Moodle có thể hiển thị cả Turnitin và các loại hoạt động khác. Chúng thuộc loại module riêng. Chỉ các trường ngày `Due`, `Hạn nộp` hoặc thuộc tính hạn nộp rõ ràng được dùng. Hạn vắng mặt được ghi là chưa hiển thị. Dữ liệu lớp được đối chiếu ngày 22/11/2026 và lưu trong tệp HTML riêng ngoài thư mục này.
+**LMS.** Chọn tệp HTML đã lưu hoặc dán HTML vào ô nhập. Nút dữ liệu mẫu minh họa quy trình. Bộ phân tích giữ thứ tự hoạt động Moodle kiểu `assign` và nhận hạn nộp từ thuộc tính rõ nghĩa hoặc dòng có nhãn `Due`, `Hạn nộp` hay nhãn tương đương. Ngày mở bài và ngày khóa nộp là các mốc riêng. Bản HTML đối chiếu ghi lại trạng thái lớp ngày 22/11/2026.
 
 **Game.** Bấm Bắt đầu và nhấn **↓** để nâng máy bay giấy. Trên thiết bị cảm ứng, dùng nút Nâng máy bay. Nhấn **P** hoặc nút Tạm dừng để nghỉ. Điểm 5/20/40 chuyển sang Level 2/3/4. Bước mô phỏng theo cấp là 40/30/25/20 ms. `requestAnimationFrame` và nội suy giúp chuyển động mượt giữa hai bước. Khi qua 50 cổng, game dừng và hiển thị chiến thắng. Điểm cao chỉ lưu trên trình duyệt.
 

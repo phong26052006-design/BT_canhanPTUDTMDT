@@ -13,8 +13,12 @@ function load(key, fallback) {
 }
 
 function save(key, value) {
-    try { localStorage.setItem(`phong-select-fe:${key}`, JSON.stringify(value)); }
-    catch { /* The current session still works if storage is unavailable. */ }
+    try {
+        localStorage.setItem(`phong-select-fe:${key}`, JSON.stringify(value));
+        return true;
+    } catch {
+        return false;
+    }
 }
 
 function inventory(product) {
@@ -40,7 +44,12 @@ const orders = [];
 const storedOrders = load('orders', []);
 if (Array.isArray(storedOrders)) {
     for (const order of storedOrders) {
-        if (order && typeof order.id === 'string') orders.push({ id: order.id, lines: sanitizeLines(order.lines) });
+        if (!order || typeof order.id !== 'string') continue;
+        const lines = Array.isArray(order.lines) ? order.lines.filter(line =>
+            productById.has(line?.id) && variants.includes(line.variant) &&
+            Number.isSafeInteger(line.qty) && line.qty > 0
+        ) : [];
+        if (lines.length) orders.push({ id: order.id, lines });
     }
 }
 let cart = sanitizeLines(load('cart', []));
@@ -117,15 +126,22 @@ function updateCart() {
 
 document.querySelector('#order').addEventListener('click', () => {
     if (!cart.length) return;
-    const id = 'PS-' + Date.now().toString(36).toUpperCase();
-    const lines = cart.map(line => ({ ...line }));
-    orders.push({ id, lines });
-    save('orders', orders);
+    const suffix = Array.from(crypto.getRandomValues(new Uint8Array(6)),
+        byte => byte.toString(16).padStart(2, '0')).join('').toUpperCase();
+    const id = 'PS-' + suffix;
+    const lines = cart.map(line => ({ ...line, unitPrice: productById.get(line.id).price }));
+    const order = { id, lines };
+    const status = document.querySelector('#cart-status');
+    if (!save('orders', [...orders, order])) {
+        status.textContent = 'Trình duyệt không lưu được đơn. Giỏ hàng vẫn sẵn sàng để thử lại.';
+        return;
+    }
+    orders.push(order);
     cart = [];
     updateCart();
     renderCatalog();
     if (currentProduct) renderDetailStock(currentProduct);
-    document.querySelector('#cart-status').textContent = `Đã ghi đơn mô phỏng ${id} trên trình duyệt.`;
+    status.textContent = `Đã ghi đơn mô phỏng ${id} trên trình duyệt.`;
 });
 
 document.querySelector('#categories')?.addEventListener('click', event => {
@@ -191,8 +207,12 @@ function installReviews(product) {
             status.textContent = 'Chọn số sao từ 1 đến 5 và nhập nhận xét tối đa 300 ký tự.';
             return;
         }
-        own = { score, text };
-        save(key, own);
+        const review = { score, text };
+        if (!save(key, review)) {
+            status.textContent = 'Trình duyệt không lưu được đánh giá. Vui lòng thử lại.';
+            return;
+        }
+        own = review;
         showReview();
         status.textContent = 'Đã lưu đánh giá.';
     });

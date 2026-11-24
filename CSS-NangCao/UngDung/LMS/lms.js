@@ -15,9 +15,16 @@
             }
             if (value) return value;
         }
-        const pattern = /(?:hạn (?:nộp(?: bài)?|chót)|đến hạn|due(?: date)?|deadline)\s*[:：]\s*(.+)/i;
-        const rows = $activity.find('[data-region="activity-dates"] > div, .activity-dates > div, .activity-dates li, .activity-dates, [data-region="activity-dates"], .description .availabilityinfo');
-        for (const row of rows.toArray().reverse()) {
+        const pattern = /^(?:hạn (?:nộp(?: bài)?|chót)|đến hạn|due(?: date)?|deadline)\s*[:：]\s*(.+)/i;
+        const rows = $activity.find('[data-region="activity-dates"] > div, .activity-dates > div, .activity-dates li, .description .availabilityinfo');
+        for (const row of rows) {
+            const match = clean($(row).text()).match(pattern);
+            if (match?.[1]) return match[1];
+        }
+        // A container can hold a single inline date instead of separate rows.
+        const inline = $activity.find('[data-region="activity-dates"], .activity-dates')
+            .filter((_, node) => !node.querySelector('div, li, br'));
+        for (const row of inline) {
             const match = clean($(row).text()).match(pattern);
             if (match?.[1]) return match[1];
         }
@@ -71,7 +78,7 @@
         template.innerHTML = markup;
         const report = extract(template.content);
         $('#source-note').text(`${source} · ${report.sections.length} chủ đề · ${report.total} bài tập`);
-        $('#fifth').text(report.fifth ? `Bài nộp thứ 5: ${report.fifth.name} · ${report.fifth.deadline}` : 'Trang nguồn có ít hơn 5 bài tập nhận diện được.');
+        $('#fifth').text(report.fifth ? `Bài tập thứ năm: ${report.fifth.name} · ${report.fifth.deadline}` : 'Trang nguồn có ít hơn 5 bài tập nhận diện được.');
         $rows.empty();
         for (const topic of report.sections) {
             const $row = $('<tr>');
@@ -88,15 +95,23 @@
         if (!report.sections.length && !report.total) $('#source-note').append(' · Chưa nhận diện được cấu trúc khóa học. Kiểm tra tệp đã lưu từ trang môn học.');
     }
 
-    $('#sample-lms').on('click', () => render(demo.map(([title, activities]) => makeDemoSection(title, activities)).join(''), 'Dữ liệu mô phỏng'));
+    let requestId = 0;
+    $('#sample-lms').on('click', () => {
+        requestId++;
+        render(demo.map(([title, activities]) => makeDemoSection(title, activities)).join(''), 'Dữ liệu mô phỏng');
+    });
     $('#read-lms').on('click', async () => {
+        const currentRequest = ++requestId;
         const file = $('#lms-file')[0].files[0];
         const pasted = $('#lms-markup').val().trim();
         try {
             if (!pasted && !file) throw new Error('Chọn tệp HTML hoặc dán HTML trước khi phân tích.');
-            if (!pasted && file.size > 10_000_000) throw new Error('Tệp HTML phải nhỏ hơn 10 MB.');
-            render(pasted || await file.text(), 'HTML do người dùng cung cấp');
+            const bytes = pasted ? new Blob([pasted]).size : file.size;
+            if (bytes > 10_000_000) throw new Error('Dữ liệu HTML tối đa 10 MB.');
+            const markup = pasted || await file.text();
+            if (currentRequest === requestId) render(markup, 'HTML do người dùng cung cấp');
         } catch (error) {
+            if (currentRequest !== requestId) return;
             $('#lms-output').prop('hidden', true);
             $('#source-note').text(error.message);
         }

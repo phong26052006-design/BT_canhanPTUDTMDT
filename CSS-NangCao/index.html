@@ -26,7 +26,7 @@
 <section class="lesson-group"><h3>Bố cục responsive</h3><ul>
 <li><a href="Lab07/Exercise10/"><span class="number">7.10</span><span><strong>Two Column Layout</strong><small>Float nav rộng 10em và chừa margin-left 12em cho nội dung.</small></span><span aria-hidden="true">↗</span></a></li>
 <li><a href="Lab07/Exercise11/"><span class="number">7.11</span><span><strong>Three Column Layout</strong><small>Định vị nav và aside hai bên container, chừa hai lề cho nội dung.</small></span><span aria-hidden="true">↗</span></a></li>
-<li><a href="Lab07/Exercise12/"><span class="number">7.12</span><span><strong>Media Queries</strong><small>Nạp CSS desktop từ 481 px và CSS mobile đến 480 px. Mobile bỏ float và lề trái.</small></span><span aria-hidden="true">↗</span></a></li>
+<li><a href="Lab07/Exercise12/"><span class="number">7.12</span><span><strong>Media Queries</strong><small>Áp dụng bố cục rộng khi viewport lớn hơn 480 px và bố cục hẹp khi viewport không quá 480 px. Bố cục hẹp bỏ float và lề trái.</small></span><span aria-hidden="true">↗</span></a></li>
 <li><a href="Lab07/Exercise12/#viewport"><span class="number">7.13</span><span><strong>Setting the Viewport</strong><small>Tiếp nối 7.12, thêm viewport và đổi danh sách điều hướng thành select trên mobile.</small></span><span aria-hidden="true">↗</span></a></li>
 </ul></section>
 <section class="lesson-group"><h3>Hiệu ứng CSS</h3><ul>
@@ -40,7 +40,11 @@
 <li><a href="Lab07/Exercise19/"><span class="number">7.19</span><span><strong>Using Bootstrap</strong><small>Grid 3/9, navbar, panel, list-group, jumbotron và bốn cột con.</small></span><span aria-hidden="true">↗</span></a></li>
 </ul></section></div></section>
 <section class="wide-section" id="ung-dung"><p class="kicker">NHÓM 2</p><h2>Ứng dụng thực tế</h2><div class="apps"><a href="UngDung/CuaHang/"><strong>Phong Select</strong><span>Xem chi tiết, phóng to ảnh, kiểm tra tồn kho và thêm vào giỏ.</span></a><a href="UngDung/LMS/"><strong>jQuery và LMS</strong><span>Tìm bài nộp thứ 5, thống kê bài tập và hạn nộp theo chủ đề.</span></a><a href="UngDung/Game/"><strong>Chuyến bay giấy</strong><span>Vượt qua các tháp gió và hoàn thành bốn cấp độ.</span></a></div></section>
-<section class="wide-section recap" id="tong-ket"><h2>Tổng kết Lab 07</h2><p class="muted">Bản gợi ý tự đánh giá, 126 từ. Hãy chỉnh theo trải nghiệm thật trước khi nộp.</p><p>Qua Lab 07, em thấy việc chọn cách bố trí ảnh hưởng trực tiếp đến nội dung xung quanh. Relative giữ khoảng trống ban đầu, còn absolute giúp đặt nhãn theo khung cha. Bài 7.12 và 7.13 hữu ích nhất vì em có thể so sánh ngay bố cục hai cột với một cột khi thu nhỏ màn hình. Phần z-index cần xem lại kỹ vì thứ tự chồng lớp còn phụ thuộc phần tử cha. Với cửa hàng trực tuyến, em có thể dùng media query cho danh mục sản phẩm, đặt nhãn khuyến mãi bằng absolute và dùng transition để báo hiệu người dùng đang chọn một sản phẩm. Bootstrap giúp bố trí các cột nhanh khi cần dùng nhiều thành phần có sẵn.</p></section>
+<section class="wide-section recap" id="tong-ket">
+<h2>Tổng kết Lab 07</h2>
+<p class="muted">Bản tham khảo để hiệu đính theo trải nghiệm cá nhân.</p>
+<p>Lab 07 cho thấy lựa chọn kỹ thuật định vị ảnh hưởng trực tiếp đến luồng hiển thị. Định vị tương đối giữ chỗ ban đầu của phần tử. Định vị tuyệt đối phù hợp để đặt chú thích hoặc nhãn khuyến mãi theo khung ảnh. Các bài về media query và viewport làm rõ cách chuyển bố cục theo chiều rộng màn hình. Bài về z-index cho thấy thứ tự chồng lớp phụ thuộc vào ngữ cảnh xếp chồng của phần tử cha. Trong cửa hàng trực tuyến, những kỹ thuật này có thể kết hợp để tổ chức lưới sản phẩm, định vị nhãn giảm giá và phản hồi trực quan khi người dùng tương tác.</p>
+</section>
 </main>
 <footer class="site-foot"><div class="shell">Trương Thanh Phong · Phát triển ứng dụng thương mại điện tử</div></footer>
 </body>

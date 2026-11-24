@@ -22,8 +22,11 @@ for (const order of Array.isArray(history) ? history.slice().reverse() : []) {
         const item = document.createElement('li');
         item.textContent = `${product.name} · ${line.variant} × ${line.qty}`;
         list.append(item);
-        total += line.qty * product.price;
+        const unitPrice = Number.isSafeInteger(line.unitPrice) && line.unitPrice >= 0
+            ? line.unitPrice : product.price;
+        total += line.qty * unitPrice;
     }
+    if (!list.children.length) continue;
     const value = document.createElement('strong');
     value.textContent = `Tổng tiền ${currency.format(total)}`;
     details.append(list, value);

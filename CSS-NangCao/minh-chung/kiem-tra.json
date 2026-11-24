@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-22T14:20:36.185Z",
+  "at": "2026-11-24T16:15:50.334Z",
   "checks": [
     {
       "name": "19 liên kết Exercise",
@@ -239,6 +239,10 @@
       "passed": true
     },
     {
+      "name": "7.12 hai truy vấn bổ sung nhau tại 480 px, bao phủ độ rộng phân số",
+      "passed": true
+    },
+    {
       "name": "7.12 không tràn ngang ở 390px",
       "passed": true,
       "details": 390
@@ -325,6 +329,10 @@
     },
     {
       "name": "7.17 đủ 11 biến thể filter",
+      "passed": true
+    },
+    {
+      "name": "7.17 nhãn contrast và hue-rotate khớp CSS",
       "passed": true
     },
     {
@@ -431,7 +439,15 @@
       "passed": true
     },
     {
+      "name": "Lưu đơn thất bại giữ nguyên giỏ và tồn kho",
+      "passed": true
+    },
+    {
       "name": "Đặt đơn mô phỏng, giỏ rỗng, giảm tồn kho",
+      "passed": true
+    },
+    {
+      "name": "Đơn lưu đơn giá tại thời điểm tạo",
       "passed": true
     },
     {
@@ -441,6 +457,10 @@
     },
     {
       "name": "Trạng thái đơn hiển thị mã, sản phẩm và số tiền",
+      "passed": true
+    },
+    {
+      "name": "Lịch sử dùng giá đã lưu và vẫn đọc đơn cũ",
       "passed": true
     },
     {
@@ -469,6 +489,10 @@
     },
     {
       "name": "LMS không gọi ngày Opened là hạn nộp",
+      "passed": true
+    },
+    {
+      "name": "LMS tách hạn nộp khỏi mốc khóa nộp",
       "passed": true
     },
     {
@@ -552,6 +576,6 @@
     }
   ],
   "issues": [],
-  "passed": 116,
-  "total": 116
+  "passed": 122,
+  "total": 122
 }

@@ -45,7 +45,7 @@
   ],
   [
     "Media Queries",
-    "Nạp CSS desktop từ 481 px và CSS mobile đến 480 px. Mobile bỏ float và lề trái."
+    "Áp dụng bố cục rộng khi viewport lớn hơn 480 px và bố cục hẹp khi viewport không quá 480 px. Bố cục hẹp bỏ float và lề trái."
   ],
   [
     "Setting the Viewport",
