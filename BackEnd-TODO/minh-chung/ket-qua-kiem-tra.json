@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "Danh sách có 6 công việc, mỗi trạng thái có 2 công việc và 1 công việc quá hạn",
+    "Thêm công việc lưu bản ghi mới và tăng tổng lên 7",
+    "Sửa nội dung trên cùng ID",
+    "Chuyển sang Đang làm làm tăng nhóm Đang làm lên 3",
+    "Chuyển sang Hoàn thành cập nhật tỷ lệ 3/7 thành 43%",
+    "Lọc trạng thái hiển thị 3 hàng và giữ tổng thống kê 7",
+    "Sau khi khởi động lại vẫn giữ ID, nội dung, trạng thái và tổng số 7",
+    "Truy vấn trực tiếp từ tệp SQLite trả về integrity_check ok và bản ghi Hoàn thành",
+    "Giao diện 390 px không có thanh cuộn ngang",
+    "Xóa đúng bản ghi và đưa tổng trở về 6",
+    "Chrome không ghi nhận lỗi JavaScript trong luồng chính",
+    "API từ chối ngày không hợp lệ với HTTP 400"
+  ],
+  "version": "v24.22.3"
+}

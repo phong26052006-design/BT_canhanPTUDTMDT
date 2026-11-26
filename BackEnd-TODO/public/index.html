@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <title>Kế hoạch · Quản lý công việc</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" type="module"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <a class="brand" href="#tong-quan"><span class="brand-icon" aria-hidden="true">✓</span><span>Kế hoạch<small>Quản lý công việc</small></span></a>
+        <nav aria-label="Điều hướng chính">
+            <a href="#tong-quan"><span aria-hidden="true">⌂</span> Tổng quan</a>
+            <a href="#cong-viec"><span aria-hidden="true">☷</span> Công việc</a>
+            <a href="#thong-ke"><span aria-hidden="true">◔</span> Thống kê</a>
+        </nav>
+        <div class="profile"><span class="initials" aria-hidden="true">TP</span><span><strong>Trương Thanh Phong</strong><small>Ứng dụng TODO</small></span></div>
+    </aside>
+
+    <main id="tong-quan">
+        <header class="page-header">
+            <div><p class="date" id="today"></p><h1>Bảng công việc</h1><p class="subtitle">Sắp xếp việc cần làm và theo dõi tiến độ.</p></div>
+            <button class="button primary" id="add" type="button"><span aria-hidden="true">＋</span> Thêm công việc</button>
+        </header>
+
+        <section class="overview" aria-labelledby="thong-ke">
+            <header><h2 id="thong-ke">Tổng quan tiến độ</h2><p>Thống kê trên toàn bộ danh sách</p></header>
+            <div class="metrics">
+                <div class="metric"><span>Tổng công việc</span><strong id="count-total">—</strong></div>
+                <div class="metric"><span>Cần làm</span><strong id="count-todo">—</strong></div>
+                <div class="metric"><span>Đang làm</span><strong id="count-doing">—</strong></div>
+                <div class="metric"><span>Hoàn thành</span><strong id="count-done">—</strong></div>
+            </div>
+            <div class="progress-line">
+                <label for="progress">Tỷ lệ hoàn thành <strong id="percent">—</strong></label>
+                <progress id="progress" value="0" max="100"></progress>
+                <p id="overdue" class="overdue"></p>
+            </div>
+        </section>
+
+        <section class="list" aria-labelledby="cong-viec">
+            <header class="list-header">
+                <div><h2 id="cong-viec">Danh sách công việc</h2><p id="result-count"></p></div>
+                <div class="filters">
+                    <label><span class="sr-only">Tìm công việc</span><input id="search" type="search" placeholder="Tìm công việc…"></label>
+                    <label><span class="sr-only">Lọc theo trạng thái</span><select id="filter">
+                        <option value="all">Mọi trạng thái</option>
+                        <option value="todo">Cần làm</option><option value="doing">Đang làm</option><option value="done">Hoàn thành</option>
+                    </select></label>
+                </div>
+            </header>
+            <p id="notice" class="notice" role="status" hidden></p>
+            <button id="retry" class="button" type="button" hidden>Tải lại danh sách</button>
+            <div class="table-heading" aria-hidden="true"><span>Công việc</span><span>Đến hạn</span><span>Trạng thái</span><span>Thao tác</span></div>
+            <ul id="tasks" class="tasks" aria-label="Các công việc"></ul>
+            <p id="empty" class="empty" hidden></p>
+        </section>
+    </main>
+
+    <dialog id="editor" aria-labelledby="editor-title">
+        <form id="task-form">
+            <div class="dialog-heading"><h2 id="editor-title">Thêm công việc</h2><button class="icon-button" type="button" data-close="editor" aria-label="Đóng">×</button></div>
+            <label>Tên công việc<input name="title" type="text" maxlength="100" required autofocus placeholder="Ví dụ: Chuẩn bị tài liệu trình bày"></label>
+            <label>Mô tả<textarea name="description" rows="3" maxlength="500" placeholder="Ghi chú hoặc kết quả cần đạt"></textarea></label>
+            <div class="fields">
+                <label>Nhóm công việc<select name="category"><option value="study">Học tập</option><option value="project">Dự án</option><option value="personal">Cá nhân</option></select></label>
+                <label>Ưu tiên<select name="priority"><option value="low">Thấp</option><option value="normal">Bình thường</option><option value="high">Cao</option></select></label>
+            </div>
+            <label>Ngày đến hạn<input name="due_date" type="date" max="9999-12-31"></label>
+            <p id="editor-error" class="form-error" role="alert" hidden></p>
+            <div class="dialog-actions">
+                <button class="button" type="button" data-close="editor">Hủy</button>
+                <button class="button primary" type="submit">Lưu công việc</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="confirm-delete" aria-labelledby="delete-title">
+        <form id="delete-form">
+            <div class="dialog-heading"><h2 id="delete-title">Xóa công việc</h2><button class="icon-button" type="button" data-close="confirm-delete" aria-label="Đóng">×</button></div>
+            <p>Bạn có muốn xóa <strong id="delete-name"></strong> khỏi danh sách?</p>
+            <p id="delete-error" class="form-error" role="alert" hidden></p>
+            <div class="dialog-actions">
+                <button class="button" type="button" data-close="confirm-delete" autofocus>Giữ lại</button>
+                <button class="button danger" type="submit">Xóa công việc</button>
+            </div>
+        </form>
+    </dialog>
+
+    <template id="task-row">
+        <li class="task-row">
+            <div class="task-name"><span class="task-dot" aria-hidden="true"></span><div><h3></h3><p class="description"></p><div class="tags"><span class="category"></span><span class="priority"></span></div></div></div>
+            <div class="deadline"><time></time><small class="late" hidden>Quá hạn</small></div>
+            <select class="task-status"><option value="todo">Cần làm</option><option value="doing">Đang làm</option><option value="done">Hoàn thành</option></select>
+            <div class="row-actions"><button class="text-button edit" type="button">Sửa</button><button class="text-button delete" type="button">Xóa</button></div>
+        </li>
+    </template>
+</body>
+</html>
