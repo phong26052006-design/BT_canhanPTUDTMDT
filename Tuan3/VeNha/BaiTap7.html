@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bài 7 · Bố cục ngữ nghĩa | Trương Thanh Phong</title><link rel="icon" href="assets/avatar.svg" type="image/svg+xml"><link rel="stylesheet" href="css/common.css"><link rel="stylesheet" href="assets/fontawesome/css/all.min.css"><link rel="stylesheet" href="css/BaiTap7.css"></head>
+<body><div class="course-bar"><a href="index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Tuần 3 · CSS cơ bản</a><span>Trương Thanh Phong · 31241024967</span></div><div class="layout-demo"><p class="wrapper-label">wrapper</p><div id="wrapper"><header>header</header><nav aria-label="Vùng điều hướng minh họa">nav</nav><main>main</main><footer>footer</footer></div></div><section class="lesson-note"><h1>Bài 7 — Cấu trúc trang</h1><p>Giữ wrapper chứa header, nav, main, footer. Header và footer chiếm cả hàng; nav ở trái và main ở phải. Dùng CSS Grid để tạo đúng hình, viền đen và bóng đổ ở góc dưới trái.</p></section><details class="code-panel"><summary>Xem CSS của bài</summary><p>Tệp: <a href="css/BaiTap7.css">css/BaiTap7.css</a></p><pre><code>.layout-demo {width:400px;max-width:calc(100% - 32px);margin:40px auto 60px;font:26px/1.4 Arial,sans-serif;background:white;box-shadow:-22px 24px 16px rgba(0,0,0,.3);padding:8px;box-sizing:border-box;}
+.wrapper-label {margin:0 0 4px;padding-left:10px;}
+#wrapper {border:3px solid black;padding:8px;display:grid;grid-template-columns:68px minmax(0,1fr);grid-template-rows:64px 300px 44px;gap:8px;}
+#wrapper &gt; * {border:3px solid black;padding:4px 7px;box-sizing:border-box;}
+#wrapper header,#wrapper footer {grid-column:1/-1;}
+#wrapper nav {grid-column:1;}
+#wrapper main {grid-column:2;}</code></pre></details></body></html>

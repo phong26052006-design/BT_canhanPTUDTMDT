@@ -1,0 +1,226 @@
+[
+  {
+    "level": 1,
+    "selector": "plate",
+    "accepted": true,
+    "image": "css-diner-level-01.png",
+    "evidence": "Green completed marker for level 1 after submitting plate"
+  },
+  {
+    "level": 2,
+    "selector": "bento",
+    "accepted": true,
+    "image": "css-diner-level-02.png",
+    "evidence": "Completed marker accepted by game"
+  },
+  {
+    "level": 3,
+    "selector": "#fancy",
+    "accepted": true,
+    "image": "css-diner-level-03.png",
+    "acceptedAt": "2026-11-11T02:41:52.716Z"
+  },
+  {
+    "level": 4,
+    "selector": "plate apple",
+    "accepted": true,
+    "image": "css-diner-level-04.png",
+    "acceptedAt": "2026-11-11T02:42:06.101Z"
+  },
+  {
+    "level": 5,
+    "selector": "#fancy pickle",
+    "accepted": true,
+    "image": "css-diner-level-05.png",
+    "acceptedAt": "2026-11-11T02:42:10.862Z"
+  },
+  {
+    "level": 6,
+    "selector": ".small",
+    "accepted": true,
+    "image": "css-diner-level-06.png",
+    "acceptedAt": "2026-11-11T02:42:15.531Z"
+  },
+  {
+    "level": 7,
+    "selector": "orange.small",
+    "accepted": true,
+    "image": "css-diner-level-07.png",
+    "acceptedAt": "2026-11-11T02:42:23.522Z"
+  },
+  {
+    "level": 8,
+    "selector": "bento orange.small",
+    "accepted": true,
+    "image": "css-diner-level-08.png",
+    "acceptedAt": "2026-11-11T02:42:28.375Z"
+  },
+  {
+    "level": 9,
+    "selector": "plate, bento",
+    "accepted": true,
+    "image": "css-diner-level-09.png",
+    "acceptedAt": "2026-11-11T02:42:52.405Z"
+  },
+  {
+    "level": 10,
+    "selector": "*",
+    "accepted": true,
+    "image": "css-diner-level-10.png",
+    "acceptedAt": "2026-11-11T02:42:56.923Z"
+  },
+  {
+    "level": 11,
+    "selector": "plate *",
+    "accepted": true,
+    "image": "css-diner-level-11.png",
+    "acceptedAt": "2026-11-11T02:43:01.514Z"
+  },
+  {
+    "level": 12,
+    "selector": "plate + apple",
+    "accepted": true,
+    "image": "css-diner-level-12.png",
+    "acceptedAt": "2026-11-11T02:43:06.171Z"
+  },
+  {
+    "level": 13,
+    "selector": "bento ~ pickle",
+    "accepted": true,
+    "image": "css-diner-level-13.png",
+    "acceptedAt": "2026-11-11T02:43:10.874Z"
+  },
+  {
+    "level": 14,
+    "selector": "plate > apple",
+    "accepted": true,
+    "image": "css-diner-level-14.png",
+    "acceptedAt": "2026-11-11T02:43:15.475Z"
+  },
+  {
+    "level": 15,
+    "selector": "orange:first-child",
+    "accepted": true,
+    "image": "css-diner-level-15.png",
+    "acceptedAt": "2026-11-11T02:43:22.000Z"
+  },
+  {
+    "level": 16,
+    "selector": "plate :only-child",
+    "accepted": true,
+    "image": "css-diner-level-16.png",
+    "acceptedAt": "2026-11-11T02:44:06.798Z"
+  },
+  {
+    "level": 17,
+    "selector": ".small:last-child",
+    "accepted": true,
+    "image": "css-diner-level-17.png",
+    "acceptedAt": "2026-11-11T02:44:12.268Z"
+  },
+  {
+    "level": 18,
+    "selector": "plate:nth-child(3)",
+    "accepted": true,
+    "image": "css-diner-level-18.png",
+    "acceptedAt": "2026-11-11T02:44:20.704Z"
+  },
+  {
+    "level": 19,
+    "selector": "bento:nth-last-child(3)",
+    "accepted": true,
+    "image": "css-diner-level-19.png",
+    "acceptedAt": "2026-11-11T02:44:31.248Z"
+  },
+  {
+    "level": 20,
+    "selector": "apple:first-of-type",
+    "accepted": true,
+    "image": "css-diner-level-20.png",
+    "acceptedAt": "2026-11-11T02:44:35.586Z"
+  },
+  {
+    "level": 21,
+    "selector": "plate:nth-of-type(even)",
+    "accepted": true,
+    "image": "css-diner-level-21.png",
+    "acceptedAt": "2026-11-11T02:44:41.883Z"
+  },
+  {
+    "level": 22,
+    "selector": "plate:nth-of-type(2n+3)",
+    "accepted": true,
+    "image": "css-diner-level-22.png",
+    "acceptedAt": "2026-11-11T02:44:46.678Z"
+  },
+  {
+    "level": 23,
+    "selector": "apple:only-of-type",
+    "accepted": true,
+    "image": "css-diner-level-23.png",
+    "acceptedAt": "2026-11-11T02:44:51.484Z"
+  },
+  {
+    "level": 24,
+    "selector": "apple:last-of-type, orange:last-of-type",
+    "accepted": true,
+    "image": "css-diner-level-24.png",
+    "acceptedAt": "2026-11-11T02:44:58.234Z"
+  },
+  {
+    "level": 25,
+    "selector": "bento:empty",
+    "accepted": true,
+    "image": "css-diner-level-25.png",
+    "acceptedAt": "2026-11-11T02:45:03.167Z"
+  },
+  {
+    "level": 26,
+    "selector": "apple:not(.small)",
+    "accepted": true,
+    "image": "css-diner-level-26.png",
+    "acceptedAt": "2026-11-11T02:45:29.567Z"
+  },
+  {
+    "level": 27,
+    "selector": "[for]",
+    "accepted": true,
+    "image": "css-diner-level-27.png",
+    "acceptedAt": "2026-11-11T02:45:40.645Z"
+  },
+  {
+    "level": 28,
+    "selector": "plate[for]",
+    "accepted": true,
+    "image": "css-diner-level-28.png",
+    "acceptedAt": "2026-11-11T02:45:46.302Z"
+  },
+  {
+    "level": 29,
+    "selector": "[for=\"Vitaly\"]",
+    "accepted": true,
+    "image": "css-diner-level-29.png",
+    "acceptedAt": "2026-11-11T02:45:51.973Z"
+  },
+  {
+    "level": 30,
+    "selector": "[for^=\"Sa\"]",
+    "accepted": true,
+    "image": "css-diner-level-30.png",
+    "acceptedAt": "2026-11-11T02:46:00.869Z"
+  },
+  {
+    "level": 31,
+    "selector": "[for$=\"ato\"]",
+    "accepted": true,
+    "image": "css-diner-level-31.png",
+    "acceptedAt": "2026-11-11T02:46:06.639Z"
+  },
+  {
+    "level": 32,
+    "selector": "[for*=\"obb\"]",
+    "accepted": true,
+    "image": "css-diner-level-32.png",
+    "acceptedAt": "2026-11-11T02:46:21.552Z"
+  }
+]

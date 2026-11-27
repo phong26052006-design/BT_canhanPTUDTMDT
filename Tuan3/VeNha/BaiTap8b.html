@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bài 8b · The Bat family | Trương Thanh Phong</title><link rel="icon" href="assets/avatar.svg" type="image/svg+xml"><link rel="stylesheet" href="css/common.css"><link rel="stylesheet" href="assets/fontawesome/css/all.min.css"><link rel="stylesheet" href="css/BaiTap8b.css"></head>
+<body><div class="course-bar"><a href="index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Tuần 3 · CSS cơ bản</a><span>Trương Thanh Phong · 31241024967</span></div>
+    <div id="root">
+        <h1 id="site-header"><span>The Bat family</span></h1>
+        <ul class="superheroes">
+            <li>
+                <strong class="hero-header">Batman</strong>
+                <img src="assets/css2/superhero-1.jpg" alt="Batman">
+                <a aria-label="Read more about Batman" href="https://en.wikipedia.org/wiki/Batman">Read more</a>
+            </li>
+            <li>
+                <strong class="hero-header">Batwing</strong>
+                <img src="assets/css2/superhero-2.jpg" alt="Batwing">
+                <a aria-label="Read more about Batwing" href="https://en.wikipedia.org/wiki/Batwing_(DC_Comics)">Read more</a>
+            </li>
+            <li>
+                <strong class="hero-header">Batgirl</strong>
+                <img src="assets/css2/superhero-3.jpg" alt="Batgirl">
+                <a aria-label="Read more about Batgirl" href="https://en.wikipedia.org/wiki/Batgirl">Read more</a>
+            </li>
+            <li>
+                <strong class="hero-header">Nightwing</strong>
+                <img src="assets/css2/superhero-4.jpg" alt="Nightwing">
+                <a aria-label="Read more about Nightwing" href="https://en.wikipedia.org/wiki/Nightwing">Read more</a>
+            </li>
+            <li>
+                <strong class="hero-header">Red Robin</strong>
+                <img src="assets/css2/superhero-5.jpg" alt="Red Robin">
+                <a aria-label="Read more about Red Robin" href="https://en.wikipedia.org/wiki/Red_Robin_(comics)">Read more</a>
+            </li>
+        </ul>
+    </div>
+<section class="lesson-note"><h1>Bài 8b — Hover và bàn phím</h1><p>Rê chuột lên một nhân vật để phóng rộng thẻ và hiện liên kết Read more có gạch chân. Có thể dùng Tab để đạt hiệu ứng tương tự nhờ focus-within. Liên kết trỏ đến trang nhân vật như HTML gốc; đây là nguồn tham khảo bên ngoài.</p></section><details class="code-panel"><summary>Xem CSS của bài</summary><p>Tệp: <a href="css/BaiTap8b.css">css/BaiTap8b.css</a></p><pre><code>#root {box-sizing:border-box;width:1024px;max-width:100%;margin:40px auto 70px;text-align:center;font-family:&#x27;Times New Roman&#x27;,serif;}
+#site-header {margin:0 0 36px;padding:18px 12px;text-align:center;background:#ccc;color:white;text-shadow:2px 2px 2px black;font-size:30px;}
+#site-header span {display:inline-block;padding-left:72px;background:url(&#x27;../assets/css2/logo.png&#x27;) no-repeat left center;background-size:60px auto;}
+.superheroes {list-style:none;padding:0;margin:0;font-size:0;min-height:255px;}
+.superheroes li {display:inline-block;position:relative;width:175px;margin:0 2px;vertical-align:bottom;font-size:18px;}
+.superheroes img {display:block;width:100%;max-width:100%;aspect-ratio:1;object-fit:cover;border:0 solid white;border-radius:16px;}
+.hero-header {position:absolute;top:12px;left:0;width:100%;color:#fff;opacity:.55;text-shadow:1px 1px 2px #333;pointer-events:none;}
+.superheroes a {display:block;width:100%;box-sizing:border-box;padding:10px 0;background:#666;color:#fff;text-decoration:none;position:absolute;left:0;top:calc(100% + 4px);}
+.superheroes li:hover,.superheroes li:focus-within {width:205px;}
+.superheroes li:hover a,.superheroes li:focus-within a {text-decoration:underline;}
+.superheroes li:hover .hero-header,.superheroes li:focus-within .hero-header {opacity:1;}
+/* Link remains keyboard-focusable while visually hidden: opacity replaces visibility. */
+.superheroes a {opacity:0;pointer-events:none;}
+.superheroes li:hover a,.superheroes li:focus-within a {opacity:1;pointer-events:auto;}
+@media(max-width:650px){.superheroes{display:flex;flex-wrap:wrap;justify-content:center;gap:48px 8px}.superheroes li{width:140px}.superheroes li:hover,.superheroes li:focus-within{width:165px}#site-header{font-size:25px}}
+@media(hover:none){.superheroes a{opacity:1;pointer-events:auto}.superheroes{display:flex;flex-wrap:wrap;gap:48px 8px;justify-content:center}}</code></pre></details></body></html>

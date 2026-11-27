@@ -1,0 +1,44 @@
+﻿tro_choi,man,selector,giai_thich,anh_minh_chung,trang_thai,thoi_diem,nguoi_thuc_hien
+CSS Diner,1,plate,Chọn theo tên thẻ plate.,css-diner-level-01.png,Game đã chấp nhận,2026-11-11T02:40:54.488827+00:00,Trợ lý AI
+CSS Diner,2,bento,Chọn theo tên thẻ bento.,css-diner-level-02.png,Game đã chấp nhận,2026-11-11T02:41:11.765584+00:00,Trợ lý AI
+CSS Diner,3,#fancy,Chọn ID fancy.,css-diner-level-03.png,Game đã chấp nhận,2026-11-11T02:41:52.716Z,Trợ lý AI
+CSS Diner,4,plate apple,Chọn apple là hậu duệ của plate.,css-diner-level-04.png,Game đã chấp nhận,2026-11-11T02:42:06.101Z,Trợ lý AI
+CSS Diner,5,#fancy pickle,Chọn pickle trong phần tử có ID fancy.,css-diner-level-05.png,Game đã chấp nhận,2026-11-11T02:42:10.862Z,Trợ lý AI
+CSS Diner,6,.small,Chọn class small.,css-diner-level-06.png,Game đã chấp nhận,2026-11-11T02:42:15.531Z,Trợ lý AI
+CSS Diner,7,orange.small,Kết hợp tên thẻ orange với class small.,css-diner-level-07.png,Game đã chấp nhận,2026-11-11T02:42:23.522Z,Trợ lý AI
+CSS Diner,8,bento orange.small,Kết hợp hậu duệ và class.,css-diner-level-08.png,Game đã chấp nhận,2026-11-11T02:42:28.375Z,Trợ lý AI
+CSS Diner,9,"plate, bento",Gộp hai selector bằng dấu phẩy.,css-diner-level-09.png,Game đã chấp nhận,2026-11-11T02:42:52.405Z,Trợ lý AI
+CSS Diner,10,*,Chọn tất cả phần tử.,css-diner-level-10.png,Game đã chấp nhận,2026-11-11T02:42:56.923Z,Trợ lý AI
+CSS Diner,11,plate *,Chọn mọi hậu duệ của plate.,css-diner-level-11.png,Game đã chấp nhận,2026-11-11T02:43:01.514Z,Trợ lý AI
+CSS Diner,12,plate + apple,Chọn apple đứng ngay sau plate cùng cha.,css-diner-level-12.png,Game đã chấp nhận,2026-11-11T02:43:06.171Z,Trợ lý AI
+CSS Diner,13,bento ~ pickle,Chọn pickle đứng sau bento cùng cha.,css-diner-level-13.png,Game đã chấp nhận,2026-11-11T02:43:10.874Z,Trợ lý AI
+CSS Diner,14,plate > apple,Chọn apple là con trực tiếp của plate.,css-diner-level-14.png,Game đã chấp nhận,2026-11-11T02:43:15.475Z,Trợ lý AI
+CSS Diner,15,orange:first-child,Chọn orange là phần tử con đầu tiên.,css-diner-level-15.png,Game đã chấp nhận,2026-11-11T02:43:22.000Z,Trợ lý AI
+CSS Diner,16,plate :only-child,Chọn phần tử con duy nhất nằm trong plate.,css-diner-level-16.png,Game đã chấp nhận,2026-11-11T02:44:06.798Z,Trợ lý AI
+CSS Diner,17,.small:last-child,Chọn phần tử class small đồng thời là con cuối.,css-diner-level-17.png,Game đã chấp nhận,2026-11-11T02:44:12.268Z,Trợ lý AI
+CSS Diner,18,plate:nth-child(3),Chọn plate ở vị trí con thứ 3.,css-diner-level-18.png,Game đã chấp nhận,2026-11-11T02:44:20.704Z,Trợ lý AI
+CSS Diner,19,bento:nth-last-child(3),Chọn bento ở vị trí thứ 3 khi đếm từ cuối.,css-diner-level-19.png,Game đã chấp nhận,2026-11-11T02:44:31.248Z,Trợ lý AI
+CSS Diner,20,apple:first-of-type,Chọn apple đầu tiên trong các phần tử cùng loại.,css-diner-level-20.png,Game đã chấp nhận,2026-11-11T02:44:35.586Z,Trợ lý AI
+CSS Diner,21,plate:nth-of-type(even),Chọn plate có vị trí cùng loại chẵn.,css-diner-level-21.png,Game đã chấp nhận,2026-11-11T02:44:41.883Z,Trợ lý AI
+CSS Diner,22,plate:nth-of-type(2n+3),"Chọn các plate thứ 3, 5, 7 và tiếp theo.",css-diner-level-22.png,Game đã chấp nhận,2026-11-11T02:44:46.678Z,Trợ lý AI
+CSS Diner,23,apple:only-of-type,Chọn apple duy nhất trong nhóm cùng loại của cha.,css-diner-level-23.png,Game đã chấp nhận,2026-11-11T02:44:51.484Z,Trợ lý AI
+CSS Diner,24,"apple:last-of-type, orange:last-of-type",Chọn apple cuối và orange cuối theo loại.,css-diner-level-24.png,Game đã chấp nhận,2026-11-11T02:44:58.234Z,Trợ lý AI
+CSS Diner,25,bento:empty,Chọn bento rỗng.,css-diner-level-25.png,Game đã chấp nhận,2026-11-11T02:45:03.167Z,Trợ lý AI
+CSS Diner,26,apple:not(.small),Chọn apple không có class small.,css-diner-level-26.png,Game đã chấp nhận,2026-11-11T02:45:29.567Z,Trợ lý AI
+CSS Diner,27,[for],Chọn phần tử có thuộc tính for.,css-diner-level-27.png,Game đã chấp nhận,2026-11-11T02:45:40.645Z,Trợ lý AI
+CSS Diner,28,plate[for],Chọn plate có thuộc tính for.,css-diner-level-28.png,Game đã chấp nhận,2026-11-11T02:45:46.302Z,Trợ lý AI
+CSS Diner,29,"[for=""Vitaly""]",Chọn giá trị thuộc tính for chính xác Vitaly.,css-diner-level-29.png,Game đã chấp nhận,2026-11-11T02:45:51.973Z,Trợ lý AI
+CSS Diner,30,"[for^=""Sa""]",Chọn giá trị for bắt đầu bằng Sa.,css-diner-level-30.png,Game đã chấp nhận,2026-11-11T02:46:00.869Z,Trợ lý AI
+CSS Diner,31,"[for$=""ato""]",Chọn giá trị for kết thúc bằng ato.,css-diner-level-31.png,Game đã chấp nhận,2026-11-11T02:46:06.639Z,Trợ lý AI
+CSS Diner,32,"[for*=""obb""]",Chọn giá trị for chứa obb.,css-diner-level-32.png,Game đã chấp nhận,2026-11-11T02:46:21.552Z,Trợ lý AI
+CSS Speedrun,Intro,li:first-child,Chọn li là con đầu tiên.,css-speedrun-intro.png,Game đã chấp nhận,2026-11-11T02:47:14.886Z,Trợ lý AI
+CSS Speedrun,1,p:not(.foo),Loại p mang class foo.,css-speedrun-level-01.png,Game đã chấp nhận,2026-11-11T02:47:30.067Z,Trợ lý AI
+CSS Speedrun,2,li:nth-child(2n+3),"Chọn li thứ 3, 5, 7 bằng công thức 2n+3.",css-speedrun-level-02.png,Game đã chấp nhận,2026-11-11T02:47:38.195Z,Trợ lý AI
+CSS Speedrun,3,div > *,Chọn tất cả con trực tiếp của div.,css-speedrun-level-03.png,Game đã chấp nhận,2026-11-11T02:47:46.551Z,Trợ lý AI
+CSS Speedrun,4,[data-item],Chọn phần tử có data-item.,css-speedrun-level-04.png,Game đã chấp nhận,2026-11-11T02:47:53.134Z,Trợ lý AI
+CSS Speedrun,5,p ~ span,Chọn span là anh em đứng sau p.,css-speedrun-level-05.png,Game đã chấp nhận,2026-11-11T02:47:58.535Z,Trợ lý AI
+CSS Speedrun,6,:enabled,Chọn điều khiển form đang được bật.,css-speedrun-level-06.png,Game đã chấp nhận,2026-11-11T02:48:04.553Z,Trợ lý AI
+CSS Speedrun,7,"#one, #two, #five, #six, #nine",Gộp năm ID đúng theo các mũi tên; dùng gợi ý của trò chơi.,css-speedrun-level-07.png,Game đã chấp nhận,2026-11-11T02:48:35.365Z,Trợ lý AI
+CSS Speedrun,8,a + span,Chọn span ngay sau a cùng cha.,css-speedrun-level-08.png,Game đã chấp nhận,2026-11-11T02:48:41.068Z,Trợ lý AI
+CSS Speedrun,9,#foo > .foo,Chọn class foo là con trực tiếp của ID foo.,css-speedrun-level-09.png,Game đã chấp nhận,2026-11-11T02:48:45.849Z,Trợ lý AI
+CSS Speedrun,10,div > div > code:last-child:not(.foo),"Chọn code cuối trong các div con, loại class foo.",css-speedrun-level-10.png,Game đã chấp nhận,2026-11-11T02:48:55.532Z,Trợ lý AI

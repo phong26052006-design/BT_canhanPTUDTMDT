@@ -1,0 +1,11 @@
+.icon-lab {max-width:1000px;margin:50px auto;font:16px/1.6 Arial,sans-serif;padding:0 20px;color:#22494c;}
+.eyebrow {font-size:12px;letter-spacing:2px;color:#55726e;font-weight:bold;}
+.icon-lab h1 {font-size:38px;line-height:1.2;max-width:650px;}
+.intro {color:#526866;max-width:650px;}
+.icon-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:32px 0;}
+.icon-grid article {background:#eff4ed;border:1px solid #dce4d7;border-radius:8px;padding:26px;}
+.icon-grid i {font-size:36px;color:#005d62;}
+.icon-grid h2 {font-size:20px;margin:16px 0 6px;}
+.icon-grid p {font-size:14px;margin:0;color:#526866;}
+.github-link a {color:#005d62;}
+@media(max-width:650px){.icon-grid{grid-template-columns:repeat(2,1fr)}.icon-lab h1{font-size:30px}.icon-grid article{padding:20px}}
