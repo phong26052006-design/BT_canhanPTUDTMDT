@@ -1,0 +1,6 @@
+@model CartViewModel
+<a class="cart-summary" asp-controller="Movies" asp-action="Cart">
+<span>Giỏ hàng của bạn <b class="cart-count">@Model.Count</b> sản phẩm</span>
+<strong>@Model.Total.ToString("N0") ₫ <span aria-hidden="true">→</span>
+</strong>
+</a>

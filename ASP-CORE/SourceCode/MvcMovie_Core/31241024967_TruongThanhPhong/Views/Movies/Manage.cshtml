@@ -1,0 +1,36 @@
+@model IReadOnlyList<Movie>
+@{ViewData["Title"]="Quản lý phim";}
+<div class="section-top">
+<div>
+<p class="eyebrow">QUẢN TRỊ CỬA HÀNG</p>
+<h1>Quản lý phim</h1>
+</div>
+<a class="btn btn-primary" asp-action="Create">+ Thêm phim</a>
+</div>
+<div class="table-responsive panel">
+<table class="table align-middle">
+<thead>
+<tr>
+<th>Phim</th>
+<th>Thể loại</th>
+<th>Phát hành</th>
+<th>Giá bán</th>
+<th>Thao tác</th>
+</tr>
+</thead>
+<tbody>@foreach(var m in Model){<tr>
+<td>
+<img class="mini-poster" src="@m.PicturePath" alt=""/>
+<strong>@m.Title</strong>
+</td>
+<td>@m.GenreObj?.Name</td>
+<td>@m.ReleaseDate.ToString("dd/MM/yyyy")</td>
+<td>@m.Price.ToString("N0") ₫</td>
+<td class="actions">
+<a asp-action="Details" asp-route-id="@m.ID">Xem</a>
+<a asp-action="Edit" asp-route-id="@m.ID">Sửa</a>
+<a class="danger" asp-action="Delete" asp-route-id="@m.ID">Xóa</a>
+</td>
+</tr>}</tbody>
+</table>
+</div>

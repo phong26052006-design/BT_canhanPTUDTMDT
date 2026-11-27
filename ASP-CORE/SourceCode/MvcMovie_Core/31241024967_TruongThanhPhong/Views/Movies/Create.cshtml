@@ -1,0 +1,15 @@
+@model Movie
+@{ViewData["Title"]="Thêm phim mới";}
+<p class="eyebrow">QUẢN TRỊ CỬA HÀNG</p>
+<h1>Thêm phim mới</h1>
+<p class="muted">Thông tin rõ ràng giúp khách hàng dễ dàng lựa chọn phim.</p>
+<div class="panel form-panel">
+<form asp-action="Create" asp-route-id="@Model.ID" method="post" enctype="multipart/form-data">
+<partial name="_MovieForm" model="Model"/>
+<div class="form-actions">
+<button class="btn btn-primary" type="submit">Lưu phim</button>
+<a class="btn btn-outline-secondary" asp-action="Manage">Quay lại</a>
+</div>
+</form>
+</div>
+@section Scripts { <partial name="_ValidationScriptsPartial"/> }

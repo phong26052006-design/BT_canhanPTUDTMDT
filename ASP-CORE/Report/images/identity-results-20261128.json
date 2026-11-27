@@ -1,0 +1,41 @@
+{
+  "time": "2026-11-28T01:26:30.506153",
+  "checks": [
+    {
+      "name": "Đăng ký Identity lưu tài khoản",
+      "pass": true
+    },
+    {
+      "name": "Không lộ liên kết xác nhận trực tiếp",
+      "pass": true
+    },
+    {
+      "name": "Không đăng nhập khi email chưa xác nhận",
+      "pass": true
+    },
+    {
+      "name": "Thư xác nhận được tạo",
+      "pass": true
+    },
+    {
+      "name": "Liên kết xác nhận hoạt động",
+      "pass": true
+    },
+    {
+      "name": "Đăng nhập sau xác nhận",
+      "pass": true
+    },
+    {
+      "name": "Khách hàng không được quyền quản trị",
+      "pass": true
+    },
+    {
+      "name": "Khách hàng không sửa thể loại",
+      "pass": true
+    },
+    {
+      "name": "Khách hàng không xem đơn của người khác",
+      "pass": true
+    }
+  ]
+}

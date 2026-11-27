@@ -1,0 +1,66 @@
+{
+  "time": "2026-11-28T01:27:14.0243177+07:00",
+  "metadata": {
+    "version": "Microsoft SQL Server 2022 (RTM) - 16.0.1000.6 (X64) \n\tOct  8 2022 05:58:25 \n\tCopyright (C) 2022 Microsoft Corporation\n\tExpress Edition (64-bit) on Windows 10 Pro 10.0 \u003CX64\u003E (Build 19045: )\n",
+    "database": "PhongCinema_QA_20261128",
+    "movieCount": 6,
+    "orderCount": 1
+  },
+  "checks": [
+    {
+      "name": "SQL Server engine",
+      "pass": true,
+      "value": 4
+    },
+    {
+      "name": "4 migrations applied",
+      "pass": true,
+      "value": 4
+    },
+    {
+      "name": "At least 6 movies",
+      "pass": true,
+      "value": 6
+    },
+    {
+      "name": "At least 3 genres",
+      "pass": true,
+      "value": 3
+    },
+    {
+      "name": "No orphan movies",
+      "pass": true,
+      "value": 0
+    },
+    {
+      "name": "Every order has shipping",
+      "pass": true,
+      "value": 0
+    },
+    {
+      "name": "Totals match persisted price snapshots",
+      "pass": true,
+      "value": 0
+    },
+    {
+      "name": "No duplicate checkout tokens",
+      "pass": true,
+      "value": 0
+    },
+    {
+      "name": "Persisted quantities valid",
+      "pass": true,
+      "value": 0
+    },
+    {
+      "name": "Identity accounts persisted",
+      "pass": true,
+      "value": 2
+    },
+    {
+      "name": "Only bootstrap user has admin role",
+      "pass": true,
+      "value": 1
+    }
+  ]
+}

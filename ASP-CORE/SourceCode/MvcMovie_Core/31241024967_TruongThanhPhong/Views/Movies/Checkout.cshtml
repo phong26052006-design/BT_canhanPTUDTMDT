@@ -1,0 +1,68 @@
+@model CheckoutViewModel
+@{ViewData["Title"]="Thông tin giao hàng";}
+<p class="eyebrow">01 GIỎ HÀNG → 02 THÔNG TIN → 03 HOÀN TẤT</p>
+<h1>Thông tin giao hàng</h1>
+<p class="muted">Bài thực hành mô phỏng đặt hàng, không thu tiền hoặc yêu cầu thẻ thanh toán.</p>
+<div class="cart-layout">
+<div class="panel form-panel">
+<form asp-action="Checkout" method="post">
+<input asp-for="Token" type="hidden"/>
+<div asp-validation-summary="All" class="text-danger" role="alert">
+</div>
+<div class="form-grid">
+<div>
+<label asp-for="Shipping.Name" class="form-label">
+</label>
+<input asp-for="Shipping.Name" class="form-control" autocomplete="name"/>
+<span asp-validation-for="Shipping.Name" class="text-danger">
+</span>
+</div>
+<div>
+<label asp-for="Shipping.Mobile" class="form-label">
+</label>
+<input asp-for="Shipping.Mobile" class="form-control" type="tel" autocomplete="tel"/>
+<span asp-validation-for="Shipping.Mobile" class="text-danger">
+</span>
+</div>
+<div class="full">
+<label asp-for="Shipping.Email" class="form-label">
+</label>
+<input asp-for="Shipping.Email" class="form-control" type="email" autocomplete="email"/>
+<span asp-validation-for="Shipping.Email" class="text-danger">
+</span>
+</div>
+<div class="full">
+<label asp-for="Shipping.Address" class="form-label">
+</label>
+<textarea asp-for="Shipping.Address" class="form-control" autocomplete="street-address" rows="2">
+</textarea>
+<span asp-validation-for="Shipping.Address" class="text-danger">
+</span>
+</div>
+<div class="full">
+<label asp-for="Shipping.ReleaseDate" class="form-label">
+</label>
+<input asp-for="Shipping.ReleaseDate" type="date" class="form-control"/>
+<span asp-validation-for="Shipping.ReleaseDate" class="text-danger">
+</span>
+</div>
+</div>
+<div class="form-actions">
+<button class="btn btn-primary" type="submit">Xác nhận đặt hàng</button>
+<a class="btn btn-outline-secondary" asp-action="Cart">Quay lại giỏ</a>
+</div>
+</form>
+</div>
+<aside class="panel order-summary">
+<h2>Đơn hàng của bạn</h2>@foreach(var line in Model.Cart.Lines){<div class="checkout-line">
+<span>@line.Movie.Title <small>× @line.Quantity</small>
+</span>
+<strong>@line.Total.ToString("N0") ₫</strong>
+</div>}<div class="total-row">
+<span>Tổng cộng</span>
+<strong>@Model.Cart.Total.ToString("N0") ₫</strong>
+</div>
+<p class="muted">Đơn hàng, chi tiết và địa chỉ sẽ được lưu cùng một giao dịch.</p>
+</aside>
+</div>
+@section Scripts { <partial name="_ValidationScriptsPartial"/> }

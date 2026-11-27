@@ -1,0 +1,70 @@
+{
+  "time": "2026-11-27T18:30:57.806Z",
+  "checks": [
+    {
+      "name": "Desktop không tràn ngang",
+      "pass": true
+    },
+    {
+      "name": "Tạo phim qua giao diện với đúng giá",
+      "pass": true
+    },
+    {
+      "name": "Ảnh tải lên được gán tên GUID",
+      "pass": true
+    },
+    {
+      "name": "Sửa phim không chọn ảnh mới giữ ảnh đã lưu",
+      "pass": true
+    },
+    {
+      "name": "UI cập nhật tổng 178000",
+      "pass": true
+    },
+    {
+      "name": "UI hiển thị mã đơn thật",
+      "pass": true
+    },
+    {
+      "name": "Danh sách đơn render mã PC",
+      "pass": true
+    },
+    {
+      "name": "Không tràn ngang tại 390px",
+      "pass": true
+    },
+    {
+      "name": "Ảnh tải được tại 390px",
+      "pass": true
+    },
+    {
+      "name": "Giỏ hàng không làm tràn trang 390",
+      "pass": true
+    },
+    {
+      "name": "Checkout không tràn 390",
+      "pass": true
+    },
+    {
+      "name": "Không tràn ngang tại 768px",
+      "pass": true
+    },
+    {
+      "name": "Ảnh tải được tại 768px",
+      "pass": true
+    },
+    {
+      "name": "Giỏ hàng không làm tràn trang 768",
+      "pass": true
+    },
+    {
+      "name": "Checkout không tràn 768",
+      "pass": true
+    },
+    {
+      "name": "Không có lỗi JavaScript trong luồng UI",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

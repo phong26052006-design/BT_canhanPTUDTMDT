@@ -1,0 +1,8 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@if(SignInManager.IsSignedIn(User)){<a asp-area="Identity" asp-page="/Account/Manage/Index">Tài khoản</a>
+<form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/Movies/Index" method="post">
+<button class="text-button" type="submit">Đăng xuất</button>
+</form>}
+else{<a asp-area="Identity" asp-page="/Account/Register">Đăng ký</a>
+<a class="login-link" asp-area="Identity" asp-page="/Account/Login">Đăng nhập</a>}

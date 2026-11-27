@@ -1,0 +1,12 @@
+{
+  "mssql.connections": [
+    {
+      "profileName": "Phong Cinema LocalDB",
+      "server": "(localdb)\\PTUDTMDT_AspCore",
+      "database": "PhongCinema_31241024967",
+      "authenticationType": "Integrated",
+      "encrypt": "Optional",
+      "trustServerCertificate": true
+    }
+  ]
+}

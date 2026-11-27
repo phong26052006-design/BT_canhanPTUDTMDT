@@ -1,0 +1,20 @@
+@model Genre
+@{var creating=Model.ID==0;ViewData["Title"]=creating?"Thêm thể loại":"Sửa thể loại";}
+<h1>@ViewData["Title"]</h1>
+<div class="panel form-panel narrow">
+<form asp-action="@(creating?"Create":"Edit")" asp-route-id="@Model.ID" method="post">
+<input asp-for="ID" type="hidden"/>
+<div asp-validation-summary="All" class="text-danger">
+</div>
+<label asp-for="Name" class="form-label">
+</label>
+<input asp-for="Name" class="form-control"/>
+<span asp-validation-for="Name" class="text-danger">
+</span>
+<div class="form-actions">
+<button class="btn btn-primary">Lưu thể loại</button>
+<a class="btn btn-outline-secondary" asp-action="Index">Quay lại</a>
+</div>
+</form>
+</div>
+@section Scripts { <partial name="_ValidationScriptsPartial"/> }

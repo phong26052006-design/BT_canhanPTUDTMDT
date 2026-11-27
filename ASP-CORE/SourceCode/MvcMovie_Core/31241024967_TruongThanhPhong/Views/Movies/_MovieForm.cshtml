@@ -1,0 +1,64 @@
+@model Movie
+<div asp-validation-summary="All" class="text-danger" role="alert">
+</div>
+<div class="form-grid">
+<div>
+<label asp-for="Title" class="form-label">
+</label>
+<input asp-for="Title" class="form-control"/>
+<span asp-validation-for="Title" class="text-danger">
+</span>
+</div>
+<div>
+<label asp-for="GenreID" class="form-label">
+</label>
+<select asp-for="GenreID" asp-items="ViewBag.GenreID" class="form-select">
+<option value="">Chọn thể loại</option>
+</select>
+<span asp-validation-for="GenreID" class="text-danger">
+</span>
+</div>
+<div class="full">
+<label asp-for="Summary" class="form-label">
+</label>
+<textarea asp-for="Summary" class="form-control" rows="3">
+</textarea>
+<span asp-validation-for="Summary" class="text-danger">
+</span>
+</div>
+<div>
+<label asp-for="ReleaseDate" class="form-label">
+</label>
+<input asp-for="ReleaseDate" type="date" class="form-control"/>
+<span asp-validation-for="ReleaseDate" class="text-danger">
+</span>
+<small class="muted">Theo đề bài, ngày phát hành từ hôm nay trở đi.</small>
+</div>
+<div>
+<label asp-for="Price" class="form-label">
+</label>
+<input asp-for="Price" asp-format="{0:0}" type="number" step="1" min="5000" max="100000000" class="form-control"/>
+<span asp-validation-for="Price" class="text-danger">
+</span>
+</div>
+<div>
+<label asp-for="Rated" class="form-label">
+</label>
+<input asp-for="Rated" type="text" class="form-control" inputmode="decimal"/>
+<span asp-validation-for="Rated" class="text-danger">
+</span>
+<small class="muted">Từ 1 đến 5, dùng dấu phẩy, ví dụ 4,5.</small>
+</div>
+<div>
+<label asp-for="PictureUpload" class="form-label">
+</label>
+<input asp-for="PictureUpload" type="file" accept=".jpg,.jpeg,.png,.gif,.webp" class="form-control"/>
+<span asp-validation-for="PictureUpload" class="text-danger">
+</span>
+<small class="muted">JPG, PNG, GIF, WebP; tối đa 2 MB. Không chọn ảnh khi sửa sẽ giữ ảnh hiện tại.</small>
+</div>
+</div>
+@if(Model.ID>0){<div class="current-image">
+<img src="@Model.PicturePath" alt="Ảnh bìa hiện tại"/>
+<span>Ảnh đang dùng</span>
+</div>}

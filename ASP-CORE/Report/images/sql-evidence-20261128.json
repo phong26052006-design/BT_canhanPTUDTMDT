@@ -1,0 +1,33 @@
+{
+  "source": "SQL Server 2022 LocalDB",
+  "database": "PhongCinema_QA_20261128",
+  "tables": [
+    "__EFMigrationsHistory",
+    "AspNetRoleClaims",
+    "AspNetRoles",
+    "AspNetUserClaims",
+    "AspNetUserLogins",
+    "AspNetUserRoles",
+    "AspNetUsers",
+    "AspNetUserTokens",
+    "ChiTietHoaDons",
+    "Genres",
+    "HoaDons",
+    "Movies",
+    "ShippingDetails"
+  ],
+  "genres": [
+    {
+      "name": "Hoạt hình",
+      "movies": 3
+    },
+    {
+      "name": "Phiêu lưu",
+      "movies": 2
+    },
+    {
+      "name": "Tâm lý",
+      "movies": 2
+    }
+  ]
+}

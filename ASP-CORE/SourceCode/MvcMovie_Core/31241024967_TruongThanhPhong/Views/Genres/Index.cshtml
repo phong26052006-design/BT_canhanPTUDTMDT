@@ -1,0 +1,33 @@
+@model IReadOnlyList<Genre>
+@{ViewData["Title"]="Thể loại";}
+<div class="section-top">
+<div>
+<p class="eyebrow">QUẢN TRỊ CỬA HÀNG</p>
+<h1>Thể loại phim</h1>
+</div>
+<a class="btn btn-primary" asp-action="Create">+ Thêm thể loại</a>
+</div>
+<div class="panel table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th>Mã</th>
+<th>Tên thể loại</th>
+<th>Số phim</th>
+<th>Thao tác</th>
+</tr>
+</thead>
+<tbody>@foreach(var g in Model){<tr>
+<td>@g.ID</td>
+<td>
+<strong>@g.Name</strong>
+</td>
+<td>@g.Movies.Count</td>
+<td class="actions">
+<a asp-action="Details" asp-route-id="@g.ID">Xem</a>
+<a asp-action="Edit" asp-route-id="@g.ID">Sửa</a>
+<a class="danger" asp-action="Delete" asp-route-id="@g.ID">Xóa</a>
+</td>
+</tr>}</tbody>
+</table>
+</div>

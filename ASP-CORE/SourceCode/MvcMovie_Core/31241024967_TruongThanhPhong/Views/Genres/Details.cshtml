@@ -1,0 +1,10 @@
+@model Genre
+@{ViewData["Title"]=Model.Name;}
+<h1>@Model.Name</h1>
+<div class="panel">
+<p>@Model.Movies.Count phim thuộc thể loại này.</p>
+<ul>@foreach(var m in Model.Movies){<li>
+<a asp-controller="Movies" asp-action="Details" asp-route-id="@m.ID">@m.Title</a>
+</li>}</ul>
+<a class="btn btn-outline-secondary" asp-action="Index">Quay lại</a>
+</div>

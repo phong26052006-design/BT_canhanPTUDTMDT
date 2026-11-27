@@ -1,0 +1,40 @@
+@model HoaDon
+@{ViewData["Title"]="Đặt hàng hoàn tất";}
+<div class="confirmation">
+<span class="success-mark">✓</span>
+<p class="eyebrow">03 HOÀN TẤT</p>
+<h1>Đã ghi nhận đơn hàng</h1>
+<p>Cảm ơn @Model.ShippingDetail.Name. Mã đơn của bạn là <strong>@($"PC{Model.MaHoaDon:000000}")</strong>.</p>
+<p class="muted">Đây là đơn hàng mô phỏng, chưa phát sinh thanh toán thực tế.</p>
+</div>
+@if(TempData["EmailStatus"] is string status){<div class="alert alert-info">@status</div>}
+<div class="panel receipt">
+<div class="section-top">
+<h2>Chi tiết đơn hàng</h2>
+<span>@BusinessDate.Local(Model.NgayLap).ToString("dd/MM/yyyy HH:mm")</span>
+</div>
+<table class="table">
+<thead>
+<tr>
+<th>Phim</th>
+<th>Số lượng</th>
+<th>Đơn giá</th>
+<th>Thành tiền</th>
+</tr>
+</thead>
+<tbody>@foreach(var d in Model.ChiTietHoaDons){<tr>
+<td>@d.TenMovie</td>
+<td>@d.SoLuong</td>
+<td>@d.DonGia.ToString("N0") ₫</td>
+<td>@((d.DonGia*d.SoLuong).ToString("N0")) ₫</td>
+</tr>}</tbody>
+</table>
+<div class="total-row">
+<span>Tổng giá trị</span>
+<strong>@Model.TongTien.ToString("N0") ₫</strong>
+</div>
+<hr/>
+<h3>Thông tin nhận hàng</h3>
+<p>@Model.ShippingDetail.Name · @Model.ShippingDetail.Mobile<br/>@Model.ShippingDetail.Address<br/>@Model.ShippingDetail.Email<br/>Dự kiến nhận @Model.ShippingDetail.ReleaseDate.ToString("dd/MM/yyyy")</p>
+<a asp-action="Index" class="btn btn-primary">Trở lại cửa hàng</a>
+</div>

@@ -1,0 +1,7 @@
+{
+  "database": "PhongCinemaUEH",
+  "major": 17,
+  "migrations": 4,
+  "movies": 6,
+  "genres": 3
+}

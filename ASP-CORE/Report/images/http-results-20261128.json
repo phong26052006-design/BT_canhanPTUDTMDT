@@ -1,0 +1,250 @@
+{
+  "time": "2026-11-28T01:26:30.157545",
+  "passed": 61,
+  "checks": [
+    {
+      "name": "Trang chủ MVC hoạt động",
+      "pass": true
+    },
+    {
+      "name": "Có tối thiểu 6 sản phẩm và 3 thể loại",
+      "pass": true
+    },
+    {
+      "name": "Chặn khách tại /Movies/Manage",
+      "pass": true
+    },
+    {
+      "name": "Chặn khách tại /Movies/Create",
+      "pass": true
+    },
+    {
+      "name": "Chặn khách tại /Genres",
+      "pass": true
+    },
+    {
+      "name": "Chặn khách tại /Orders",
+      "pass": true
+    },
+    {
+      "name": "Chống CSRF khi mua",
+      "pass": true
+    },
+    {
+      "name": "GET không thay đổi giỏ",
+      "pass": true
+    },
+    {
+      "name": "Không mua phim không tồn tại",
+      "pass": true
+    },
+    {
+      "name": "Thêm sản phẩm vào Session",
+      "pass": true
+    },
+    {
+      "name": "Cộng số lượng phim đã có",
+      "pass": true
+    },
+    {
+      "name": "Chặn số lượng 0",
+      "pass": true
+    },
+    {
+      "name": "Chặn số lượng -1",
+      "pass": true
+    },
+    {
+      "name": "Chặn số lượng 100",
+      "pass": true
+    },
+    {
+      "name": "Chặn số lượng 1.5",
+      "pass": true
+    },
+    {
+      "name": "Chặn số lượng abc",
+      "pass": true
+    },
+    {
+      "name": "Cập nhật số lượng và bỏ qua giá giả",
+      "pass": true
+    },
+    {
+      "name": "Tổng 2 dòng đúng",
+      "pass": true
+    },
+    {
+      "name": "Xóa dòng giỏ và tính lại",
+      "pass": true
+    },
+    {
+      "name": "Checkout tạo token chống gửi lặp",
+      "pass": true
+    },
+    {
+      "name": "Checkout xác thực email, mobile và ngày",
+      "pass": true
+    },
+    {
+      "name": "Checkout chặn token giả",
+      "pass": true
+    },
+    {
+      "name": "Checkout lưu đơn và liên kết giao hàng",
+      "pass": true
+    },
+    {
+      "name": "Mã đơn được Razor render đúng",
+      "pass": true
+    },
+    {
+      "name": "Email local được phân biệt với gửi thật",
+      "pass": true
+    },
+    {
+      "name": "Gửi lặp trả lại cùng đơn",
+      "pass": true
+    },
+    {
+      "name": "Giỏ trống sau đặt hàng",
+      "pass": true
+    },
+    {
+      "name": "Phiên khác không xem được đơn",
+      "pass": true
+    },
+    {
+      "name": "Không Checkout giỏ trống",
+      "pass": true
+    },
+    {
+      "name": "Đăng nhập quản trị",
+      "pass": true
+    },
+    {
+      "name": "Trang quản trị/chi tiết /Genres",
+      "pass": true
+    },
+    {
+      "name": "Trang quản trị/chi tiết /Orders",
+      "pass": true
+    },
+    {
+      "name": "Trang quản trị/chi tiết /Movies/Create",
+      "pass": true
+    },
+    {
+      "name": "Trang quản trị/chi tiết /Movies/Edit/1",
+      "pass": true
+    },
+    {
+      "name": "Trang quản trị/chi tiết /Movies/Details/1",
+      "pass": true
+    },
+    {
+      "name": "Thêm thể loại",
+      "pass": true
+    },
+    {
+      "name": "Chặn thể loại trùng",
+      "pass": true
+    },
+    {
+      "name": "Sửa thể loại",
+      "pass": true
+    },
+    {
+      "name": "Validation Giá dưới 5000",
+      "pass": true
+    },
+    {
+      "name": "Validation Rating quá 5",
+      "pass": true
+    },
+    {
+      "name": "Validation Ngày quá khứ",
+      "pass": true
+    },
+    {
+      "name": "Validation Khóa ngoại giả",
+      "pass": true
+    },
+    {
+      "name": "Validation Tên quá ngắn",
+      "pass": true
+    },
+    {
+      "name": "Chặn upload evil.html",
+      "pass": true
+    },
+    {
+      "name": "Chặn upload evil.jpg",
+      "pass": true
+    },
+    {
+      "name": "Chặn upload tiny.png",
+      "pass": true
+    },
+    {
+      "name": "Chặn upload large.jpg",
+      "pass": true
+    },
+    {
+      "name": "Thêm phim có upload",
+      "pass": true
+    },
+    {
+      "name": "Ảnh lưu tên GUID an toàn",
+      "pass": true
+    },
+    {
+      "name": "Ảnh upload truy cập được",
+      "pass": true
+    },
+    {
+      "name": "Sửa giữ ảnh gốc và bỏ qua PicturePath giả",
+      "pass": true
+    },
+    {
+      "name": "Chặn xóa thể loại có phim",
+      "pass": true
+    },
+    {
+      "name": "Xóa phim chưa có đơn",
+      "pass": true
+    },
+    {
+      "name": "Xóa thể loại trống",
+      "pass": true
+    },
+    {
+      "name": "Chặn xóa phim đã có đơn",
+      "pass": true
+    },
+    {
+      "name": "Thêm không ảnh dùng mặc định",
+      "pass": true
+    },
+    {
+      "name": "Ảnh mặc định đúng",
+      "pass": true
+    },
+    {
+      "name": "Tìm tên phim",
+      "pass": true
+    },
+    {
+      "name": "Lọc thể loại",
+      "pass": true
+    },
+    {
+      "name": "Mã hóa nội dung tìm kiếm",
+      "pass": true
+    },
+    {
+      "name": "Có thư .eml thử nghiệm",
+      "pass": true
+    }
+  ]
+}

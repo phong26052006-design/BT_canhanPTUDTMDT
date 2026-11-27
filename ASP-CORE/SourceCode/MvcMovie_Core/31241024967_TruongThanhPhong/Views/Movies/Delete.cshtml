@@ -1,0 +1,12 @@
+@model Movie
+@{ViewData["Title"]="Xóa phim";}
+<h1>Xác nhận xóa phim</h1>
+<div class="panel form-panel">
+<h2>@Model.Title</h2>
+<p>Thể loại @Model.GenreObj?.Name · @Model.Price.ToString("N0") ₫</p>
+<p>Phim đã có trong đơn hàng sẽ được giữ lại để bảo toàn lịch sử.</p>
+<form asp-action="Delete" asp-route-id="@Model.ID" method="post">
+<button class="btn btn-danger">Xác nhận xóa</button>
+<a class="btn btn-outline-secondary" asp-action="Manage">Hủy</a>
+</form>
+</div>

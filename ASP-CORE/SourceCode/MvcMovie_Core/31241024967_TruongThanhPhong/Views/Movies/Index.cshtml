@@ -1,0 +1,72 @@
+@model IReadOnlyList<Movie>
+@{ViewData["Title"]="Khám phá phim";}
+<section class="hero">
+<div class="hero-copy">
+<p class="eyebrow">BỘ SƯU TẬP PHONG CINEMA</p>
+<h1>Một bộ phim hay.<br/>Một hành trình mới.</h1>
+<p>Chọn những câu chuyện dành cho bạn, từ chuyến phiêu lưu rực rỡ đến những khoảnh khắc thật gần.</p>
+<a class="btn btn-light" href="#collection">Khám phá bộ sưu tập <span aria-hidden="true">↘</span>
+</a>
+<div class="hero-meta">
+<span>@ViewBag.TotalMovies tựa phim chọn lọc</span>
+<span>@ViewBag.TotalGenres thể loại</span>
+<span>Đặt hàng dễ dàng</span>
+</div>
+</div>
+<div class="hero-art" aria-hidden="true">
+<div class="orbit">
+</div>
+<span class="hero-star">✦</span>
+<div class="ticket">
+<small>PHONG CINEMA / 2026</small>
+<strong>STORIES<br/>TO KEEP.</strong>
+<span>ADMIT ONE ───────────</span>
+</div>
+<span class="hero-caption">MỖI CÂU CHUYỆN MỞ RA MỘT THẾ GIỚI</span>
+</div>
+</section>
+<section id="collection">
+<div class="section-top">
+<div>
+<p class="eyebrow">CHỌN CÂU CHUYỆN CỦA BẠN</p>
+<h2>Phim trong bộ sưu tập</h2>
+</div>
+<span class="muted">@Model.Count tựa phim</span>
+</div>
+<form method="get" class="filter-form">
+<label class="visually-hidden" for="q">Tìm phim</label>
+<input id="q" name="q" value="@ViewBag.Query" placeholder="Tìm theo tên phim…" class="form-control" maxlength="200"/>
+<label class="visually-hidden" for="genre">Thể loại</label>
+<select id="genre" name="genre" class="form-select">
+<option value="">Tất cả thể loại</option>@foreach(Genre g in ViewBag.Genres){<option value="@g.ID" selected="@(ViewBag.Genre==g.ID)">@g.Name</option>}</select>
+<button class="btn btn-primary">Tìm phim</button>
+<a asp-action="Index" class="btn btn-outline-secondary">Đặt lại</a>
+</form>
+@if(Model.Count==0){<div class="empty-state">
+<h3>Chưa tìm thấy phim phù hợp</h3>
+<p>Hãy thử từ khóa khác hoặc xem tất cả thể loại.</p>
+</div>}
+<div class="movie-grid">@foreach(var movie in Model){<article class="movie-card">
+<a asp-action="Details" asp-route-id="@movie.ID" class="poster-link">
+<img src="@movie.PicturePath" alt="Bìa phim @movie.Title" loading="lazy"/>
+<span class="genre-badge">@movie.GenreObj?.Name</span>
+</a>
+<div class="movie-body">
+<div class="movie-rating">★ @movie.Rated.ToString("0.0") <span>/ 5</span>
+<small>Phát hành @movie.ReleaseDate.ToString("dd/MM/yyyy")</small>
+</div>
+<h3>
+<a asp-action="Details" asp-route-id="@movie.ID">@movie.Title</a>
+</h3>
+<p class="summary">@movie.Summary</p>
+<div class="buy-row">
+<strong>@movie.Price.ToString("N0") <small>₫</small>
+</strong>
+<form asp-action="AddToCart" asp-route-id="@movie.ID" method="post">
+<button class="btn btn-primary" type="submit" aria-label="Mua @movie.Title">Mua <span aria-hidden="true">+</span>
+</button>
+</form>
+</div>
+</div>
+</article>}</div>
+</section>

@@ -1,0 +1,17 @@
+@model Movie
+@{ViewData["Title"]=Model.Title;}
+<a class="back-link" asp-action="Index">← Trở lại bộ sưu tập</a>
+<div class="detail-layout">
+<img class="detail-poster" src="@Model.PicturePath" alt="Bìa phim @Model.Title"/>
+<div>
+<p class="eyebrow">@Model.GenreObj?.Name</p>
+<h1>@Model.Title</h1>
+<p class="movie-rating">★ @Model.Rated.ToString("0.0") / 5</p>
+<p>@Model.Summary</p>
+<p class="muted">Ngày phát hành @Model.ReleaseDate.ToString("dd/MM/yyyy")</p>
+<p class="detail-price">@Model.Price.ToString("N0") ₫</p>
+<p>Bản đĩa phim mô phỏng. Đây là cửa hàng phục vụ học tập.</p>
+<form asp-action="AddToCart" asp-route-id="@Model.ID" method="post">
+<button class="btn btn-primary btn-lg">Thêm vào giỏ hàng +</button>
+</form>@if(User.IsInRole("Admin")){<a class="back-link" asp-action="Edit" asp-route-id="@Model.ID">Chỉnh sửa thông tin phim →</a>}</div>
+</div>

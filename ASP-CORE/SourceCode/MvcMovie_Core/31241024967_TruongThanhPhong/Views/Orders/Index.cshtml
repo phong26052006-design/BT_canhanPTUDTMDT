@@ -1,0 +1,27 @@
+@model IReadOnlyList<HoaDon>
+@{ViewData["Title"]="Đơn hàng";}
+<p class="eyebrow">QUẢN TRỊ CỬA HÀNG</p>
+<h1>Đơn hàng đã lưu</h1>
+<p class="muted">Thông tin cá nhân chỉ hiển thị cho tài khoản quản trị.</p>
+<div class="panel table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th>Mã đơn</th>
+<th>Thời gian</th>
+<th>Người nhận</th>
+<th>Số lượng</th>
+<th>Tổng tiền</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>@foreach(var o in Model){<tr>
+<td>@($"PC{o.MaHoaDon:000000}")</td>
+<td>@BusinessDate.Local(o.NgayLap).ToString("dd/MM/yyyy HH:mm")</td>
+<td>@o.ShippingDetail?.Name</td>
+<td>@o.ChiTietHoaDons.Sum(d=>d.SoLuong)</td>
+<td>@o.TongTien.ToString("N0") ₫</td>
+<td>@(o.EmailSent?"Đã gửi SMTP":"Chưa gửi thật")</td>
+</tr>}</tbody>
+</table>
+</div>

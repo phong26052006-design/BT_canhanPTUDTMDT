@@ -1,0 +1,11 @@
+@model Genre
+@{ViewData["Title"]="Xóa thể loại";}
+<h1>Xác nhận xóa thể loại</h1>
+<div class="panel form-panel">
+<h2>@Model.Name</h2>
+<p>Thể loại đang có @Model.Movies.Count phim. Chỉ có thể xóa khi không còn phim liên quan.</p>
+<form asp-action="Delete" asp-route-id="@Model.ID" method="post">
+<button class="btn btn-danger">Xác nhận xóa</button>
+<a class="btn btn-outline-secondary" asp-action="Index">Hủy</a>
+</form>
+</div>

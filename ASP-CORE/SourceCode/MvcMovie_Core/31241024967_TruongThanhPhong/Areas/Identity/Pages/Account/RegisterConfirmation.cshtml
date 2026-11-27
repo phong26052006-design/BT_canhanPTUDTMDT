@@ -1,0 +1,6 @@
+@page
+@model RegisterConfirmationModel
+@inject IWebHostEnvironment Environment
+@inject MvcMoviePhong.Extension.EmailServiceNew EmailService
+@{ViewData["Title"]="Xác nhận đăng ký";}
+<h1>Kiểm tra thư xác nhận</h1><div class="panel form-panel"><p>Tài khoản đã được tạo. Hãy mở thư xác nhận để kích hoạt email trước khi đăng nhập.</p>@if(Environment.IsDevelopment()&&EmailService.IsPickup){<p>Chế độ thử nghiệm local ghi thư vào <code>%LOCALAPPDATA%/PhongCinema/MailPickup</code>. Mở tệp eml và truy cập liên kết xác nhận. Chưa có email gửi ra Internet.</p>}<a asp-page="./Login" class="btn btn-primary">Về trang đăng nhập</a></div>
